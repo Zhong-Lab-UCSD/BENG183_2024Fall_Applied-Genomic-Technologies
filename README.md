@@ -1,5 +1,26 @@
 # BENG 183 Applied Genomic Technologies - 2024Fall
 
+### Final Paper Submission
+
+#### To submit the final project, please follow these steps:
+
+1. To start, fork this repository. [Fork a repo - GitHub Docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+2. Clone the repository to your computer.
+3. Upload your files and commit changes to complete your solution.
+4. Push/sync the changes up to GitHub.
+5. Create a pull request on the original repository to turn in the assignment. [Creating a pull request - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+Tips: You can install Github Desktop to use GUI instead of command line.
+
+#### Requirements:
+
+1. Please put the final paper of your group in the "**Final_Paper**" Folder in this repository. Create a folder and put your paper **.md** files together **with figures within the folder**. 
+2. The name of the Folder should be **"Group_Number_Topic"**. e.g. "Group_1_RNA-seq".
+
+#### Grading:
+
+The final paper will be graded by the 4 TAs. Each TA will give a score in 1-10 to each paper. The average score will be the score of this final paper of this team. **All team members will receive the same score**.
+
 ### Chapter1 Molecular Biology
 
 - [Review of Molecular Biology from 3D Genome ebook.](https://zhonglab.gitbook.io/3dgenome/chap0-preparation/0.1-molecular-biology) 
