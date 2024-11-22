@@ -30,9 +30,7 @@ Spatial transcriptomics (ST) is a cutting-edge approach that combines genomics a
 
 ![Spatial Transcriptomics Example](img/spatial_example.png)
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img1.png)
-![](https://github.com/drahmanucsd/beng183proj/blob/main/img2.png)
-![](https://github.com/drahmanucsd/beng183proj/blob/main/img3.png)
-![](https://github.com/drahmanucsd/beng183proj/blob/main/img4.png)
+
 
 
 ---
@@ -51,6 +49,8 @@ Understanding this variability is important, because this way researchers can ta
 - **Reveals Microenvironments**: Investigates the interaction between tumor cells and their surroundings.
 
 ![Tumor Heterogeneity](img/tumor_heterogeneity.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img2.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img3.png)
 
 ---
 
@@ -79,7 +79,8 @@ PCA is a linear dimensionality reduction technique designed to reduce the number
 - Does not preserve local or global geometric structures in non-linear datasets.  
 
 ---
-
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img4.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img5.png)
 ### **Uniform Manifold Approximation and Projection (UMAP)**  
 UMAP is a non-linear dimensionality reduction technique that emphasizes preserving the local and global structure of data when projecting it into lower dimensions (e.g., 2D or 3D). It is particularly suited for visualizing clusters and patterns in complex datasets.  
 
@@ -116,6 +117,7 @@ Both techniques are valuable tools depending on the dataset's nature and the ana
 - **Mapping Subpopulations**: Identifies unique cell types and their spatial distributions.
 
 ![Clustering Example](img/clustering.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img6.png)
 
 ---
 
@@ -130,6 +132,7 @@ Deconvolution predicts the proportions of various cell types in a tissue, enhanc
 Deconvolution reduces costs and computational complexity, making it accessible for large-scale studies.
 
 ![Deconvolution Example](img/deconvolution.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img7.png)
 
 ---
 
@@ -153,6 +156,9 @@ Machine learning models are essential for processing and interpreting spatial tr
 - **Cost-Effective Precision Medicine**: Accelerates and reduces the cost of personalized therapies.
 
 ![Machine Learning Models](img/ml_models.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img8.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img9.png)
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img10.gif)
 
 ---
 
