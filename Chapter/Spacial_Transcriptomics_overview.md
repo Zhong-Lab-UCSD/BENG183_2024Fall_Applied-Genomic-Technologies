@@ -59,6 +59,7 @@ Understanding this variability is important, because this way researchers can ta
 
 Clustering techniques are invaluable for analyzing spatial transcriptomics data. By grouping data based on similarity, clustering reveals patterns in tissue organization and gene expression.
 
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img11.png)
 ## Dimensionality Reduction
 
 ### **Principal Component Analysis (PCA)**  
