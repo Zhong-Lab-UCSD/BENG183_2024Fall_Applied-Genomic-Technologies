@@ -28,7 +28,7 @@ Spatial transcriptomics (ST) is a cutting-edge approach that combines genomics a
 
 - In Situ Capture has the advantage of being able to identify novel spatial information for genes
 
-![Spatial Transcriptomics Example](img/spatial_example.png)
+<!-- ![Spatial Transcriptomics Example](img/spatial_example.png) -->
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img1.png)
 
 
@@ -48,7 +48,7 @@ Understanding this variability is important, because this way researchers can ta
 - **Tailors Therapies**: Enables development of targeted treatments for specific tumor regions based on the knowledge of differing gene expression at these locations.
 - **Reveals Microenvironments**: Investigates the interaction between tumor cells and their surroundings.
 
-![Tumor Heterogeneity](img/tumor_heterogeneity.png)
+<!-- ![Tumor Heterogeneity](img/tumor_heterogeneity.png) -->
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img2.png)
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img3.png)
 
@@ -116,7 +116,7 @@ Both techniques are valuable tools depending on the dataset's nature and the ana
 - **Inter-Tumor Heterogeneity**: Distinguishes genetic differences across tumor sections.
 - **Mapping Subpopulations**: Identifies unique cell types and their spatial distributions.
 
-![Clustering Example](img/clustering.png)
+<!-- ![Clustering Example](img/clustering.png) -->
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img6.png)
 
 ---
@@ -131,7 +131,7 @@ Deconvolution predicts the proportions of various cell types in a tissue, enhanc
 
 Deconvolution reduces costs and computational complexity, making it accessible for large-scale studies.
 
-![Deconvolution Example](img/deconvolution.png)
+<!-- ![Deconvolution Example](img/deconvolution.png) -->
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img7.png)
 
 ---
@@ -155,10 +155,10 @@ Machine learning models are essential for processing and interpreting spatial tr
 - **Pathology Advances**: Provides high-resolution diagnostic tools.
 - **Cost-Effective Precision Medicine**: Accelerates and reduces the cost of personalized therapies.
 
-![Machine Learning Models](img/ml_models.png)
-![](https://github.com/drahmanucsd/beng183proj/blob/main/img8.png)
-![](https://github.com/drahmanucsd/beng183proj/blob/main/img9.png)
-![](https://github.com/drahmanucsd/beng183proj/blob/main/img10.gif)
+<!-- ![Machine Learning Models](img/ml_models.png) -->
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img8.jpeg)
+<!-- ![](https://github.com/drahmanucsd/beng183proj/blob/main/img9.png) -->
+
 
 ---
 
@@ -196,7 +196,8 @@ HistoGene is an advanced spatial transcriptomics platform that integrates histol
 - Combines histological and transcriptomic insights for holistic tissue analysis.
 - Improves diagnostic accuracy and enhances drug target discovery.
 
-![HistoGene Workflow](img/histogene.png)
+<!-- ![HistoGene Workflow](img/histogene.png) -->
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img10.gif)
 
 ---
 
