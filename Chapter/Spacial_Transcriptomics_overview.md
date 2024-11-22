@@ -29,6 +29,7 @@ Spatial transcriptomics (ST) is a cutting-edge approach that combines genomics a
 - In Situ Capture has the advantage of being able to identify novel spatial information for genes
 
 <!-- ![Spatial Transcriptomics Example](img/spatial_example.png) -->
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img2.png)
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img1.png)
 
 
@@ -49,7 +50,7 @@ Understanding this variability is important, because this way researchers can ta
 - **Reveals Microenvironments**: Investigates the interaction between tumor cells and their surroundings.
 
 <!-- ![Tumor Heterogeneity](img/tumor_heterogeneity.png) -->
-![](https://github.com/drahmanucsd/beng183proj/blob/main/img2.png)
+
 ![](https://github.com/drahmanucsd/beng183proj/blob/main/img3.png)
 
 ---
