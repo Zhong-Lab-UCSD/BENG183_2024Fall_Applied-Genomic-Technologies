@@ -34,6 +34,7 @@ Spatial transcriptomics (ST) is a cutting-edge approach that combines genomics a
 
 
 
+
 ---
 
 ## Relevance to Cancer
@@ -62,6 +63,7 @@ Clustering techniques are invaluable for analyzing spatial transcriptomics data.
 <div style="text-align: center;">
   <img src="https://github.com/drahmanucsd/beng183proj/blob/main/image11.png" width="600" />
 </div>
+![](https://raw.githubusercontent.com/mbernste/mbernste.github.io/master/images/dim_reduc_PBMC_3k_example.png)
 
 
 ## Dimensionality Reduction
