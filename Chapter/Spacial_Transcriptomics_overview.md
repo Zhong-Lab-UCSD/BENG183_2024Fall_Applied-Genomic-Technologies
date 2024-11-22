@@ -59,7 +59,10 @@ Understanding this variability is important, because this way researchers can ta
 
 Clustering techniques are invaluable for analyzing spatial transcriptomics data. By grouping data based on similarity, clustering reveals patterns in tissue organization and gene expression.
 
-![](https://github.com/drahmanucsd/beng183proj/blob/main/image11.png)
+<div style="text-align: center;">
+  <img src="https://github.com/drahmanucsd/beng183proj/blob/main/image11.png" width="600" height="400" />
+</div>
+
 ## Dimensionality Reduction
 
 ### **Principal Component Analysis (PCA)**  
@@ -215,5 +218,7 @@ HistoGene is an advanced spatial transcriptomics platform that integrates histol
 
 ---
 `
+
+
 
 
