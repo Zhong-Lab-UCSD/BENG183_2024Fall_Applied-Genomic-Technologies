@@ -64,7 +64,7 @@ Clustering techniques are invaluable for analyzing spatial transcriptomics data.
   <img src="https://github.com/drahmanucsd/beng183proj/blob/main/image11.png" width="600" />
 </div>
 ![](https://raw.githubusercontent.com/mbernste/mbernste.github.io/master/images/dim_reduc_PBMC_3k_example.png)
-
+![](https://github.com/drahmanucsd/beng183proj/blob/main/img12.png)
 
 ## Dimensionality Reduction
 
