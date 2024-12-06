@@ -30,7 +30,9 @@ First, cancer drugs are represented in two different forms to accurately capture
 cancer drugs are modeled as molecular graphs, with atoms as nodes and bonds as edges. A Complete Graph Convolutional Network (CGCN) is used by the model to dynamically update both node and edge 
 features to capture atom-bond interactions. It ensures that bond characteristics (e.g., type, polarity) are incorporated into the molecular representation. In sequence representation, drugs are 
 represented as text using SMILES strings. 
+
 ![fig1]("./Group_16_DeepAEG/fig1.jpg")
+
 This data is then processed by the model to capture higher-level structural information. By representing drug representation in two different forms, this increases data diversity and improves the model’s 
 robustness by exposing it to different structural variations of the same molecule. 
 
