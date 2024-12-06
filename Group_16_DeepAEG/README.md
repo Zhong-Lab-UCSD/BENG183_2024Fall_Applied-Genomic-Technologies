@@ -95,7 +95,7 @@ How might the underlying architecture behind the DeepAEG model be repurposed and
 
 
 ## Citations
-Lao C, Zheng P, Chen H, Liu Q, An F, Li Z. “DeepAEG: a model for predicting cancer drug response based on data enhancement and edge-collaborative update strategies.” BMC Bioinformatics. 2024 Mar 9;25(1):105. 
+Lao C, Zheng P, Chen H, Liu Q, An F, Li Z. “DeepAEG: a model for predicting cancer drug response based on data enhancement and edge-&nbsp;&nbsp;&nbsp;&nbspcollaborative update strategies.” BMC Bioinformatics. 2024 Mar 9;25(1):105. 
 doi: 10.1186/s12859-024-05723-8. PMID: 38461284; PMCID: PMC10925015.
 
 
