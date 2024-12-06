@@ -15,7 +15,7 @@
 
 ---
 
-# What is AlphaFold?
+## What is AlphaFold?
 
 ---
 
