@@ -31,7 +31,7 @@ cancer drugs are modeled as molecular graphs, with atoms as nodes and bonds as e
 features to capture atom-bond interactions. It ensures that bond characteristics (e.g., type, polarity) are incorporated into the molecular representation. In sequence representation, drugs are 
 represented as text using SMILES strings. 
 
-![fig1]("fig1.jpg")
+![fig1](fig1.jpg)
 
 This data is then processed by the model to capture higher-level structural information. By representing drug representation in two different forms, this increases data diversity and improves the model’s 
 robustness by exposing it to different structural variations of the same molecule. 
@@ -61,12 +61,12 @@ To assess the performance of the DeepAEG model, Zhejiang lab compared the method
 Spearman's Correlation Coefficient (SCC). As you can see, DeepAEG showed highest accuracy predicting IC50 value among other 6 models. Compared to all other 6 models, DeepAEG showed the highest PCC and SCC values 
 and lowest RMSE values; the model was able to predict the IC50 accurately and precisely with better performance.
 
-![fig3](fig3.jpg)
+![fig3](fig3.png)
 
 Moreover, Zhejiang lab also assessed prediction performance on different cancers and drugs. The DeepAEG model was consistently highly performed over all cell lines, with Pearson’s correlation between 0.878 and 0.951.
 It showed the best performance in thyroid carcinoma and GSK1070916 which is an ATP competitive inhibitor used for antitumor activity. 
 
-![fig4]("fig4.jpg")
+![fig4](fig4.png)
 
 
 
