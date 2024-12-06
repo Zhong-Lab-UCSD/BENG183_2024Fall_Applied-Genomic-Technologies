@@ -30,7 +30,7 @@ First, cancer drugs are represented in two different forms to accurately capture
 cancer drugs are modeled as molecular graphs, with atoms as nodes and bonds as edges. A Complete Graph Convolutional Network (CGCN) is used by the model to dynamically update both node and edge 
 features to capture atom-bond interactions. It ensures that bond characteristics (e.g., type, polarity) are incorporated into the molecular representation. In sequence representation, drugs are 
 represented as text using SMILES strings. 
-![fig1]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig1.jpg")
+![fig1]("./Group_16_DeepAEG/fig1.jpg")
 This data is then processed by the model to capture higher-level structural information. By representing drug representation in two different forms, this increases data diversity and improves the model’s 
 robustness by exposing it to different structural variations of the same molecule. 
 
@@ -38,7 +38,7 @@ Secondly, Deep AEG also requires patient genomic data in order to predict the dr
 DeepAEG incorporates four different multi-omics data: gene mutations, gene expression levels, DNA methylation pattern, and copy number variations data. Each data type is then processed by a 
 dedicated 1D Convolutional Neural Network (CNN). The outputs are combined using an attention mechanism to highlight the most relevant genomic features for predicting drug responses.
 
-![fig2]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig2.jpg")
+![fig2](./Group_16_DeepAEG/fig2.jpg)
 
 ### Combining Features
 After feature extraction, two separate drug and genomic data are concatenated into a single feature vector, which shows the comprehensive representation of the drug-cell line interaction. 
@@ -55,16 +55,16 @@ for stable and efficient convergence. Beside optimizer the model also uses loss 
 predict IC50 values for unseen drug-cell line pairs, guiding cancer drug efficacy assessments.
 
 ### Performance of DeepAEG
-To Assess the performance of the DeepAEG model, Zhejiang lab compared the method with six other methods using metrics such as Root Mean Square Error (RMSE), Pearson’s Correlation Coefficient (PCC), and 
+To assess the performance of the DeepAEG model, Zhejiang lab compared the method with six other methods using metrics such as Root Mean Square Error (RMSE), Pearson’s Correlation Coefficient (PCC), and 
 Spearman's Correlation Coefficient (SCC). As you can see, DeepAEG showed highest accuracy predicting IC50 value among other 6 models. Compared to all other 6 models, DeepAEG showed the highest PCC and SCC values 
 and lowest RMSE values; the model was able to predict the IC50 accurately and precisely with better performance.
 
-![fig3]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig3.jpg")
+![fig3](./Group_16_DeepAEG/fig3.jpg)
 
 Moreover, Zhejiang lab also assessed prediction performance on different cancers and drugs. The DeepAEG model was consistently highly performed over all cell lines, with Pearson’s correlation between 0.878 and 0.951.
 It showed the best performance in thyroid carcinoma and GSK1070916 which is an ATP competitive inhibitor used for antitumor activity. 
 
-![fig4]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig4.jpg")
+![fig4]("./Group_16_DeepAEG/fig4.jpg")
 
 
 
