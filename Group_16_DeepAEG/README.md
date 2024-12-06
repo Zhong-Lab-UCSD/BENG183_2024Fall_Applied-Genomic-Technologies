@@ -68,5 +68,35 @@ It showed the best performance in thyroid carcinoma and GSK1070916 which is an A
 
 ![fig4](fig4.png)
 
+## Application 
+
+### Established Success
+After the aforementioned training and optimization phases, the Zhejiang lab tasked the model with predicting 17,845 drug-cell line interactions that were deliberately missing from the previous 106,494 dug-cell 
+line interactions that the model was trained on. From this testing, they were able to narrow down the 10 best and 10 worst drugs in terms of their ability to inhibit cancer cell growth.
+
+![fig5](fig5.png)
+
+This violin plot shows those testing results, from which the model was able to identify Bortezomib as the most effective drug for treating myeloma. This result is consistent with the actual drug cell line data 
+which goes to show the strength of applying DeepAEG as a prediction tool once the supervised training has been done.
+
+### Advanced Treatment Production
+One promising application of DeepAEG is the use of its predictive capabilities to investigate untested drug-cell line interactions. Using this model to help determine which drugs in consideration will be the 
+most effective, and would therefore be worth pursuing for advancement into costly clinical trials. This can be done with both completely new and untested drugs as well as for drug repurposing, where existing 
+FDA-approved drugs are tested for application against other cancer subtypes.
+
+### Personalized Medicine
+Perhaps the most important application of DeepAEG is of course employing the model in the realm of personalized medicine. By taking in multi-omics data from the patient’s cells, DeepAEG will be able to make a 
+prediction on which established drugs are best suited for that specific patient’s condition. This level of precise predicting could reduce trial-and-error approaches in oncology, greatly streamlining the process of 
+creating a personal treatment plan, and improving patient outcomes and quality of care.
+
+### Stop and Think:
+How might the underlying architecture behind the DeepAEG model be repurposed and applied to other non-cancer diseases? 
+
+
+
+## Citations
+Lao C, Zheng P, Chen H, Liu Q, An F, Li Z. “DeepAEG: a model for predicting cancer drug response based on data enhancement and edge-collaborative update strategies.” BMC Bioinformatics. 2024 Mar 9;25(1):105. 
+doi: 10.1186/s12859-024-05723-8. PMID: 38461284; PMCID: PMC10925015.
+
 
 
