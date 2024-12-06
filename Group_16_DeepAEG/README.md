@@ -31,3 +31,40 @@ cancer drugs are modeled as molecular graphs, with atoms as nodes and bonds as e
 features to capture atom-bond interactions. It ensures that bond characteristics (e.g., type, polarity) are incorporated into the molecular representation. In sequence representation, drugs are 
 represented as text using SMILES strings. 
 ![fig1]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig1.jpg")
+This data is then processed by the model to capture higher-level structural information. By representing drug representation in two different forms, this increases data diversity and improves the model’s 
+robustness by exposing it to different structural variations of the same molecule. 
+
+Secondly, Deep AEG also requires patient genomic data in order to predict the drug response efficiency of cancer patients. In order to capture the dynamic and complex nature of genomic data, 
+DeepAEG incorporates four different multi-omics data: gene mutations, gene expression levels, DNA methylation pattern, and copy number variations data. Each data type is then processed by a 
+dedicated 1D Convolutional Neural Network (CNN). The outputs are combined using an attention mechanism to highlight the most relevant genomic features for predicting drug responses.
+
+![fig2]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig2.jpg")
+
+### Combining Features
+After feature extraction, two separate drug and genomic data are concatenated into a single feature vector, which shows the comprehensive representation of the drug-cell line interaction. 
+By analyzing these combined vectors, machine learning models can predict how a particular cell line will react to a specific drug, often measured as an IC50 value. This process ensures that the model integrates 
+complementary information from two different sources. From the unified vector, drug features provide insights into the molecular structure and properties, and genomic features reveal how the cell line might respond 
+to those properties based on the patient's genetic characteristics.
+
+### Training and Testing 
+After the feature, the acquired single drug-cell line pair vector can be used  for the training of the DeepAEG model. Zhejiang lab has acquired their training and testing datasets from Genomics of Drug 
+Sensitivity in Cancer and Cancer Cell Line Encyclopedia databases. The datasets included approximately 106,500 interaction instances and 561 cancer cell lines and 221 drugs. For the training datasets, the drug-cell 
+line vector is then put into the prediction network with known IC50 values (log-transformed for normalization) as a label. Beside training, the model also goes through an optimization process for better prediction 
+of drug response efficiency. DeepAEG uses the AdamW optimizer, which combines adaptive learning rates with weight decay to prevent overfitting and improve convergence. The learning rate is set to 10−310−3, fine-tuned
+for stable and efficient convergence. Beside optimizer the model also uses loss function to minimize the Mean Squared Error (MSE) between the predicted and true IC50 values. Once training is complete, the model can 
+predict IC50 values for unseen drug-cell line pairs, guiding cancer drug efficacy assessments.
+
+### Performance of DeepAEG
+To Assess the performance of the DeepAEG model, Zhejiang lab compared the method with six other methods using metrics such as Root Mean Square Error (RMSE), Pearson’s Correlation Coefficient (PCC), and 
+Spearman's Correlation Coefficient (SCC). As you can see, DeepAEG showed highest accuracy predicting IC50 value among other 6 models. Compared to all other 6 models, DeepAEG showed the highest PCC and SCC values 
+and lowest RMSE values; the model was able to predict the IC50 accurately and precisely with better performance.
+
+![fig3]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig3.jpg")
+
+Moreover, Zhejiang lab also assessed prediction performance on different cancers and drugs. The DeepAEG model was consistently highly performed over all cell lines, with Pearson’s correlation between 0.878 and 0.951.
+It showed the best performance in thyroid carcinoma and GSK1070916 which is an ATP competitive inhibitor used for antitumor activity. 
+
+![fig4]("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig4.jpg")
+
+
+
