@@ -1,4 +1,4 @@
-# Group_16_DeepAEG
+# Group 16 DeepAEG
 
 ## Introduction
 
@@ -19,3 +19,15 @@ results in the results of the model taking a huge hit. Because of this, it is ab
 
 ### The Advantages of DeepAEG 
 To overcome the limitations described above, the Zhejiang lab proposed a novel multi-source heterogeneous graph convolutional neural network, also known as DeepAEG. 
+
+
+## Procedure
+
+### Data Processing
+In order for DeepAEG to accurately predict the IC50 value (half-maximal inhibitory concentration) of the cancer treatment drugs, the model requires two types of data: drug representation data and patient genomic data. 
+
+First, cancer drugs are represented in two different forms to accurately capture its chemical structure and detailed molecular interactions. In the graph representation of the drug, 
+cancer drugs are modeled as molecular graphs, with atoms as nodes and bonds as edges. A Complete Graph Convolutional Network (CGCN) is used by the model to dynamically update both node and edge 
+features to capture atom-bond interactions. It ensures that bond characteristics (e.g., type, polarity) are incorporated into the molecular representation. In sequence representation, drugs are 
+represented as text using SMILES strings. 
+!("C:\Users\leena\BENG183_2024Fall_Applied-Genomic-Technologies\Group_16_DeepAEG\fig1.jpg")
