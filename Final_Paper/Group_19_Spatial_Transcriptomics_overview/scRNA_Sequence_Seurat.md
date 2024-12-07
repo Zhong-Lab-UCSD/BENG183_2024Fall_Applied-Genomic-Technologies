@@ -1,17 +1,19 @@
 # ScRNA Sequence - Seurat 
 ### By Nichole Mora, Ehsun Yazdani, Nicholas Hubbard
-* [What is Seurat EDIT (Ehsun)](#231)
-* [Overivew of Seurat EDIT (Ehsun)](#232)<br>
-* [Case Study EDIT (Nichole)](#2321)<br>
-* [Methods EDIT (Nichole)](#2322)
-* [Different Application (Why is Seurat better) EDIT (Nicholas)](#233)
-* [Different Application(Why is Seurat better) EDIT (Nicholas)](#234)
-* [Selected methods comparison EDIT (Nicholas)](#235)
+* [What is Seurat](#what-is-seurat)
+* [Overivew of Seurat)](#overview-of-seurat)<br>
+* [Case Study](#case-study)<br>
+* [Methods](#methods)
+* [Why is Seurat Better](#different-application)
+** [Insert Different Application1](#insert-different-application1)
+** [Insert Different Application2](#insert-different-application2)
+** [Insert Different Application3](#insert-different-application3)
+* [Selected methods comparison](#235)
 
 
 
 
-## 2.3.1 Introduction<a name="231"></a>
+## What is Seurat 
 
 The foundamental object of 3C(Chromosome Conformation Capture) techniques and 3C-derived methods is to understand the physical wiring diagram of the genome by identifying the physical interaction between chromosomes. 
 
@@ -23,7 +25,7 @@ To capture the interaction (crosslink between strings), there are few steps in g
 
 > Based on these general ideas, then we'll dive deeper by walking through two of the most popular  techniques and then briefly introduce some other methods. 
 
-## 2.3.2 Overivew of 3C methods<a name="232"></a>
+## Overview of Seurat
 
 ![](/assets/1-s2.0-S1360138518300827-gr1b2_lrg.jpg)
 [Figure1](https://doi.org/10.1016/j.tplants.2018.03.014). Schematic Representation of Chromosome Conformation Capture (3C) and 3C-Derived Methods. These methods help to elucidate nuclear organization by detecting physical interactions between genetic elements located throughout the genome. Abbreviations: IP, immunoprecipitation; RE, restriction enzyme. **Figure by Sotelo-Silveira, Mariana, et al. Trends in Plant Science (2018).**
