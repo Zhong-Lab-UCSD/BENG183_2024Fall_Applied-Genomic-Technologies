@@ -1,4 +1,4 @@
-# 2.3 ScRNA Sequence - Seurat 
+# ScRNA Sequence - Seurat 
 ### By Nichole Mora, Ehsun Yazdani, Nicholas Hubbard
 1. [What is Seurat EDIT (Ehsun)](#231)
 2. [Overivew of Seurat EDIT (Ehsun)](#232)<br>
