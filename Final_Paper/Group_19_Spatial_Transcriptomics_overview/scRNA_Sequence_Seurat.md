@@ -54,8 +54,8 @@ The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering
 # Methods
 In order to begin analyzing data to cluster, we must first load the data and create a seurat object, which we will be using to cluster.
 
-```bash
 
+```bash
 #load the expression matrix
 expression_data <- read.table("~/SCP404/expression/outputs_5ca76079328cee0c8dad60c0_66021478-5f80-4c3e-80b4-c2fbca32fce6/mouse_E18_nuclei_analysis.scp.expr.txt", 
                               header = TRUE, 
@@ -80,24 +80,8 @@ pca_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_6602
 tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_66021478-5f80-4c3e-80b4-c2fbca32fce6/mouse_E18_nuclei_analysis.scp.X_tsne.coords.txt", 
                           header = TRUE, 
                           row.names = 1, 
-                          sep = "\t")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                          sep = "\t")'''
+```
 
 # Different Applications Performance Compared to Seurat
 - Hi-C original: [Lieberman-Aiden et al., Science 2010](doi: 10.1126/science.1181369)
