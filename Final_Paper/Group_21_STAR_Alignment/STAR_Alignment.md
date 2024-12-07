@@ -42,9 +42,32 @@ STAR starts by finding the longest prefix in reads that exactly match some (>= 1
 ### Step 2: Mapping the the unmapped regions to the reference genome
 #### Scenario 1: Able to find exact match in the reference genome for the unmapped portion: 
 ![]()
-If STAR is able to find some exact match for the entire unmapped portion at some genome locations after the first MMP, then we are done. However, in many cases, we are not so lucky.
+- If STAR is able to find some exact match for the entire unmapped portion at some genome locations after the first MMP, then we are done. However, in many cases, we are not so lucky.
 
 #### Scenario 2: Minor mismatch between unmapped region and the reference genome
+![]()
+- As STAR is mapping the second MMP (second longest exact match prefix) to some locations in the reference genome, STAR encountered some mismatch that prevented us from further matching to extend the MMP. In this case, STAR will count how many mismatches STAR have seen while STAR continues our effort to match the MMP to the reference genome. If the mismatch is short and STAR reaches the next exact matching region, STAR will extend the second MMP to include the mismatch and the next MMP. Such mismatch will be reported in the final output of STAR.
+
+#### Scenario 3: Major mismatch occurs
+![]()
+- If STAR encounters a significantly mismatched region or regions with poor sequencing quality that decreases the alignment quality considerably, then such region is soft-clipped and will not be included in the aligned reads. However, the location and length of the soft-clipped region is still reported in the final output. 
+
+Due to length limitations, this paper will not demonstrate the details of the scoring system of STAR during alignment.
+
+Step 2 will be repeated until STAR has matched all portions in all mappable reads to the reference genome. STAR will then proceed to the next stage to stitch together mapped portions of reads.
+
+## Clustering, Stitching, Scoring:
+- After completing the seed searching steps, STAR proceeds with the clustering, stitching, and scoring processes to reconstruct full, accurate reads from fragmented or partially aligned sequence segments. The pipeline begins by identifying uniquely mapped seeds, which are designated as anchor points for subsequent alignment. These anchor points serve as central hubs around which neighboring seeds are clustered, enabling the identification of fragments that likely originate from the same read. 
+
+- Once the clustering is complete, the next step involves stitching the clustered seeds to reconstruct a continuous read. This is achieved by evaluating potential alignments based on a scoring system that considers various factors, including insertions and deletions (indels), skipped regions, soft-clipped regions, matches, and mismatches. The scoring process aims to identify the alignment that most accurately represents the original sequencing read while minimizing errors.
+
+## Usage
+
+
+
+
+
+
 
 
 
