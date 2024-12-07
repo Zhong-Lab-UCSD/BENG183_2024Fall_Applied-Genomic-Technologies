@@ -1,10 +1,11 @@
 # ScRNA Sequence - Seurat 
 ### By Nichole Mora, Ehsun Yazdani, Nicholas Hubbard
 * [What is Seurat](#what-is-seurat)
-* [Overivew of Seurat](#overview-of-seurat)<br>
+* [Why Should You Use Seurat](#why-is-seurat-better)
+* [What is Clustering](#what-is-clustering)
 * [Case Study](#case-study)<br>
 * [Methods](#methods)
-* [Why is Seurat Better](#why-is-seurat-better)
+* [Different Applications Performance Compared to Seurat](#different-applications-performance-compared-to-seurat)
   * [Insert Different Application1](#insert-different-application1)
   * [Insert Different Application2](#insert-different-application2)
   * [Insert Different Application3](#insert-different-application3)
@@ -25,7 +26,7 @@ To capture the interaction (crosslink between strings), there are few steps in g
 
 > Based on these general ideas, then we'll dive deeper by walking through two of the most popular  techniques and then briefly introduce some other methods. 
 
-## Overview of Seurat
+## Why Should You Use Seurat
 
 ![](/assets/1-s2.0-S1360138518300827-gr1b2_lrg.jpg)
 [Figure1](https://doi.org/10.1016/j.tplants.2018.03.014). Schematic Representation of Chromosome Conformation Capture (3C) and 3C-Derived Methods. These methods help to elucidate nuclear organization by detecting physical interactions between genetic elements located throughout the genome. Abbreviations: IP, immunoprecipitation; RE, restriction enzyme. **Figure by Sotelo-Silveira, Mariana, et al. Trends in Plant Science (2018).**
@@ -37,6 +38,18 @@ To better understand the difference between these methods, I'd like to distingus
 
 These kind of specificity is determined by the primer when people use **specific primers** before PCR. 
 
+# What is Clustering
+
+
+
+
+
+
+
+
+
+
+
 # Case Study
 Hi-C techniques has the highest through-put (billion reads per sample) but suffering of a relative low resolution of 0.1-1Mb. However, the other methods usually have a higher resolution  around 1kb. For more details one can refer to table2 in [2].
 
@@ -46,7 +59,6 @@ Hi-C is the highest through-put version of 3C-derived technologies. Due to the d
 The principle of Hi-C can be illustrated as:
 ![](/assets/hic.gif)
 # Methods
-
 
  Hi-C critical steps [8] 
 - Fixation: keep DNA conformed
@@ -58,7 +70,7 @@ The principle of Hi-C can be illustrated as:
 - Adapter ligation: paired-end and indexing
 - PCR: create enough material for flow cell
 
-# Why is Seurat Better 
+# Different Applications Performance Compared to Seurat
 - Hi-C original: [Lieberman-Aiden et al., Science 2010](doi: 10.1126/science.1181369)
 - Hi-C 1.0: [Belton-JM et al., Methods 2012](doi: 10.1016/j.ymeth.2012.05.001)
 - In situ Hi-C: [Rao et al., Cell 2014](doi: 10.1016/j.cell.2014.11.021)
