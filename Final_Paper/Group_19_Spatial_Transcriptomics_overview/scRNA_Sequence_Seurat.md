@@ -1,4 +1,5 @@
 # 2.3 ScRNA Sequence - Seurat 
+### By Nichole Mora, Ehsun Yazdan, Nicholas Hubbard
 1. [What is Seurat EDIT (Ehsun)](#231)
 2. [Overivew of Seurat EDIT (Ehsun)](#232)<br>
     2.1. [Case Study EDIT (Nichole)](#2321)<br>
