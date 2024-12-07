@@ -1,11 +1,11 @@
 # 2.3 ScRNA Sequence - Seurat 
-1. [Introduction](#231)
-2. [Overivew of 3C methods](#232)<br>
-    2.1. [Specificity](#2321)<br>
-    2.2. [Through-put and resolution](#2322)
-3. [Hi-C](#233)
-4. [ChIA-PET](#234)
-5. [Selected methods comparison](#235)
+1. [What is Seurat EDIT (Ehsun)](#231)
+2. [Overivew of Seurat EDIT (Ehsun)](#232)<br>
+    2.1. [Case Study EDIT (Nichole)](#2321)<br>
+    2.2. [Methods EDIT (Nichole)](#2322)
+3. [Different Application EDIT (Nicholas)](#233)
+4. [Different Application EDIT (Nicholas)](#234)
+5. [Selected methods comparison EDIT (Nicholas)](#235)
 
 
 
