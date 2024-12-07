@@ -3,8 +3,9 @@
 * [What is Seurat](#what-is-seurat)
 * [Why Should You Use Seurat](#why-should-you-use-seurat)
 * [What is Clustering](#what-is-clustering)
-* [Case Study](#case-study)<br>
-* [Methods](#methods)
+* [Case Study](#case-study)<be>
+  *[Loading Data](#loading-data)
+  *[Perform Clustering](#perform-clustering)
 * [Different Applications Performance Compared to Seurat](#different-applications-performance-compared-to-seurat)
   * [Insert Different Application1](#insert-different-application1)
   * [Insert Different Application2](#insert-different-application2)
