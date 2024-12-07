@@ -5,7 +5,7 @@
 * [Case Study](#case-study)<br>
 * [Methods](#methods)
 * [Why is Seurat Better](#different-application)
-  *[Insert Different Application1](#insert-different-application1)
+  * [Insert Different Application1](#insert-different-application1)
   * [Insert Different Application2](#insert-different-application2)
   * [Insert Different Application3](#insert-different-application3)
 * [Selected methods comparison](#235)
