@@ -1,4 +1,4 @@
-# 2.3 C-Techs (chromosome conformation capture)-coupled 
+# 2.3 ScRNA Sequence - Seurat 
 1. [Introduction](#231)
 2. [Overivew of 3C methods](#232)<br>
     2.1. [Specificity](#2321)<br>
