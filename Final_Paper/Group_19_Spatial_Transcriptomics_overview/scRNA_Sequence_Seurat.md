@@ -1,7 +1,7 @@
 # ScRNA Sequence - Seurat 
 ### By Nichole Mora, Ehsun Yazdani, Nicholas Hubbard
 * [What is Seurat](#what-is-seurat)
-* [Overivew of Seurat)](#overview-of-seurat)<br>
+* [Overivew of Seurat](#overview-of-seurat)<br>
 * [Case Study](#case-study)<br>
 * [Methods](#methods)
 * [Why is Seurat Better](#why-is-seurat-better)
