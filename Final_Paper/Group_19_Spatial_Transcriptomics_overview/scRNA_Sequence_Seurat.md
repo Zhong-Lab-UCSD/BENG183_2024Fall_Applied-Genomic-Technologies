@@ -13,7 +13,7 @@
 
 
 
-## What is Seurat 
+# What is Seurat 
 
 The foundamental object of 3C(Chromosome Conformation Capture) techniques and 3C-derived methods is to understand the physical wiring diagram of the genome by identifying the physical interaction between chromosomes. 
 
@@ -32,7 +32,7 @@ To capture the interaction (crosslink between strings), there are few steps in g
 
 To better understand the difference between these methods, I'd like to distingush them between the following couple of aspects:
 
-#### 1) Specificity - What does _one, all, many_ mean<a name="2321"></a>
+ 1) Specificity - What does _one, all, many_ mean<a name="2321"></a>
 ‘1’, ‘Many’ and ‘All’ indicate how many loci are interrogated in a given experiment. For example, ‘1 versus All’ indicates that the experiment probes the interaction profile between 1 locus and all other potential loci in the genome. ‘All versus All’ means that one can detect the interaction profiles of all loci, genome-wide, and their interactions with all other genomic loci [1].
 
 These kind of specificity is determined by the primer when people use **specific primers** before PCR. 
@@ -40,7 +40,7 @@ These kind of specificity is determined by the primer when people use **specific
 # Case Study
 Hi-C techniques has the highest through-put (billion reads per sample) but suffering of a relative low resolution of 0.1-1Mb. However, the other methods usually have a higher resolution  around 1kb. For more details one can refer to table2 in [2].
 
-## 2.3.3 Hi-C<a name="233"></a>
+ 2.3.3 Hi-C<a name="233"></a>
 Hi-C is the highest through-put version of 3C-derived technologies. Due to the decreasing cost of 2nd generation sequencing, hi-c is widely used.
 
 The principle of Hi-C can be illustrated as:
@@ -48,7 +48,7 @@ The principle of Hi-C can be illustrated as:
 # Methods
 
 
-##### Hi-C critical steps [8] 
+ Hi-C critical steps [8] 
 - Fixation: keep DNA conformed
 - Digestion: enzyme frequency and penetratin
 - Fill-in: biotin for junction enrichment
@@ -86,7 +86,7 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 
 
-## 2.3.5 Selected methods comparison<a name="235"></a> 
+#Selected Comparisons
 <table>
  <tbody>
     <tr>
