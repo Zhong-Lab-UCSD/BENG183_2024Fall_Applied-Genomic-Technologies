@@ -8,7 +8,7 @@
 * [Different Applications Performance Compared to Seurat](#different-applications-performance-compared-to-seurat)
   * [Insert Different Application1](#insert-different-application1)
   * [Insert Different Application2](#insert-different-application2)
-* [Selected methods comparison](#235)
+* [Selected methods comparison](#selected-methods-comparison)
 
 
 
