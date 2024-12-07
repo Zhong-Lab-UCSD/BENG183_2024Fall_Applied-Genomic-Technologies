@@ -47,27 +47,57 @@ These kind of specificity is determined by the primer when people use **specific
 
 
 
-
-
 # Case Study
-Hi-C techniques has the highest through-put (billion reads per sample) but suffering of a relative low resolution of 0.1-1Mb. However, the other methods usually have a higher resolution  around 1kb. For more details one can refer to table2 in [2].
+The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline. 
 
- 2.3.3 Hi-C<a name="233"></a>
-Hi-C is the highest through-put version of 3C-derived technologies. Due to the decreasing cost of 2nd generation sequencing, hi-c is widely used.
 
-The principle of Hi-C can be illustrated as:
-![](/assets/hic.gif)
 # Methods
+In order to begin analyzing data to cluster, we must first load the data and create a seurat object, which we will be using to cluster.
 
- Hi-C critical steps [8] 
-- Fixation: keep DNA conformed
-- Digestion: enzyme frequency and penetratin
-- Fill-in: biotin for junction enrichment
-- Ligation: freeze interactions in sequence
-- Biotin removal: junctions only
-- Fragment size: small fragments sequence better
-- Adapter ligation: paired-end and indexing
-- PCR: create enough material for flow cell
+```bash
+
+#load the expression matrix
+expression_data <- read.table("~/SCP404/expression/outputs_5ca76079328cee0c8dad60c0_66021478-5f80-4c3e-80b4-c2fbca32fce6/mouse_E18_nuclei_analysis.scp.expr.txt", 
+                              header = TRUE, 
+                              row.names = 1, 
+                              sep = "\t")
+
+#create Seurat object
+seurat_obj <- CreateSeuratObject(counts = expression_data)
+
+
+#load the metadata
+metadata <- read.table("~/SCP404/metadata/outputs_5ca76079328cee0c8dad60c0_66021478-5f80-4c3e-80b4-c2fbca32fce6/mouse_E18_nuclei_analysis.scp.metadata.txt", 
+                       header = TRUE, 
+                       row.names = 1, 
+                       sep = "\t")
+pca_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_66021478-5f80-4c3e-80b4-c2fbca32fce6/mouse_E18_nuclei_analysis.scp.X_diffmap_pca.coords.txt", 
+                         header = TRUE, 
+                         row.names = 1, 
+                         sep = "\t")
+
+# Load t-SNE coordinates
+tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_66021478-5f80-4c3e-80b4-c2fbca32fce6/mouse_E18_nuclei_analysis.scp.X_tsne.coords.txt", 
+                          header = TRUE, 
+                          row.names = 1, 
+                          sep = "\t")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Different Applications Performance Compared to Seurat
 - Hi-C original: [Lieberman-Aiden et al., Science 2010](doi: 10.1126/science.1181369)
