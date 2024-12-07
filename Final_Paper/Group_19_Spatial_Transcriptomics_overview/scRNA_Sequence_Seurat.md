@@ -37,7 +37,7 @@ To better understand the difference between these methods, I'd like to distingus
 
 These kind of specificity is determined by the primer when people use **specific primers** before PCR. 
 
-#### 2) Through-put and resolution<a name="2322"></a>
+# Case Study
 Hi-C techniques has the highest through-put (billion reads per sample) but suffering of a relative low resolution of 0.1-1Mb. However, the other methods usually have a higher resolution  around 1kb. For more details one can refer to table2 in [2].
 
 ## 2.3.3 Hi-C<a name="233"></a>
@@ -45,6 +45,7 @@ Hi-C is the highest through-put version of 3C-derived technologies. Due to the d
 
 The principle of Hi-C can be illustrated as:
 ![](/assets/hic.gif)
+# Methods
 
 
 ##### Hi-C critical steps [8] 
@@ -57,7 +58,7 @@ The principle of Hi-C can be illustrated as:
 - Adapter ligation: paired-end and indexing
 - PCR: create enough material for flow cell
 
-##### Hi-C derived techniques 
+# Why is Seurat Better  
 - Hi-C original: [Lieberman-Aiden et al., Science 2010](doi: 10.1126/science.1181369)
 - Hi-C 1.0: [Belton-JM et al., Methods 2012](doi: 10.1016/j.ymeth.2012.05.001)
 - In situ Hi-C: [Rao et al., Cell 2014](doi: 10.1016/j.cell.2014.11.021)
@@ -68,11 +69,21 @@ The principle of Hi-C can be illustrated as:
 - Hi-C improving: [Golloshi et al., Methods 2018](https://www.biorxiv.org/content/biorxiv/early/2018/02/13/264515.full.pdf)
 - Arima 1-day Hi-C: [Ghurye et al., BioRxiv 2018](https://www.biorxiv.org/content/early/2018/02/07/261149)
 
-## 2.3.4 ChIA-PET<a name="234"></a> 
+# Insert Different Application1
 ChIA-PET is another method that combines ChIP and pair-end sequencing to analysis the chromtin interaction. It allows for targeted binding factors such as: estrogen receptor alpha, CTCF-mediated loops, RNA polymerase II, and a combination of key architectural factors. on the one hand, it has the benefit of achieving a higher resolution compared to Hi-C, as only ligation products involving the immunoprecipitated molecule are sequenced, on the other hand, ChIA-PET has systematic biases due to ChIP process:
 - Only one type of binding factor selected
 - Different antibodies
 - ChIP conditions
+
+# Insert Different Application2
+
+
+
+
+# Insert Different Application3
+
+
+
 
 
 ## 2.3.5 Selected methods comparison<a name="235"></a> 
