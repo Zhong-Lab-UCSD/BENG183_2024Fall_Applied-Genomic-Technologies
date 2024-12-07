@@ -3,8 +3,8 @@
 2. [Overivew of Seurat EDIT (Ehsun)](#232)<br>
     2.1. [Case Study EDIT (Nichole)](#2321)<br>
     2.2. [Methods EDIT (Nichole)](#2322)
-3. [Different Application EDIT (Nicholas)](#233)
-4. [Different Application EDIT (Nicholas)](#234)
+3. [Different Application (Why is Seurat better) EDIT (Nicholas)](#233)
+4. [Different Application(Why is Seurat better) EDIT (Nicholas)](#234)
 5. [Selected methods comparison EDIT (Nicholas)](#235)
 
 
