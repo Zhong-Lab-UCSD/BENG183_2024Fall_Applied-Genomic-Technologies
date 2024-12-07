@@ -4,8 +4,8 @@
 * [Why Should You Use Seurat](#why-should-you-use-seurat)
 * [What is Clustering](#what-is-clustering)
 * [Case Study](#case-study)<be>
-  *[Loading Data](#loading-data)
-  *[Perform Clustering](#perform-clustering)
+  * [Loading Data](#loading-data)
+  * [Perform Clustering](#perform-clustering)
 * [Different Applications Performance Compared to Seurat](#different-applications-performance-compared-to-seurat)
   * [Insert Different Application1](#insert-different-application1)
   * [Insert Different Application2](#insert-different-application2)
@@ -52,7 +52,7 @@ These kind of specificity is determined by the primer when people use **specific
 The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline. 
 
 
-# Methods
+## Loading Data
 To begin analyzing data to cluster, we must first load the data and create a Seurat object.
 
 ```bash
@@ -82,7 +82,7 @@ tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_660
                           row.names = 1, 
                           sep = "\t")'''
 ```
-### 
+## Perform Clustering
 
 
 
