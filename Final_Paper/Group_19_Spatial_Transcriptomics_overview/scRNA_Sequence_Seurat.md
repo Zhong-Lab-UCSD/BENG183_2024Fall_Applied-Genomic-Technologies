@@ -1,12 +1,12 @@
 # ScRNA Sequence - Seurat 
 ### By Nichole Mora, Ehsun Yazdani, Nicholas Hubbard
-1. [What is Seurat EDIT (Ehsun)](#231)
-2. [Overivew of Seurat EDIT (Ehsun)](#232)<br>
-    2.1. [Case Study EDIT (Nichole)](#2321)<br>
-    2.2. [Methods EDIT (Nichole)](#2322)
-3. [Different Application (Why is Seurat better) EDIT (Nicholas)](#233)
-4. [Different Application(Why is Seurat better) EDIT (Nicholas)](#234)
-5. [Selected methods comparison EDIT (Nicholas)](#235)
+* [What is Seurat EDIT (Ehsun)](#231)
+* [Overivew of Seurat EDIT (Ehsun)](#232)<br>
+* [Case Study EDIT (Nichole)](#2321)<br>
+* [Methods EDIT (Nichole)](#2322)
+* [Different Application (Why is Seurat better) EDIT (Nicholas)](#233)
+* [Different Application(Why is Seurat better) EDIT (Nicholas)](#234)
+* [Selected methods comparison EDIT (Nicholas)](#235)
 
 
 
