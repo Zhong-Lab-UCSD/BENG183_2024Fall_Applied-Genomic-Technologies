@@ -4,7 +4,7 @@
 * [Overivew of Seurat)](#overview-of-seurat)<br>
 * [Case Study](#case-study)<br>
 * [Methods](#methods)
-* [Why is Seurat Better](#different-application)
+* [Why is Seurat Better](#why-is-seurat-better)
   * [Insert Different Application1](#insert-different-application1)
   * [Insert Different Application2](#insert-different-application2)
   * [Insert Different Application3](#insert-different-application3)
@@ -86,7 +86,7 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 
 
-#Selected Comparisons
+# Selected Methods Comparison
 <table>
  <tbody>
     <tr>
