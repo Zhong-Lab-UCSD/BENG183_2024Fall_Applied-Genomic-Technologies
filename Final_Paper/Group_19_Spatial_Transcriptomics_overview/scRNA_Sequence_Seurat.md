@@ -1,7 +1,7 @@
 # ScRNA Sequence - Seurat 
 ### By Nichole Mora, Ehsun Yazdani, Nicholas Hubbard
 * [What is Seurat](#what-is-seurat)
-* [Why Should You Use Seurat](#why-is-seurat-better)
+* [Why Should You Use Seurat](#why-should-you-use-seurat)
 * [What is Clustering](#what-is-clustering)
 * [Case Study](#case-study)<br>
 * [Methods](#methods)
