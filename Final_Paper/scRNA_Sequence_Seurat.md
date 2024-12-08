@@ -101,7 +101,7 @@ Centers and scales the data
 ```bash
 RunPCA
 ```
-Performs principal component analysis to reduce dimensionality of data
+Performs principal component analysis to reduce the dimensionality of data
 ```bash
 RunTSNE
 ```
@@ -112,8 +112,27 @@ DimPlot
 Plots the cells in a 2D space and groups by metadata column
 
 
+# Perform clustering
+```bash
+seurat_obj <- FindNeighbors(seurat_obj, dims = 1:10) 
+seurat_obj <- FindClusters(seurat_obj, resolution = 0.5) 
 
+seurat_obj <- NormalizeData(seurat_obj)
 
+seurat_obj <- FindVariableFeatures(seurat_obj)
+
+seurat_obj <- ScaleData(seurat_obj)
+
+#required before t-SNE
+seurat_obj <- RunPCA(seurat_obj, verbose = FALSE)
+
+#run t-SNE
+seurat_obj <- RunTSNE(seurat_obj, dims = 1:10) 
+
+DimPlot(seurat_obj, reduction = "tsne", group.by = "seurat_clusters")
+
+table(Idents(seurat_obj))
+```
 
 
 
