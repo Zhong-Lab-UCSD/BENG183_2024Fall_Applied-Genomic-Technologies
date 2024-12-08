@@ -83,21 +83,21 @@ tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_660
                           sep = "\t")'''
 ```
 ## Perform Clustering
-In order to begin clustering, it is important to know which commands to use to create a clustering plot. Below are all the Seurat commands you are allowed to use with the Seurat package.
+In order to begin clustering, it is important to know which commands to use to create a clustering plot. Below are all the Seurat commands with a description of each command you can use with the Seurat package.
 
 ```bash
 NormalizeData
 ```
-normalizes the gene expression data for each cell to make it comparable across cells
+Normalizes the gene expression data for each cell to make it comparable across cells
 
 ```bash
 FindVariableFeatures
 ```
-identifies genes with high variability across cells
+Identifies genes with high variability across cells
 ```bash
 ScaleData 
 ```
-centers and scales the data
+Centers and scales the data
 ```bash
 RunPCA
 ```
@@ -105,11 +105,11 @@ Performs principal component analysis to reduce dimensionality of data
 ```bash
 RunTSNE
 ```
-reduction method for visualizing high dimensional data
+Reduction method for visualizing high dimensional data
 ```bash
 DimPlot
 ```
-plots the cells in a 2D space and groups by metadata column
+Plots the cells in a 2D space and groups by metadata column
 
 
 
