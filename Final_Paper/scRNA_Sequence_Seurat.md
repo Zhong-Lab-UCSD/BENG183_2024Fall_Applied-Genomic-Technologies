@@ -84,6 +84,17 @@ tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_660
 ```
 ## Perform Clustering
 
+```bash
+NormalizeData
+```
+normalizes the gene expression data for each cell to make it comparable across cells
+
+FindVariableFeatures - identifies genes with high variability across cells
+ScaleData - centers and scales the data 
+RunPCA - Performs principal component analysis to reduce dimensionality of data
+RunTSNE - a reduction method for visualizing high dimensional data
+DimPlot -  plots the cells in a 2D space and groups by metadata column
+
 
 
 
