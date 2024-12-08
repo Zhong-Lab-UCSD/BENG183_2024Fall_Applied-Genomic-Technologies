@@ -83,6 +83,7 @@ tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_660
                           sep = "\t")'''
 ```
 ## Perform Clustering
+In order to begin clustering, it is important to know which commands to use to create a clustering plot. Below are all the Seurat commands you are allowed to use with the Seurat package.
 
 ```bash
 NormalizeData
