@@ -136,12 +136,10 @@ seurat_obj <- RunPCA(seurat_obj, verbose = FALSE)
 seurat_obj <- RunTSNE(seurat_obj, dims = 1:10) 
 
 DimPlot(seurat_obj, reduction = "tsne", group.by = "seurat_clusters")
-
-table(Idents(seurat_obj))
 ```
 ## Clustering Plot
 
-![](https://github.com/nmora2/ScRNA-Seq---Seurat/blob/c5fd38651e2a375fc65739eff41a0a31cdb1584a/Screenshot%202024-12-07%20at%204.59.19%20PM.png)
+![](https://github.com/nmora2/ScRNA-Seq---Seurat/blob/c5fd38651e2a375fc65739eff41a0a31cdb1584a/Screenshot%202024-12-07%20at%204.59.19%20PM.png | width=50)
 
 
 # Different Applications Performance Compared to Seurat
