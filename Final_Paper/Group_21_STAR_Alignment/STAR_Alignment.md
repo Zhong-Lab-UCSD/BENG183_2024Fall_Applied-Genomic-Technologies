@@ -37,19 +37,23 @@ Once potential seed locations are identified, the algorithm extends these matche
 ## **STAR Algorithm Illustration**
 ### Step1: Finding the longest prefixes in reads that exactly matches the reference genome
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step1.png)
+
 STAR starts by finding the longest prefix in reads that exactly match some (>= 1) locations in the reference genome. The current longest prefix in a read is called a Maximal Mapping Prefix. As stated previously, STAR uses uncompressed suffix arrays to conduct string search in the reference genome. This reduces the runtime of aligning a sequence from O(n^2) to at most O(n*log2(n)) and greatly reduces the memory usage from O(n^2) to O(n). By statistical probability, longer sequences tend to map to fewer locations in the reference genome, which offers less genome coordinates to look at at later steps.  Additionally, by doing this, STAR minimizes the unmapped regions in reads, which saves some effort for later alignment tasks.
 
 ### Step 2: Mapping the the unmapped regions to the reference genome
 #### Scenario 1: Able to find exact match in the reference genome for the unmapped portion: 
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step2_Scenario1.png)
+
 - If STAR is able to find some exact match for the entire unmapped portion at some genome locations after the first MMP, then we are done. However, in many cases, we are not so lucky.
 
 #### Scenario 2: Minor mismatch between unmapped region and the reference genome
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step2_Scenario2.png)
+
 - As STAR is mapping the second MMP (second longest exact match prefix) to some locations in the reference genome, STAR encountered some mismatch that prevented us from further matching to extend the MMP. In this case, STAR will count how many mismatches STAR have seen while STAR continues our effort to match the MMP to the reference genome. If the mismatch is short and STAR reaches the next exact matching region, STAR will extend the second MMP to include the mismatch and the next MMP. Such mismatch will be reported in the final output of STAR.
 
 #### Scenario 3: Major mismatch occurs
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step2_Scenario3.png)
+
 - If STAR encounters a significantly mismatched region or regions with poor sequencing quality that decreases the alignment quality considerably, then such region is soft-clipped and will not be included in the aligned reads. However, the location and length of the soft-clipped region is still reported in the final output. 
 
 Due to length limitations, this paper will not demonstrate the details of the scoring system of STAR during alignment.
@@ -58,6 +62,7 @@ Step 2 will be repeated until STAR has matched all portions in all mappable read
 
 ## Clustering, Stitching, Scoring:
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step3_StitchingReads.png)
+
 - After completing the seed searching steps, STAR proceeds with the clustering, stitching, and scoring processes to reconstruct full, accurate reads from fragmented or partially aligned sequence segments. The pipeline begins by identifying uniquely mapped seeds, which are designated as anchor points for subsequent alignment. These anchor points serve as central hubs around which neighboring seeds are clustered, enabling the identification of fragments that likely originate from the same read. 
 
 - Once the clustering is complete, the next step involves stitching the clustered seeds to reconstruct a continuous read. This is achieved by evaluating potential alignments based on a scoring system that considers various factors, including insertions and deletions (indels), skipped regions, soft-clipped regions, matches, and mismatches. The scoring process aims to identify the alignment that most accurately represents the original sequencing read while minimizing errors.
