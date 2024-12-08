@@ -16,7 +16,7 @@
 
 # What is Seurat 
 
-The foundamental object of 3C(Chromosome Conformation Capture) techniques and 3C-derived methods is to understand the physical wiring diagram of the genome by identifying the physical interaction between chromosomes. 
+The fundamental object of 3C(Chromosome Conformation Capture) techniques and 3C-derived methods is to understand the physical wiring diagram of the genome by identifying the physical interaction between chromosomes. 
 
 To capture the interaction (crosslink between strings), there are few steps in general:
 - Take a snapshot of the flowing cells - **Crosslink** with fixative agent (formaldehyde)
@@ -53,7 +53,9 @@ The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering
 
 
 ## Loading Data
-To begin analyzing data to cluster, we must first load the data and create a Seurat object. In this case, we are given the expression data, metadata, PCA coordinates, and t-SNE coordinates which we will load in the following code.
+To begin analyzing data to cluster, we must first load the data and create a Seurat object. 
+
+In this study, we are given the expression data, metadata, PCA coordinates, and t-SNE coordinates which we will load in the following code.
 
 ```bash
 #load the expression matrix
