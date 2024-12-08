@@ -8,7 +8,7 @@ STAR operates on Linux via the command line, aligning trimmed .fastq files to an
 The RNA-Seq workflow begins with biological sample preparation and sequencing, followed by quality control steps like adapter trimming and sequence evaluation using tools such as FASTQC. STAR facilitates the alignment process, accurately mapping reads to the genome while accounting for splicing events. Once the reads are aligned, they are quantified to associate them with genes, enabling statistical analysis to identify differentially expressed genes.
 
 STAR’s alignment capability supports essential steps in RNA-Seq workflows, ensuring the accurate representation of transcriptomic data for downstream interpretation.
-![]()
+![Figure 1.1 RNA Sequencing General Workflow](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/RNAseq_Workflow.png)
 
 ## **STAR Alignment Overview**
 ### **Seed-and-Extension Strategy in STAR Alignment**
@@ -62,6 +62,39 @@ Step 2 will be repeated until STAR has matched all portions in all mappable read
 - Once the clustering is complete, the next step involves stitching the clustered seeds to reconstruct a continuous read. This is achieved by evaluating potential alignments based on a scoring system that considers various factors, including insertions and deletions (indels), skipped regions, soft-clipped regions, matches, and mismatches. The scoring process aims to identify the alignment that most accurately represents the original sequencing read while minimizing errors.
 
 ## Usage
+### 1. Building Index for Reference Genome:
+```
+$STAR --runThreadN 16 --runMode genomeGenerate --genomeDir Your_directory/ --genomeFastaFiles reference.fa --sjdbGTFfile gtf_file.gtf --sjdbOverhang 100
+```
+
+#### Explanation: 
+- --runMode genomeGenerate：Specifictly indicate to STAR that the current goal is to do genome index generation
+- --genomeFastaFiles：Point to the Fasta file that contains the reference genome
+- --sjdbGTFfile: point out the path to the GTF file, which contains annotated genes and their locations in the genome. This annotation helps STAR recognize known splice junctions.
+- --sjdbOverhang: Set the length of the overhang for splice junctions. Here we use 100 as an example.
+
+### 2. Aligning Reads to the Reference Genome Using STAR:
+```
+$STAR --runThreadN 16 --genomeDir chrX_STAR_index/ --readFilesIn inputFile.fastq/ --outSAMtype BAM SortedByCoordinate --outFileNamePrefix ./STAR
+```
+
+#### Explanation: 
+- --genomeDir: Specifies the directory containing the indexed reference genome
+- --outSAMtype: Tell STAR to output the alignment result in which format
+
+## Expected Output
+1. Prefix_Aligned.sortedByCoord.out.bam: This file contains the aligned reads in BAM format, organized by their genomic coordinates. It serves as the primary output of the alignment.
+
+2. Prefix_Log.out: This log file provides general details about the alignment process, such as the total number of reads processed, the count of uniquely aligned reads, and the number of reads mapped to multiple locations.
+
+3. Prefix_Log.final.out: This file gives a summary of the alignment statistics, providing a quick snapshot of the alignment overall success.
+
+4. Prefix_Log.progress.out: This file tracks the alignment progress in real-time, which is especially helpful for monitoring longer runs.
+
+5. Prefix_SJ.out.tab: This file lists the splice junctions identified during the alignment, which can be useful for identifying novel splicing events or for comparing with known annotations.
+
+
+
 
 
 
