@@ -5,7 +5,6 @@
 * [Protein Structure](#protein-structure)
 * [What is AlphaFold?](#what-is-alphafold)
 * [How to use?](#how-to-use)
-* [Applications](#applications)
 * [Ahicevements and Limitations](#achievements-and-limitations)
 * [Sources](#sources)
 
@@ -21,7 +20,7 @@
 
 ## How to use?
 
-# Usage
+### Usage
 
 There are two ways to use AlphaFold. First, there is the [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/), which provides free accessible protein structure predictions. This database contains over 200 million entries, which covers a substantial amount of Uniprot, the database that contains protein sequences and annotations. 
 
@@ -56,17 +55,13 @@ The main inputs AlphaFold take in are:
 
 The AlphaFold outputs include the computed MSAs, unrelaxed structures (PDB file), relaxed structures (PDB file) that include an extra relaxation step to improve goemetry, ranked structures (PDB file) that contains structures ordered by model confidence, raw model outputs, prediction metadata, and section timings. 
 
-# Framework
+### Framework
 
 AlphaFold is built on a complex neural network focused on end-to-end prediction with a core component being the Evoformer. This is the central block of AlphaFold and is responsible for processing the MSAs and their pair features, which capture residue-residue relationships including the distance and orientation of the protein. In addition, another core components is the structure module that refines the 3D atomic coordinates and ensures that physical realism is kept, such as using geometric constraints like bond lengths and angles. Lastly, structures are repeatedly fed back into the network to refine the structure, resolve inconsistencies, and improve overall accuracy.
 
 The attention mechanism in neural networks allow models to focus on specific relevant parts of input data when making predictions. This helps models efficiently capture relationships and dependencies across multiple elements and improve overall accuracy. AlphaFold uses attention in multiple ways: self-attention in MSAs capture co-evolutionary signals among amino acids, self-attention in 3D structures help predict spatial proximity and structural interactions, and cross-attention between representations integrates MSAs and intermediate structures together.
 
 AlphaFold was first trained on supervised learning on PDB data to generate a new dataset of predicted structures. Then it was later trained on the same architecture from scratch using a mixture of PDB data and the new dataset of predicted structures. This self-distillation procedure improves the accuracy of the resulting network.
-
----
-
-## Applications
 
 ---
 
