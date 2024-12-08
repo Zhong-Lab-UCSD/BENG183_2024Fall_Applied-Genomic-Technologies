@@ -221,25 +221,20 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 
 
-# Referrence
-Seurat Official Website:
-https://satijalab.org/seurat
-Seurat GitHub Repository:
-https://github.com/satijalab/seurat
-Seurat Tutorials:
-https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
-Comprehensive Analysis Workflow:
-https://satijalab.org/seurat/articles/essential_features.html
-Seurat Integration Tutorial:
-https://satijalab.org/seurat/articles/integration_introduction.html
+# Reference
+* Seurat Official Website: https://satijalab.org/seurat
+* Seurat GitHub Repository: https://github.com/satijalab/seurat
+* Seurat Tutorials: https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
+* Comprehensive Analysis Workflow: https://satijalab.org/seurat/articles/essential_features.html
+* Seurat Integration Tutorial: https://satijalab.org/seurat/articles/integration_introduction.html
 
 Academic Publications:
-Original Seurat Paper (2015):
+* Original Seurat Paper (2015):
 Satija, R., et al. (2015). "Spatial reconstruction of single-cell gene expression data." Nature Biotechnology.
 https://doi.org/10.1038/nbt.3192
-Seurat v3 Paper (2019):
+* Seurat v3 Paper (2019):
 Stuart, T., et al. (2019). "Comprehensive integration of single-cell data." Cell.
 https://doi.org/10.1016/j.cell.2019.05.031
-Seurat v4 Paper (2021):
+* Seurat v4 Paper (2021):
 Hao, Y., et al. (2021). "Integrated analysis of multimodal single-cell data." Cell.
 https://doi.org/10.1016/j.cell.2021.04.048
