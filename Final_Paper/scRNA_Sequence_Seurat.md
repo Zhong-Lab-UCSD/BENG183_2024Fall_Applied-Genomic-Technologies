@@ -21,7 +21,6 @@ Seurat is a powerful open-source R package specifically designed for the analysi
 One of the standout features of Seurat is its ability to handle complex datasets with high dimensionality, making it particularly well-suited for studies involving thousands to millions of individual cells. By leveraging advanced statistical methods and algorithms, Seurat enables researchers to uncover subtle differences in gene expression that may correspond to distinct cell types or states within a heterogeneous population.
 
 
-
 ## Why Should You Use Seurat
 
 Seurat is widely favored in the single-cell genomics community for several compelling reasons. Firstly, it offers a comprehensive and streamlined workflow that covers all essential steps of single-cell data analysis. From initial quality control and data normalization to more sophisticated analyses like clustering and differential expression, Seurat provides a cohesive set of tools that simplify the entire analytical process.
