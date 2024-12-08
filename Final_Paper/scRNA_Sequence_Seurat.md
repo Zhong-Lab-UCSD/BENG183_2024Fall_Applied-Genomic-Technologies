@@ -88,7 +88,8 @@ In order to begin clustering, it is important to know which commands to use to c
 ```bash
 NormalizeData
 ```
-Normalizes the gene expression data for each cell to make it comparable across cells
+* Normalizes the gene expression data for each cell to consider differences in sequencing depth or library size to make it comparable across cells.
+* Output: Normalized expression values which demonstrates the differences due to biological variation.
 
 ```bash
 FindVariableFeatures
