@@ -139,7 +139,7 @@ seurat_obj <- RunTSNE(seurat_obj, dims = 1:10)
 DimPlot(seurat_obj, reduction = "tsne", group.by = "seurat_clusters")
 ```
 ## Clustering Plot
-The image below represents the clustering visualization of cells grouped depending on their similarity in gene expression of the mouse single-cell RNA sequencing data provided for this case study.
+The image below represents the clustering visualization of cells grouped depending on their similarity in gene expression of the mouse single-cell RNA sequencing data for this case study.
 #### Key Aspects:
 * Color code is used to indicate cluster identity.
 * Clusters can reveal different cell types, subtypes within a cell type, and responses to certain treatments or conditions.
