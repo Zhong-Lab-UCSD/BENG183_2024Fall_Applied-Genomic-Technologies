@@ -112,7 +112,7 @@ DimPlot
 Plots the cells in a 2D space and groups by metadata column
 
 
-# Perform clustering
+### The Code to Perform Clustering
 ```bash
 seurat_obj <- FindNeighbors(seurat_obj, dims = 1:10) 
 seurat_obj <- FindClusters(seurat_obj, resolution = 0.5) 
@@ -133,7 +133,9 @@ DimPlot(seurat_obj, reduction = "tsne", group.by = "seurat_clusters")
 
 table(Idents(seurat_obj))
 ```
+## Clustering Plot
 
+![](https://github.com/nmora2/ScRNA-Seq---Seurat/blob/c5fd38651e2a375fc65739eff41a0a31cdb1584a/Screenshot%202024-12-07%20at%204.59.19%20PM.png)
 
 
 # Different Applications Performance Compared to Seurat
