@@ -94,15 +94,18 @@ NormalizeData
 ```bash
 FindVariableFeatures
 ```
-Identifies genes with high variability across cells
+* Identifies genes with high variability across cells by looking at ranked genes.
+* Output: A list of genes with high variability which is useful for dimensionality reduction and clustering.
 ```bash
 ScaleData 
 ```
-Centers and scales the data
+* Centers and scales the expression data for each gene in order to make it simple to compare across genes
+* Output: Scaled data showing that all genes contribute equally to PCA.
 ```bash
 RunPCA
 ```
-Performs principal component analysis to reduce the dimensionality of data
+* Performs principal component analysis to reduce the dimensionality of the dataset. PCA looks at axes that capture the maximum variance in data. 
+* Output: A reduced dimensional dataset with cells represented in few dimensions, useful for clustering and visualization.
 ```bash
 RunTSNE
 ```
