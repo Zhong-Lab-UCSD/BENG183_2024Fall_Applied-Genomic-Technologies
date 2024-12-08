@@ -30,7 +30,7 @@ We will now provide an overview of DBSCAN-CellX, a newly developed algorithm tha
 
 Why do we care? The rationale behind DBSCAN-CellX is to introduce three extensions to the DBSCAN algorithm such that resulting analysis of cell tissue is improved. The original algorithm relies on predefined input parameters to produce an output; however, cell cultures are prone to varying cell densities that impact both the size and proximity of cells within the tissue sample, which requires these parameters to be carefully selected. Standard DBSCAN approaches also fall short in providing a consistently accurate identification of individual cell positions1.
 
-To combat these common challenges, DBSCAN-CellX offers three corrections to provide a more accurate analysis of the spatial relationships within cell tissues1:
+To combat these common challenges, DBSCAN-CellX offers three corrections to provide a more accurate analysis of the spatial relationships within cell tissues:
 * **Automated Parameter Identification:**
 The algorithm examines the local density of cells in the sample and selectively chooses a radius and minimum cell number (the input parameters for standard DBSCAN) to generate clusters by. This helps adjust for any individual cell clusters in the sample as well as cells that might have more loosely connected expression profiles by ensuring that these relationships do not go undetected because the chosen radius is too large or small.
 * **Cluster Edge Identification:**
