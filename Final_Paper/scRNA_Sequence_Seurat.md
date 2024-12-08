@@ -139,7 +139,7 @@ DimPlot(seurat_obj, reduction = "tsne", group.by = "seurat_clusters")
 ```
 ## Clustering Plot
 
-![](https://github.com/nmora2/ScRNA-Seq---Seurat/blob/c5fd38651e2a375fc65739eff41a0a31cdb1584a/Screenshot%202024-12-07%20at%204.59.19%20PM.png = 60x30)
+![](https://github.com/nmora2/ScRNA-Seq---Seurat/blob/c5fd38651e2a375fc65739eff41a0a31cdb1584a/Screenshot%202024-12-07%20at%204.59.19%20PM.png)
 
 
 # Different Applications Performance Compared to Seurat
