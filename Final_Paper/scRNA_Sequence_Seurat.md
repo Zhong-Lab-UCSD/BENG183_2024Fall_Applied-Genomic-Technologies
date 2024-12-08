@@ -221,7 +221,7 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 
 
-# Reference
+# References
 * Seurat Official Website: https://satijalab.org/seurat
 * Seurat GitHub Repository: https://github.com/satijalab/seurat
 * Seurat Tutorials: https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
