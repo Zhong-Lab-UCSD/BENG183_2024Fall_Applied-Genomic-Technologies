@@ -5,7 +5,7 @@
 * [What is Clustering](#what-is-clustering)
 * [Case Study](#case-study)<be>
   * [Loading Data](#loading-data)
-  * [Perform Clustering](#perform-clustering)
+  * [Perform Clustering with Seurat Commands](#perform-clustering-with-seurat-commands)
 * [Different Applications Performance Compared to Seurat](#different-applications-performance-compared-to-seurat)
   * [Insert Different Application1](#insert-different-application1)
   * [Insert Different Application2](#insert-different-application2)
@@ -50,11 +50,10 @@ These kind of specificity is determined by the primer when people use **specific
 
 # Case Study
 The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline.
-In this case, we are given the expression data, metadata, PCA coordinates, and t-SNE coordinates which we will load in the following code.
 
 
 ## Loading Data
-To begin analyzing data to cluster, we must first load the data and create a Seurat object.
+To begin analyzing data to cluster, we must first load the data and create a Seurat object. In this case, we are given the expression data, metadata, PCA coordinates, and t-SNE coordinates which we will load in the following code.
 
 ```bash
 #load the expression matrix
@@ -82,7 +81,7 @@ tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_660
                           row.names = 1, 
                           sep = "\t")'''
 ```
-## Perform Clustering
+## Perform Clustering With Clustering Commands
 In order to begin clustering, it is important to know which commands to use to create a clustering plot. Below are all the Seurat commands with a description of each command you can use with the Seurat package.
 
 ```bash
