@@ -89,11 +89,26 @@ NormalizeData
 ```
 normalizes the gene expression data for each cell to make it comparable across cells
 
-FindVariableFeatures - identifies genes with high variability across cells
-ScaleData - centers and scales the data 
-RunPCA - Performs principal component analysis to reduce dimensionality of data
-RunTSNE - a reduction method for visualizing high dimensional data
-DimPlot -  plots the cells in a 2D space and groups by metadata column
+```bash
+FindVariableFeatures
+```
+identifies genes with high variability across cells
+```bash
+ScaleData 
+```
+centers and scales the data
+```bash
+RunPCA
+```
+Performs principal component analysis to reduce dimensionality of data
+```bash
+RunTSNE
+```
+reduction method for visualizing high dimensional data
+```bash
+DimPlot
+```
+plots the cells in a 2D space and groups by metadata column
 
 
 
