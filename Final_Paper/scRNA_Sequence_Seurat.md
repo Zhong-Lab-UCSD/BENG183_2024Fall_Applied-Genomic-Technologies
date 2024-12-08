@@ -222,20 +222,24 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 
 # Referrence
-[1] Schmitt, Anthony D., Ming Hu, and Bing Ren. "Genome-wide mapping and analysis of chromosome architecture." Nature reviews Molecular cell biology 17.12 (2016): 743.<br>
+Seurat Official Website:
+https://satijalab.org/seurat
+Seurat GitHub Repository:
+https://github.com/satijalab/seurat
+Seurat Tutorials:
+https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
+Comprehensive Analysis Workflow:
+https://satijalab.org/seurat/articles/essential_features.html
+Seurat Integration Tutorial:
+https://satijalab.org/seurat/articles/integration_introduction.html
 
-[2] Risca, Viviana I., and William J. Greenleaf. "Unraveling the 3D genome: genomics tools for multiscale exploration." Trends in Genetics 31.7 (2015): 357-372.<br>
-
-[3] Dekker J, Rippe K, Dekker M, Kleckner N. Capturing chromosome conformation. Science 2002;295(5558):1306–11.<br>
-
-[4] Simonis M, Klous P, Homminga I, Galjaard RJ, Rijkers EJ, Grosveld F, et al. High-res- olution identification of balanced and complex chromosomal rearrangements by 4C technology. Nature Methods 2009;6(11):837–42.<br>
-
-[5] Dostie J, Richmond TA, Arnaout RA, Selzer RR, Lee WL, Honan TA, et al. Chromo- some Conformation Capture Carbon Copy (5C): a massively parallel solution for mapping interactions between genomic elements. Genome Res 2006;16(10): 1299–309.<br>
-
-[6] Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A, et al. Comprehensive mapping of long-range interactions reveals folding principles of the human genome. Science 2009;326(5950):289–93.<br>
-
-[7] Fullwood, M.J. et al. (2009) An oestrogen-receptor-alpha-bound human chromatin interactome. Nature 462, 58–64.<br>
-
-[8] https://github.com/hms-dbmi/hic-data-analysis-bootcamp/blob/master/HiC-Protocol.pptx.
-
-
+Academic Publications:
+Original Seurat Paper (2015):
+Satija, R., et al. (2015). "Spatial reconstruction of single-cell gene expression data." Nature Biotechnology.
+https://doi.org/10.1038/nbt.3192
+Seurat v3 Paper (2019):
+Stuart, T., et al. (2019). "Comprehensive integration of single-cell data." Cell.
+https://doi.org/10.1016/j.cell.2019.05.031
+Seurat v4 Paper (2021):
+Hao, Y., et al. (2021). "Integrated analysis of multimodal single-cell data." Cell.
+https://doi.org/10.1016/j.cell.2021.04.048
