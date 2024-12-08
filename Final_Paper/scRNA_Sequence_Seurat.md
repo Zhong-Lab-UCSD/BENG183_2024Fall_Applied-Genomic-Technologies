@@ -16,36 +16,34 @@
 
 # What is Seurat 
 
-The fundamental object of 3C(Chromosome Conformation Capture) techniques and 3C-derived methods is to understand the physical wiring diagram of the genome by identifying the physical interaction between chromosomes. 
+Seurat is a powerful open-source R package specifically designed for the analysis and interpretation of single-cell RNA sequencing (scRNA-seq) data. Developed by the Satija Lab at the New York Genome Center, Seurat has rapidly become a prominent tool in the field of single-cell genomics. Its primary purpose is to facilitate the comprehensive exploration of cellular heterogeneity by providing an integrated workflow that encompasses data preprocessing, normalization, dimensionality reduction, clustering, and visualization.
 
-To capture the interaction (crosslink between strings), there are few steps in general:
-- Take a snapshot of the flowing cells - **Crosslink** with fixative agent (formaldehyde)
-- Zoom in on crosslinked part and exclude untangled parts - **Digested** with a restriction enzyme
-- Analyze the components come from the same chromatin - **Reverse crosslink** and **sequence**
-- Finish the jigsaw puzzle and get the results - **Align** the reads and **summarize** the contacts
+One of the standout features of Seurat is its ability to handle complex datasets with high dimensionality, making it particularly well-suited for studies involving thousands to millions of individual cells. By leveraging advanced statistical methods and algorithms, Seurat enables researchers to uncover subtle differences in gene expression that may correspond to distinct cell types or states within a heterogeneous population.
 
-> Based on these general ideas, then we'll dive deeper by walking through two of the most popular  techniques and then briefly introduce some other methods. 
+
 
 ## Why Should You Use Seurat
 
-![](/assets/1-s2.0-S1360138518300827-gr1b2_lrg.jpg)
-[Figure1](https://doi.org/10.1016/j.tplants.2018.03.014). Schematic Representation of Chromosome Conformation Capture (3C) and 3C-Derived Methods. These methods help to elucidate nuclear organization by detecting physical interactions between genetic elements located throughout the genome. Abbreviations: IP, immunoprecipitation; RE, restriction enzyme. **Figure by Sotelo-Silveira, Mariana, et al. Trends in Plant Science (2018).**
+Seurat is widely favored in the single-cell genomics community for several compelling reasons. Firstly, it offers a comprehensive and streamlined workflow that covers all essential steps of single-cell data analysis. From initial quality control and data normalization to more sophisticated analyses like clustering and differential expression, Seurat provides a cohesive set of tools that simplify the entire analytical process.
 
-To better understand the difference between these methods, I'd like to distingush them between the following couple of aspects:
+Another significant advantage of Seurat is its scalability. As single-cell studies continue to grow in size and complexity, the ability to efficiently process large datasets becomes crucial. Seurat is designed to handle extensive datasets without compromising on performance, making it an ideal choice for large-scale studies that demand robust computational capabilities.
 
- 1) Specificity - What does _one, all, many_ mean<a name="2321"></a>
-‘1’, ‘Many’ and ‘All’ indicate how many loci are interrogated in a given experiment. For example, ‘1 versus All’ indicates that the experiment probes the interaction profile between 1 locus and all other potential loci in the genome. ‘All versus All’ means that one can detect the interaction profiles of all loci, genome-wide, and their interactions with all other genomic loci [1].
+Community support is another area where Seurat excels. Being one of the most popular tools in its domain, Seurat has extensive documentation, numerous tutorials, and an active user community. This wide varierty of resources facilitates the learning curve for new users and provides ample support for troubleshooting and optimizing analyses.
 
-These kind of specificity is determined by the primer when people use **specific primers** before PCR. 
-
-# What is Clustering
+Furthermore, Seurat's flexibility allows it to integrate seamlessly with other bioinformatics tools and pipelines. This interoperability enables researchers to customize their analyses and incorporate additional methods as needed, enhancing the overall versatility of their workflows.
 
 
+## What is Clustering
 
+Clustering is a fundamental unsupervised machine learning technique used to group similar data points based on their inherent features. In the realm of single-cell RNA sequencing, clustering plays a role in identifying distinct cell populations within a heterogeneous sample. By analyzing gene expression profiles, clustering algorithms can discern groups of cells that exhibit similar patterns, which often correspond to specific cell types or functional states.
 
+Clustering serves as a crucial step in unraveling the complexity of cellular ecosystems, allowing researchers to map out the diverse landscape of cell types present in a given tissue or organism. This, in turn, facilitates a deeper understanding of biological processes such as development, differentiation, and disease progression.
 
+Seurat these clustering methods to ensure accurate and meaningful groupings of cells. The process begins with dimensionality reduction, where high-dimensional gene expression data is transformed into a lower-dimensional space using techniques like Principal Component Analysis (PCA) or Uniform Manifold Approximation and Projection (UMAP). This reduction simplifies the data while preserving its essential structure, making it more amenable to clustering.
 
+Once the data is in a reduced dimensional space, Seurat constructs a nearest-neighbor graph that captures the relationships between cells based on their similarity. Clustering algorithms, such as the Louvain or Leiden methods, are applied to this graph to identify clusters of closely related cells. These clusters are subsequently visualized in the reduced dimensional space, often with distinct colors representing different groups, allowing for a intuitive interpretation of the cellular landscape.
 
+Evaluating the quality of clusters is an essential aspect of the analysis. Researchers assess whether the identified clusters correspond to known cell types or reveal novel populations by examining marker genes—genes that are uniquely expressed in each cluster. Additionally, the stability of clusters is evaluated by testing their consistency across different subsamples or varying analysis parameters, ensuring that the groupings are robust and biologically meaningful.
 
 
 # Case Study
