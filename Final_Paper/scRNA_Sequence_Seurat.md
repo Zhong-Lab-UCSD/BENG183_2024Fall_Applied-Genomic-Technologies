@@ -148,21 +148,10 @@ The image below represents the clustering visualization of cells grouped dependi
 
 
 # Different Applications Performance Compared to Seurat
-- Hi-C original: [Lieberman-Aiden et al., Science 2010](doi: 10.1126/science.1181369)
-- Hi-C 1.0: [Belton-JM et al., Methods 2012](doi: 10.1016/j.ymeth.2012.05.001)
-- In situ Hi-C: [Rao et al., Cell 2014](doi: 10.1016/j.cell.2014.11.021)
-- Single cell Hi-C: [Nagano et al., Genome Biology 2015](https://doi.org/10.1186/s13059-015-0753-7)
-- DNase Hi-C [Ma, Wenxiu, Methods et al](https://www.ncbi.nlm.nih.gov/pubmed/25437436)
-- Hi-C 2.0: [Belaghzal et al., Methods 2017](https://www.ncbi.nlm.nih.gov/pubmed/28435001)
-- DLO-Hi-C: [Lin et al., Nature Genetics 2018](https://doi.org/10.1038/s41588-018-0111-2)
-- Hi-C improving: [Golloshi et al., Methods 2018](https://www.biorxiv.org/content/biorxiv/early/2018/02/13/264515.full.pdf)
-- Arima 1-day Hi-C: [Ghurye et al., BioRxiv 2018](https://www.biorxiv.org/content/early/2018/02/07/261149)
+
 
 ## Insert Different Application1
-ChIA-PET is another method that combines ChIP and pair-end sequencing to analysis the chromtin interaction. It allows for targeted binding factors such as: estrogen receptor alpha, CTCF-mediated loops, RNA polymerase II, and a combination of key architectural factors. on the one hand, it has the benefit of achieving a higher resolution compared to Hi-C, as only ligation products involving the immunoprecipitated molecule are sequenced, on the other hand, ChIA-PET has systematic biases due to ChIP process:
-- Only one type of binding factor selected
-- Different antibodies
-- ChIP conditions
+
 
 ## Insert Different Application2
 
@@ -174,6 +163,7 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 
 # Selected Methods Comparison
+## AN EXAMPLE FROM TEMPLATE but use this to compare applications and include seurat
 <table>
  <tbody>
     <tr>
