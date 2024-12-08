@@ -3,7 +3,7 @@
 ## **Background and Introduction:** 
 RNA sequencing (RNA-Seq) is prevalently used for analyzing gene expression and transcriptomic profiles. It involves several key computational steps to process raw sequencing data, with read alignment to a reference genome being a critical step. STAR, which stands for "Spliced Transcripts Alignment to a Reference", is a commonly used tool for this RNA-seq. STAR is known for its ability to handle large RNA-Seq datasets.
 
-STAR operates on Linux via the command line, aligning trimmed .fastq files to an indexed reference genome. The tool produces output files in .sam or .bam formats, which contain the aligned reads necessary for downstream analyses, such as gene quantification and splice junction identification.
+STAR operates on Linux via the command line, aligning trimmed .fastq files to an indexed reference genome. The tool produces output files in .sam or .bam formats, which contain the aligned reads necessary for downstream analyses, such as gene quantification and splice junction identification. It automatically generate files containing statistics of alignment, such as the proportion of uniquely mapped reads. It also documents the events occured during alignment, such as soft-clipping, and reports it in the final output files. This allows users to effectively review the alignment progress and results.
 
 The RNA-Seq workflow begins with biological sample preparation and sequencing, followed by quality control steps like adapter trimming and sequence evaluation using tools such as FASTQC. STAR facilitates the alignment process, accurately mapping reads to the genome while accounting for splicing events. Once the reads are aligned, they are quantified to associate them with genes, enabling statistical analysis to identify differentially expressed genes.
 
@@ -60,12 +60,26 @@ Due to length limitations, this paper will not demonstrate the details of the sc
 
 Step 2 will be repeated until STAR has matched all portions in all mappable reads to the reference genome. STAR will then proceed to the next stage to stitch together mapped portions of reads.
 
-## Clustering, Stitching, Scoring:
+## Step 3: Clustering, Stitching, Scoring:
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step3_StitchingReads.png)
 
-- After completing the seed searching steps, STAR proceeds with the clustering, stitching, and scoring processes to reconstruct full, accurate reads from fragmented or partially aligned sequence segments. The pipeline begins by identifying uniquely mapped seeds, which are designated as anchor points for subsequent alignment. These anchor points serve as central hubs around which neighboring seeds are clustered, enabling the identification of fragments that likely originate from the same read. 
+After completing the seed searching steps, **STAR** transitions to the critical processes of **clustering, stitching, and scoring**. These steps are essential for reconstructing full, accurate reads from fragmented or partially aligned sequence segments.
 
-- Once the clustering is complete, the next step involves stitching the clustered seeds to reconstruct a continuous read. This is achieved by evaluating potential alignments based on a scoring system that considers various factors, including insertions and deletions (indels), skipped regions, soft-clipped regions, matches, and mismatches. The scoring process aims to identify the alignment that most accurately represents the original sequencing read while minimizing errors.
+### Clustering: Establishing Anchor Points
+The process begins by identifying **uniquely mapped seeds**, which are designated as **anchor points**. These anchors serve as central points for subsequent alignment. Neighboring seeds that are closely aligned to the anchor point are clustered together, creating a group of fragments that likely originate from the same read. This clustering step ensures that the alignment process captures local sequence relationships effectively.
+
+### Stitching: Building Continuous Reads
+Once clustering is complete, the pipeline proceeds to **stitch** the clustered seeds together to reconstruct a continuous read. This step evaluates the optimal arrangement of clustered segments to generate a complete alignment. 
+
+### Scoring: Ensuring Alignment Accuracy
+The reconstruction process employs a **scoring system** to evaluate and refine alignments. This scoring system accounts for a variety of factors, including:
+
+- **Insertions and deletions (indels):** Adjusting for gaps or extra bases in the sequence.
+- **Skipped regions:** Accounting for larger gaps in the reference sequence.
+- **Soft-clipped regions:** Managing partial matches at the ends of reads.
+- **Matches and mismatches:** Prioritizing alignment accuracy while minimizing errors.
+
+By integrating these elements, the scoring system identifies the alignment that most accurately represents the original sequencing read. The goal is to minimize errors while ensuring that the reconstructed sequence maintains biological relevance and technical precision.
 
 ## Usage
 ### 1. Building Index for Reference Genome:
