@@ -109,11 +109,13 @@ RunPCA
 ```bash
 RunTSNE
 ```
-Reduction method for visualizing high dimensional data
+* Reduction method for visualizing high-dimensional data into a two-dimensional or three-dimensional space for visualization.
+* Output: a 2D or 3D plot demonstrating cells grouped depending on their similarity in gene expression. 
 ```bash
 DimPlot
 ```
-Plots the cells in a 2D space and groups by metadata column
+* Plots the cells in a 2D space and groups them by metadata column and color codes cells based on the metadata provided.
+* Output: A visualization of the clustering.
 
 
 ### The Code to Perform Clustering
