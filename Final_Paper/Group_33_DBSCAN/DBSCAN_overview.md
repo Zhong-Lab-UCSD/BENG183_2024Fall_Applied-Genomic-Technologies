@@ -1,3 +1,7 @@
+# DBSCAN: Density Based Spatial Clustering of Applications With Noise
+Presented by Group 33: Jack Kissinger, Julia Nguyen, & Sujana Sreenivasan
+BENG 183 - Applied Genomic Technologies
+
 # Introduction to DBSCAN:
 Clustering is a widely used bioinformatics technique that uses an unsupervised machine learning model to partition datasets into groups based on recognized patterns or characteristics. This concept was first brought about in the 1950’s when Stuart Lloyd at Bell labs introduced the K-Means algorithm. From that point on, K-means became the standard algorithm for clustering, characterized by its iterative and effectively scalable model. By providing the groundwork for clustering, the development of numerous advanced algorithms were able to emerge into bioinformatics. DBSCAN, for instance, was formally published in the 1990s and introduced a new method of clustering that could handle arbitrarily shaped clusters while effectively dealing with noise within datasets. The Density-Based Spatial Clustering of Applications with Noise algorithm became a new popular unsupervised machine learning algorithm capable of identifying clusters. 
 
