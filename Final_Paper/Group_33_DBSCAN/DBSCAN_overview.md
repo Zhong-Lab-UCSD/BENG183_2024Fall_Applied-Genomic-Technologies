@@ -38,7 +38,9 @@ Understanding relative cell positioning is important for biological applications
 ---
 
 # References:
-https://www.nature.com/articles/s41598-023-45190-4 
-https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/ 
+https://www.nature.com/articles/s41598-023-45190-4
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/
+
 https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/ 
 
