@@ -49,7 +49,8 @@ These kind of specificity is determined by the primer when people use **specific
 
 
 # Case Study
-The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline. 
+The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline.
+In this case, we are given the expression data, metadata, PCA coordinates, and t-SNE coordinates which we will load in the following code.
 
 
 ## Loading Data
@@ -76,7 +77,6 @@ pca_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_6602
                          row.names = 1, 
                          sep = "\t")
 
-# Load t-SNE coordinates
 tsne_coords <- read.table("~/SCP404/cluster/outputs_5ca76079328cee0c8dad60c0_66021478-5f80-4c3e-80b4-c2fbca32fce6/mouse_E18_nuclei_analysis.scp.X_tsne.coords.txt", 
                           header = TRUE, 
                           row.names = 1, 
