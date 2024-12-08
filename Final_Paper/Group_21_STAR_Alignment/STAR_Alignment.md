@@ -15,17 +15,7 @@ STAR’s alignment capability supports essential steps in RNA-Seq workflows, ens
 STAR employs a "seed-and-extension" strategy to efficiently map sequencing reads to a reference genome. This approach balances computational efficiency with alignment accuracy, making it powerful for RNA-Seq data analysis.
 
 ### **Seed Phase**
-The first phase of the seed-and-extension strategy involves identifying short sequences, called "seeds," within the sequencing reads. These seeds are chosen because they exactly match subsequences in the reference genome. By focusing on exact matches, STAR can utilize efficient string search algorithms such as the Burrows-Wheeler Transform (BWT) or Suffix Arrays to rapidly locate potential regions of alignment. This step significantly reduces the search space, narrowing the possible locations where the full read might align.
-
-#### **Advantages of Seeds:**
-- Efficiency: Exact matching enables the use of precomputed indices like the Suffix Array or BWT, speeding up the search process.
-
-- Scalability: This approach allows the alignment algorithm to handle large genomes and datasets.
-
-#### **Disadvantages of Seeds:**
-- Memory Intensity: Building and storing indices for the reference genome can require substantial computational resources.
-
-- High Computational Cost: Despite the efficiency of exact match algorithms, the sheer volume of reads in high-throughput sequencing datasets can make this step computationally expensive.
+The first phase of the seed-and-extension strategy involves identifying short sequences, called "seeds," within the sequencing reads. These seeds are chosen because they exactly match some subsequences in the reference genome. By focusing on exact matches, STAR can utilize efficient string search algorithms such as the Burrows-Wheeler Transform (BWT) or Suffix Arrays to rapidly locate potential regions of alignment. This step significantly reduces the search space, narrowing the possible locations where the full read might align.
 
 ### **Extension Phase**
 Once potential seed locations are identified, the algorithm extends these matches to align the entire read. This involves dealing with mismatches, insertions, deletions, and splicing events that may occur within the read. STAR is especially good at this phase by:
@@ -33,6 +23,18 @@ Once potential seed locations are identified, the algorithm extends these matche
 - Allowing for gaps in alignments to accommodate introns, which is particularly important for RNA-Seq data.
 
 - Using scoring systems to evaluate alignment quality and select the best match for each read.
+
+#### **Advantages of "Seed-Extension" Strategy:**
+- Efficiency: Exact matching enables the use of precomputed indices like the Suffix Array or BWT, speeding up the search process.
+
+- Scalability: This approach allows the alignment algorithm to handle large genomes and datasets with limited memory spaces.
+
+
+#### **Disadvantages of Seed-Extension" Strategy:**
+- Memory Intensity: Building and storing indices for the reference genome can require substantial computational resources. Storing the uncompressed Suffix Array and requiring access to it at all times would also require significant memory space, especially when aligning to larger genomes.
+
+
+- High Computational Cost: Despite the efficiency of exact match algorithms, It’s memory-intensive. Because the reference genome must be pre-indexed and the uncompressed suffix array need to be stored in memory for quick access during alignment, and the extension phase and scoring can be computationally expensive, especially when dealing with highly complex genomes, for those with more mismatches. 
 
 ## **STAR Algorithm Illustration**
 ### Step1: Finding the longest prefixes in reads that exactly matches the reference genome
@@ -49,7 +51,8 @@ STAR starts by finding the longest prefix in reads that exactly match some (>= 1
 #### Scenario 2: Minor mismatch between unmapped region and the reference genome
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step2_Scenario2.png)
 
-- As STAR is mapping the second MMP (second longest exact match prefix) to some locations in the reference genome, STAR encountered some mismatch that prevented us from further matching to extend the MMP. In this case, STAR will count how many mismatches STAR have seen while STAR continues our effort to match the MMP to the reference genome. If the mismatch is short and STAR reaches the next exact matching region, STAR will extend the second MMP to include the mismatch and the next MMP. Such mismatch will be reported in the final output of STAR.
+- As STAR is mapping the second MMP (second longest exact match prefix) to some locations in the reference genome, STAR encountered some mismatch that prevented us from further matching to extend the MMP. 
+- In this case, STAR will count how many mismatches STAR have seen while STAR continues our effort to match the MMP to the reference genome. If the mismatch is short and STAR reaches the next exact matching region, STAR will extend the second MMP to include the mismatch and the next MMP. Such mismatch will be reported in the final output of STAR.
 
 #### Scenario 3: Major mismatch occurs
 ![](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_21_STAR_Alignment/Graphs/Step2_Scenario3.png)
@@ -100,18 +103,19 @@ $STAR --runThreadN 16 --genomeDir chrX_STAR_index/ --readFilesIn inputFile.fastq
 
 #### Explanation: 
 - --genomeDir: Specifies the directory containing the indexed reference genome
+- --readFilesIn: Point out the input file directory
 - --outSAMtype: Tell STAR to output the alignment result in which format
 
 ## Expected Output
-1. Prefix_Aligned.sortedByCoord.out.bam: This file contains the aligned reads in BAM format, organized by their genomic coordinates. It serves as the primary output of the alignment.
+1. **Prefix_Aligned.sortedByCoord.out.bam**: This file contains the aligned reads in BAM format, organized by their genomic coordinates. It serves as the primary output of the alignment.
 
-2. Prefix_Log.out: This log file provides general details about the alignment process, such as the total number of reads processed, the count of uniquely aligned reads, and the number of reads mapped to multiple locations.
+2. **Prefix_Log.out**: This log file provides general details about the alignment process, such as the total number of reads processed, the count of uniquely aligned reads, and the number of reads mapped to multiple locations.
 
-3. Prefix_Log.final.out: This file gives a summary of the alignment statistics, providing a quick snapshot of the alignment overall success.
+3. **Prefix_Log.final.out**: This file gives a summary of the alignment statistics, providing a quick snapshot of the alignment overall success.
 
-4. Prefix_Log.progress.out: This file tracks the alignment progress in real-time, which is especially helpful for monitoring longer runs.
+4. **Prefix_Log.progress.out**: This file tracks the alignment progress in real-time, which is especially helpful for monitoring longer runs.
 
-5. Prefix_SJ.out.tab: This file lists the splice junctions identified during the alignment, which can be useful for identifying novel splicing events or for comparing with known annotations.
+5. **Prefix_SJ.out.tab**: This file lists the splice junctions identified during the alignment, which can be useful for identifying novel splicing events or for comparing with known annotations.
 
 ## Sources
 1. [STAR: ultrafast universal RNA-seq aligner](https://pmc.ncbi.nlm.nih.gov/articles/PMC3530905/pdf/bts635.pdf)
