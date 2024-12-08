@@ -1,11 +1,17 @@
-Introduction to DBSCAN:
+#Introduction to DBSCAN:
 Clustering is a widely used bioinformatics technique that uses an unsupervised machine learning model to partition datasets into groups based on recognized patterns or characteristics. This concept was first brought about in the 1950’s when Stuart Lloyd at Bell labs introduced the K-Means algorithm. From that point on, K-means became the standard algorithm for clustering, characterized by its iterative and effectively scalable model. By providing the groundwork for clustering, the development of numerous advanced algorithms were able to emerge into bioinformatics. DBSCAN, for instance, was formally published in the 1990s and introduced a new method of clustering that could handle arbitrarily shaped clusters while effectively dealing with noise within datasets. The Density-Based Spatial Clustering of Applications with Noise algorithm became a new popular unsupervised machine learning algorithm capable of identifying clusters. 
 
-Algorithm Overview:
+---
 
-Comparison with k-means Clustering:
+#Algorithm Overview:
 
-Bioinformatics Applications:
+---
+
+#Comparison with k-means Clustering:
+
+---
+
+#Bioinformatics Applications:
 Why is DBSCAN an important algorithm for bioinformatics? Through our overview of the algorithm we have established that DBSCAN performs well for use cases involving an uneven cluster size with non-Euclidean geometry, in order to conduct a spatial analysis2. In simpler terms, we would like to apply DBSCAN to datasets with irregular shapes or varying densities.
 
 There are several problems in bioinformatics that fall under these categories and could be addressed using machine learning and density-based clustering. For example, researchers might be interested in identifying target protein motifs for gene regulation through spatial analysis of cell clusters or molecules to study protein-protein interactions as well as interactions involving DNA or RNA. DBSCAN can also be used to identify clusters of cells in RNA sequencing data to classify cells into distinct functional groups based on their gene expression profiles. It is additionally effective in microbial community analysis, where it can cluster similar metagenomic sequences to identify distinct species within the community. Another application of density-based clustering is image analysis; for example, DBSCAN can be used on MRI scan data to visually segment images based on the presence of certain cell growths or patterns within tissue organization2.
@@ -29,7 +35,9 @@ To assess the performance of this model, we can apply metrics such as benchmarki
 
 Understanding relative cell positioning is important for biological applications such as microbial community analysis, developmental functions of organisms, and spatial transcriptomics. DBSCAN-CellX provides a means of improving the classification of cell positioning within culture samples by addressing common shortcomings of the original DBSCAN algorithm when analyzing tissue monolayers. The goal of this extension is to improve the accuracy and usability of density-based clustering for future analyses of complex biological datasets, and provide the framework to achieve a stronger understanding of the influence of spatial relationships on cellular functionality within different tissues and organisms1.
 
-References:
+---
+
+#References:
 https://www.nature.com/articles/s41598-023-45190-4 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/ 
 https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/ 
