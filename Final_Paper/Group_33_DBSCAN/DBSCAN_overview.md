@@ -18,6 +18,10 @@ Clustering is a widely used bioinformatics technique that uses an unsupervised m
 
 ---
 
+## Limitations of DBSCAN:
+
+---
+
 ## Bioinformatics Applications:
 Why is DBSCAN an important algorithm for bioinformatics? Through our overview of the algorithm we have established that DBSCAN performs well for use cases involving an uneven cluster size with non-Euclidean geometry, in order to conduct a spatial analysis2. In simpler terms, we would like to apply DBSCAN to datasets with irregular shapes or varying densities.
 
