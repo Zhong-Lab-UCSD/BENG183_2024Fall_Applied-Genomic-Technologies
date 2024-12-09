@@ -1,11 +1,13 @@
 # MERFISH: Multiplexed error-robust fluorescence in situ hybridization
 ### By Nick Monell, Benjamin Esser and Tusha Karnani
 
+## Contents
 * [What is MERFISH?](#what-is-merfish)
 * [Procedure](#procedure)
 * [Computational Decoding](#computational-decoding)
 * [Output](#output)
 * [Applications of MERFISH](#applications-of-merfish)
+* [References](#references)
 
 ## What is MERFISH?
 #### FISH
@@ -23,5 +25,8 @@
 
 ## Applications of MERFISH
 #### Developmental Biology
+
 #### Cancer Research
 #### Infectious Diseases and Immunology
+
+## References
