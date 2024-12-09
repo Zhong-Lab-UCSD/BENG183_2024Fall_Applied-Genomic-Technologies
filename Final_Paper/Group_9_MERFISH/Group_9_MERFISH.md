@@ -10,6 +10,7 @@
 ## What is MERFISH?
 #### FISH
 #### MERFISH Overview
+![](https://github.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_9_MERFISH/Images/merfish1.png)
 
 ## Procedure
 
