@@ -233,6 +233,7 @@ Harmony is a toolkit developed for the R platform that focuses on batch correcti
 * Seurat Tutorials: https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
 * Comprehensive Analysis Workflow: https://satijalab.org/seurat/articles/essential_features.html
 * Seurat Integration Tutorial: https://satijalab.org/seurat/articles/integration_introduction.html
+* Mouse Clustering Case study: https://singlecell.broadinstitute.org/single_cell/study/SCP404/demo-cellranger-sccloud
 
 Academic Publications:
 * Original Seurat Paper (2015):
