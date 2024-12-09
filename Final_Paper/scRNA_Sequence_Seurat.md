@@ -48,7 +48,9 @@ Evaluating the quality of clusters is an essential aspect of the analysis. Resea
 
 
 # Case Study
-The Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline.
+Now that we know what Seurat is and what it is used for, we will demonstrate how to use Seurat to perform clustering and the result of the clustering through a visualization. 
+
+The following Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline.
 
 
 ## Loading Data
@@ -147,19 +149,19 @@ The image below represents the clustering visualization of cells grouped dependi
 
 
 # Different Applications Performance Compared to Seurat
-Now that we have taken a look at Seurat itself, we can see how it compares to alternative softwares and even how to optimize a workflow by using a combination of these different choices.
+Now that we have looked at Seurat itself, we can see how it compares to alternative software and even how to optimize a workflow by combining these different choices.
 
 ## Scanpy
-Scanpy is a toolkit developed to analyze singe-cell expression data. It is designed for preprocessing, visualization, cllustering, and more. Built with sparse matrix support and optimized algorithms, this alternative shows improved scalability in comparison to Seurat. It is also more ideal for Python users due to its streamlined integration with other Python tools. Scanpy is often more chalenging for new users due to its modular structure and lack of documentation. Keeping all those advantages and disadvantages in mind, it is optimal to use Scanpy for its quick preprocesesing, then switch to Seurat for the improved visualization and heightened analysis.
+Scanpy is a toolkit developed to analyze single-cell expression data. It is designed for preprocessing, visualization, clustering, and more. Built with sparse matrix support and optimized algorithms, this alternative shows improved scalability compared to Seurat. It is also ideal for Python users due to its streamlined integration with other Python tools. Scanpy is often more challenging for new users due to its modular structure and lack of documentation. Considering all those advantages and disadvantages, it is optimal to use Scanpy for its quick preprocessing, and then switch to Seurat for improved visualization and heightened analysis.
 
 ## Monocle
-Another similar tooll to Seurat and Scanpy is Monocle. Built on the R platform, this software boasts support for analysis of pseudotime and emphasizes trajectory analysis. Given its focus on these two forms of analysis, Monocle doesn't have as extensive capabilities for comprehensive clustering or integration, nor is it optimized for larger datasets. Thus, it makes sense to use Monocle following Scanpy or Seurat's preprocessing and clustering when interested in pseudotime and trajectory analysis.
+Another similar tool to Seurat and Scanpy is Monocle. Built on the R platform, this software boasts support for the analysis of pseudotime and emphasizes trajectory analysis. Given its focus on these two forms of analysis, Monocle doesn't have as extensive capabilities for comprehensive clustering or integration, nor is it optimized for larger datasets. Thus, it makes sense to use Monocle following Scanpy or Seurat's preprocessing and clustering when interested in pseudotime and trajectory analysis.
 
 ## Cell Ranger
-Cell Ranger is a standalone software develeped by 10x Genomics for a multitude of purposes, including barcode processing, single cell gene counting, sample demultiplexing, among many others. Its greatest advantages are apparent when used in conjunction with other hardware produced by the company. Due to its focus on end-to-end processing, Cell Ranger doesn't allow for significant user input during intermediary steps or parameter switching. Users will often generate a gene-cell matrix using Cell Ranger, then use Seurat to filter out low-quality cells and genes.
+Cell Ranger is a standalone software developed by 10x Genomics for a multitude of purposes, including barcode processing, single-cell gene counting, sample demultiplexing, among many others. Its greatest advantages are apparent when used in conjunction with other hardware produced by the company. Due to its focus on end-to-end processing, Cell Ranger doesn't allow for significant user input during intermediary steps or parameter switching. Users will often generate a gene-cell matrix using Cell Ranger, and then use Seurat to filter out low-quality cells and genes.
 
 ## Harmony
-Harmony is a toolkit developed for the R platform that focuses on batchc correction and dataset integration  whilel avoiding overcorrecting and erasing small variation. It is capable of handling large datasets given its utilization of parallel processing and sparse matrix support, similar to Scanpy. On the other hand, Harmony is difficult for new users when used as a standalonee software implementation, and has limited visualization support. Thus, it is most oftene used to correct batch effects before further analysis can be performed with Seurat.
+Harmony is a toolkit developed for the R platform that focuses on batch correction and dataset integration  while avoiding overcorrecting and erasing small variations. It is capable of handling large datasets given its utilization of parallel processing and sparse matrix support, similar to Scanpy. On the other hand, Harmony is difficult for new users when used as a standalone software implementation and has limited visualization support. Thus, it is most often used to correct batch effects before further analysis can be performed with Seurat.
 
 
 
