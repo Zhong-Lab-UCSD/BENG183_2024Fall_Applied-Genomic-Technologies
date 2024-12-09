@@ -50,7 +50,7 @@ Evaluating the quality of clusters is an essential aspect of the analysis. Resea
 # Case Study
 Now that we know what Seurat is and what it is used for, we will demonstrate how to use Seurat to perform clustering and the result of the clustering through a visualization. 
 
-The following Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering using SCP's analysis pipeline.
+The following Case Study focuses on mouse sc-RNA sequence data and demonstrates clustering.
 
 
 ## Loading Data
