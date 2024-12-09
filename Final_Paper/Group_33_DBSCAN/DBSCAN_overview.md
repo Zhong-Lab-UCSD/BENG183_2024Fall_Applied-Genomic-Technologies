@@ -50,19 +50,16 @@ To assess the performance of this model, we can apply metrics such as benchmarki
 Understanding relative cell positioning is important for biological applications such as microbial community analysis, developmental functions of organisms, and spatial transcriptomics. DBSCAN-CellX provides a means of improving the classification of cell positioning within culture samples by addressing common shortcomings of the original DBSCAN algorithm when analyzing tissue monolayers. The goal of this extension is to improve the accuracy and usability of density-based clustering for future analyses of complex biological datasets, and provide the framework to achieve a stronger understanding of the influence of spatial relationships on cellular functionality within different tissues and organisms[^2].
 
 ---
+## Image Credits:
+https://dsworld.org/content/images/2021/10/dbscan.png
 
 ## References:
 [^1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/ (Reference 1, PMC Article)
 
 [^2]: https://www.nature.com/articles/s41598-023-45190-4 (Reference 2, Nature Article)
 
-
 https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/ 
-
 
 https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python 
 
-
-## Image Credits:
-https://dsworld.org/content/images/2021/10/dbscan.png
 
