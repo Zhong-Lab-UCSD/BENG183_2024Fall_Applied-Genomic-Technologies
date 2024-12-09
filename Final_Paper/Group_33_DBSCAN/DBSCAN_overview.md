@@ -29,7 +29,8 @@ With so many clustering algorithms available to choose from, a researcher may wo
 
 * **More computationally intensive:**
 
-![Figure 1.1](dbscan-vs-kmeans.png "Figure 1.1")
+### Figure 1.1: Practical Examples
+![Figure 1.1](dbscan-vs-kmeans.png)
 
 ---
 
