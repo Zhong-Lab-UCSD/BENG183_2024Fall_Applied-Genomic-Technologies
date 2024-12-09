@@ -20,6 +20,11 @@ With so many clustering algorithms available to choose from, a researcher may wo
 
 
 ### Advantages of DBSCAN:
+* **The number of clusters does not need to be preset beforehand:**
+  
+* **Irregularly-shaped clusters are more easily identified:**
+  
+* **Continuous clusters are favored over clusters with gaps:**
 
 ### Limitations of DBSCAN:
 
