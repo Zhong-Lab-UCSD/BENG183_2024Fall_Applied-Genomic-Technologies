@@ -24,10 +24,10 @@ MERFISH utilizes a high-throughput encoding system to differentiate between hund
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/encoding.jpg" width="45%" style="display: block; margin: auto;"/>
 
-Figure 2: Demonstration of detected RNA spots (general) and how to decode each spot into an RNA species based on fluorescent readout over 16 hybridization rounds. <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+Figure 2: Demonstration of detected RNA spots (general) and how to decode each spot into an RNA species based on fluorescent readout over 16 hybridization rounds. Kok Hao Chen et al.,Spatially resolved, highly multiplexed RNA profiling in single cells. <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
 </div>
 
-* Considering all possible n-length binary strings, we can encode `$2^n - 1$` gene species using this system (removing 1 for the string containing only 0's as this would be an undetectable position). This makes it highly scalable for multiplexing. This means the minimum number of imaging rounds we must perform, n, is `$\log_2(x + 1)$` where x is the number of gene species we are interested in.
+* Considering all possible n-length binary strings, we can encode $2^n - 1$ gene species using this system (removing 1 for the string containing only 0's as this would be an undetectable position). This makes it highly scalable for multiplexing. This means the minimum number of imaging rounds we must perform, n, is $\log_2(x + 1)$ where x is the number of gene species we are interested in.
 * For our encoding system, we will apply some "rule" to regulate which binary strings we can use to encode RNA species. Remember, MERFISH is Error Robust meaning if a probe doesn't bind properly in a particular hybridization round or fluorescent readout is unresolvable, we should still be able to determine which RNA species was there based on the rest of our code. One such system is Modified Hamming Distance 4 (MDH4), consisting of n-bit binary strings with a maximum of 4 'fluorescence-on' (1) bits that are at least different from any other string by 4-bit positions. Valid codes would be `000000001111` or `100100100100` while an invalid code may be `110001101010`. Because we know that each code is supposed to have 4 on-bits if there is any single-bit error we can correct it by referencing the readout with our codebook, finding which string position the error is in, and decoding which RNA species it is. 
 The benefit of encoding and decoding in MERFISH is the redundancy and error correction, allowing us to resolve the count and position of every RNA species even in extensive datasets.
 ## Validation
@@ -38,7 +38,8 @@ Within the encoding scheme designed for the experiment, encode several 'control 
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/validation.jpg" width="30%" style="display: block; margin: auto;"/>
 
-Figure 3: Comparison of confidence ratio between detected RNA (blue) and control words (red) with dashed line representing maximum confidence ratio of control words. <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+Figure 3: Comparison of confidence ratio between detected RNA (blue) and control words (red) with dashed line representing maximum confidence ratio of control words. Kok Hao Chen et al.,Spatially resolved, highly multiplexed RNA profiling in single cells. <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+</div>
 
 #### RNA-Seq Reference
 Use the counts for each RNA species as a form of validation. Compare the actual RNA counts for each species with a known method of RNA-seq. If copy numbers show a strong correlation, we have strong evidence of the method's accuracy.
