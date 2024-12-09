@@ -168,45 +168,44 @@ Harmony is a toolkit developed for the R platform that focuses on batchc correct
 
 
 # Selected Methods Comparison
-## AN EXAMPLE FROM TEMPLATE but use this to compare applications and include seurat
+## Summary Table
 <table>
  <tbody>
     <tr>
-        <th>Method</td>
-        <th>Targets</td>
-        <th>Resolution</td>
-        <th>Notes</td>
+        <th>Toolkit</td>
+        <th>Advantages</td>
+        <th>Disadvantages</td>
+        <th>Workflow</td>
     </tr>
     <tr>
-        <td>3C <a href="http://refhub.elsevier.com/S2001-0370(17)30093-4/rf0535">[3]</a></td>
-        <td>one-vs-one</td>
-        <td>~1–10 kb<br></td>
-        <td><ul><li>Sequence of bait locus must be known</li><li>Easy data analysis</li><li>Low throughput</li></ul></td>
+        <td>Seurat</td>
+        <td><ul><li>Dimensionality Reeduction</li><li>Clustering</li><li>Visualization</li><li>Integration</li></li></ul></td>
+        <td><ul><li>Struggles with differentiation of similar cell types</li><li>Lack of capability for predicting rare cell populations</li></ul></td>
+        <td>N/A</td>
     </tr>
     <tr>
-    <td>4C <a href="http://refhub.elsevier.com/S2001-0370(17)30093-4/rf0545">[4]</a></td>
-    <td>one-vs-all</td>
-    <td>~2 kb</td>
-    <td><ul><li>Sequence of bait locus must be known</li><li>Detects novel contacts</li><li>Long-range contacts</li></ul></td>
+        <td>Scanpy</td>
+        <td><ul><li>Improved Scalability</li><li>Python integration</li><li>Conservation of machine memory</li></ul></td>
+        <td><ul><li>More challenging for new users</li><li>Less emphasis on visualization</li><li>Less documentation</li></ul></td>
+        <td>Use scanpy for preprocessor for its speed and memory capability, then switch to Seurat for visuaization and heightened analysis</td>
     </tr>
     <tr>
-    <td>5C <a href="http://refhub.elsevier.com/S2001-0370(17)30093-4/rf0550">[5]</a></td>
-    <td>many-vs-many</td>
-    <td>~1 kb</td>
-    <td><ul><li>High dynamic range</li><li>Complete contact map of a locus</li><li>3C with ligation-mediated amplification (LMA) of a ‘carbon copy’ library of oligos designed across restriction fragment junctions of interest
-3C</li></ul></td>
+        <td>Monocle</td>
+        <td><ul><li>Dynamic gene expression anaysis</li><li>Support for multi-modal datasets</li><li>Distinct visualizations for trajectories and pseudotime</li></ul></td>
+        <td><ul><li>No focus on comprehensive clustering or integration</li><li>Not optimized for large datasets</li><li>LLess versatility in plotting options</li></ul></td>
+        <td>Monocle is used following Seurat's preprocessing for pseudotime and trajectory analysis</td>
     </tr>
     <tr>
-    <td>Hi-C <a href="http://refhub.elsevier.com/S2001-0370(17)30093-4/rf0300">[6]</a></td>
-    <td>all-vs-all</td>
-    <td>0.1–1 Mb</td>
-    <td><ul><li>Genome-wide nucleosome core positioning</li><li>Relative low resolution</li><li>High cost</li></ul></td>
+        <td>Cell Ranger</td>
+        <td><ul><li>Ease of use</li><li>Optimized for high performance, esepecially in conjunction with othere 10x Genomics products</li><li>Spatial transcriptomics</li></ul></td>
+        <td><ul><li>Limited flexibility in modifying intermeediary steps</li><li>Requires significant computational resources</li></ul></td>
+        <td>Generate a gene-cell matrix with Cell Ranger, then use Seurat to filter out low-quality cells and genes.</td>
     </tr>
     <tr>
-    <td>ChIA-PET <a href="http://refhub.elsevier.com/S0168-9525(15)00063-3/sbref1405">[7]</a></td>
-    <td>Interaction of whole genome mediated by protein</td>
-    <td>Depends on read depth and the size of the genome region bound by the protein of interest</td>
-    <td><ul><li>Lower noise with ChIP</li><li>Biased method since selected protein</li></ul></td>
+        <td>Harmony</td>
+        <td><ul><li>Batch correection and dataset integration</li><li>Avoids overcorrecting and erasing small biological variation</li><li>Uses parallel processing and sparse matrices for large dataset support</li></ul></td>
+        <td><ul><li>Difficult for new users</li><li>Limited visualization support</li></ul></td>
+        <td>Harmony is useed to correct batch effects before further analysis and/or visualization</td>
     </tr>
  </tbody>
 </table>
