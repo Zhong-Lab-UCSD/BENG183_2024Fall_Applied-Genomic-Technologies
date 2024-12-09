@@ -29,7 +29,7 @@ There are several problems in bioinformatics that fall under these categories an
 
 By handling noise, grouping data points based on density, and not requiring the number of clusters to be predefined, DBSCAN is ideal for the spatial analysis of complex biological datasets. In the next section, we will elaborate on an algorithm that extends the DBSCAN algorithm to be more applicable to cell culture and tissue analysis, a data type that is often used to answer bioinformatics questions.
 
-DBSCAN-CellX (An Extension of DBSCAN):
+## DBSCAN-CellX (An Extension of DBSCAN):
 We will now provide an overview of DBSCAN-CellX, a newly developed algorithm that extends the original DBSCAN software to be more appropriate for analysis of cell culture experimental datasets. This software serves as a highly useful tool for bioinformatics analysis, with the source code available here on Github as an open-source Python package with embedded visualization tools to understand the dataset1. The software can alternatively be run through an application, providing a graphical user interface for those who prefer it. 
 
 Why do we care? The rationale behind DBSCAN-CellX is to introduce three extensions to the DBSCAN algorithm such that resulting analysis of cell tissue is improved. The original algorithm relies on predefined input parameters to produce an output; however, cell cultures are prone to varying cell densities that impact both the size and proximity of cells within the tissue sample, which requires these parameters to be carefully selected. Standard DBSCAN approaches also fall short in providing a consistently accurate identification of individual cell positions1.
