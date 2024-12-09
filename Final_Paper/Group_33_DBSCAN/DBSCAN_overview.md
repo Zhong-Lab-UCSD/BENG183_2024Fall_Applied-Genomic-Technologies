@@ -32,6 +32,10 @@ With so many clustering algorithms available to choose from, a researcher may wo
 ### Figure 1.1: Practical Examples
 ![Figure 1.1](dbscan-vs-kmeans.png)
 
+Some of the key differences between DBSCAN and k-means clustering can be seen in the examples in Figure 1.1 above. For example, in the first two comparisons, DBSCAN identifies each concentric circle and half circle as its own cluster, with a clear spatial separation between each one. In contrast, k-means clustering's limited ability to manage irregularly-shaped clusters is on full display. Since cluster assignments are based purely on the distance from the nearest mean vector, some parts of both sections are classified as belonging to different clusters, even though there is a clear separation between the sections when viewed with the human eye. 
+
+Additionally, in the fifth comparison (rightmost column in Figure 1.1), DBCSAN's flexible cluster number is clearly highlighted. Since this run of k-means clustering was initialized with k = 3, this square of datapoints had to be separated into three different clusters, even though there are no clear patterns to speak of. This results in cluster boundaries that are relatvely arbitrary, and highly-dependent on the initial positions of each mean vector. In contrast, since DBSCAN is able to determine the appropriate number of clusters at runtime, it classifies the entire square as being part of the same cluster, which makes sense as there are no defining characteristics that would set apart any one section of the data.
+
 ---
 
 ## Bioinformatics Applications:
