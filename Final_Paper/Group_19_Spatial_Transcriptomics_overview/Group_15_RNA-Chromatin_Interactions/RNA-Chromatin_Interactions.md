@@ -20,15 +20,15 @@ In the process of focusing on RNA-chromatin interactions, there were several ste
 
 As a reminder, scRNA-seq provides a higher resolution and insight, compared to the average of many cells in traditional RNA-seq by focusing on individual cells. The RNA of these cells is then converted to cDNA and amplified for sequencing/mapping and determining gene expression patterns.
 
-![](https://github.com/alicup29/BENG183_2024Fall_Applied-Genomic-Technologies/Final_Paper/Group_15_RNA-Chromatin_Interactions/img1.jpg)
+![](https://github.com/alicup29/beng183proj/blob/main/img1.jpg)
 
 In setting up the in-vitro experiment, HUVECs were subjected to three temporally different concentrations of “...high glucose and TNFα [that]…” to mimic the diabetic hyperglycemia and chronic inflammation that induces EC dysfunction (Calandrelli, et al. 2020). Day 0 corresponds to normal glucose conditions, Day 3 to high glucose/TNFα conditions, and Day 7 had the same conditions but for 7 instead of 3 days.
 
-![](https://github.com/alicup29/BENG183_2024Fall_Applied-Genomic-Technologies/Final_Paper/Group_15_RNA-Chromatin_Interactions/img2.jpg)
+![](https://github.com/alicup29/beng183proj/blob/main/img2.png)
 
 Each group was subjected to scRNA-seq resulting in various graphs that reveal “...a profound gene expression and phenotypic change…” (Calandrelli, et al. 2020).
 
-![](https://github.com/alicup29/BENG183_2024Fall_Applied-Genomic-Technologies/Final_Paper/Group_15_RNA-Chromatin_Interactions/img3.jpg)
+![](https://github.com/alicup29/beng183proj/blob/main/img3.png)
 
 Following scRNA-seq, one such graph is this expression heatmap that displays the top differentially expressed genes of the treated cells, grouped by function and ordered specifically by a SERPINE1 biomarker, which is indicative of stress-induced dysfunction. Additionally, the heatmap is z-scaled, representing the standard deviations away from the mean SERPINE1 expression. After classifying the top differentially expressed genes, there is a significant increase in expression of inflammatory/immune response genes, which are characteristic of EC reactions to diabetes stress. In terms of the z-scale, there is a majority shift from very low expression (blue in day 0) to extremely high expression (yellow in day 3 and 7).
 
@@ -38,21 +38,21 @@ As a result of scRNA-seq, the scientists were able to find which differentially 
 
 In order to answer this question, they first utilized Hi-C (Hierarchical-Chromatin organization), a genomics method used to study the 3D organization of the genome and identify physical interactions between different regions of DNA within the cell nucleus. By cross-linking interacting DNA and associated proteins, then fragmenting and sequencing the DNA strands, Hi-C provides important insight into chromatin organization and gene regulation. For example, topologically associated domains (TADs) which are contiguous and long regions subset of chromosomes that are spatially clustered together and frequently interact. 
 
-![](https://github.com/alicup29/BENG183_2024Fall_Applied-Genomic-Technologies/Final_Paper/Group_15_RNA-Chromatin_Interactions/img4.jpg)
+![](https://github.com/alicup29/beng183proj/blob/main/img4.png)
 
 As a result of the in situ Hi-C experiments, there were no significant differences between the proportions of read pairs classified as intrachromosomal or genomic-level TAD/A & B compartment changes across all three days. Essentially, the stress conditions “...did not significantly perturb the major 3D genome features…” of the ECs (Calandrelli, et al. 2020).
 
-![](https://github.com/alicup29/BENG183_2024Fall_Applied-Genomic-Technologies/Final_Paper/Group_15_RNA-Chromatin_Interactions/img5.jpg)
+![](https://github.com/alicup29/beng183proj/blob/main/img5.png)
 
 If a majority of the 3D genome organization in ECs was not affected, then the next question to be asked was– what about changes to RNA-chromatin interactions? In order to tackle this problem, in-situ MApping of RNA-Genome Interaction (iMARGI) was used. iMARGI is used to analyze how RNA molecules physically associate w/ specific regions of DNA at specific genomic loci by crosslinking RNA and local chromatin (DNA), then using NGS to align and determine which RNA interacts with specific chromatin regions.
 
-![](https://github.com/alicup29/BENG183_2024Fall_Applied-Genomic-Technologies/Final_Paper/Group_15_RNA-Chromatin_Interactions/img6.jpg)
+![](https://github.com/alicup29/beng183proj/blob/main/img6.png)
 
 This process produces RNA-DNA hybrids, or “read pairs”. Between day 0 and day 3 & 7 sample ECs, there was a significant difference in the unique iMARGI read pairs classified as interchromosomal, jumping from 34.4% (day 0) to 62.7% (days 3 & 7)-- indicating that diabetes stress conditions “...induced interchromosomal RNA–chromatin interactions in ECs…” (Calandrelli, et al. 2020).
 
 From here, it becomes a matter of asking what type of interchromosomal interaction causes this EC response. Looking further into the obtained iMARGI read pairs (majority RNA ends over DNA ends), the specific locations are a majority RNA-chromatin interactions at super enhancer regions. Specifically, long-intergenic non-coding RNA (a type of chromatin-associated RNA) from the super enhancer “Linc607SE” are the main culprit, and the start of the super enhancer interaction cascade originating from cell stress and ultimately causing EC dysfunction.
 
-![](https://github.com/alicup29/BENG183_2024Fall_Applied-Genomic-Technologies/Final_Paper/Group_15_RNA-Chromatin_Interactions/img7.jpg)
+![](https://github.com/alicup29/beng183proj/blob/main/img7.png)
 
 Overall, it was through a mixture of several key genomic technologies (scRNA-seq, Hi-C, & iMARGI) and analyses of their output data that allowed the scientists to unravel the cascade of RNA-chromatin interactions, with just EC dysfunction.
 
