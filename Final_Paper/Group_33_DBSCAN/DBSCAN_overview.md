@@ -68,12 +68,12 @@ Understanding relative cell positioning is important for biological applications
 https://dsworld.org/content/images/2021/10/dbscan.png
 
 ## References:
-[^1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/ (Reference 1, PMC Article)
+[^1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/ (Reference 2, PMC Article)
 
-[^2]: https://www.nature.com/articles/s41598-023-45190-4 (Reference 2, Nature Article)
+[^2]: https://www.nature.com/articles/s41598-023-45190-4 (Reference 3, Nature Article)
 
 [^3]: https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/ (Reference 3, Georgia Tech Article)
 
-[^4]: https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python (Reference 4, New Horizons Article)
+[^4]: https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python (Reference 1, New Horizons Article)
 
 
