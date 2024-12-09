@@ -23,10 +23,16 @@
 #### Expression Noise
 #### Expression Covariation
 #### Spatial Distribution
+Some RNA transcripts enriched in the perinuclear region, some enriched in the cell periphery, and some scattered throughout the cell.
+It determines the correlation coefficients for the spatial density profiles of all pairs of RNA species and organized these RNAs according to the pairwise correlations again using a hierarchical clustering approach.
+The spatial pattern that observed reflects their cotranslational enrichment at the ER since they pass through the same/similar secretion pathways.
+![](https://github.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/tree/main/Final_Paper/Group_9_MERFISH/Images/spatial.jpeg)
+
 
 ## Applications of MERFISH
+MERFISH (Multiplexed Error-Robust Fluorescence In Situ Hybridization) has revolutionized spatial transcriptomics by enabling the high-throughput and spatially resolved analysis of gene expression. Its ability to detect thousands of RNA species while preserving spatial context has found applications across various fields of biology and medicine.
 #### Developmental Biology
-- **Tissue Morphogenesis**: MERFISH reveals how gene expression drives the formation and differentiation of tissues during embryonic development.**: Normalize data to ensure each feature contributes equally to variance.  
+- **Tissue Morphogenesis**: MERFISH reveals how gene expression drives the formation and differentiation of tissues during embryonic development.
 - **Cell Lineage Tracing**: It enables the study of how single cells contribute to tissue formation, providing a spatial view of developmental trajectories.
 #### Cancer Research
 - **Tumor Microenvironment**: MERFISH maps gene expression in tumor and surrounding stromal cells, providing a spatial understanding of the tumor microenvironment.
