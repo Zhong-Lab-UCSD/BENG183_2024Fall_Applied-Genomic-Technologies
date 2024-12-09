@@ -19,7 +19,7 @@ With so many clustering algorithms available to choose from, a researcher may wo
 
 ### Advantages of DBSCAN:
 * **The number of clusters does not need to be preset beforehand:**
-  
+DBSCAN is much more flexible as an algorithm, since it dynamically determines the optimal number of clusters for a given dataset at runtime, while k-means must have the number of clusters *k* set before beginning the algorithm. This means that the user needs to have more information about the dataset, or try multiple different runs of clustering to determine the best number of k-means clusters, while the same process is unneccesary with DBSCAN.
 * **Irregularly-shaped clusters are more easily identified:**
   
 * **Continuous clusters are favored over clusters with gaps:**
