@@ -168,7 +168,6 @@ Harmony is a toolkit developed for the R platform that focuses on batchc correct
 
 
 # Selected Methods Comparison
-## Summary Table
 <table>
  <tbody>
     <tr>
