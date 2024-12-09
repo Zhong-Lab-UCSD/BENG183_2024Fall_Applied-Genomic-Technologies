@@ -17,6 +17,8 @@ Clustering is a widely used bioinformatics technique that uses an unsupervised m
 ## Comparison with k-means Clustering:
 With so many clustering algorithms available to choose from, a researcher may wonder why someone would use the DBSCAN over another option, such as hierarchical clustering or k-means clustering. Each algorithm has a unique set of strengths and drawbacks, and it is important to choose a strategy that complements your specific dataset, workflow, and experimental goals. 
 
+
+
 ### Advantages of DBSCAN:
 
 ### Limitations of DBSCAN:
@@ -55,4 +57,9 @@ Understanding relative cell positioning is important for biological applications
 [^2]: https://www.nature.com/articles/s41598-023-45190-4 (Reference 2, Nature Article)
 
 https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/ 
+
+https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python 
+
+## Image Credits:
+https://dsworld.org/content/images/2021/10/dbscan.png
 
