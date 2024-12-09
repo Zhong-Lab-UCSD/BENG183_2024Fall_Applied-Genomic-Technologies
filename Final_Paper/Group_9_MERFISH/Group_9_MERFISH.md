@@ -3,7 +3,6 @@
 
 ## Contents
 * [What is MERFISH?](#what-is-merfish)
-* [Procedure](#procedure)
 * [Computational Decoding](#computational-decoding)
 * [Output](#output)
 * [Applications of MERFISH](#applications-of-merfish)
@@ -13,7 +12,6 @@
 ## What is MERFISH?
 #### FISH
 #### MERFISH Overview
-![](https://github.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_9_MERFISH/Images/merfish1.png)
 
 ## Computational Decoding
 MERFISH utilizes a high-throughput encoding system to differentiate between hundreds to thousands of RNA species in a single experiment. The encoding system is as follows:
@@ -45,14 +43,25 @@ Figure 3: Comparison of confidence ratio between detected RNA (blue) and control
 Use the counts for each RNA species as a form of validation. Compare the actual RNA counts for each species with a known method of RNA-seq. If copy numbers show a strong correlation, we have strong evidence of the method's accuracy.
 
 ## Output
+The MERFISH approach allows parallelization of measurements of many individual RNA species and covariation analysis between different RNA species. 
 #### Expression Noise
 #### Expression Covariation
+Analysis of covariations in the expression levels of different genes can reveal which genes are coregulated and elucidate gene regulatory pathways. Using a heirarchical clustering approach, genes can be grouped based on the covariation of their expression analysis data. This can help recognize groups with substantially correlated expression patterns, i.e. they have more correlation in expression patterns with genes in the group compared to those outside. Gene ontology (GO) enrichment analysis can then further look into the functions of these genes and help identify correlated genes/pathways.
+<div align="center">
+<img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/correlation.png" width="45%" style="display: block; margin: auto;"/>
+
+Figure 3: Matrix of the pairwise correlation coefficients of the cell-to-cell variation in expression for the measured genes, shown together with the hierarchical clustering tree. Two of the seven groups are enlarged on the right. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+</div>
+
 #### Spatial Distribution
 Some RNA transcripts enriched in the perinuclear region, some enriched in the cell periphery, and some scattered throughout the cell.
 It determines the correlation coefficients for the spatial density profiles of all pairs of RNA species and organized these RNAs according to the pairwise correlations again using a hierarchical clustering approach.
 The spatial pattern that observed reflects their cotranslational enrichment at the ER since they pass through the same/similar secretion pathways.
-![](https://github.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/tree/main/Final_Paper/Group_9_MERFISH/Images/spatial.jpeg)
+<div align="center">
+<img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/spatial.jpeg" width="60%" style="display: block; margin: auto;"/>
 
+Figure 4: Distinct spatial distributions of RNAs observed in the 140-gene measurements. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+</div>
 
 ## Applications of MERFISH
 MERFISH (Multiplexed Error-Robust Fluorescence In Situ Hybridization) has revolutionized spatial transcriptomics by enabling the high-throughput and spatially resolved analysis of gene expression. Its ability to detect thousands of RNA species while preserving spatial context has found applications across various fields of biology and medicine.
