@@ -29,7 +29,7 @@ These tools typically output statistical metrics like fold change and adjusted p
 ## Volcano Plot
 A volcano plot is a scatter plot designed to visualize gene expression changes between conditions. It combines the magnitude of expression changes (fold change) with their statistical significance (p-value) to highlight the most impactful genes.
 
-![Image](/volcano_plot.png)
+<img width="214" alt="Screen Shot 2024-12-09 at 3 45 37 PM" src="https://github.com/user-attachments/assets/746d2224-d2af-4326-bf56-5d674a913a3e">
 
 The provided image depicts a volcano plot, a scatter plot used to visualize differential gene expression. The x-axis represents the log2 fold change, which indicates the magnitude of change in gene expression between two conditions; values further from zero signify greater changes. The y-axis displays the -log10 p-value, representing the statistical significance of these changes, with higher values indicating stronger confidence in the results. 
 
