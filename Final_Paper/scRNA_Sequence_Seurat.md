@@ -188,25 +188,25 @@ Harmony is a toolkit developed for the R platform that focuses on batch correcti
         <td>Scanpy</td>
         <td><ul><li>Improved Scalability</li><li>Python integration</li><li>Conservation of machine memory</li></ul></td>
         <td><ul><li>More challenging for new users</li><li>Less emphasis on visualization</li><li>Less documentation</li></ul></td>
-        <td>Use scanpy for preprocessor for its speed and memory capability, then switch to Seurat for visuaization and heightened analysis</td>
+        <td>Use scanpy for a preprocessor for its speed and memory capability, then switch to Seurat for visualization and heightened analysis</td>
     </tr>
     <tr>
         <td>Monocle</td>
         <td><ul><li>Dynamic gene expression anaysis</li><li>Support for multi-modal datasets</li><li>Distinct visualizations for trajectories and pseudotime</li></ul></td>
         <td><ul><li>No focus on comprehensive clustering or integration</li><li>Not optimized for large datasets</li><li>LLess versatility in plotting options</li></ul></td>
-        <td>Monocle is used following Seurat's preprocessing for pseudotime and trajectory analysis</td>
+        <td>Monocle is used following Seurat's preprocessing for pseudo time and trajectory analysis</td>
     </tr>
     <tr>
         <td>Cell Ranger</td>
-        <td><ul><li>Ease of use</li><li>Optimized for high performance, esepecially in conjunction with othere 10x Genomics products</li><li>Spatial transcriptomics</li></ul></td>
-        <td><ul><li>Limited flexibility in modifying intermeediary steps</li><li>Requires significant computational resources</li></ul></td>
+        <td><ul><li>Ease of use</li><li>Optimized for high performance, especially in conjunction with other 10x Genomics products</li><li>Spatial transcriptomics</li></ul></td>
+        <td><ul><li>Limited flexibility in modifying intermediary steps</li><li>Requires significant computational resources</li></ul></td>
         <td>Generate a gene-cell matrix with Cell Ranger, then use Seurat to filter out low-quality cells and genes.</td>
     </tr>
     <tr>
         <td>Harmony</td>
-        <td><ul><li>Batch correection and dataset integration</li><li>Avoids overcorrecting and erasing small biological variation</li><li>Uses parallel processing and sparse matrices for large dataset support</li></ul></td>
+        <td><ul><li>Batch correction and dataset integration</li><li>Avoids overcorrecting and erasing small biological variation</li><li>Uses parallel processing and sparse matrices for large dataset support</li></ul></td>
         <td><ul><li>Difficult for new users</li><li>Limited visualization support</li></ul></td>
-        <td>Harmony is useed to correct batch effects before further analysis and/or visualization</td>
+        <td>Harmony is used to correct batch effects before further analysis and/or visualization</td>
     </tr>
  </tbody>
 </table>
