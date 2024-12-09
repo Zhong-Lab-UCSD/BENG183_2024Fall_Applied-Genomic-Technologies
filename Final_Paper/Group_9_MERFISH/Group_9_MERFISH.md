@@ -24,7 +24,7 @@ MERFISH utilizes a high-throughput encoding system to differentiate between hund
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/encoding.jpg" width="45%" style="display: block; margin: auto;"/>
 
-Figure 2: Demonstration of detected RNA spots (general) and how to decode each spot into an RNA species based on fluorescent readout over 16 hybridization rounds. <b> Figure from Kok Hao Chen et al.<b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+Figure 2: Demonstration of detected RNA spots (general) and how to decode each spot into an RNA species based on fluorescent readout over 16 hybridization rounds. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
 </div>
 
 * Considering all possible n-length binary strings, we can encode $2^n - 1$ gene species using this system (removing 1 for the string containing only 0's as this would be an undetectable position). This makes it highly scalable for multiplexing. This means the minimum number of imaging rounds we must perform, n, is $\log_2(x + 1)$ where x is the number of gene species we are interested in.
@@ -38,7 +38,7 @@ Within the encoding scheme designed for the experiment, encode several 'control 
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/validation.jpg" width="30%" style="display: block; margin: auto;"/>
 
-Figure 3: Comparison of confidence ratio between detected RNA (blue) and control words (red) with dashed line representing maximum confidence ratio of control words. <b> Figure from Kok Hao Chen et al.<b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+Figure 3: Comparison of confidence ratio between detected RNA (blue) and control words (red) with dashed line representing maximum confidence ratio of control words. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
 </div>
 
 #### RNA-Seq Reference
