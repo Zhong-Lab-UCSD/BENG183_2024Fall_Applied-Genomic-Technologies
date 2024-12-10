@@ -1,9 +1,9 @@
 # 1.1 MEME (Multiple Expectation Maximization for Motif Elicitation) 
-1. [Introduction](#111)
-    1.1. [About MEME Suite](#1111)
-    1.2. [Importance of Motif-based Analysis](#1112)
-2. [Overview of MEME Parameters](#112)
-    2.1. [Motif Discovery Modes](#1121)
+1. [Introduction](#111)<br>
+    1.1. [About MEME Suite](#1111)<br>
+    1.2. [Importance of Motif-based Analysis](#1112)<br>
+2. [Overview of MEME Parameters](#112)<br>
+    2.1. [Motif Discovery Modes](#1121)<br>
 3. [Algorithm](#113)
 5. [Example](#114)
 6. [Limitations](115)
@@ -32,8 +32,8 @@ There are three types of motif discovery modes to choose from depending on the c
 | Motif Discovery Mode | Description | Basic Usage |
 |-----------|:----------------:|----:              |
 | Classic Mode | Oreos!           | - Input: One set of sequences<br> - Output: Motifs enriched in this set |
-| Discriminative Mode | Otter Pop        | It's hot out baby |
-| Differential Enrichment Mode | IPA              | I need it. |
+| Discriminative Mode | Otter Pop        | - Input: Two sets of sequences, a primary (target) set and secondary (control) set<br> - Output: Motifs enriched in the primary set relative to the control set |
+| Differential Enrichment Mode | IPA              | - Input: Two sets of sequences, a primary (target) set and secondary (control) set<br> - Output: Motifs enriched in the primary set relative to the control set |
 
 ## 1.1.3 MEME Algorithm<a name="113"></a>
 
