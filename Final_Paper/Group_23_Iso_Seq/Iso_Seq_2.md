@@ -12,36 +12,23 @@ Classifying isoforms is essential in genomics and transcriptomics because it hel
 
 **SQANTI3** (Structural and Quality Annotation of Novel Transcript Isoforms 3) is a comprehensive tool designed for the annotation and quality assessment of transcript isoforms obtained from long-read sequencing technologies, such as PacBio Iso-Seq or Oxford Nanopore. It is particularly useful for analyzing full-length transcripts and assessing their structural accuracy and functional relevance.
 
-<style>
-  .center-figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-</style>
-
-<div class="center-figure">
+<div style="text-align: center;">
   <figure>
     <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/SQANTI3.png" width="600"/>
-    <figcaption>
-      <strong>Fig. 7: SQANTI3 overview</strong>
-    </figcaption>
+    <figcaption><strong>Fig. 7: SQANTI3 overview</strong></figcaption>
   </figure>
 </div>
-
 
 
 To get the classification information, running sqanti3_qc.py is enough. Here is the breifly instruction:
 
 ```shell
 python sqanti3_qc.py  sample1.collapsed.sorted.gff \
-				gencode.v39.annotation.sorted.gtf \
-				human_GRCh38_no_alt_analysis_set.fasta \
-				-t 20 -fl sample1.collapsed.abundance.txt -d $outdir --CAGE_peak \
-				refTSS_v3.3_human_coordinate.hg38.sorted.bed --polyA_motif_list \
-				polyA.list.txt --report both --isoAnnotLite                    
+			gencode.v39.annotation.sorted.gtf \
+			human_GRCh38_no_alt_analysis_set.fasta \
+			-t 20 -fl sample1.collapsed.abundance.txt -d $outdir --CAGE_peak \
+			refTSS_v3.3_human_coordinate.hg38.sorted.bed --polyA_motif_list \
+			polyA.list.txt --report both --isoAnnotLite                    
 ```
 Positional arguments:
 1. isoforms
@@ -67,11 +54,11 @@ As a result of running SQANTI3 QC, the tool will create a series of output files
 
 Columns 2:`chrom`: chromosome.
 
-Columns 3:``strand`: strand.
+Columns 3:`strand`: strand.
 
-Columns 4:``length`: isoform length.
+Columns 4:`length`: isoform length.
 
-**Columns 6**:``structural_category`: one of the categories ["full-splice_match", "incomplete-splice_match", "novel_in_catalog", "novel_not_in_catalog", "genic", "antisense", "fusion", "intergenic", "genic_intron"]
+**Columns 6**:`structural_category`: one of the categories ["full-splice_match", "incomplete-splice_match", "novel_in_catalog", "novel_not_in_catalog", "genic", "antisense", "fusion", "intergenic", "genic_intron"]
 
 **Columns 15**:`subcategory`: additional splicing categorization, separated by semi-colons.
 
