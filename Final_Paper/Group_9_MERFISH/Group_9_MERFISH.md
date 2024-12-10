@@ -12,6 +12,11 @@
 ## What is MERFISH?
 MERFISH stands for Multiplexed Error-Robust Fluorescence In Situ Hybridization. It's an imaging technqiue and spatial transcriptomics technology that measures RNA expression and and location in tissue. It was pubished in 2015 by Chen et al in Science.
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/overview.jpeg" width="45%" style="display: block; margin: auto;"/>
+Figure 2: Demonstration of detected RNA spots (general) and how to decode each spot into an RNA species based on fluorescent readout over 16 hybridization rounds. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+</div>
+
 ## Procedure
 MERFISH is built upon small molecule fluorescence in situ hybridization (smFISH) technology, but uses a cominatorial barcoding scheme (which will be explained later) which allows for imaging of thousands of RNA species at once.
 
@@ -19,12 +24,17 @@ At a very high level, MERFISH involves only a few steps. First, the sample is tr
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/probes.jpeg" width="45%" style="display: block; margin: auto;"/>
+Figure 2: Demonstration of detected RNA spots (general) and how to decode each spot into an RNA species based on fluorescent readout over 16 hybridization rounds. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+</div>
 
 Encoding probes contain
-  1. 1 target sequence: RNA sequence complementary to the mRNA that encoding probe is measuring
-  2. 2 readout sequences: RNA sequence complementary to a specific fluorescently labeled readout probe.
+  1. target sequence: RNA sequence complementary to the mRNA that encoding probe is measuring
+  2. readout sequences: RNA sequence complementary to a specific fluorescently labeled readout probe
 
-All of the encoding probes with the same target sequence, when put all together, will have a unique combination of out readout sequences and will therefore bind a unique combination of fluorescently labeled readout probes. Therefore, each mRNA species that we want to measure will have its own fluorescent fingerprint that we will use to identify it. Once we treat our sample with all of our fluorescently labeled readout probes, taking an image to record the fluorescence coming from the sample, we should have the information we need.
+All of the encoding probes with the same target sequence, when put together, will have a unique combination of readout sequences and will therefore bind a unique combination of fluorescently labeled readout probes. Therefore, each mRNA species that we want to measure will have its own fluorescent fingerprint that we can use to identify it.
+
+After binding our encoding probes to the sample's mRNA, we treat our sample with each of our fluorescently labeled readout probes.
+Between readout probes, we take an image to record the fluorescence coming from the sample and then treat with photobleach to wash away the bound readout probes.
 
 ## Computational Decoding
 MERFISH utilizes a high-throughput encoding system to differentiate between hundreds to thousands of RNA species in a single experiment. The encoding system is as follows:
