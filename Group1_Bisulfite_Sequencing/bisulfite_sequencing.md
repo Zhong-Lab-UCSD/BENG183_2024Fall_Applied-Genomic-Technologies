@@ -14,6 +14,8 @@ In this chapter, we explore the principles, experimental workflow, bioinformatic
 
 ### **2.1 DNA Methylation**
 
+![Figure X](dna_methylation.jpg)
+
 DNA methylation typically involves adding a methyl group to the 5th carbon of cytosine bases, mediated by DNA methyltransferases (DNMTs). This modification primarily occurs in CpG dinucleotides, though non-CpG methylation is also observed in specific cell types, such as embryonic stem cells.
 
 Methylation is critical for processes like:
@@ -25,7 +27,7 @@ Methylation is critical for processes like:
 
 ### **2.2 Chemistry of Bisulfite Conversion**
 
-![Figure 1](bisulfite_chemistry.jpeg)
+![Figure 1](bisulfite_chemistry.jpg)
 
 As shown in *figure 1*, the core principle of bisulfite sequencing lies in the selective chemical conversion of cytosine to uracil, while methylated cytosine remains unaltered. Bisulfite reacts with cytosine to produce a sulfonated intermediate, which deaminates to uracil under alkaline conditions. Methylated cytosines are resistant to this reaction, preserving their identity.
 
