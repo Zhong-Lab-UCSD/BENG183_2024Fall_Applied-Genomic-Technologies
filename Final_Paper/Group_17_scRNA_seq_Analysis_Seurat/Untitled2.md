@@ -2,10 +2,16 @@
 
 By: Joseph Hwang, Andrew Quach, Alisa Vu 
 
----
+## **Table of Contents**
+1. [Introduction](#Introduction)
+2. [Learning Objective](#LearningObjective)
+3. [Workflow](#Workflow)
+4. [Real World Applications](#RealWorld)
+5. [Strengths](#Strengths)
+6. [Limitations](#Limitations)
+7. [Conclusion](#Conclusion)
 
-
-## **Introduction<a name="Introduction"></a>**
+# **Introduction<a name="Introduction"></a>**
 
 Imagine standing inches away from a large painting where all you see are thousands of individually-colored dots. At first glance, you might think the dots are random and chaotic. Stepping back, however, you realize the tiny dots actually form a coherent picture. This style of painting was created using "Pointillism", a technique partially developed by French Artist Georges Pierre Seurat. 
 
@@ -27,7 +33,8 @@ Seurat is a very popular tool to use when working with scRNA-seq data, because i
 
 In this chapter, we will analyze scRNA-seq data of Peripheral Blood Mononuclear Cells (PMBC) from 10X Genomics. By analyzing single-cell data of PBMCs, we can reveal cell heterogeneity by identifying distinct immune cell types based on their gene expression profiles. Note that for our analysis, we are not running CellRanger on the raw FASTQ file (raw form of scRNA-seq data), but instead starting from the counts matrix. The counts matrix can be found [here](https://cf.10xgenomics.com/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz). 
 
-## **Workflow<a name="Workflow"></a>**
+
+# **Workflow<a name="Workflow"></a>**
 
 - Loading single-cell data into Seurat
 - Quality Control and Filtering
@@ -101,14 +108,15 @@ We can visualize feature-feature relationships to get an understanding of our da
 # QC metrics as a violin plot
 VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 ```
-# IMAGE
+![qc2-1](https://github.com/user-attachments/assets/8fa9b3e8-8578-41b0-8ff6-3963ec947cf0)
+
 ```
 # feature-feature relationships 
 plot1 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "percent.mt")
 plot2 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
 plot1 + plot2
 ```
-# IMAGE
+![qc2-2](https://github.com/user-attachments/assets/e765260a-79d8-4d10-af87-82808ba70401)
 
 In our case, we filter cells that have over 2,500 or less than 200 unique genes. In addition, we filter cells that have greater than 5% mitochondrial counts. 
 ```
@@ -116,7 +124,8 @@ pbmc <- subset(pbmc, subset = nFeature_RNA > 200 & nFeature_RNA < 2500 & percent
 ```
 ### 3. Normalization and Scaling
 Finally, we want to normalize the data so that we can compare gene expressions across different cells. One way of doing this is by employing global-scaling normalization or log normalization. This method normalizes the expression value of a given gene i in cell j using the formula:
-# IMAGE
+
+![normalized_expression_formula_corrected](https://github.com/user-attachments/assets/d2362295-054c-4718-8f5a-ed77ab9aa968)
 
 In Seurat, we can use `NormalizeData()` to normalize our values.
 ```
@@ -137,7 +146,8 @@ We can then use an elbow plot, which displays a ranking of principal components 
 ```
 ElbowPlot(pbmc)
 ```
-![](elbow.PNG) 
+![elbow](https://github.com/user-attachments/assets/0cb2f7db-6407-425a-9946-0f543230fbf4)
+
 
 In this example, the elbow exists between PC 1-10, suggesting that most true signal is captured here and therefore we only want to perform downstream analysis on the first 10 PCs.
 
@@ -159,54 +169,78 @@ Seurat allows us to use non-linear dimensional reduction techniques like UMAP to
 pbmc <- RunUMAP(pbmc, dims = 1:10)
 DimPlot(pbmc, reduction = "umap")
 ```
-![clustering](clustering.PNG)
+
+![umapplot-1](https://github.com/user-attachments/assets/d11b154c-4754-4792-a7b8-9b91e175dc9f)
 
 Each dot in the graph represents a cell.
 
 ### 7. Identifying Marker Genes and Cell Type Annotation
-These were the distinct cells we found in our data. Assign biological meaning to clusters based on marker genes. For example, if a cluster has high expression of CD3E, we might label it as T cells.
+Finally, we need to assign cell types to our clusters. One way to do this is to use marker genes that are known to be expressed in certain cell types. Conveniently, Seurat has a function called `FindAllMarkers()` that identifies positive and negative markers for all clusters. For example, MS4A1 is a marker for B cells, CD8A is a marker for CD8+ T, etc.
+```
+pbmc.markers <- FindAllMarkers(pbmc, only.pos = TRUE)
+pbmc.markers %>%
+    group_by(cluster) %>%
+    dplyr::filter(avg_log2FC > 1)
+```
 
-![markers](Markers.PNG)
+For our dataset, we can use canonical markers to identify our clustering to known cell types:
+![Screenshot 2024-12-10 111306](https://github.com/user-attachments/assets/933bb0e2-c7d7-45e2-9626-5aeae0c499a4)
+
+After using expression patterns of marker genes to assign our clusters to cell types, we can use the command shown below to label each cluster on the plot. 
+```
+new.cluster.ids <- c("Naive CD4 T", "CD14+ Mono", "Memory CD4 T", "B", "CD8 T", "FCGR3A+ Mono",
+    "NK", "DC", "Platelet")
+names(new.cluster.ids) <- levels(pbmc)
+pbmc <- RenameIdents(pbmc, new.cluster.ids)
+DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
+```
+
+![labelplot-1](https://github.com/user-attachments/assets/9d79e5cf-046f-40af-91b0-5c6c40495e64)
+
+# Real World Applications of Seurat<a name="RealWorld"></a>
+-  Cancer Research
+  - Seurat can be used to understand tumor heterogeneity by identifying distinct cell populations within a tumor. For example, researchers can target rare cancer stem cells, assess immune infiltration, and map gene expression between healthy and diseased cells.
+- Developmental Biology:
+  - Cell differentation over time during development can also be studied using Seurat. Through analysis of gene expression dynamics, lineage trajectories and roles of regulators in embryonic and organ development can be revealed.
+- Immune Profiling:
+  - Seurat can also be used in characterizing immune cell diversity in health and disease.
+- Integration Across Datasets:
+  - Additionally, Seurat can be used to combine datasets from different experiments such as combining RNA and protein data to improve analyses through a more comprehensive appraoch.
+
+# **Strengths of Seurat<a name="Strengths"></a>**
+- Scalability
+  - Handles large datasets with thousands of cells and hundreds of genes.
+
+- Visualization Power
+  - Provides methods such as Uniform Manifold Approfiximation and Projection (UMAP) and t-distributed Stochastic Neighbor Embedding (t-SNE) for visualizing data. This allows for researchers to understand relationships between cell populations and detect patterns.
+
+- Flexibility
+  - Supports integration of other R packages and accomodates multimodal data.
+  - Parts of Seurat can also be installed as the program is modular allowing for just the necessities to be installed, saving space and time.
+
+- Extensive Documentation
+  - As an R program, there is a lot of online resources and a large community to ask questions to. This makes Serurat very accessible to larger amount of researchers with varying expertise levels.
 
 
-## Real World Applications of Seurat<a name="RealWorld"></a>
-Single-cell RNA sequencing has revolutionized our ability to study cellular heterogeneity, and Seurat is one of the widely used tools for analyzing that heterogeneity. Its applications extend across various areas of biology:
-### Cancer Research
-Seurat can be used to understand tumor heterogeneity by identifying distinct cell populations within a tumor. For example, researchers can target rare cancer stem cells, assess immune infiltration, and map gene expression between healthy and diseased cells.
-### Developmental Biology:
-Cell differentation over time during development can also be studied using Seurat. Through analysis of gene expression dynamics, lineage trajectories and roles of regulators in embryonic and organ development can be revealed.
-### Immune Profiling:
-Seurat can also be used in characterizing immune cell diversity in health and disease.
-### Integration Across Datasets:
-Additionally, Seurat can be used to combine datasets from different experiments such as combining RNA and protein data to improve analyses through a more comprehensive appraoch.
+# **Limitations of Seurat<a name="Limitations"></a>**
+- Technical Expertise:
+  - Due to Seurat being an R program, users need to be proficient in R in order to fully utilize Seurat. However, there is a lot of resources to get help.
 
-## **Strengths of Seurat<a name="Strengths"></a>**
-Scalability
-- Handles large datasets with thousands of cells and hundreds of genes.
+- Computational Demands:
+  - Although Seurat can handle large datasets there will be siginficant memory and processing power usage because of it.
 
-Visualization Power
-- Provides methods such as Uniform Manifold Approfiximation and Projection (UMAP) and t-distributed Stochastic Neighbor Embedding (t-SNE) for visualizing data. This allows for researchers to understand relationships between cell populations and detect patterns.
+- Interpretation Challenges:
+  - Clustering results are sensitive to normalization and parameters that are set when running Seurat. Users have to know what they are looking for in the data.
 
-Flexibility
-- Supports integration of other R packages and accomodates multimodal data.
-- Parts of Seurat can also be installed as the program is modular allowing for just the necessities to be installed, saving space and time.
-
-Extensive Documentation
-- As an R program, there is a lot of online resources and a large community to ask questions to. This makes Serurat very accessible to larger amount of researchers with varying expertise levels.
-
-
-## **Limitations of Seurat<a name="Limitations"></a>**
-Technical Expertise:
-- Due to Seurat being an R program, users need to be proficient in R in order to fully utilize Seurat. However, there is a lot of resources to get help.
-
-Computational Demands:
-- Although Seurat can handle large datasets there will be siginficant memory and processing power usage because of it.
-
-Interpretation Challenges:
-- Clustering results are sensitive to normalization and parameters that are set when running Seurat. Users have to know what they are looking for in the data.
-
-## **Conclusion<a name="Conclusion"></a>**
+# **Conclusion<a name="Conclusion"></a>**
 Despite some limitations, Seurat is indispensible for uncovering biological insights from scRNA-seq data. Its flexibility, scalability, and visualization capabilites make it a valuable tool for uncovering biological insights in various fields from cancer to developmental biology. With continued support from the community and its creators, Seurat will remain a tool that all bioinformaticists need in their toolbelt.
 
+## **References**
+1. Satija Lab. "Guided Clustering Tutorial." Seurat v5, Satija Lab, https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
+2. Satija Lab. "Installation Guide for Seurat v5." Seurat v5, Satija Lab, Accessed 10 Dec. 2024, https://satijalab.org/seurat/articles/install_v5
+3. Principle Gallery. "Technique Tuesday: Pointillism Take Two." Principle Gallery, https://www.principlegallery.com/technique-tuesday-pointillism-take-two/
+4. Wikipedia contributors. "Georges Seurat." Wikipedia, Wikimedia Foundation, https://en.wikipedia.org/wiki/Georges_Seurat
+5. Jovic, Dragomirka et al. “Single-cell RNA sequencing technologies and applications: A brief overview.” Clinical and translational medicine vol. 12,3 (2022). https://doi.org/10.1002/ctm2.694
+7. 10x Genomics. "3k PBMCs from a Healthy Donor (v1.1)." 10x Genomics, https://www.10xgenomics.com/datasets/3-k-pbm-cs-from-a-healthy-donor-1-standard-1-1-0
 
 
