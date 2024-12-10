@@ -197,7 +197,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 
 ![labelplot-1](https://github.com/user-attachments/assets/9d79e5cf-046f-40af-91b0-5c6c40495e64)
 
-# Real World Applications of Seurat<a name="real-world"></a>
+# Real World Applications<a name="real-world"></a>
 -  Cancer Research
   - Seurat can be used to understand tumor heterogeneity by identifying distinct cell populations within a tumor. For example, researchers can target rare cancer stem cells, assess immune infiltration, and map gene expression between healthy and diseased cells.
 - Developmental Biology:
@@ -207,7 +207,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 - Integration Across Datasets:
   - Additionally, Seurat can be used to combine datasets from different experiments such as combining RNA and protein data to improve analyses through a more comprehensive appraoch.
 
-# **Strengths of Seurat<a name="strengths"></a>**
+# **Strengths<a name="strengths"></a>**
 - Scalability
   - Handles large datasets with thousands of cells and hundreds of genes.
 
@@ -222,7 +222,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
   - As an R program, there is a lot of online resources and a large community to ask questions to. This makes Serurat very accessible to larger amount of researchers with varying expertise levels.
 
 
-# **Limitations of Seurat<a name="limitations"></a>**
+# **Limitations<a name="limitations"></a>**
 - Technical Expertise:
   - Due to Seurat being an R program, users need to be proficient in R in order to fully utilize Seurat. However, there is a lot of resources to get help.
 
