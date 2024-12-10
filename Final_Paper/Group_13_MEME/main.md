@@ -31,9 +31,9 @@ The MEME tool’s basic function is to discover ungapped motifs in inputted grou
 There are three types of motif discovery modes to choose from depending on the context of the problem [4]:
 | Motif Discovery Mode | Description | Basic Usage |
 |----------------|----------------|----------------|
-| Classic Mode | Oreos!           | <ul><li>Input: One set of sequences<li><u1>Output: Motifs enriched in this set |
-| Discriminative Mode | Otter Pop        | <ul><li>Input: Two sets of sequences, a primary (target) set and secondary (control) set<li><u1>Output: Motifs enriched in the primary set relative to the control set |
-| Differential Enrichment Mode | IPA              | <ul><li>Input: Two sets of sequences, a primary (target) set and secondary (control) set<li><u1>Output: Motifs enriched in the primary set relative to the control set |
+| Classic Mode | In this mode, MEME measures enrichment relative to a (higher order) random model based on freqeuncies of the letters in the provided sequences. It could also be relative to frequencies based on a custom background model, which can be provided through the advanced options. | <ul><li>Input: One set of sequences<li><u1>Output: Motifs enriched in this set |
+| Discriminative Mode | This mode searches for motifs that appear more in the target set than the control set. Position-specific priors (PSPs) are generated for the target set, which are used to focus MEME on patterns in the target set that do not appear in the control set. | <ul><li>Input: Two sets of sequences, a primary (target) set and secondary (control) set<li><u1>Output: Motifs enriched in the primary set relative to the control set |
+| Differential Enrichment Mode | Similar to Discriminative Mode, this mode also counts how often motifs appear in the target set compared to the control set. It gives a higher score to motifs that appear more frequently in comparison of the two sets. | <ul><li>Input: Two sets of sequences, a primary (target) set and secondary (control) set<li><u1>Output: Motifs enriched in the primary set relative to the control set |
 
 ## 1.1.3 MEME Algorithm<a name="113"></a>
 
