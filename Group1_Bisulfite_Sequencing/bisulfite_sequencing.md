@@ -156,7 +156,7 @@ The first step in the workflow involves assessing the quality of raw sequencing 
         ```
 ### **4.2 Read Alignment**
 
-![Figure 4](bioinformatics_approach.jpg)
+![Figure 4](bioinformatics_approach.png)
 
 Mapping bisulfite-converted reads to a reference genome is a critical step. The unique C-to-T conversions introduced during bisulfite treatment require specialized aligners.
 
