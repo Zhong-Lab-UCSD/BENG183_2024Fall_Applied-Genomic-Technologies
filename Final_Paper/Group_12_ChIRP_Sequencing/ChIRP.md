@@ -19,7 +19,7 @@
 4. **Reversal of Crosslinks**: The crosslinks between protein and DNA are reversed, and the DNA is purified.
 5. **Library Preparation and Sequencing**: The DNA fragments are prepared into a sequencing library and subjected to high-throughput sequencing.
 6. **Data Analysis**: Sequencing reads are aligned to a reference genome, and peaks are identified to locate protein-DNA interaction sites.
-![ChIP-seq Workflow](chip-protocol-steps.png)
+<img src="chip-protocol-steps.png" alt="ChIP-seq Workflow" width="500">
 
 ---
 
