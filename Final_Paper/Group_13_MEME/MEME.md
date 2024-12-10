@@ -1,9 +1,9 @@
 # 1.1 MEME (Multiple Expectation Maximization for Motif Elicitation) 
-1. [Introduction](#111)<br>
-    1.1. [About MEME Suite](#1111)<br>
+1. [Introduction](#111)
+    1.1. [About MEME Suite](#1111)
     1.2. [Importance of Motif-based Analysis](#1112)
-2. [Overview of MEME Parameters](#112)<br>
-    2.1. [Motif Discovery Modes](#1121)<br>
+2. [Overview of MEME Parameters](#112)
+    2.1. [Motif Discovery Modes](#1121)
 3. [Algorithm](#113)
 5. [Example](#114)
 6. [Limitations](115)
@@ -31,7 +31,7 @@ The MEME tool’s basic function is to discover ungapped motifs in inputted grou
 There are three types of motif discovery modes to choose from depending on the context of the problem [4]:
 | Motif Discovery Mode | Description | Basic Usage |
 |-----------|:----------------:|----:              |
-| Classic Mode | Oreos!           | - Input: One set of sequences - Output: Motifs enriched in this set |
+| Classic Mode | Oreos!           | - Input: One set of sequences<br> - Output: Motifs enriched in this set |
 | Discriminative Mode | Otter Pop        | It's hot out baby |
 | Differential Enrichment Mode | IPA              | I need it. |
 
