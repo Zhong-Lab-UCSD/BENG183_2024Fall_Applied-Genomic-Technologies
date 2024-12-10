@@ -4,12 +4,12 @@
 - Nir Reitner
 
 ## Table of Contents
-- [Case Study: "Chromatin Occupancy of Ppp1r1b-lncRNA Genome-Wide Using Chromatin Isolation by RNA Purification"](#case-study-chromatin-occupancy-of-ppp1r1b-lncrna-genome-wide-using-chromatin-isolation-by-rna-purification)
+- [Case Study: "Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"](#case-study-exploration-and-bioinformatic-prediction-for-profile-of-mrna-bound-to-circular-rna-btbd7_hsa_circ_0000563-in-coronary-artery-disease)
 
 
-## Case Study: "Chromatin Occupancy of Ppp1r1b-lncRNA Genome-Wide Using Chromatin Isolation by RNA Purification"
+## Case Study: "Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"
 
-This case explored the bioinformatic prediction for the profile of mRNA bound to the circular RNA BTBD7_hsa_circ_0000563. Using an alternative approach, ChIRP-sequencing was used to interrogate these ribonucleoprotein complexes and subsequently employ functional assays to explore how these candidate mRNAs directly impact the disease process. This led to the identification of 221 mRNAs that bound the circular RNA. Thus, this highlights the power of ChIRP-sequencing to investigate RNA-mediated regulatory networks and downstream pathway effects in association with CAD. ChIRP sequencing identified the differentially expressed genes (DEGs) found and shown in Figure 2 to substantiate the findings. The heatmap visually highlights clear differences in expression between the target group (BTBD7 circular RNA) and the control group, showcasing the successful isolation of RNA-binding partners while minimizing background noise. The volcano plot further supports these findings, displaying a subset of significantly upregulated mRNAs, which underscores the role of the circular RNA in binding and regulating transcripts involved in coronary artery disease.
+This case explored the bioinformatic prediction for the profile of mRNA bound to the circular RNA BTBD7_hsa_circ_0000563. Using an alternative approach, ChIRP-sequencing was used to interrogate these ribonucleoprotein complexes and subsequently employ functional assays to explore how these candidate mRNAs directly impact the disease process. This led to the identification of 221 mRNAs that bound the circular RNA. This case study highlights the power of ChIRP-sequencing to investigate RNA-mediated regulatory networks and downstream pathway effects in association with CAD.
 
 ### Key Findings:
 1. **Objective**: To investigate the role of the circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease by identifying mRNAs bound to it and analyzing their functional significance in disease progression.
@@ -24,6 +24,9 @@ This case explored the bioinformatic prediction for the profile of mRNA bound to
    - Highlights the role of circular RNAs in regulating downstream pathways and their impact on disease progression.
 
 ### Figures:
+*Figure 2**: 
+![Figure 2: Heatmap and Volcano Plot](figure2.png)
+
 - Figure 2 shows the differentially expressed genes identified through the ChIRP-Seq. The heatmap provides a qualitative outlook on the RNA binding, the volcano plot shows the quantitative data of the experiment. 
 1. **Heatmap**:
    - Visualizes expression differences between BTBD7 circular RNA and control groups.
@@ -39,7 +42,7 @@ This case explored the bioinformatic prediction for the profile of mRNA bound to
    - Provides quantitative evidence of the circular RNA’s regulatory role in coronary artery disease.
 
 ### Implications:
-This case study highlights the potential of ChIRP-sequencing in unraveling RNA-mediated regulatory mechanisms. By mapping RNA-chromatin interactions and analyzing their role in regulating gene expression and chromatin dynamics, researchers can gain deeper insights into biological processes and disease progression.
+This case study highlights the potential of ChIRP-sequencing in unraveling RNA-mediated regulatory mechanisms. By mapping RNA-chromatin interactions and analyzing their role in regulating gene expression and chromatin dynamics, we are closer to understanding the mechanisms behind diseases and their progression.
 
 *"Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"* ([DOI link]([https://doi.org/10.3390/cells12242805](https://doi.org/10.1186/s12872-024-03711-7))).
 
