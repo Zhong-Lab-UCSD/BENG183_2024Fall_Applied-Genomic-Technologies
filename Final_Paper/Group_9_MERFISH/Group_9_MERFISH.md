@@ -3,33 +3,37 @@
 
 ## Contents
 * [What is MERFISH?](#what-is-merfish)
+* [Procedure](#procedure)
 * [Computational Decoding](#computational-decoding)
+* [Validation](#validation)
 * [Output](#output)
 * [Applications of MERFISH](#applications-of-merfish)
 * [Conclusion](#conclusion)
 * [References](#references)
 
 ## What is MERFISH?
-MERFISH is an imaging technqiue and spatial transcriptomics technology that measures RNA expression and and location in tissue. It was pubished in 2015 by Chen et al in Science.
+MERFISH is an imaging technique and spatial transcriptomics technology that measures RNA expression and and location in a tissue. It was pubished in 2015 by Chen et al in Science.
+
+MERFISH is built upon small molecule fluorescence in situ hybridization (smFISH) technology, but uses a combinatorial barcoding scheme, which allows for imaging of thousands of RNA species at once at single-cell resolution.
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/overview.jpeg" width="45%" style="display: block; margin: auto;"/>
+  
 Figure 1: Overview of MERFISH process and output. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
 </div>
 
 ## Procedure
-MERFISH is built upon small molecule fluorescence in situ hybridization (smFISH) technology, but uses a cominatorial barcoding scheme (which will be explained later) which allows for imaging of thousands of RNA species at once.
-
 At a very high level, MERFISH involves only a few steps. First, the sample is treated with encoding probes which will bind to specific mRNA. Next, the sample is treated with readout probes which will bind to specific encoding probes and emit fluorescence, which is imaged and can then be decoded to detect and quantify RNA species while preserving spatial information.
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/probes.jpeg" width="45%" style="display: block; margin: auto;"/>
+  
 Figure 2: Encoding probes, made up of target and readout sequences, bind RNA species as well as readout probes over successive rounds of readout hybridization. <b> Figure from Moffit et al.</b> <i>PNAS</i> <b>113</b>, 1612826113 (2016). <a href="https://doi.org/10.1073/pnas.1612826113">DOI:10.1073/pnas.1612826113</a>
 </div>
 
 Encoding probes contain
-  1. target sequence: RNA sequence complementary to the mRNA that encoding probe is measuring
-  2. readout sequences: RNA sequence complementary to a specific fluorescently labeled readout probe
+  1. Target sequence: RNA sequence complementary to the mRNA that encoding probe is measuring
+  2. Readout sequences: RNA sequence complementary to a specific fluorescently labeled readout probe
 
 All of the encoding probes with the same target sequence, when put together, will have a unique combination of readout sequences and will therefore bind a unique combination of fluorescently labeled readout probes. Therefore, each mRNA species that we want to measure will have its own fluorescent fingerprint that we can use to identify it.
 
@@ -116,3 +120,4 @@ MERFISH exemplifies the evolution of biological research tools, moving beyond st
 1. [Kok Hao Chen et al., Spatially resolved, highly multiplexed RNA profiling in single cells, Science](https://www.science.org/doi/10.1126/science.aaa6090)
 2. [Miller et al., Space-feature measures on meshes for mapping spatial transcriptomics, Medical Image Analysis](https://www.sciencedirect.com/science/article/pii/S1361841523003286?casa_token=ZqXh4KXN5sEAAAAA:QbjS1rtmAQC0Vo4oWw7EceIGqjlB2ZW4n4OvEGTubU225DrdeRs8NogIdwxOdNJ_H1dix1b4mw#b73)
 3. [Developing Spatial Transcriptomics Data Analysis Solutions to Empower Researchers, Vizgen](https://vizgen.com/developing-spatial-transcriptomics-data-analysis-solutions-to-empower-researchers/)
+4. [Moffitt et al., High-throughput single-cell gene-expression profiling with multiplexed error-robust fluorescence in situ hybridization, PNAS](https://doi.org/10.1073/pnas.1612826113)
