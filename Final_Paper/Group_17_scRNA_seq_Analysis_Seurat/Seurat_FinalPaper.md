@@ -3,13 +3,13 @@
 By: Joseph Hwang, Andrew Quach, Alisa Vu 
 
 ## **Table of Contents**
-1. [Introduction](#Introduction)
-2. [Learning Objective](#LearningObjective)
-3. [Workflow](#Workflow)
-4. [Real World Applications](#RealWorld)
-5. [Strengths](#Strengths)
-6. [Limitations](#Limitations)
-7. [Conclusion](#Conclusion)
+1. [Introduction](#introduction)
+2. [Learning Objective](#learning-objective)
+3. [Workflow](#workflow)
+4. [Real World Applications](#real-world)
+5. [Strengths](#strengths)
+6. [Limitations](#limitations)
+7. [Conclusion](#conclusion)
 
 # **Introduction<a name="Introduction"></a>**
 
@@ -29,12 +29,12 @@ Single-cell RNA sequencing is a relatively new sequencing technology that was fi
 
 Seurat is a very popular tool to use when working with scRNA-seq data, because it provides numerous utilities and an end-to-end workflow. Seurat can be used to do data preprocessing, dimensionality reduction, clustering, differential expression analysis, data integration, and visualization. As a result, it is a popular choice of tool when trying to extract biological meaningful insights from scRNA-seq data, especially when working with hetergeneous samples and high-dimensional data. While Seurat is an R package, there are alternatives for other programming languages, such as Scanpy for Python and Harmony for Python/R.
 
-# **Learning Objective**<a name="LearningObjective"></a>
+# **Learning Objective**<a name="learning-objective"></a>
 
 In this chapter, we will analyze scRNA-seq data of Peripheral Blood Mononuclear Cells (PMBC) from 10X Genomics. By analyzing single-cell data of PBMCs, we can reveal cell heterogeneity by identifying distinct immune cell types based on their gene expression profiles. Note that for our analysis, we are not running CellRanger on the raw FASTQ file (raw form of scRNA-seq data), but instead starting from the counts matrix. The counts matrix can be found [here](https://cf.10xgenomics.com/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz). 
 
 
-# **Workflow<a name="Workflow"></a>**
+# **Workflow<a name="workflow"></a>**
 
 - Loading single-cell data into Seurat
 - Quality Control and Filtering
@@ -197,7 +197,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 
 ![labelplot-1](https://github.com/user-attachments/assets/9d79e5cf-046f-40af-91b0-5c6c40495e64)
 
-# Real World Applications of Seurat<a name="RealWorld"></a>
+# Real World Applications of Seurat<a name="real-world"></a>
 -  Cancer Research
   - Seurat can be used to understand tumor heterogeneity by identifying distinct cell populations within a tumor. For example, researchers can target rare cancer stem cells, assess immune infiltration, and map gene expression between healthy and diseased cells.
 - Developmental Biology:
@@ -207,7 +207,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 - Integration Across Datasets:
   - Additionally, Seurat can be used to combine datasets from different experiments such as combining RNA and protein data to improve analyses through a more comprehensive appraoch.
 
-# **Strengths of Seurat<a name="Strengths"></a>**
+# **Strengths of Seurat<a name="strengths"></a>**
 - Scalability
   - Handles large datasets with thousands of cells and hundreds of genes.
 
@@ -222,7 +222,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
   - As an R program, there is a lot of online resources and a large community to ask questions to. This makes Serurat very accessible to larger amount of researchers with varying expertise levels.
 
 
-# **Limitations of Seurat<a name="Limitations"></a>**
+# **Limitations of Seurat<a name="limitations"></a>**
 - Technical Expertise:
   - Due to Seurat being an R program, users need to be proficient in R in order to fully utilize Seurat. However, there is a lot of resources to get help.
 
@@ -232,7 +232,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 - Interpretation Challenges:
   - Clustering results are sensitive to normalization and parameters that are set when running Seurat. Users have to know what they are looking for in the data.
 
-# **Conclusion<a name="Conclusion"></a>**
+# **Conclusion<a name="conclusion"></a>**
 Despite some limitations, Seurat is indispensible for uncovering biological insights from scRNA-seq data. Its flexibility, scalability, and visualization capabilites make it a valuable tool for uncovering biological insights in various fields from cancer to developmental biology. With continued support from the community and its creators, Seurat will remain a tool that all bioinformaticists need in their toolbelt.
 
 ## **References**
