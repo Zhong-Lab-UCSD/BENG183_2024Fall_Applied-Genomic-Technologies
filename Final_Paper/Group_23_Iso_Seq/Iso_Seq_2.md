@@ -12,7 +12,17 @@ Classifying isoforms is essential in genomics and transcriptomics because it hel
 
 **SQANTI3** (Structural and Quality Annotation of Novel Transcript Isoforms 3) is a comprehensive tool designed for the annotation and quality assessment of transcript isoforms obtained from long-read sequencing technologies, such as PacBio Iso-Seq or Oxford Nanopore. It is particularly useful for analyzing full-length transcripts and assessing their structural accuracy and functional relevance.
 
-<div style="text-align: center;">
+<style>
+  .center-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+</style>
+
+<div class="center-figure">
   <figure>
     <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/SQANTI3.png" width="600"/>
     <figcaption>
@@ -22,15 +32,16 @@ Classifying isoforms is essential in genomics and transcriptomics because it hel
 </div>
 
 
+
 To get the classification information, running sqanti3_qc.py is enough. Here is the breifly instruction:
 
 ```shell
 python sqanti3_qc.py  sample1.collapsed.sorted.gff \
-					gencode.v39.annotation.sorted.gtf \
-					human_GRCh38_no_alt_analysis_set.fasta \
-					-t 20 -fl sample1.collapsed.abundance.txt -d $outdir --CAGE_peak \
-					refTSS_v3.3_human_coordinate.hg38.sorted.bed --polyA_motif_list \
-					polyA.list.txt --report both --isoAnnotLite                    
+				gencode.v39.annotation.sorted.gtf \
+				human_GRCh38_no_alt_analysis_set.fasta \
+				-t 20 -fl sample1.collapsed.abundance.txt -d $outdir --CAGE_peak \
+				refTSS_v3.3_human_coordinate.hg38.sorted.bed --polyA_motif_list \
+				polyA.list.txt --report both --isoAnnotLite                    
 ```
 Positional arguments:
 1. isoforms
@@ -46,7 +57,7 @@ As a result of running SQANTI3 QC, the tool will create a series of output files
 
 
 <figure style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/classification_file.png" width="800"/>
+  <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/classification_file.png" width="1000"/>
   <figcaption>
     <strong>Fig. 8: Sample of clssification output file</strong>
   </figcaption>
@@ -175,7 +186,7 @@ awk '{sum[$3]+=$2} END {for (category in sum) print category, sum[category]}' sa
 Assuming we have 4 samples, the same actions need to be performed on each sample. Below is the final output along with the corresponding visualization plot.
 
 <figure style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/result.png" width="800"/>
+  <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/result.png" width="1000"/>
   <figcaption>
     <strong>Fig. 15: Results of isoforms classification and quantification</strong>
   </figcaption>
