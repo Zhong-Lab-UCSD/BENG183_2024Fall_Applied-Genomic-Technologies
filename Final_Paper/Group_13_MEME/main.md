@@ -31,7 +31,7 @@ The MEME tool’s basic function is to discover ungapped motifs in inputted grou
 There are three types of motif discovery modes to choose from depending on the context of the problem [4]:
 | Motif Discovery Mode | Description | Basic Usage |
 |----------------|----------------|----------------|
-| Classic Mode | Oreos!           | <ul><li>Input: One set of sequences<li><u1><br> - Output: Motifs enriched in this set |
+| Classic Mode | Oreos!           | <ul><li>Input: One set of sequences<li><u1><br>Output: Motifs enriched in this set |
 | Discriminative Mode | Otter Pop        | - Input: Two sets of sequences, a primary (target) set and secondary (control) set<br> - Output: Motifs enriched in the primary set relative to the control set |
 | Differential Enrichment Mode | IPA              | - Input: Two sets of sequences, a primary (target) set and secondary (control) set<br> - Output: Motifs enriched in the primary set relative to the control set |
 
