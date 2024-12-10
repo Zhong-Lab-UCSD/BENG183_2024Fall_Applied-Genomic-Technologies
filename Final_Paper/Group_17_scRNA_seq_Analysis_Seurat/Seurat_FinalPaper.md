@@ -198,42 +198,45 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 ![labelplot-1](https://github.com/user-attachments/assets/9d79e5cf-046f-40af-91b0-5c6c40495e64)
 
 # Real World Applications<a name="real-world"></a>
--  Cancer Research
+- **Cancer Research:**
   - Seurat can be used to understand tumor heterogeneity by identifying distinct cell populations within a tumor. For example, researchers can target rare cancer stem cells, assess immune infiltration, and map gene expression between healthy and diseased cells.
-- Developmental Biology:
+- **Developmental Biology:**
   - Cell differentation over time during development can also be studied using Seurat. Through analysis of gene expression dynamics, lineage trajectories and roles of regulators in embryonic and organ development can be revealed.
-- Immune Profiling:
-  - Seurat can also be used in characterizing immune cell diversity in health and disease.
-- Integration Across Datasets:
+- **Immune Profiling:**
+  - Seurat can also be used in characterizing immune cell diversity in health and disease. It could be used to study immune exhaustion, immune responses, and how certain immune cells are affected by certain diseases. 
+- **Integration Across Datasets:**
   - Additionally, Seurat can be used to combine datasets from different experiments such as combining RNA and protein data to improve analyses through a more comprehensive appraoch.
 
 # **Strengths<a name="strengths"></a>**
-- Scalability
-  - Handles large datasets with thousands of cells and hundreds of genes.
+- **Scalability**
+  - Efficiently handles large datasets with thousands of cells and hundreds of genes.
 
-- Visualization Power
+- **Visualization Power**
   - Provides methods such as Uniform Manifold Approfiximation and Projection (UMAP) and t-distributed Stochastic Neighbor Embedding (t-SNE) for visualizing data. This allows for researchers to understand relationships between cell populations and detect patterns.
+  - Contains functions that can create intuitive plots such as heatmaps, feature plots, violin plots, etc. to understand complex biological data.
 
-- Flexibility
+- **Flexibility**
   - Supports integration of other R packages and accomodates multimodal data.
   - Parts of Seurat can also be installed as the program is modular allowing for just the necessities to be installed, saving space and time.
 
-- Extensive Documentation
+- **Extensive Documentation**
   - As an R program, there is a lot of online resources and a large community to ask questions to. This makes Serurat very accessible to larger amount of researchers with varying expertise levels.
-
+  - There are many well-documented tutorials and vignettes available on the tool website. 
 
 # **Limitations<a name="limitations"></a>**
-- Technical Expertise:
+- **Technical Expertise:**
   - Due to Seurat being an R program, users need to be proficient in R in order to fully utilize Seurat. However, there is a lot of resources to get help.
 
-- Computational Demands:
+- **Computational Demands:**
   - Although Seurat can handle large datasets there will be siginficant memory and processing power usage because of it.
+  - May need access to high-performance resources for large projects.
 
-- Interpretation Challenges:
+- **Interpretation Challenges:**
   - Clustering results are sensitive to normalization and parameters that are set when running Seurat. Users have to know what they are looking for in the data.
+  - Still require careful biological interpretation to avoid over-interpreting clustering artifacts or random patterns. 
 
 # **Conclusion<a name="conclusion"></a>**
-Despite some limitations, Seurat is indispensible for uncovering biological insights from scRNA-seq data. Its flexibility, scalability, and visualization capabilites make it a valuable tool for uncovering biological insights in various fields from cancer to developmental biology. With continued support from the community and its creators, Seurat will remain a tool that all bioinformaticists need in their toolbelt.
+Seurat is an invaluable tool for analyzing scRNA-seq data. Its advanced flexibility, scalability, and visualization capabilites make it a powerful tool for researchers involved in fields such as cancer biology, immunology, and developmental biology. Despite some limitations, such as computational demeands and technical expertise requirements, Seurat's extensive documentation and active community still makes it highly accessible. As single-cell technologies continue to advance, Seurat will likely remain as a stable for uncovering biological insights. 
 
 ## **References**
 1. Satija Lab. "Guided Clustering Tutorial." Seurat v5, Satija Lab, https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
