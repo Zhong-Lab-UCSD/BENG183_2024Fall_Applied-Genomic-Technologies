@@ -67,6 +67,13 @@ After post-processing, MERFISH data can take various forms, for example represen
 
 ## Applications of MERFISH
 MERFISH (Multiplexed Error-Robust Fluorescence In Situ Hybridization) has revolutionized spatial transcriptomics by enabling the high-throughput and spatially resolved analysis of gene expression. Its ability to detect thousands of RNA species while preserving spatial context has found applications across various fields of biology and medicine.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/applications.png" width="45%" style="display: block; margin: auto;"/>
+
+Figure 5: Left- Spatial distribution of all cell clusters in one mouse brain coronal section. Right- Spatial distribution of identified cells across a human lung cancer sample. <b> Figure from Developing Spatial Transcriptomics Data Analysis Solutions to Empower Researchers </b> <i>Vizgen</i>
+</div>
+
 #### Developmental Biology
 - **Tissue Morphogenesis**: MERFISH reveals how gene expression drives the formation and differentiation of tissues during embryonic development.
 - **Cell Lineage Tracing**: It enables the study of how single cells contribute to tissue formation, providing a spatial view of developmental trajectories.
@@ -78,12 +85,6 @@ It identifies interactions between cancer cells, immune cells, and other stromal
 #### Infectious Diseases and Immunology
 - **Host-Pathogen Interactions**: It helps study how pathogens interact with host cells, revealing spatial patterns of immune activation or suppression.
 - **Response to Vaccines**: It helps assess immune responses to vaccines in different tissues by tracking spatial gene expression changes.
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/applications.png" width="45%" style="display: block; margin: auto;"/>
-
-Figure 5: Left- Spatial distribution of all cell clusters in one mouse brain coronal section. Right- Spatial distribution of identified cells across a human lung cancer sample. <b> Figure from Developing Spatial Transcriptomics Data Analysis Solutions to Empower Researchers </b> <i>Vizgen</i> <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
-</div>
 
 ## Conclusion
 MERFISH exemplifies the evolution of biological research tools, moving beyond standard sequencing to address not just the "what" but also the "where" of gene expression. This spatial resolution allows researchers to explore how cells interact within their native environments and how these interactions change during development, disease, or treatment.
