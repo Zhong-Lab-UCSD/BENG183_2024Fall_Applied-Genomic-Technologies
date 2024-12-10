@@ -4,13 +4,13 @@
 - Nir Reitner
 
 ## Table of Contents
-- - [What is ChIRP-seq?](#what-is-chirp-seq)
+- [What is ChIRP-seq?](#what-is-chirp-seq)
 - [Case Study: "Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"](#case-study-exploration-and-bioinformatic-prediction-for-profile-of-mrna-bound-to-circular-rna-btbd7_hsa_circ_0000563-in-coronary-artery-disease)
 
 # What is ChIRP-seq?
 
 ## Quick Refresher on ChIP-seq:
-**ChIP-seq (Chromatin Immunoprecipitation Sequencing)** is a technique that combines chromatin immunoprecipitation with high-throughput DNA sequencing to identify the binding sites of DNA-associated proteins, such as transcription factors or histones, across the genome. It is widely used to study gene regulation, epigenetic modifications, and protein-DNA interactions.
+**ChIP-seq (Chromatin Immunoprecipitation Sequencing)** is a technique that combines chromatin immunoprecipitation with high-throughput DNA sequencing to **identify the binding sites of DNA-associated proteins**, such as transcription factors or histones, across the genome. It is widely used to study gene regulation, epigenetic modifications, and protein-DNA interactions.
 
 ### Steps of ChIP-seq:
 1. **Crosslinking**: Cells are treated with formaldehyde to crosslink proteins to DNA, preserving protein-DNA interactions.
@@ -19,12 +19,13 @@
 4. **Reversal of Crosslinks**: The crosslinks between protein and DNA are reversed, and the DNA is purified.
 5. **Library Preparation and Sequencing**: The DNA fragments are prepared into a sequencing library and subjected to high-throughput sequencing.
 6. **Data Analysis**: Sequencing reads are aligned to a reference genome, and peaks are identified to locate protein-DNA interaction sites.
-<img src="chip-protocol-steps.png" alt="ChIP-seq Workflow" width="500">
+#### ChIP-seq Workflow:
+<img src="chip-protocol-steps.png" alt="ChIP-seq Workflow" width="350">
 
 ---
 
 ## What is ChIRP-seq?
-**ChIRP-seq (Chromatin Isolation by RNA Purification Sequencing)** is very similar to ChIP-seq but is used to analyze RNA-DNA interactions across the genome. This technique identifies the genomic binding sites of specific RNAs, such as long noncoding RNAs (lncRNAs), by isolating the DNA-bound RNA molecules and their associated chromatin complexes, followed by high-throughput DNA sequencing. It is often used to gain insights into how RNA molecules regulate gene expression and chromatin architecture.
+**ChIRP-seq (Chromatin Isolation by RNA Purification Sequencing)** is very similar to ChIP-seq but is used to analyze **RNA-DNA interactions** across the genome. This technique identifies the genomic binding sites of specific RNAs, such as long noncoding RNAs (lncRNAs), by isolating the DNA-bound RNA molecules and their associated chromatin complexes, followed by high-throughput DNA sequencing. It is often used to gain insights into how RNA molecules regulate gene expression and chromatin architecture.
 
 ### Steps of ChIRP-seq:
 1. **RNA Capture**: Specific biotin-labeled probes are designed to hybridize to the RNA of interest.
@@ -32,6 +33,9 @@
 3. **Pulldown**: The RNA-probe complexes, along with associated DNA and proteins, are captured using streptavidin beads.
 4. **DNA Purification**: Crosslinks are reversed, leaving the associated DNA purified.
 5. **Sequencing and Analysis**: Purified DNA is sequenced, and the reads are mapped to the genome to identify RNA-DNA interaction sites.
+#### ChIRP-seq Workflow:
+<img src="ChIRP-Workflow.png" alt="ChIP-seq Workflow" width="300">
+
 
 ---
 
