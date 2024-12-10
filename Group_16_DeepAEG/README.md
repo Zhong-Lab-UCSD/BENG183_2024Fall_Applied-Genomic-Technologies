@@ -3,22 +3,27 @@
 ## Introduction
 
 ### Background
-Cancer is a disease that affects millions of people worldwide, and there is no single cure for cancer due to the heterogeneity of patients, the diversity of the disease itself, and the uncertainty of
-drug efficacy. Because of this, it is incredibly difficult to treat resulting in losses worldwide. A hopeful solution to this issue is the idea of individualized cancer treatments, in which we can utilize
-a patient's genotype and their unique drug reactions in order to improve therapeutic effect while reducing drug usage side effects. In order to efficiently narrow down treatments for patients and predict
-drug responses, we can utilize machine learning. 
+Cancer remains a leading cause of death worldwide, and its treatment is severely hindered due to the heterogeneity of patients, the diversity of the disease itself, and the uncertainty of
+drug efficacy. Because of this, it is incredibly difficult to treat resulting in losses worldwide. A hopeful solution to this issue is individualized cancer treatment, in which we can utilize
+a patient's genotype and their unique drug reactions in order to improve therapeutic effect while reducing drug usage side effects. Machine learning can play a pivotal role in easily determining which drugs
+to test for each patient based on their specific profile.
 ### Limitations of Past Models
-Several models have been proposed, such as simple logistic regression models, SVMs, and more as well as more complicated models like tCNNs(maybe embed
-links) and DeepTTA. However, these models face limitations that cause the model to lose vital information during feature learning. One example of this is the loss of important molecular structural information such
+Several models have been proposed, such as simple logistic regression models, SVMs, and more as well as more complicated models like [tCNNs](https://computational.cancer.gov/model/twin-convolutional-neural-network-drugs-smiles-format)
+and [DeepTTA](https://academic.oup.com/bib/article/23/3/bbac100/6554594). However, these models face limitations that cause the model to lose vital information during feature learning. One example of this is the loss of important molecular structural information such
 as charge and stereoisomerism due to the nature of the molecular fingerprinting/SMILES that is used to linearly encode drug structure. 
 
 Due to this, graph based approaches gained popularity because the natural structure of drugs can easily be represented using a graph as well as the power of GCNs that can integrate multiple omics features.
-DeepCDR is a popular graph-based model that achieves excellent results compared to traditional models, but its performance is still impeded due to the loss of molecular bond information due to the 
+[DeepCDR](https://academic.oup.com/bioinformatics/article/36/Supplement_2/i911/6055929) is a popular graph-based model that achieves excellent results compared to traditional models, but its performance is still 
+impeded due to the loss of molecular bond information due to the 
 intricate nature of molecular edge characterization and the constraints that come with updating edges in graph-based systems. Molecular bonds are as vital as molecular structure, so the loss of this information
 results in the results of the model taking a huge hit. Because of this, it is absolutely necessary to optimize and improve the edge updating fusion algorithm.
 
 ### The Advantages of DeepAEG 
-To overcome the limitations described above, the Zhejiang lab proposed a novel multi-source heterogeneous graph convolutional neural network, also known as DeepAEG. 
+To overcome the limitations described above, the Zhejiang lab proposed a novel multi-source heterogeneous graph convolutional neural network, also known as DeepAEG. This structure is advantageous over other 
+models because of the unique node and edge updating system. The hybrid graph CNN is developed by updating both atom (node) embeddings and bond (edge) embeddings simultaneously to retain complete deep drug
+information, unlike other models that lose vital information in the updating process. Next, transformer modules are used at the feature extraction level in order to capture the string-based features underlying
+the SMILES sequences of the drugs. This leads to a more accurate and comprehensive drug representation, leading to better predictions. By addressing and improving the shortcomings of previous models, DeepAEG
+delivers superior predictions of drug reactions and greatly advances the field of individualized cancer treatments.
 
 
 ## Procedure
@@ -68,6 +73,7 @@ It showed the best performance in thyroid carcinoma and GSK1070916 which is an A
 
 ![fig4](fig4.png)
 
+
 ## Application 
 
 ### Established Success
@@ -80,9 +86,9 @@ This violin plot shows those testing results, from which the model was able to i
 which goes to show the strength of applying DeepAEG as a prediction tool once the supervised training has been done.
 
 ### Advanced Treatment Production
-One promising application of DeepAEG is the use of its predictive capabilities to investigate untested drug-cell line interactions. Using this model to help determine which drugs in consideration will be the 
-most effective, and would therefore be worth pursuing for advancement into costly clinical trials. This can be done with both completely new and untested drugs as well as for drug repurposing, where existing 
-FDA-approved drugs are tested for application against other cancer subtypes.
+One promising application of DeepAEG is the use of its predictive capabilities to investigate untested drug-cell line interactions among hypothesized treatment options. Using this model to help determine which drugs 
+in consideration will be the most effective can help mediate the cost risk when deciding what to advance to a clinical trial phase. This can be done with both completely new and untested drugs as well as for drug 
+repurposing, where existing FDA-approved drugs are tested for application against other cancer subtypes. 
 
 ### Personalized Medicine
 Perhaps the most important application of DeepAEG is of course employing the model in the realm of personalized medicine. By taking in multi-omics data from the patient’s cells, DeepAEG will be able to make a 
