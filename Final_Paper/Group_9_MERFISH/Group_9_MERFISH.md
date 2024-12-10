@@ -44,7 +44,7 @@ Use the counts for each RNA species as a form of validation. Compare the actual 
 
 ## Output
 The MERFISH approach allows parallelization of measurements of many individual RNA species and covariation analysis between different RNA species. 
-#### Expression Noise
+
 #### Expression Covariation
 Analysis of covariations in the expression levels of different genes can reveal which genes are coregulated and elucidate gene regulatory pathways. Using a heirarchical clustering approach, genes can be grouped based on the covariation of their expression analysis data. This can help recognize groups with substantially correlated expression patterns, i.e. they have more correlation in expression patterns with genes in the group compared to those outside. Gene ontology (GO) enrichment analysis can then further look into the functions of these genes and help identify correlated genes/pathways.
 <div align="center">
@@ -63,6 +63,8 @@ The spatial pattern that observed reflects their cotranslational enrichment at t
 Figure 4: Distinct spatial distributions of RNAs observed in the 140-gene measurements. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
 </div>
 
+After post-processing, MERFISH data can take various forms, for example represented as a 2D image with a large number of channels (associated with the measured gene set), as a list of points in space with attached gene count information (reconstructing single-cell RNAseq information combined with location), or simply as a long list of single mRNA molecules with their detected location.
+
 ## Applications of MERFISH
 MERFISH (Multiplexed Error-Robust Fluorescence In Situ Hybridization) has revolutionized spatial transcriptomics by enabling the high-throughput and spatially resolved analysis of gene expression. Its ability to detect thousands of RNA species while preserving spatial context has found applications across various fields of biology and medicine.
 #### Developmental Biology
@@ -77,8 +79,16 @@ It identifies interactions between cancer cells, immune cells, and other stromal
 - **Host-Pathogen Interactions**: It helps study how pathogens interact with host cells, revealing spatial patterns of immune activation or suppression.
 - **Response to Vaccines**: It helps assess immune responses to vaccines in different tissues by tracking spatial gene expression changes.
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/applications.png" width="45%" style="display: block; margin: auto;"/>
+
+Figure 5: Left- Spatial distribution of all cell clusters in one mouse brain coronal section. Right- Spatial distribution of identified cells across a human lung cancer sample. <b> Figure from Developing Spatial Transcriptomics Data Analysis Solutions to Empower Researchers </b> <i>Vizgen</i> <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+</div>
+
 ## Conclusion
 MERFISH exemplifies the evolution of biological research tools, moving beyond standard sequencing to address not just the "what" but also the "where" of gene expression. This spatial resolution allows researchers to explore how cells interact within their native environments and how these interactions change during development, disease, or treatment.
 
 ## References
 1. [Kok Hao Chen et al., Spatially resolved, highly multiplexed RNA profiling in single cells, Science](https://www.science.org/doi/10.1126/science.aaa6090)
+2. [Miller et al., Space-feature measures on meshes for mapping spatial transcriptomics, Medical Image Analysis](https://www.sciencedirect.com/science/article/pii/S1361841523003286?casa_token=ZqXh4KXN5sEAAAAA:QbjS1rtmAQC0Vo4oWw7EceIGqjlB2ZW4n4OvEGTubU225DrdeRs8NogIdwxOdNJ_H1dix1b4mw#b73)
+3. [Developing Spatial Transcriptomics Data Analysis Solutions to Empower Researchers, Vizgen](https://vizgen.com/developing-spatial-transcriptomics-data-analysis-solutions-to-empower-researchers/)
