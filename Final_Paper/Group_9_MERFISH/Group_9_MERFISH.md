@@ -17,6 +17,9 @@ MERFISH is built upon small molecule fluorescence in situ hybridization (smFISH)
 
 At a very high level, MERFISH involves only a few steps. First, the sample is treated with encoding probes which will bind to specific mRNA. Next, the sample is treated with readout probes which will bind to specific encoding probes and emit fluorescence, which is imaged and can then be decoded to detect and quantify RNA species while preserving spatial information.
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/probes.jpeg" width="45%" style="display: block; margin: auto;"/>
+
 Encoding probes contain
   1. 1 target sequence: RNA sequence complementary to the mRNA that encoding probe is measuring
   2. 2 readout sequences: RNA sequence complementary to a specific fluorescently labeled readout probe.
