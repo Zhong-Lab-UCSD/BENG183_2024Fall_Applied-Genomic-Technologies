@@ -44,7 +44,7 @@ This case explored the bioinformatic prediction for the profile of mRNA bound to
 ### Implications:
 This case study highlights the potential of ChIRP-sequencing in unraveling RNA-mediated regulatory mechanisms. By mapping RNA-chromatin interactions and analyzing their role in regulating gene expression and chromatin dynamics, we are closer to understanding the mechanisms behind diseases and their progression.
 
-*"Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"* ([DOI link]([https://doi.org/10.3390/cells12242805](https://doi.org/10.1186/s12872-024-03711-7))).
+*"Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"* [(https://doi.org/10.1186/s12872-024-03711-7)](https://doi.org/10.1186/s12872-024-03711-7).
 
 ---
 
