@@ -12,33 +12,27 @@ Classifying isoforms is essential in genomics and transcriptomics because it hel
 
 **SQANTI3** (Structural and Quality Annotation of Novel Transcript Isoforms 3) is a comprehensive tool designed for the annotation and quality assessment of transcript isoforms obtained from long-read sequencing technologies, such as PacBio Iso-Seq or Oxford Nanopore. It is particularly useful for analyzing full-length transcripts and assessing their structural accuracy and functional relevance.
 
-<div style="text-align: center;">
-  <figure>
-    <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/SQANTI3.png" width="600"/>
-    <figcaption><strong>Fig. 7: SQANTI3 overview</strong></figcaption>
-  </figure>
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <img src="https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_2/SQANTI3.png" width="600"/>
+  <figcaption><strong>Fig. 7: SQANTI3 overview</strong></figcaption>
 </div>
-
 
 To get the classification information, running sqanti3_qc.py is enough. Here is the breifly instruction:
 
 ```shell
 python sqanti3_qc.py  sample1.collapsed.sorted.gff \
-			gencode.v39.annotation.sorted.gtf \
-			human_GRCh38_no_alt_analysis_set.fasta \
-			-t 20 -fl sample1.collapsed.abundance.txt -d $outdir --CAGE_peak \
-			refTSS_v3.3_human_coordinate.hg38.sorted.bed --polyA_motif_list \
-			polyA.list.txt --report both --isoAnnotLite                    
+		gencode.v39.annotation.sorted.gtf \
+		human_GRCh38_no_alt_analysis_set.fasta \
+		-t 20 -fl sample1.collapsed.abundance.txt -d $outdir --CAGE_peak \
+		refTSS_v3.3_human_coordinate.hg38.sorted.bed --polyA_motif_list \
+		polyA.list.txt --report both --isoAnnotLite                    
 ```
 Positional arguments:
-1. isoforms
-   Isoforms (FASTA/FASTQ) or GTF format. It is recommended to provide them in GTF format, but if it is needed to map the sequences to the genome use a FASTA/FASTQ file with the --fasta option. The obtained `*collapsed.gff`is the output from the `isoseq collapse`.
+1. Isoforms (FASTA/FASTQ) or GTF format. It is recommended to provide them in GTF format, but if it is needed to map the sequences to the genome use a FASTA/FASTQ file with the --fasta option. The obtained `*collapsed.gff`is the output from the `isoseq collapse`.
 
-2. annotation 
-   Reference annotation file (GTF format)
+2. Reference annotation file (GTF format)
 
-3. genome
-   Reference genome (Fasta format)
+3. Reference genome (Fasta format)
 
 As a result of running SQANTI3 QC, the tool will create a series of output files in the specified directory (`--dir` or `-d` flag in the QC script), and the classification results are contained in `_classification.txt`. It is a tab-separated file where transcripts are rows and QC attributes are columns. Isoforms are identified by their ID in the input long-read GTF file (`*collapsed.gff`). 
 
