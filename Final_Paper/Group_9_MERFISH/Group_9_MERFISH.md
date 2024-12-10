@@ -10,8 +10,18 @@
 * [References](#references)
 
 ## What is MERFISH?
-#### FISH
-#### MERFISH Overview
+MERFISH stands for Multiplexed Error-Robust Fluorescence In Situ Hybridization. It's an imaging technqiue and spatial transcriptomics technology that measures RNA expression and and location in tissue. It was pubished in 2015 by Chen et al in Science.
+
+## Procedure
+MERFISH is built upon small molecule fluorescence in situ hybridization (smFISH) technology, but uses a cominatorial barcoding scheme (which will be explained later) which allows for imaging of thousands of RNA species at once.
+
+At a very high level, MERFISH involves only a few steps. First, the sample is treated with encoding probes which will bind to specific mRNA. Next, the sample is treated with readout probes which will bind to specific encoding probes and emit fluorescence, which is imaged and can then be decoded to detect and quantify RNA species while preserving spatial information.
+
+Encoding probes contain
+  1. 1 target sequence: RNA sequence complementary to the mRNA that encoding probe is measuring
+  2. 2 readout sequences: RNA sequence complementary to a specific fluorescently labeled readout probe.
+
+All of the encoding probes with the same target sequence, when put all together, will have a unique combination of out readout sequences and will therefore bind a unique combination of fluorescently labeled readout probes. Therefore, each mRNA species that we want to measure will have its own fluorescent fingerprint that we will use to identify it. Once we treat our sample with all of our fluorescently labeled readout probes, taking an image to record the fluorescence coming from the sample, we should have the information we need.
 
 ## Computational Decoding
 MERFISH utilizes a high-throughput encoding system to differentiate between hundreds to thousands of RNA species in a single experiment. The encoding system is as follows:
