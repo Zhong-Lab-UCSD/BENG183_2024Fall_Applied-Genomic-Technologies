@@ -43,7 +43,7 @@ This simple yet powerful chemistry forms the foundation of bisulfite sequencing.
 
 ## **3. Experimental Workflow**
 
-![Figure 2](experimental_workflow.pneg)
+![Figure 2](experimental_workflow.png)
 
 ### **3.1 DNA Extraction**
 
