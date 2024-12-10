@@ -24,7 +24,7 @@ This case explored the bioinformatic prediction for the profile of mRNA bound to
    - Highlights the role of circular RNAs in regulating downstream pathways and their impact on disease progression.
 
 ### Figures:
-*Figure 2**: 
+*Figure 2*: 
 ![Figure 2: Heatmap and Volcano Plot](figure2.png)
 
 - Figure 2 shows the differentially expressed genes identified through the ChIRP-Seq. The heatmap provides a qualitative outlook on the RNA binding, the volcano plot shows the quantitative data of the experiment. 
