@@ -10,7 +10,7 @@
 * [References](#references)
 
 ## What is MERFISH?
-MERFISH stands for Multiplexed Error-Robust Fluorescence In Situ Hybridization. It's an imaging technqiue and spatial transcriptomics technology that measures RNA expression and and location in tissue. It was pubished in 2015 by Chen et al in Science.
+MERFISH is an imaging technqiue and spatial transcriptomics technology that measures RNA expression and and location in tissue. It was pubished in 2015 by Chen et al in Science.
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/overview.jpeg" width="45%" style="display: block; margin: auto;"/>
@@ -24,7 +24,7 @@ At a very high level, MERFISH involves only a few steps. First, the sample is tr
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/tkarnani/BENG183_2024Fall_Applied-Genomic-Technologies/main/Final_Paper/Group_9_MERFISH/Images/probes.jpeg" width="45%" style="display: block; margin: auto;"/>
-Figure 2: Demonstration of detected RNA spots (general) and how to decode each spot into an RNA species based on fluorescent readout over 16 hybridization rounds. <b> Figure from Kok Hao Chen et al.</b> <i>Science</i> <b>348</b>, aaa6090 (2015). <a href="https://doi.org/10.1126/science.aaa6090">DOI:10.1126/science.aaa6090</a>
+Figure 2: Encoding probes, made up of target and readout sequences, bind RNA species as well as readout probes over successive rounds of readout hybridization. <b> Figure from Moffit et al.</b> <i>PNAS</i> <b>113</b>, 1612826113 (2016). <a href="https://doi.org/10.1073/pnas.1612826113">DOI:10.1073/pnas.1612826113</a>
 </div>
 
 Encoding probes contain
