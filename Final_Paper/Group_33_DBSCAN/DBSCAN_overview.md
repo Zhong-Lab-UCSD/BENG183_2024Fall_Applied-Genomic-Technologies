@@ -8,9 +8,48 @@ BENG 183 - Applied Genomic Technologies
 ## Introduction to DBSCAN:
 Clustering is a widely used bioinformatics technique that uses an unsupervised machine learning model to partition datasets into groups based on recognized patterns or characteristics. This concept was first brought about in the 1950’s when Stuart Lloyd at Bell labs introduced the K-Means algorithm. From that point on, K-means became the standard algorithm for clustering, characterized by its iterative and effectively scalable model. By providing the groundwork for clustering, the development of numerous advanced algorithms were able to emerge into bioinformatics. DBSCAN, for instance, was formally published in the 1990s and introduced a new method of clustering that could handle arbitrarily shaped clusters while effectively dealing with noise within datasets. The Density-Based Spatial Clustering of Applications with Noise algorithm became a new popular unsupervised machine learning algorithm capable of identifying clusters. 
 
+DBSCAN can be distinguished by three main features: it is density-based, does not require pre-defined clusters, and can effectively handle noise. Rather than clustering points solely based on distance, DBSCAN groups points together based on whether they are within a similar, densely packed region. While highly-dense regions are formed into clusters, low-density regions are categorized as outliers by the algorithm. In addition, DBSCAN does not require the number of clusters to be specific beforehand as opposed to other algorithms such as K-Means. In doing so, the algorithm implements an adaptive method to identify the number of clusters based on how the points are naturally distributed throughout the dataset [^5]. 
+
 ---
 
 ## Algorithm Overview:
+### **Step 1: Parameter Selection**
+
+The two key parameters for DBSCAN are ε and MinPts.
+- ε (epsilon) refers to the maximum radius, or neighborhood size, around a point
+- MinPts (minimum points) refers to the minimum number of points with a neighborhood to form a cluster
+
+Both of these parameters influence how many clusters DBSCAN finds. Therefore it is critical that these parameters are properly selected in order to produce accurate and proper results [^5]. 
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/7440d5c9-2508-400c-b4a1-f1320c7411c0">
+
+A common approach for identifying appropriate parameter values is to use a k-distance plot. This graph shows the distance (m) to the nearest kth nearest neighbor for each point within the data. The “elbow” of the plot, which refers to the point at which the slope of the curve increases sharply (boxed in red), indicates where the density of the points start to lower. The distance at the “elbow” point is therefore a candidate for the ε (epsilon) parameter. The k value used in the k-distance plot is often used to set the MinPts parameter. This value is typically a small integer, often 4 or 5, which will increase for datasets with high-dimensionality.
+
+
+
+### **Step 2: Classification of all points**
+  
+  The algorithm will initially select a random point from the dataset. Using the provided parameters, DBSCAN can assign each point into three possible classifications until all points are properly identified:
+  
+**1. Core Point:** A core point has at least a minimum number of neighbors (MinPts) within a certain distance (ε).
+
+**2. Edge Point:** An edge point is located within the ε neighborhood of the core point; however, unlike the core point, it does not have enough neighbors to form its own cluster.
+
+**3. Noise Point:** A noise point is neither a core nor edge point. Rather, this point is classified as an outlier because it is not located near any core points and there are not enough points around it to form its own cluster. 
+
+![image](https://github.com/user-attachments/assets/aedc6cae-eafe-4d5c-9dea-97bf1fa35f31)
+
+
+### **Step 3: Cluster Formation**
+  
+  For each core point, DBSCAN will cluster it with all the points that are within radius ε. The process will recursively go through each neighbor of the core point until they are properly grouped into the same cluster. To complete the cluster, the algorithm will then assign each unclustered edge point to the cluster of the nearest core point. 
+
+### **Step 4: Mark noise**
+
+  If a point does not meet the conditions for being a core point or an edge point, DBSCAN will label that point as noise. Properly identifying and labeling points as outliers improves the quality of clusters while allowing the algorithm to handle arbitrary cluster shapes. The algorithm is terminated once all points have been assigned to a cluster or classified as noise [^5]. 
+
+![image](https://github.com/user-attachments/assets/e98acef9-0ff9-45cc-998a-efd35cf898e0)
+
 
 ---
 
@@ -77,5 +116,9 @@ https://dsworld.org/content/images/2021/10/dbscan.png
 [^3]: https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/ (Reference 3, Georgia Tech Article)
 
 [^4]: https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python (Reference 1, New Horizons Article)
+
+[^5]: https://www.datacamp.com/tutorial/dbscan-clustering-algorithm 
+
+[^6] https://medium.com/@sachinsoni600517/clustering-like-a-pro-a-beginners-guide-to-dbscan-6c8274c362c4 
 
 
