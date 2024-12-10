@@ -3,7 +3,7 @@
     1.1. [About MEME Suite](#1111)<br>
     1.2. [Importance of Motif-based Analysis](#1112)
 2. [Overview of MEME Parameters](#112)<br>
-    2.1. [Motif Discovery Modes]<br>
+    2.1. [Motif Discovery Modes](#1121)<br>
 3. [Algorithm](#113)
 5. [Example](#114)
 6. [Limitations](115)
@@ -18,7 +18,35 @@ Motifs are short repetitive patterns in DNA, RNA, and protein sequences that are
 
 ## 1.1.2 Overview of MEME Parameters<a name="112"></a>
 
-The following describes what
+The MEME tool’s basic function is to discover ungapped motifs in inputted group(s) of unaligned sequences through either the Classic or the Discriminative/Differential mode. It also requires the selection of specific parameters to improve the quality of the motif search. In general, all modes will require and generate the following: 
+- Input: Group of related sequences (DNA, RNA, or protein) in FastA/BED format
+- Output: As many motifs as requested and graphed in the pictogram
+
+#### Motif Discovery Modes<a name="1121"></a>
+<table>
+ <tbody>
+    <tr>
+        <th>Motif Discovery Mode</td>
+        <th>Description</td>
+        <th>Basic Usage</td>
+    </tr>
+    <tr>
+        <td>Classic Mode</td>
+        <td>Site distribution: Informs MEME of expected motif distribution to improve quality of motif search</td>
+        <td><ul><li>Input primary sequences: Provide one set of sequences and MEME discovers motifs enriched in this set. Enrichment is measured relative to a (higher order) random model based on frequencies of the letters in your sequences</li></ul></td>
+    </tr>
+    <tr>
+    <td>Discriminative Mode</td>
+    <td><ul><li>Searching for motifs that appear more in the target than the control set</li></ul><ul><li>Position-specific priors (PSPs) are generated for the target set, which are used to focus MEME on patterns in target set that don’t appear in control</li></ul></td>
+    <td><ul><li>Provide two sets of sequences: primary (target), secondary (control)</li></ul></td>
+    </tr>
+    <tr>
+    <td>Differential Mode</td>
+    <td><ul><li>Searching for motifs that appear more in the target than the control set</li></ul><ul><li>Simply counts how often motifs appear in the target set compared to the control. It gives higher score to motifs that appear more often appear in the target set</li></ul></td>
+    <td><ul><li>Provide two sets of sequences: primary (target), secondary (control)</li></ul></td>
+    </tr>
+ </tbody>
+</table>
 
 ## 1.1.3 MEME Algorithm<a name="113"></a>
 
