@@ -2,6 +2,15 @@
 
 ### By Amick Licup, Chloe Keggen, Jerold Reputana
 
+* [Overview](#overview)
+* [Endothelial Cells & Dysfunction](#endothelial-cells--dysfunction)
+* [What are caRNA & RNA-chromatin interactions?](#what-are-carna--rna-chromatin-interactions)
+* [Single-cell RNA-seq](#single-cell-rna-seq)
+* [Hi-C & iMARGI](#hi-c--imargi)
+* [Key Findings](#key-findings)
+* [Summary](#summary)
+* [Sources](#sources)
+
 ---
 
 ## Overview 
@@ -16,8 +25,11 @@ Endothelial cells line all blood vessels, located throughout the entire body, br
 
 ![](https://github.com/alicup29/beng183proj/blob/main/img8.png)
 
+## What are caRNA & RNA-chromatin interactions?
+
 Chromatin-associated RNA, caRNAs, are RNA molecules that physically associate with chromatin to regulate gene expression. They include long non-coding RNAs, small nuclear RNAs, and enhancer RNAs. These RNA molecules directly or indirectly interact with chromatin, a “mixture of DNA and proteins that form the chromosomes found in the cells of organisms” (NHGRI). caRNAs are transcribed from one gene, then travel and attach to a genomic sequence, most often at super enhancers or transcription start sites, on another gene. Super enhancers are a cluster of transcriptional enhancers across a long range of genomic DNA. In diabetic patients’ endothelial cells specifically, super enhancer activity increases in stress. Non-coding RNAs are transcribed at an elevated rate, including caRNAs. The caRNAs then travel to a different enhancer site, a mechanism called ‘inter-super-enhancer communication’.
 
+![](https://github.com/alicup29/beng183proj/blob/main/img11.png)
 ![](https://github.com/alicup29/beng183proj/blob/main/img9.png)
 
 At the new gene enhancer site, caRNA’s can do multiple things. Focusing on two major factors: first, they can recruit chromatin-modifying enzymes such as histone acetyltransferases and methyltransferases, which modify histones at enhancer sites. This recruitment promotes a change in chromatin structure, which can either suppress or promote transcription. However, during stress and this increase in RNA transcription, caRNAs may recruit modifiers to regions where they are not needed. 
@@ -25,8 +37,6 @@ Second, caRNAs may prevent or form chromatin loops by tethering distant genomic 
 In diabetic patients, caRNAs can recruit chromatin modifiers that suppress transcription of endothelial nitric oxide synthase, reducing NO levels and therefore disrupting vasodilation. This complication results in hypertension and an increased risk of cardiovascular diseases. Similarly, as a response to hyperglycemia, the stabilization of chromatin loops causes an upregulation in fibrotic gene programs. There are several more side effects of abnormal caRNA transcription in endothelial cells in diabetic stress, such as an enhanced expression of oxidative stress, disruption of angiogenesis, and dysregulation of the lipid metabolism– all of which have major implications on the body. 
 
 ![](https://github.com/alicup29/beng183proj/blob/main/img10.png)
-
-## What are caRNA & RNA-chromatin interactions?
 
 ## Single-cell RNA-seq
 In the process of focusing on RNA-chromatin interactions, there were several steps involving applications of different genomic technologies to solve a series of questions. One of the first problems the scientists faced was on how to identify the effects of diabetes stress conditions on epithelial cells– specifically HUVECs (Human Umbilical Vein Endothelial Cells). Essentially, the solution to this problem was to measure & identify the gene expression of endothelial cells (EC) via single-cell RNA-seq, or scRNA-seq. 
@@ -85,3 +95,8 @@ Their findings revealed three critical points:
 This research ties closely to the concepts we have learned in class about applied genomic technologies and their real work applications. For instance, sc-RNA sequencing can be used to reveal cell to cell variability in gene expression during dysfunction, while iMARGI sequencing can be used to directly map how RNA interacts with chromatin. These are the tools we have learned in class, where applying these techniques were used to answer real world questions about endothelial dysfunction. Additionally, the process of discovering therapeutic implications. The research suggests that targeting RNA-chromatin interactions, like the one involving LINC00607, could lead to new treatments for diseases driven by endothelial dysfunction, such as diabetes or cardiovascular conditions. 
 
 Overall, this study highlights the power of genomic tools in investigating how molecular interactions shape cell behavior under stress. It not only advances our understanding of endothelial dysfunction but also demonstrates how applied genomic technologies can bridge fundamental research and therapeutic discoveries. This research article is a clear example of how the concepts we studied in class directly inform the proper workflow in research and discover future treatments. 
+
+## Sources
+1. [CHROMATIN - National Human Genome Research Institute](https://www.genome.gov/genetics-glossary/Chromatin#:~:text=00%3A00,fit%20in%20the%20cell%20nucleus)
+2. [Targeting Super-Enhancers for Disease Treatment and Diagnosis - Science Direct](https://www.sciencedirect.com/science/article/pii/S1016847823005198)
+3. [Stress-induced RNA–chromatin interactions promote endothelial dysfunction - PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC7566596/)
