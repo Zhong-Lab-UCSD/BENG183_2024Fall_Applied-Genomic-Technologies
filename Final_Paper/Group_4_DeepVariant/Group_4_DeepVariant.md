@@ -1,5 +1,7 @@
 # Handout: DeepVariant - Transforming Genomics with AI
 
+![DeepVariant Logo](Figures/dv_logo.png)
+
 ---
 
 ## 1. Introduction
@@ -39,6 +41,8 @@
 #### Step 2: Encode Variants as Pileup Images
 #### Step 3: CNN Processing
 #### Step 4: Variant Calling
+#### Step 5: Accessing DeepVariant
+- The DeepVariant pipeline is open-source and available on GitHub: [DeepVariant Repository](https://github.com/google/deepvariant).
 
 ---
 
