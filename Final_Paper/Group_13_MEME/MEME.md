@@ -11,10 +11,16 @@
 ## 1.1.1 Introduction<a name="111"></a>
 
 #### About MEME Suite<a name="1111"></a>
-MEME Suite is an extensive collection of motif-based sequence analysis tools, widely used in the scientific community for identifying and analyzing motifs found in biological sciences. The basis of algorithms behind the MEME Suite tools were first published in 1994 by Timothy L. Bailey and Charles Elkan from UC San Diego's Computer Science and Engineering department. Its tools are specialized for motif discoveries, enrichments, scannings, comparisons, and more. This chapter will be focused on MEME, which is a motif discovery tool within MEME Suite. 
+MEME Suite is an extensive collection of motif-based sequence analysis tools, widely used in the scientific community for identifying and analyzing motifs found in biological sciences. The basis of algorithms behind the MEME Suite tools were first published in 1994 by Timothy L. Bailey and Charles Elkan from UC San Diego's Computer Science and Engineering department [1]. Its tools are specialized for motif discoveries, enrichments, scannings, comparisons, and more. This chapter will be focused on MEME, which is a motif discovery tool within MEME Suite. 
 
 #### Importance of Motif-based Analysis<a name="1112"></a>
-Motifs are short repetitive patterns in DNA, RNA, and protein sequences that are biologically significant. They play a vital role in understanding biological processes because they often correspond to functional or regulatory elements within the genome. Two types of motifs are: gapped motifs, which are recurring, variable length motifs, and ungapped motifs, which are recurring, fixed-length motifs. For example, the TATA box, an important promoter sequence, is an ungapped motif of fixed length, whereas the bacterial σ70 promoter: TTGACA– (16-19 bp gap) –TATAAT, is a gapped motif of variable length.
+Motifs are short repetitive patterns in DNA, RNA, and protein sequences that are biologically significant. They play a vital role in understanding biological processes because they often correspond to functional or regulatory elements within the genome.
+
+There are two types of motifs:
+- Gapped motifs: Recurring, variable length motifs
+- Ungapped motifs: Recurring, fixed-length motifs
+
+For example, the TATA box, an important promoter sequence, is an ungapped motif of fixed length, whereas the bacterial σ70 promoter: TTGACA– (16-19 bp gap) –TATAAT, is a gapped motif of variable length.
 
 ## 1.1.2 Overview of MEME Parameters<a name="112"></a>
 
