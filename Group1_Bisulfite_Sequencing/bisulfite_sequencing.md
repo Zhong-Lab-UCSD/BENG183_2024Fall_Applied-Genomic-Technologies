@@ -25,7 +25,9 @@ Methylation is critical for processes like:
 
 ### **2.2 Chemistry of Bisulfite Conversion**
 
-The core principle of bisulfite sequencing lies in the selective chemical conversion of cytosine to uracil, while methylated cytosine remains unaltered. Bisulfite reacts with cytosine to produce a sulfonated intermediate, which deaminates to uracil under alkaline conditions. Methylated cytosines are resistant to this reaction, preserving their identity.
+![Figure 1](bisulfite_chemistry.jpeg)
+
+As shown in *figure 1*, the core principle of bisulfite sequencing lies in the selective chemical conversion of cytosine to uracil, while methylated cytosine remains unaltered. Bisulfite reacts with cytosine to produce a sulfonated intermediate, which deaminates to uracil under alkaline conditions. Methylated cytosines are resistant to this reaction, preserving their identity.
 
 After PCR amplification, uracils are replaced with thymines, allowing differentiation between methylated (unaltered) and unmethylated (converted) cytosines.
 
@@ -40,6 +42,8 @@ This simple yet powerful chemistry forms the foundation of bisulfite sequencing.
 ---
 
 ## **3. Experimental Workflow**
+
+![Figure 2](experimental_workflow.pneg)
 
 ### **3.1 DNA Extraction**
 
@@ -64,6 +68,8 @@ Bisulfite treatment exploits the reactivity of cytosine under acidic conditions.
 In subsequent sequencing, these chemical transformations are critical for distinguishing between methylated and unmethylated cytosines.
 
 #### *Steps in Bisulfite Treatment*
+
+![Figure 3](bisulfite_mechanism.jpeg)
 
 1. **Denaturation**:
     
@@ -149,6 +155,8 @@ The first step in the workflow involves assessing the quality of raw sequencing 
         trim_galore --paired sample_R1.fastq sample_R2.fastq -o output_folder
         ```
 ### **4.2 Read Alignment**
+
+![Figure 4](bioinformatics_approach.jpg)
 
 Mapping bisulfite-converted reads to a reference genome is a critical step. The unique C-to-T conversions introduced during bisulfite treatment require specialized aligners.
 
