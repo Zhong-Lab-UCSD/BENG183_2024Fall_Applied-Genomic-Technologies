@@ -15,7 +15,7 @@ By: Joseph Hwang, Andrew Quach, Alisa Vu
 
 Imagine standing inches away from a large painting where all you see are thousands of individually-colored dots. At first glance, you might think the dots are random and chaotic. Stepping back, however, you realize the tiny dots actually form a coherent picture. This style of painting was created using "Pointillism", a technique partially developed by French Artist Georges Pierre Seurat. 
 
-![point](https://principlearttalk.com/wp-content/uploads/2015/05/seurat-detail.jpg)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/seurat-detail.jpg)
 
 Now, imagine Pointilism but with a biological twist. Instead of painted dots, you have single cells, and instead of a brush, you have the bioinformatic tool called Seurat. Seurat is a software for single-cell RNA sequencing (scRNA-seq) analysis that, similar to the painter Georges Seurat, transforms individual data points into biological insights. Seurat gives researchers the ability to paint a clearer picture among complex biological data. With this connection between art and science, let's dive into why Seurat is so powerful in uncovering the hidden beauty and complexity of scRNA-seq data. 
 
@@ -108,7 +108,7 @@ We can visualize feature-feature relationships to get an understanding of our da
 # QC metrics as a violin plot
 VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 ```
-![qc2-1](https://github.com/user-attachments/assets/8fa9b3e8-8578-41b0-8ff6-3963ec947cf0)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/feature_plots.png)
 
 ```
 # feature-feature relationships 
@@ -116,7 +116,7 @@ plot1 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "percent.mt")
 plot2 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
 plot1 + plot2
 ```
-![qc2-2](https://github.com/user-attachments/assets/e765260a-79d8-4d10-af87-82808ba70401)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/qc_plot.png)
 
 In our case, we filter cells that have over 2,500 or less than 200 unique genes. In addition, we filter cells that have greater than 5% mitochondrial counts. 
 ```
@@ -125,7 +125,7 @@ pbmc <- subset(pbmc, subset = nFeature_RNA > 200 & nFeature_RNA < 2500 & percent
 ### 3. Normalization and Scaling
 Finally, we want to normalize the data so that we can compare gene expressions across different cells. One way of doing this is by employing global-scaling normalization or log normalization. This method normalizes the expression value of a given gene i in cell j using the formula:
 
-![normalized_expression_formula_corrected](https://github.com/user-attachments/assets/d2362295-054c-4718-8f5a-ed77ab9aa968)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/normalized_formula.png)
 
 In Seurat, we can use `NormalizeData()` to normalize our values.
 ```
@@ -146,7 +146,7 @@ We can then use an elbow plot, which displays a ranking of principal components 
 ```
 ElbowPlot(pbmc)
 ```
-![elbow](https://github.com/user-attachments/assets/0cb2f7db-6407-425a-9946-0f543230fbf4)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/elbow_plot.PNG)
 
 
 In this example, the elbow exists between PC 1-10, suggesting that most true signal is captured here and therefore we only want to perform downstream analysis on the first 10 PCs.
@@ -170,7 +170,7 @@ pbmc <- RunUMAP(pbmc, dims = 1:10)
 DimPlot(pbmc, reduction = "umap")
 ```
 
-![umapplot-1](https://github.com/user-attachments/assets/d11b154c-4754-4792-a7b8-9b91e175dc9f)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/clustering_plot.png)
 
 Each dot in the graph represents a cell.
 
@@ -184,7 +184,7 @@ pbmc.markers %>%
 ```
 
 For our dataset, we can use canonical markers to identify our clustering to known cell types:
-![Screenshot 2024-12-10 111306](https://github.com/user-attachments/assets/933bb0e2-c7d7-45e2-9626-5aeae0c499a4)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/marker_genes.jpg)
 
 After using expression patterns of marker genes to assign our clusters to cell types, we can use the command shown below to label each cluster on the plot. 
 ```
@@ -195,7 +195,7 @@ pbmc <- RenameIdents(pbmc, new.cluster.ids)
 DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 ```
 
-![labelplot-1](https://github.com/user-attachments/assets/9d79e5cf-046f-40af-91b0-5c6c40495e64)
+![](https://github.com/JoeHwa/BENG183_2024Fall_Applied-Genomic-Technologies/blob/726420d31e0aed8d194cacd2176734bafe5d61ed/Final_Paper/Group_17_scRNA_seq_Analysis_Seurat/labeled_plot.png)
 
 # Real World Applications<a name="real-world"></a>
 - **Cancer Research:**
