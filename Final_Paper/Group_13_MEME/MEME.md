@@ -50,8 +50,24 @@ The MEME tool’s basic function is to discover ungapped motifs in inputted grou
 
 ## 1.1.3 MEME Algorithm<a name="113"></a>
 
+To understand the algorithm behind MEME, it is best to consider the full name, Multiple Expectation Maximization for Motif Elicitation. The name lays out the key component of using an EM algorithm to determine whether sequences are part of a motif or the background. In their paper, “Fitting a mixture model by expectation maximization to discover motifs in biopolymers,” Bailey and Elkan describe exactly as the title suggests. To give some background, a mixture model is a probabilistic model for representing subpopulations within an overall population, or motifs from a sequence in our case. It is also. Each sequence can contain zero, one, or multiple motif occurrences. The model has two components: a motif component and a background component. The background component represents all regions that are not part of the motif while the motif component naturally represents the subpopulation being examined. The algorithm estimates the model parameters (mixing probabilities, motif frequencies, background frequencies) to maximize the likelihood of the data, specifically using log likelihood in calculations. This is done using EM, in the E-Step, the expected probability that a subsequence belongs to the motif or background is found. Then, in the M-Step, the model parameters are updated based on these probabilities. These steps are iteratively done until no significant new motifs are found.  A motif is discovered by fitting the mixture model to the data. The identified motif is then "erased" probabilistically (reducing its contribution) so the algorithm can find additional motifs. By discovering new motifs in a given dataset, the algorithm can be designated under unsupervised learning as it is not necessary to pre-align sequences or have prior knowledge of motifs within the sequences. The exact formulas can be found within the referenced 1994 [*paper*]([https://en.wikipedia.org/wiki/YOLO_(aphorism](https://cdn.aaai.org/ISMB/1994/ISMB94-004.pdf)) by Bailey and Elkan.
+
 ## 1.1.4 Example of Usage<a name="114"></a>
 
+FastA input file:
+
+Output:
+
+Taking a closer look at the first motif, the x axis describes the position of the MEME in relation to each other, and the y axis represents the frequency of a base appearing at that position. In this example, positions 3-5 would have 100% CTG base occurrence, whereas position 11 has all 4 types of bases, with A most predominantly.
+
+## Applications for MEME Modes
+- Classic Mode: Searching for transcription factor binding motifs in a set of DNA sequences
+- Differential or Discriminative Mode: Comparing protein expression levels between healthy and diseased cells
+
 ## 1.1.5 Limitations<a name="115"></a>
+
+MEME can only handle ungapped motifs (fixed-length patterns). Variable length patterns are split into multiple separate “ungapped” motifs. For datasets with gapped motifs, use GLAM2 which is specialized for such calculations. 
+
+MEME works best on smaller sets of sequences. For datasets with +50 sequences, use STREME. MEME can handle at most 500,000 (primary) FASTA sequences, and 80,000,000 bytes of data. Ideally, use MEME with sequences 100-500 bp in length.
 
 # References
