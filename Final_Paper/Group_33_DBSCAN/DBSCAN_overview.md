@@ -30,7 +30,7 @@ Much like single-linkage hierarchical clustering, DBSCAN favors clusters that ar
 While it may be an advantage in some cases for outlier datapoints to be excluded from clustering, some workflows may require that all datapoints be assigned to a cluster, so this characteristic could be seen as a drawback. 
 
 * **More computationally intensive:**
-A major disadvantage for large datasets would be that DBSCAN's runtime is significantly slower than a typical k-means clustering run, since the algorithm is more complex[^4}. Assigning points to the closest mean vector is a much simpler series of calculations than performing an analysis of data density near a certain point. Although there are more factors to consider, such as the dimensionality of the data, and the number of total clusters, k-means is generally *O(n)* when a finite number of iterations are specified beforehand, while DBSCAN is *O(nlogn)*.
+A major disadvantage for large datasets would be that DBSCAN's runtime is significantly slower than a typical k-means clustering run, since the algorithm is more complex[^4]. Assigning points to the closest mean vector is a much simpler series of calculations than performing an analysis of data density near a certain point. Although there are more factors to consider, such as the dimensionality of the data, and the number of total clusters, k-means is generally *O(n)* when a finite number of iterations are specified beforehand, while DBSCAN is *O(nlogn)*.
 
 ### Figure 1.1: Practical Examples
 ![Figure 1.1](dbscan-vs-kmeans.png)
