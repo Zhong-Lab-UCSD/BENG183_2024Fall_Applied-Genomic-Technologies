@@ -1,4 +1,13 @@
-# BENG 183 Final Project
+# "Harmonic" MUSIC: a tool for genomics research 
+### Team 14: Lawrence Xu, Ruomin Xin, Sunan Xu
+
+
+* [Introduction](#Introduction)
+* [Experiment Methodology](#experiment-methodology)
+* [Data Analysis](#data-analysis)
+
+
+
 
 ## Introduction
 
