@@ -157,7 +157,7 @@ Mouse Hippocampus data (from demo above):
 The left image displays the non-spatial clustering output, while the right image shows BANKSY's clustering results. BANKSY identified two additional clusters (15 and 16), uncovering subtle cell-type distinctions missed by the non-spatial approach. This highlights BANKSY's strength in capturing finer details by incorporating spatial relationships between cells.
 
 Mature Oligodendrocyte (OD) cell data:
-![](./Assets/oligoCell.png)
+![](./Assets/matureOligo.png)
 
 As indicated by the red and orange lines, BANKSY was able to distinguish between Subclusters 1 and 2, which the non-spatial algorithm failed to do. This highlights the added value of spatial context in BANKSY's approach, enabling more accurate and detailed clustering that is essential for understanding complex tissue structures.
 
