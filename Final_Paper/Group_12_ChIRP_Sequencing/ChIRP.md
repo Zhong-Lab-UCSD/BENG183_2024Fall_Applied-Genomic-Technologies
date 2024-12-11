@@ -10,29 +10,29 @@
 # What is ChIRP-seq?
 
 ## Quick Refresher on ChIP-seq:
-**ChIP-seq (Chromatin Immunoprecipitation Sequencing)** is a technique that combines chromatin immunoprecipitation with high-throughput DNA sequencing to **identify the binding sites of DNA-associated proteins**, such as transcription factors or histones, across the genome. It is widely used to study gene regulation, epigenetic modifications, and protein-DNA interactions.
+**Chromatin Immunoprecipitation Sequencing**, or **ChIP-Seq** is a biological research method that utalizes chromatin immunoprecipitation and high-throuput DNA sequencing in order to **identify the binding sites of DNA-associated proteins** across the genome. For example, some proteins that may be targted in a ChIP-seq include transcription factors or histones. This method is often applied in order to study gene regulation, epigenetic modifications, and protein-DNA interactions.
 
 ### Steps of ChIP-seq:
-1. **Crosslinking**: Cells are treated with formaldehyde to crosslink proteins to DNA, preserving protein-DNA interactions.
-2. **Chromatin Fragmentation**: Chromatin is isolated and sheared into smaller fragments, typically by sonication or enzymatic digestion.
-3. **Immunoprecipitation**: An antibody specific to the target protein is used to isolate the protein-DNA complexes.
-4. **Reversal of Crosslinks**: The crosslinks between protein and DNA are reversed, and the DNA is purified.
-5. **Library Preparation and Sequencing**: The DNA fragments are prepared into a sequencing library and subjected to high-throughput sequencing.
-6. **Data Analysis**: Sequencing reads are aligned to a reference genome, and peaks are identified to locate protein-DNA interaction sites.
+1. **Cross-linking**: Cells are chemically trated to crosslink proteins to DNA, fixing and preserving the protein-DNA molecules.
+2. **Chromatin Fragmentation**: The Chromatin-RNA complexes are is broken up into smaller fragments, usually through sonication or enzymatic digestion.
+3. **Immunoprecipitation**: An antibody specific to the target protein is designed and sent in to pull down on the protein-DNA complexes.
+4. **Reversal of Crosslinks**: The proteins are washed off, leaving the isolated chromatin DNA.
+5. **Library Preparation and Sequencing**: These DNA fragments are prepared into a sequencing library and then undergo high-throughput sequencing.
+6. **Data Analysis**: Sequencing reads are mapped and alignrd back to a reference genome, and peaks are identified to signify the locations of protein-DNA interaction sites.
 #### ChIP-seq Workflow:
 <img src="chip-protocol-steps.png" alt="ChIP-seq Workflow" width="350">
 
 ---
 
 ## What is ChIRP-seq?
-**ChIRP-seq (Chromatin Isolation by RNA Purification Sequencing)** is very similar to ChIP-seq but is used to analyze **RNA-DNA interactions** across the genome. This technique identifies the genomic binding sites of specific RNAs, such as long noncoding RNAs (lncRNAs), by isolating the DNA-bound RNA molecules and their associated chromatin complexes, followed by high-throughput DNA sequencing. It is often used to gain insights into how RNA molecules regulate gene expression and chromatin architecture.
+**Chromatin Isolation by RNA Purification Sequencing,**, or **ChIRP-seq** is a very similar method to ChIP-seq but is used to analyze **RNA-DNA interactions** across the genome rather then protein-DNA interactions. This technique identifies binding sites of specific RNAs, such as long noncoding RNAs (lncRNAs), sending probes to pull down on DNA-bound RNA molecules, dragging the DNA and their associated chromatin complexes along with them. This is then followed by DNA sequencing in order to identify the targeted DNA and align the locations of these DNA-RnA complexes. It is often used to gain insights into how RNA molecules are involved in genomic actions such as regulating gene expression and chromatin architecture.
 
 ### Steps of ChIRP-seq:
-1. **RNA Capture**: Specific biotin-labeled probes are designed to hybridize to the RNA of interest.
-2. **Chromatin Isolation**: Crosslinked chromatin complexes are fragmented.
-3. **Pulldown**: The RNA-probe complexes, along with associated DNA and proteins, are captured using streptavidin beads.
-4. **DNA Purification**: Crosslinks are reversed, leaving the associated DNA purified.
-5. **Sequencing and Analysis**: Purified DNA is sequenced, and the reads are mapped to the genome to identify RNA-DNA interaction sites.
+1. **RNA Capture**: Specific biotin-labeled probes are designed to bind and hybridize to the target RNA molecules.
+2. **Chromatin Isolation**: Crosslinked chromatin complexes are fragmented, using sonfication or enzymes.
+3. **Pulldown**: The RNA-probe complexes, along with its associated DNA and proteins, are captured using magnetic streptavidin beads.
+4. **DNA Purification**: RNA is washed off, isolating the purifed DNA.
+5. **Sequencing and Analysis**: Isolated DNA is sequenced, and the reads are mapped back the genome to identify RNA-DNA interaction sites.
 #### ChIRP-seq Workflow:
 <img src="ChIRP-Workflow.png" alt="ChIP-seq Workflow" width="300">
 
