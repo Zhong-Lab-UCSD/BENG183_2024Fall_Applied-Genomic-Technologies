@@ -1,5 +1,7 @@
 # HOMER: Motif Discovery and ChIP-Seq, csRNA-seq, GRO-Seq Analysis
 
+### Written by: Shania Bu, Tasha Nguyen, and Amber Tse
+
 Hypergeometric Optimization of Motif EnRichment, referred to as HOMER, is a de novo motif discovery algorithm that looks for motifs with differential enrichment between a set of target sequences and background sequences. First, we will introduce DNA motifs and the common RNA-seq technologies that HOMER is used for. Then we will dive into the design and implementation of HOMER.
 
 ## 1. What are Motifs?
