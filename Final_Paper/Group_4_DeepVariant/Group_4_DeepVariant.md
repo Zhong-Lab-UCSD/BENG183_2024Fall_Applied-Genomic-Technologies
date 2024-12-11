@@ -161,7 +161,6 @@ DeepVariant demonstrates consistent and high accuracy when applied across genome
 These results highlight DeepVariant’s adaptability and robust performance in cross-species applications, such as generalizing from human data to mouse datasets.
 
 ---
-p
 
 ### 4.2 Robustness Across Applications
 - **Genome Builds**:
