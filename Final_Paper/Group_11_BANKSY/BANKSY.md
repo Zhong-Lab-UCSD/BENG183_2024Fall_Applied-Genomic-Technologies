@@ -14,6 +14,8 @@ This is achieved by adding neighborhood features to the traditional gene-cell ex
 
 BANKSY then constructs a graph with cells as nodes and their similarities as edges. Afterwards, it efficiently clusters the cells using the Leiden algorithm, which starts by treating each node as its own cluster and iteratively moving nodes between clusters to maximize modularity: a measure of how well nodes in a network are grouped together. The process repeats until optimal clusters are formed. The following image is a visual representation of this.
 
+![][Assets/clusterRep.png]
+
 **Advantages of BANKSY**
 
 * Can simultaneously cluster cells into types and tissue domains  
@@ -24,7 +26,7 @@ BANKSY then constructs a graph with cells as nodes and their similarities as edg
 * Not as dependent on precise parameter tuning  
 * Can be used for spatial quality control
 
-![][../Assets/image1.png]
+![][Assets/runtimeComp.png]
 
 This image compares the runtimes of common spatial cell-type clustering algorithms, clearly   
 demonstrating that BANKSY is far more scalable than any other spatial algorithm. It can handle nearly twice as many cells as the second-best algorithm, in less time. Surprisingly, it is also as scalable as a standard non-spatial clustering algorithm.
@@ -50,21 +52,26 @@ Input: A spatial omics dataset consisting of gene or protein expression profiles
    In the final step, BANKSY integrates cell-type classifications and tissue domains to produce comprehensive, interpretable outputs. It generates detailed spatial maps of cell types through domains and summary reports, translating complex data into actionable insights. These outputs support hypothesis generation and guide experimental validation, advancing the understanding of tissue structure and function.
 
 **Demo**  
-**![][image2]**
+
+
+
+
 
 **Sample Outputs**
 
 Mouse Hippocampus data (from demo above):
 
-![][image3]
+![][Assets/mouseHippo.png]
 
 The left image displays the non-spatial clustering output, while the right image shows BANKSY's clustering results. BANKSY identified two additional clusters (15 and 16), uncovering subtle cell-type distinctions missed by the non-spatial approach. This highlights BANKSY's strength in capturing finer details by incorporating spatial relationships between cells.
 
 Mature Oligodendrocyte (OD) cell data:
+![][Assets/oligoCell.png]
 
 As indicated by the red and orange lines, BANKSY was able to distinguish between Subclusters 1 and 2, which the non-spatial algorithm failed to do. This highlights the added value of spatial context in BANKSY's approach, enabling more accurate and detailed clustering that is essential for understanding complex tissue structures.
 
 Human Colorectal Cancer Data:
+![][Assets/colorectal.png]
 
 The red arrows represent the cycling epithelial cell cluster detected only by BANKSY’s clustering. These are epithelial cells that are actively undergoing the cell cycle, and are thus of high interest in cancer studies.
 
