@@ -105,3 +105,7 @@ Below the heatmaps, metadata annotations link chromatin contact patterns to key 
 This graph highlights the correlation between expression quantitative trait loci (eQTLs) and chromatin contacts across different cell types in the human brain. It distinguishes all eQTL–target pairs (total bar heights) from cell-type-specific (CTS) eQTL–target pairs (boxed subset). CTS pairs represent eQTLs that regulate target gene expression uniquely in specific cell types, showcasing the role of chromatin interactions in driving cell-specific gene regulation. Excitatory neurons (ExN) and inhibitory neurons (InN) contribute the most to CTS eQTL–target pairs, reflecting the strong influence of chromatin contacts on gene expression in neurons.
 
 This analysis demonstrates that eQTLs are enriched in chromatin contacts that overlap with their target gene promoters within the same cell type. This enrichment indicates that cell-type-specific chromatin architecture plays a critical role in enabling the functional effects of eQTLs. By linking eQTLs to chromatin organization, the data provide a deeper understanding of how chromatin structure contributes to the diversity of gene regulation across cell types, shedding light on mechanisms underlying cellular function and disease susceptibility.
+
+
+## Reference
+

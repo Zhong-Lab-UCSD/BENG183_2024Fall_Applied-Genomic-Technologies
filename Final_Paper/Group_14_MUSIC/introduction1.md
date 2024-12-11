@@ -53,3 +53,7 @@ The workflow includes constructing sequencing libraries, differentiating RNA and
 
 ## Reference:  
 Statello, Luisa, et al. “Gene Regulation by Long Non-Coding RNAs and Its Biological Functions.” Nature Reviews Molecular Cell Biology, vol. 22, no. 2, 1 Feb. 2021, pp. 96–118, www.nature.com/articles/s41580-020-00315-9, [https://doi.org/10.1038/s41580-020-00315-9](https://doi.org/10.1038/s41580-020-00315-9).  
+
+Johannes Köster, "Sven Rahmann, Snakemake—a scalable bioinformatics workflow engine" Bioinformatics, Volume 28, Issue 19, October 2012, Pages 2520–2522, [https://doi.org/10.1093/bioinformatics/bts480](https://doi.org/10.1093/bioinformatics/bts480)
+
+Merkel, D. (2014). "Docker: lightweight linux containers for consistent development and deployment". Linux Journal, 2014(239), 2. [https://www.linuxjournal.com/content/docker-lightweight-linux-containers-consistent-development-and-deployment](https://www.linuxjournal.com/content/docker-lightweight-linux-containers-consistent-development-and-deployment)
