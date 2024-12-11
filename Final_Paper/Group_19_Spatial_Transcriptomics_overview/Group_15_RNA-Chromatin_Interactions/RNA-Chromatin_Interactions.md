@@ -19,6 +19,8 @@ The human body is one of the most complex mysteries scientists across discipline
 
 In particular, diabetes is one of the most studied health issues and affects a majority of people worldwide. While there are a multitudinous amount of studies on the topic, we will be focusing on a particular research paper that delves into the role of chromatin-associated RNA (caRNA) in endothelial cell dysfunction– a critical factor in diseases like diabetes.
 
+![](https://github.com/alicup29/beng183proj/blob/main/img12.png)
+
 Specifically, what questions did the scientists ask? What genomic technologies did they then use to answer those questions? What insights did that provide them and what were their next logical steps? These are the questions we will be asking ourselves in discovering how these scientists solved this specific aspect of a larger problem with genomic technologies.
 
 ---
