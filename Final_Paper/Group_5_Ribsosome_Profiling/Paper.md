@@ -4,7 +4,7 @@
 <div style="text-align: justify;">
 Ribosome profiling, also known as Ribo-seq, is a revolutionary technique that enables genome-wide analysis of translation by mapping ribosome-protected mRNA fragments. This powerful method provides unparalleled insights into gene expression at the level of translation, complementing transcriptomics and proteomics to offer a comprehensive view of cellular function.
 </div>
-<img src="ribo.jpeg" alt="ribo" width="700" style="display: block; margin: 0 auto;">
+<img src="ribo.jpeg" alt="ribo" width="500" style="display: block; margin: 0 auto;">
 
 ## Why Ribosome Profiling?
 <div style="text-align: justify;">
