@@ -38,7 +38,7 @@ The creation of ncRNA indices and the alignment to the indices can be done using
 <br>To determine ribosome distribution, a count array (lists that record the number of reads that are mapped to each codon of a transcript), would be generated with the bam file resulting from the genome alignment along with GTF genome annotation file using a package called Plastid. By using LOESS smoothing with the count array, we can then calculate cumulative ribosome distribution on transcripts ([manual of Plastid](https://plastid.readthedocs.io/en/latest/generated/plastid.html); [manual of LOESS](https://pypi.org/project/loess/#documentation))
 
 
-The table below shows some packages and programs developed for ribosome profiling data analysis:
+The table below shows some packages and programs developed for ribosome profiling data analysis of different specialization:
 
 | Package Name  |                 Application               |  Organism  |
 |:-------------:|:-----------------------------------------:|:----------:|
@@ -64,10 +64,6 @@ Mingso Sherma Limbu, Tianze Xiong, Sufang Wang,A review of Ribosome profiling an
 
 Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020, https://doi.org/10.1093/nar/gkae1020
 
-### Websites:
-https://github.com/ratschlab/RiboDiff 
-https://plastid.readthedocs.io/en/latest/generated/plastid.html
-https://pypi.org/project/loess/#documentation
-https://rdp.ucc.ie/home
+
 
 
