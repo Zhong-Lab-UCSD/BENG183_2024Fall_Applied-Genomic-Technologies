@@ -156,23 +156,23 @@ Mouse Hippocampus data (from demo above):
 
 The left image displays the non-spatial clustering output, while the right image shows BANKSY's clustering results. BANKSY identified two additional clusters (15 and 16), uncovering subtle cell-type distinctions missed by the non-spatial approach. This highlights BANKSY's strength in capturing finer details by incorporating spatial relationships between cells.
 
-Mature Oligodendrocyte (OD) cell data:'
+Mature Oligodendrocyte (OD) cell data:
 
 ![](./Assets/matureOligo.png)
 
-As indicated by the red and orange lines, BANKSY was able to distinguish between Subclusters 1 and 2, which the non-spatial algorithm failed to do. This highlights the added value of spatial context in BANKSY's approach, enabling more accurate and detailed clustering that is essential for understanding complex tissue structures.
+As indicated by the red and orange lines, BANKSY successfully distinguished between Subclusters 1 and 2, which the non-spatial algorithm failed to do. This distinction reflects how BANKSY's ability to incorporate spatial context provides a more accurate and detailed clustering approach. As a result, BANKSY provides deeper insights into the organization and interaction of cells within complex tissue structures, which is crucial for understanding functional dynamics and disease progression.
 
 Human Colorectal Cancer Data:
 
 ![](./Assets/colorectal.png)
 
-The red arrows represent the cycling epithelial cell cluster detected only by BANKSY’s clustering. These are epithelial cells that are actively undergoing the cell cycle, and are thus of high interest in cancer studies.
+The red arrows highlight the cycling epithelial cell cluster, which was detected exclusively by BANKSY’s clustering. These cells are actively undergoing the cell cycle, making them of significant interest in cancer research, where cell replication plays a key role in tumor growth and progression. BANKSY's ability to identify such dynamic cellular processes offers valuable insights into cancer biology and potential therapeutic targets.
 
 ## **Applications to Personalized Medicine**
 
-BANKSY is highly effective at mapping the various cell types within a tumor, including immune cells, stromal cells, and cancer cells. It also excels at identifying tissue domains associated with tumor progression. This has numerous applications, such as enhancing our understanding of tumor heterogeneity by revealing the diverse cellular compositions within a single tumor. This is crucial for advancing personalized medicine within oncology.
+BANKSY is highly effective at mapping various cell types within a tumor, including immune cells, stromal cells, and cancer cells, while also identifying tissue domains linked to tumor progression. This capability has numerous applications, such as enhancing our understanding of tumor heterogeneity by revealing the diverse cellular compositions within a single tumor. Such insights are crucial for advancing personalized medicine in oncology, as they allow for more precise targeting of therapies based on the unique tumor microenvironment.
 
-Through BANKSY, we can also better understand the cellular responses to different drugs, paving the way for more effective treatments. Similarly, by analyzing cellular reactions to diseases, BANKSY helps identify potential biomarkers. Its speed and precision also enable more accurate tissue testing, supporting the creation of personalized medicines tailored to individual patients.
+Through BANKSY, we can also gain a deeper understanding of how cells respond to different drugs, facilitating the development of more effective treatments. By analyzing cellular reactions to diseases, BANKSY aids in identifying potential biomarkers for diagnostics and therapeutic targets. Furthermore, its speed and precision enable more accurate tissue testing, allowing for the development of personalized medicines tailored to individual patients' specific needs, ultimately improving treatment outcomes.
 
 ## **References**
 
