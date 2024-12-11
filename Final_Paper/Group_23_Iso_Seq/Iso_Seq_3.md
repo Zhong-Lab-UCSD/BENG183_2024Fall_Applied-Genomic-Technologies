@@ -17,7 +17,7 @@ Micronuclei arise from mis-segregating events where an entire or a part of a chr
 
 **The Various Fate of a Micronucleus**
 ![Various fate of a micronucleus](https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/main/Iso_Seq_3/fate%20of%20micronuclei.png)
-**Fig. 8: Alternative splicing mechanisms**  
+**Fig. 17: Alternative splicing mechanisms**  
 
 a. The micronucleus be reincorporated into the primary nucleus through microtubules correct attachment in mitosis, giving rise to two daughter cells, one aneuploid and one diploid.   
 b. The micronucleus  persist in a micronuclear state by mis-segregating again in the subsequent mitosis, forming a diploid daughter cell but micronucleated and an aneuploid daughter cell.   
@@ -31,13 +31,13 @@ d. The micronucleus be extruded from the cell, forming after mitotic division tw
 **Micronuceli Rupture**  
 Micronuclear rupture is a fundamental step in cancer progression. It can activate immune signaling pathways.    
 
-**Fig. 9: Genomic consequences of micronuclear rupture**  
+**Fig. 17: Genomic consequences of micronuclear rupture**  
 ![result of Micronuceli rupture](https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/refs/heads/main/Iso_Seq_3/rupture.png)
 Upon nuclear envelope collapse, the genetic material contained in the micronucleus undergo profound changes and rearrangements.
    
        
           
-**Fig. 10: Inflammatory consequences of micronuclear rupture**   
+**Fig. 18: Inflammatory consequences of micronuclear rupture**   
 ![cGas-STING](https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/refs/heads/main/Iso_Seq_3/cGas-STING.png)
 Due to micronuclear envelope collapse, cytosolic exposure of genetic material initiate the nucleic-acid recognition, and the innate immune cGAS–STING pathway and downstream inflammatory signaling.  
 [Source](https://pubmed.ncbi.nlm.nih.gov/38197599/#&gid=article-figures&pid=figure-3-uid-2)
