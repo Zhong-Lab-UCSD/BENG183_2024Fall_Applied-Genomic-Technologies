@@ -12,13 +12,32 @@
 
 ## Protein Structure
 
+Proteins are commonly known as the fundamental building blocks for all living organisms. They carry out important tasks in cell, from regulation, structure, and functions of the organ's they belong to. When proteins fail to do their function or hinders the body's function, we see these larger organs fail, in the event of diseases, like in Alzheimer's[1] or ALS[2]. In order to understand how these proteins function, and what happens when they do not function, we can look to studying their specialized structure. Proteins are constructed from amino acid sequences that fold in a certain way, resulting in a mechanism that is specially designed to handling a certain task. For example, a hemoglobin protein that is used for oxygen transport will have specialized binding sites for oxygen molecules, and otpimize the binding and transport of those molecules so they can be delivered across the body[3]. From knowing what shape a protein has, we can understand how it interactes with other molecules in the body, and what role they play in pathways.
+
+Over the years, we have tried to look at protein structure using a variety of methods, each having their own positives and negatives. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins, and 
+
+Because of these 
+
+Proteins fold in very complex ways that rely more factors than just the peptides that make up its sequence:
+
+structure affected by number of internal and external forces, including hydrogen bonding, hydrophobic interaction, dimers, electrostatic interactions, van der Waals forces, environment, etc.
+
+Protein can fold in many different ways along an energy landscape, when created they follow the lowest energy landscape, but this can be hard to find
+
+Proteins can take on a number of different conformations depending on their role, predicting this dynamic behavior can be difficult 
+
+
+
 ---
 
 ## What is AlphaFold?
 
+
 ---
 
 ## How to use?
+
+
 
 ### Usage
 
@@ -67,8 +86,16 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 
 ## Achievements and Limitations
 
+
+
 ---
 
 ## Sources
+
+[1] Penke B, Bogár F, Paragi G, Gera J, Fülöp L. Key Peptides and Proteins in Alzheimer's Disease. Curr Protein Pept Sci. 2019;20(6):577-599. doi: 10.2174/1389203720666190103123434. PMID: 30605056.
+
+[2] Maguire G. Amyotrophic lateral sclerosis as a protein level, non-genomic disease: Therapy with S2RM exosome released molecules. World J Stem Cells. 2017 Nov 26;9(11):187-202. doi: 10.4252/wjsc.v9.i11.187. PMID: 29312526; PMCID: PMC5745587.
+
+[3] Pittman RN. Regulation of Tissue Oxygenation. San Rafael (CA): Morgan & Claypool Life Sciences; 2011. Chapter 4, Oxygen Transport. Available from: https://www.ncbi.nlm.nih.gov/books/NBK54103/
 
 ---
