@@ -71,7 +71,7 @@ In subsequent sequencing, these chemical transformations are critical for distin
 
 #### *Steps in Bisulfite Treatment*
 
-![Figure 3](bisulfite_mechanism.jpeg)
+![Figure 3](bisulfite_mechanism.jpg)
 
 1. **Denaturation**:
     
@@ -299,4 +299,9 @@ These advancements promise to expand our understanding of epigenetics and its ro
 ## **8. Conclusion**
 
 Bisulfite sequencing is a powerful tool for studying DNA methylation at single-base resolution. Its ability to reveal intricate patterns of epigenetic regulation has transformed our understanding of gene expression, development, and disease. Despite its limitations, continued advancements in sequencing technologies and bioinformatics will ensure its central role in epigenetic research for years to come.
+
+---
+## **Resources**
+
+1. Swarnaseetha Adusumalli, Mohd Feroz Mohd Omar, Richie Soong, Touati Benoukraf, Methodological aspects of whole-genome bisulfite sequencing analysis, Briefings in Bioinformatics, Volume 16, Issue 3, May 2015, Pages 369–379, https://doi.org/10.1093/bib/bbu016
 
