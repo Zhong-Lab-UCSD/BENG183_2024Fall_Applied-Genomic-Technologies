@@ -34,13 +34,11 @@ Filter methods evaluate the relevance of features independently of a model. Thes
 
 #### Wrapper Methods:
 
-&nbsp
-: Wrapper methods select features by training models on different feature subsets and evaluating model performance at each combination. Some examples of this are Recursive Feature Selection (which is explained later) and Forward Selection, where starting from 0 features, features are added to the model one at a time until the model performance stops improving. Since wrapper methods directly evaluate feature subsets, they outperform filter methods in terms of accuracy but in turn, they are more computationally expensive and prone to overfitting.
+Wrapper methods select features by training models on different feature subsets and evaluating model performance at each combination. Some examples of this are Recursive Feature Selection (which is explained later) and Forward Selection, where starting from 0 features, features are added to the model one at a time until the model performance stops improving. Since wrapper methods directly evaluate feature subsets, they outperform filter methods in terms of accuracy but in turn, they are more computationally expensive and prone to overfitting.
 
 #### Embedded Methods:
 
-&nbsp
-: Embedded methods select features during the model training process. The model will predict the most relevant features based on the feature relationship with the target variable as it learns. An example is LASSO. This method applies a penalty during the regression process, shrinking coefficients of less important features to a zero value so that the subset of features selected will be the most relevant. Since embedded methods require the model to be run multiple times on feature subsets, they tend to be faster than wrapper methods yet accurate as they still interact with the classifier. However, embedded methods are less interpretable and adaptable across different algorithms.
+Embedded methods select features during the model training process. The model will predict the most relevant features based on the feature relationship with the target variable as it learns. An example is LASSO. This method applies a penalty during the regression process, shrinking coefficients of less important features to a zero value so that the subset of features selected will be the most relevant. Since embedded methods require the model to be run multiple times on feature subsets, they tend to be faster than wrapper methods yet accurate as they still interact with the classifier. However, embedded methods are less interpretable and adaptable across different algorithms.
 
 
 ## Potential Applications in Bioinformatics
