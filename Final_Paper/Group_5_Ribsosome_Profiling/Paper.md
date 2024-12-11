@@ -100,13 +100,13 @@ Choi SH, Martinez TF, Kim S, Donaldson C, Shokhirev MN, Saghatelian A, et al. CD
 
 Huang JZ, Chen M, Chen D, Gao XC, Zhu S, Huang H, et al. A Peptide Encoded by a Putative lncRNA HOXB-AS3 Suppresses Colon Cancer Growth. Mol Cell. 2017;68(1):171–84.e6.
 
-Ingolia, N. T., Brar, G. A., Rouskin, S., McGeachy, A. M., & Weissman, J. S. (2012). The ribosome profiling strategy for monitoring translation in vivo by deep sequencing of ribosome-protected mRNA fragments. Nature protocols, 7(8), 1534–1550. https://doi.org/10.1038/nprot.2012.086
+Ingolia, N. T., Brar, G. A., Rouskin, S., McGeachy, A. M., & Weissman, J. S. (2012). The ribosome profiling strategy for monitoring translation in vivo by deep sequencing of ribosome-protected mRNA fragments. Nature protocols, 7(8), 1534–1550. 
 
-Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020, https://doi.org/10.1093/nar/gkae1020
+Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020.
 
-Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeline for differential analysis of pausing in ribosome profiling data,STAR Protocols,Volume 3, Issue 3,2022,101605,ISSN 2666-1667, https://doi.org/10.1016/j.xpro.2022.101605.
+Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeline for differential analysis of pausing in ribosome profiling data,STAR Protocols,Volume 3, Issue 3,2022,101605,ISSN 2666-1667.
 
-Mingso Sherma Limbu, Tianze Xiong, Sufang Wang, A review of Ribosome profiling and tools used in Ribo-seq data analysis, Computational and Structural Biotechnology Journal, Volume 23, 2024, Pages 1912-1918, ISSN 2001-0370, https://doi.org/10.1016/j.csbj.2024.04.051.
+Mingso Sherma Limbu, Tianze Xiong, Sufang Wang, A review of Ribosome profiling and tools used in Ribo-seq data analysis, Computational and Structural Biotechnology Journal, Volume 23, 2024, Pages 1912-1918, ISSN 2001-0370.
 
 Su, D., Ding, C., Qiu, J., Yang, G., Wang, R., Liu, Y., ... & Zhang, T. (2024). Ribosome profiling: a powerful tool in oncological research. Biomarker Research, 12(1), 11.
 
