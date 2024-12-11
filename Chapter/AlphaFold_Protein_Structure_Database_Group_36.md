@@ -45,7 +45,7 @@ There are 3 distinct AlphaFold algorithms: 1, 2, and 3.
 
 ### How it Works
 
-At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences. This method is not entirely comparative modeling: while AlphaFold was trained on previously known protein structures, it does not require a template and can predict previously unknown structures. It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min 
+At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences. This method is not entirely comparative modeling: while AlphaFold was trained on previously known protein structures, it does not require a template and can predict previously unknown structures. It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min. 
 
 ---
 
@@ -98,21 +98,21 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 
 ## Achievements and Limitations
 
-Achievements
-Research everywhere heavily use AlphaFold to quickly determine protein structure
-Efficient as an algorithm for also solving previously unknown protein folds
-We have a comprehensive database of protein structures created by AlphaFold that people can use to validate their protein reconstructions
+### Achievements
+* Researchers across the world heavily use AlphaFold to quickly determine protein structure
+* Efficient algorithm for solving unknown protein folds
+* Provides a comprehensive database of protein structures that can be used for protein reconstruction validation
 
-Limitations:
-Affected by point mutations
-Lower confidence with proteins that do not have similar known structures
-Not designed to capture dynamic movement, but can get different conformations
-Validating novel models created by AlphaFold
+### Limitations
+* Affected by point mutations
+* Lower confidence with proteins that do not have similar known structures
+* Not designed to capture dynamic movement but can get different conformations
+* Validating novel models created by AlphaFold
 
-Improvements:
-Increasing precision in models
-Better modeling dynamic proteins
-Expanding on the Alphafold Protein Structure Database
+### Improvements
+* Increasing precision in predicted models
+* Developing better methods for modeling dynamic proteins
+* Expanding on the Alphafold Protein Structure Database datasets
 
 ---
 
