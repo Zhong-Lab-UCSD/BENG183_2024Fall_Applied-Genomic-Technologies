@@ -4,17 +4,17 @@
 1. [Why is Feature Selection Important](#why-is-feature-selection-important)
 2. [How is Feature Selection Done](#how-is-feature-selection-done)
 3.  [Potential Applications In Bioinformatics](#potential-applications-in-bioinformatics)
-4. [Boruta](#Boruta:-A-Wrapper-method-for-feature-selection)
+4. [Boruta](#Boruta:-A-wrapper-method-for-feature-selection)
 5.  [Conclusion](#conclusion)
 6.  [Sources](#sources-cited)
 
 Within machine learning, high-dimensional datasets can make it difficult to fit appropriate models and perform effective analysis. One technique that can be used to address this issue is feature selection, which can be defined as the process of identifying and selecting the most significant features (predictors with the highest correlation) in a dataset for use in predictive model construction. Our paper aims to give an overview of what feature selection is, why it is useful, how it may be done, and how it can be applied in bioinformatics, as well as touching on Boruta, a commonly used feature selection tool that excels in bioinformatics contexts.
 
-## Why is feature selection important?
+## Why is Feature Selection Important?
 Feature selection plays a valuable role in the classification pipeline, as it addresses challenges of a dataset that commonly hinder model performance, including high dimensionality, redundancy, and high dependency within data. In comparison to other dimensionality reduction techniques (i.e. Principal Component Analysis, or PCA, which is based on projection, or information theory, which is based on compression, etc.), feature selection doesn’t alter the representation of the variables, but merely selects a smaller subset of them.
 By shrinking the size of the dataset to be analyzed, feature selection can greatly improve the model by reducing computational cost, improving accuracy, decreasing noise, enhancing interpretability, and reducing overfitting. However, there are some potential issues to be aware of. Since it involves additional processing of the data, feature selection introduces an additional layer of complexity within the modeling task that may require troubleshooting. Likewise, the optimal parameters for the feature subset may not generalize to full, original feature set, so if an important feature is removed, this could compromise the results of the model.  
 
-## How is Feature Selection Done
+## How is Feature Selection Done?
 
 ### Data Cleaning
 
