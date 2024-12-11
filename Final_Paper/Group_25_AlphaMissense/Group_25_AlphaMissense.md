@@ -6,7 +6,7 @@
 
 To understand AlphaMissense, it is first important to introduce AlphaFold. AlphaFold was a groundbreaking AI system developed by Google DeepMind that is used to predict protein structure. AlphaFold improved upon previous models for predicting the 3D structure of proteins. Shown below is one example of a protein structure elucidated in the original AlphaFold paper. The TM-score is a metric used to compare protein structures, and 1 indicates a perfect match. In this example, the TM-score of 0.93 indicates that the protein model produced by AlphaFold is highly accurate.
 
-PROTEIN IMAGE!
+[](./Images/protein-jumper-etal.png)
 
 AlphaMissense is essentially an extension of AlphaFold, and builds upon the models and protein data already provided by AlphaFold. The biological problem that researchers wanted to address was the difficulty in properly identifying missense mutations that have a pathogenic impact. There have been over 4 million missense mutations observed in the human genome. However, only around 2% are pathogenic, while the other 98% are benign. This discrepancy results in data that has a large amount of background noise in identifying and studying the crucial mutations. Previously, multiplexed assays of variant effect (MAVEs) were the main way that pathogenicity was assessed, and although they are effective, they are expensive in cost, time, and labor. By leveraging AlphaFold’s deep learning capabilities and large-scale protein structure data, AlphaMissense aims to predict how specific mutations that affect individual amino acids might alter protein folding, stability, and ultimately function that form the molecular basis of diseases.
 
