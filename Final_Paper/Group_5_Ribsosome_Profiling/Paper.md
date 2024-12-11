@@ -92,18 +92,29 @@ The table below shows some packages and programs developed for ribosome profilin
 
 ## References
 ### Papers:
+Bao Y, Zhai J, Chen H, Wong CC, Liang C, Ding Y, et al. Targeting m(6)A reader YTHDF1 augments antitumour immunity and boosts anti-PD-1 efficacy in colorectal cancer. Gut. 2023;72(8):1497–509.
+
+Brar, G. A., & Weissman, J. S. (2015). Ribosome profiling reveals the what, when, where, and how of protein synthesis. Nature Reviews Molecular Cell Biology, 16(11), 651-664.
+
+Choi SH, Martinez TF, Kim S, Donaldson C, Shokhirev MN, Saghatelian A, et al. CDK12 phosphorylates 4E-BP1 to enable mTORC1-dependent translation and mitotic genome stability. Genes Dev. 2019;33(7–8):418–35.
+
+Huang JZ, Chen M, Chen D, Gao XC, Zhu S, Huang H, et al. A Peptide Encoded by a Putative lncRNA HOXB-AS3 Suppresses Colon Cancer Growth. Mol Cell. 2017;68(1):171–84.e6.
+
 Ingolia, N. T., Brar, G. A., Rouskin, S., McGeachy, A. M., & Weissman, J. S. (2012). The ribosome profiling strategy for monitoring translation in vivo by deep sequencing of ribosome-protected mRNA fragments. Nature protocols, 7(8), 1534–1550. https://doi.org/10.1038/nprot.2012.086
 
-Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeline for differential analysis of pausing in ribosome profiling data,STAR Protocols,Volume 3, Issue 3, 2022,101605,ISSN 2666-1667, https://doi.org/10.1016/j.xpro.2022.101605.
-
-Mingso Sherma Limbu, Tianze Xiong, Sufang Wang,A review of Ribosome profiling and tools used in Ribo-seq data analysis, Computational and Structural Biotechnology Journal,Volume 23,2024,Pages 1912-1918,ISSN 2001-0370, https://doi.org/10.1016/j.csbj.2024.04.051.
-
 Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020, https://doi.org/10.1093/nar/gkae1020
+
+Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeline for differential analysis of pausing in ribosome profiling data,STAR Protocols,Volume 3, Issue 3,2022,101605,ISSN 2666-1667, https://doi.org/10.1016/j.xpro.2022.101605.
+
+Mingso Sherma Limbu, Tianze Xiong, Sufang Wang, A review of Ribosome profiling and tools used in Ribo-seq data analysis, Computational and Structural Biotechnology Journal, Volume 23, 2024, Pages 1912-1918, ISSN 2001-0370, https://doi.org/10.1016/j.csbj.2024.04.051.
+
+Su, D., Ding, C., Qiu, J., Yang, G., Wang, R., Liu, Y., ... & Zhang, T. (2024). Ribosome profiling: a powerful tool in oncological research. Biomarker Research, 12(1), 11.
+
+Wei R, Cui X, Min J, Lin Z, Zhou Y, Guo M, et al. NAT10 promotes cell proliferation by acetylating CEP170 mRNA to enhance translation efficiency in multiple myeloma. Acta Pharm Sin B. 2022;12(8):3313-25.
 
 ### Websites:
 https://github.com/ratschlab/RiboDiff <br>
 https://plastid.readthedocs.io/en/latest/generated/plastid.html <br>
 https://pypi.org/project/loess/#documentation <br>
 https://rdp.ucc.ie/home
-
 
