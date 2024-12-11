@@ -24,7 +24,7 @@ Before carrying out feature selection, data cleaning and imputation are importan
 
 ### Feature Scaling
 
-Feature scaling can also be used to decrease bias in classification tasks where features with larger values may over-contribute to the model performance. Feature scaling standardizes or normalizes the values of features, for example Min-Max Normalization, so that features are more comparable and the model is more accurate .
+Feature scaling can also be used to decrease bias in classification tasks where features with larger values may over-contribute to the model performance. Feature scaling standardizes or normalizes the values of features, for example Min-Max Normalization, so that features are more comparable and the model is more accurate.
 
 ### Techniques in Feature Selection
 
