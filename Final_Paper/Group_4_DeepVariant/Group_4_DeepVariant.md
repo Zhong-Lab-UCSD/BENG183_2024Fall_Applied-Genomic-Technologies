@@ -123,10 +123,6 @@ Both metrics together provide a comprehensive view of DeepVariant’s performanc
 
 *Figure 1: Precision-recall plot for NA12878 variant calling using Illumina HiSeq data. DeepVariant (red) demonstrates superior precision and recall compared to GATK (green and blue), reflecting its higher F1 scores for both SNPs and indels.*
 
-![ROC Curve](Figures/supplementary_figure_2.png)
-
-*Figure 2: Receiver Operating Characteristic (ROC) curve for NA12878 variant calling using Illumina HiSeq data. DeepVariant (red) outperforms GATK (green, blue) in ranking true positives relative to false positives.*
-
 ### 4.1 Key Metrics
 - **Primary Training and Testing**:
   - Trained on CEPH NA12878 and tested on unseen Ashkenazi male NA24385.
