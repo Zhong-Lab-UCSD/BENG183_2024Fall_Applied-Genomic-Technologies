@@ -70,7 +70,7 @@ Input: A spatial omics dataset consisting of gene or protein expression profiles
 
 ## **Demo**  
 
-### Installation
+### 1. Installation
 
 Install the *Banksy* R package with Bioconductor.
 
@@ -78,7 +78,7 @@ Install the *Banksy* R package with Bioconductor.
 BiocManager::install('Banksy')
 ```
 
-### Load Relevant Packages
+### 2. Load Relevant Packages
 
 Load *BANKSY*. We’ll also load other packages for normalization, quality control, and data manipulation / visualization.
 
@@ -94,7 +94,7 @@ library(cowplot)
 library(ggplot2)
 ```
 
-### *BANKSY* Pipeline
+### 3. *BANKSY* Pipeline
 
 We’ll use mouse hippocampus data here.
 
