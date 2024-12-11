@@ -32,9 +32,9 @@ This technique allows for precise tracking of ribosome movement along mRNA, unco
 4. Insights into ncRNAs and cancer researches
 
 There are many gene expression changes in cancer, and ribosome profiling provides a unique window into understanding these changes at the translational level. One key area is the translational potential of transcripts previously classified as noncoding RNAs (ncRNAs). For instance, studies have shown that LINC00493, annotated as ncRNA, encodes a peptide localized to mitochondria, interacting with critical mitochondrial proteins. These findings suggest that many annotated ncRNAs may have unrecognized functional roles.
-![cancer](cancer.jpg)
 
 In the context of cancer, ribosome profiling aids in identifying disease-specific translational changes and novel therapeutic targets. Cancer is characterized by significant changes in glucose metabolism and aberrant amino acid metabolism. By analyzing ribosome profiling data, Huang et al. speculated that HOXB-AS3, a downregulated lncRNA in colorectal cancer (CRC) tissues, might serve as a potential protein-coding template. Subsequent experiments revealed that HOXB-AS3 encodes a 55-amino acid peptide, which exerts its tumor-suppressive role by competitively impairing the binding of splicing factor heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) to PKM exon 9. This interaction favors the formation of PKM1 over PKM2, leading to impaired aerobic glycolysis and inhibition of CRC growth. Ribosome profiling has helped uncover these metabolic shifts by revealing the translational regulation behind them. For instance, it has enabled the identification of somatic mutations and dysregulated oncogenic pathways involved in tumorigenesis. These discoveries not only expand our understanding of tumor biology but also highlight potential biomarkers and drug targets. Some of the pathways revealed by ribosome profiling are shown below.
+![cancer](cancer.jpg)
 
 5. Integration with Other Technologies
 
