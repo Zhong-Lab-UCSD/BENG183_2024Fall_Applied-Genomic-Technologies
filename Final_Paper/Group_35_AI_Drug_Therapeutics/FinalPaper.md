@@ -80,12 +80,14 @@ yourself!
   The rapid timeline for discovering ISM042-2-048 illustrates the power of AI in streamlining complex processes. The entire process, from data analysis to compound synthesis and testing, was completed in just 30 days. The integration of AI platforms significantly compressed the timeline, demonstrating a new standard for efficiency in pharmaceutical research. In comparison, traditional methods of drug discovery require years of development. Target Identification and Validation takes approximately 1-2 years, a lengthy and expensive process in which scientists identify a biological target (ex. protein, receptor) involved in a disease and validate its relevance. Then, hit identification and lead discovery takes another 2-3 years, as large compound libraries must be screened to find “hit” molecules that interact with the target. Hits are then refined into “lead” compounds through iterative testing and optimization to improve potency, selectivity, and pharmacokinetics (Hughes et al.)
 
 ![image](https://github.com/user-attachments/assets/9f79beb4-4308-43c7-94de-1df1a8b91b02)
+
 Figure by Hughes et al., Br J Pharmacol. 2011 Mar;162(6):1239–1249.
 
 
   In this specific case, for the study of HCC related drug development, of the 8,918 compounds generated, only seven were synthesized and tested in the initial round. This remarkable efficiency reflects Chemistry42's predictive capabilities, which prioritized candidates with the highest potential for success. The AI’s ability to minimize unnecessary synthesis and testing resulted in significant time and resource savings. AlphaFold’s predictive capabilities played a critical role by generating precise 3D models of CDK20, a key target in hepatocellular carcinoma (HCC). By eliminating the need for labor-intensive and costly experimental structural determination, researchers could focus on designing molecules with high specificity and binding efficacy. The results speak volumes about the efficacy of the AI-driven approach. ISM042-2-001, the initial compound, demonstrated a promising binding affinity (K_d = 9.2 μM), validating the AI’s ability to identify viable therapeutic candidates. Subsequent optimization rounds led to ISM042-2-048, a molecule with nanomolar potency. This dramatic improvement highlights the capability of AI to deliver optimized drug candidates with clinical potential in record time (Ren et al.).
 
 ![image](https://github.com/user-attachments/assets/c360c87f-f752-4e41-84dd-e6306bc3f189)
+
 Figure by Ren et al., Chem. Sci., 2023,14, 1443-1452
 
 (A) Representative Binding Affinity Curve for ISM042-2-048 in CDK20 Kinase Binding Assay
