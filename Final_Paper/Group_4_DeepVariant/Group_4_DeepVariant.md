@@ -94,6 +94,25 @@ DeepVariant’s retraining and preprocessing strategies have effectively address
 ---
 
 ## 7. Future Directions
+### 7.1 Expanding Applications
+- DeepVariant has shown exceptional performance in variant calling for whole-genome sequencing, but its framework can be extended to other genomic domains:
+  - **Transcriptomics**: Applying DeepVariant to RNA sequencing data could help identify splice variants and RNA editing events with higher accuracy.
+  - **Epigenomics**: Incorporating chromatin accessibility or methylation data could open avenues for epigenetic variant analysis.
+
+### 7.2 Improving Sensitivity for Challenging Datasets
+- Exomes and datasets with non-uniform coverage or fewer variants remain challenging for DeepVariant.
+- Future improvements in sensitivity could make the tool more reliable for:
+  - Exome sequencing projects.
+  - Data from less-common sequencing platforms or protocols.
+
+### 7.3 Leveraging Diverse Training Data
+- Training DeepVariant on a wider variety of datasets can enhance its generalizability and robustness:
+  - Non-human species with limited genomic resources.
+  - Low-quality or sparse sequencing data from clinical samples.
+- Leveraging larger and more diverse datasets could also improve performance across varying genome builds, platforms, and experimental designs.
+
+### 7.4 Conclusion
+By expanding its scope, improving sensitivity, and incorporating diverse training data, DeepVariant has the potential to become a universal tool for genomic and epigenomic analysis, applicable across a broad range of research and clinical settings.
 
 ---
 
