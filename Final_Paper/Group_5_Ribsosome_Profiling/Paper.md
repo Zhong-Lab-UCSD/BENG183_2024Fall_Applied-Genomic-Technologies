@@ -51,15 +51,14 @@ The table below shows some packages and programs developed for ribosome profilin
 | smORFer | Detection of small ORFs in prokaryotes | Prokaryotes |
 
 
-Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)). 
+> Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)). 
 
 
 ## References
 Ingolia, N. T., Brar, G. A., Rouskin, S., McGeachy, A. M., & Weissman, J. S. (2012). The ribosome profiling strategy for monitoring translation in vivo by deep sequencing of ribosome-protected mRNA fragments. Nature protocols, 7(8), 1534–1550. https://doi.org/10.1038/nprot.2012.086
 
-Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,
-End-to-end pipeline for differential analysis of pausing in ribosome profiling data,
-STAR Protocols,Volume 3, Issue 3, 2022,101605,ISSN 2666-1667,
-https://doi.org/10.1016/j.xpro.2022.101605.
+Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeline for differential analysis of pausing in ribosome profiling data,STAR Protocols,Volume 3, Issue 3, 2022,101605,ISSN 2666-1667, https://doi.org/10.1016/j.xpro.2022.101605.
 
+Mingso Sherma Limbu, Tianze Xiong, Sufang Wang,A review of Ribosome profiling and tools used in Ribo-seq data analysis, Computational and Structural Biotechnology Journal,Volume 23,2024,Pages 1912-1918,ISSN 2001-0370, https://doi.org/10.1016/j.csbj.2024.04.051.
 
+Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020, https://doi.org/10.1093/nar/gkae1020
