@@ -116,7 +116,7 @@ With how AlphaFold is structured, its speciality as a computational method for p
 
 ### Limitations
 
-While AlphaFold has proven itself expetional in a variety of ways, it still faces limitations that it can improve upon in future iterations. 
+While AlphaFold has proven itself expetional in a variety of ways, it still faces limitations that it can improve upon in future iterations[11]. It still faces trouble with determining the structure of protein sequences with point mutations, as its dataset does not contain enough informtaion on the affects of mutations.  It also struggles with proteins that do not already have close relatives of known proteins, resulting in lower confidence scores. AlphaFold may also struggle with capturing dynamic movement with the nature of how difficult it is to predict how protien conformations can change, but it can display different conformational states at a time.
 
 ### Conlcusion
 
@@ -145,5 +145,7 @@ In AlphaFold's future, we can look to increased precision in the models it predi
 [9] Embl-Ebi. (n.d.). What are proteins and how do we know their structures?. What are proteins and how do we know their structures? | AlphaFold. https://www.ebi.ac.uk/training/online/courses/alphafold/an-introductory-guide-to-its-strengths-and-limitations/what-are-proteins-and-how-do-we-know-their-structures/ 
 
 [10] MIT and Tsinghua scholars use deepmind’s alphafold approach to boost COVID-19 antibodies. ZDNET. (n.d.). https://www.zdnet.com/article/mit-and-tsinghua-scholars-use-deepminds-alphafold-approach-to-boost-covid-19-antibodies/?form=MG0AV3 
+
+[11] Embl-Ebi. (n.d.-a). Strengths and limitations of alphafold2. Strengths and limitations of AlphaFold2 | AlphaFold. https://www.ebi.ac.uk/training/online/courses/alphafold/an-introductory-guide-to-its-strengths-and-limitations/strengths-and-limitations-of-alphafold/ 
 
 ---
