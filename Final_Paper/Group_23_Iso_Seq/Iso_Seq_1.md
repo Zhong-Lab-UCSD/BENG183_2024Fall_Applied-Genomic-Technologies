@@ -375,14 +375,14 @@ Micronuclear rupture is a fundamental step in cancer progression. It can activat
 
 **Fig. 9: Genomic consequences of micronuclear rupture**  
 ![result of Micronuceli rupture](https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/refs/heads/main/Iso_Seq_3/rupture.png)
-Upon nuclear envelope collapse, the genetic material contained in the micronucleus undergo profound changes and rearrangements.
-   
+Upon nuclear envelope collapse, the genetic material contained in the micronucleus undergo profound changes and rearrangements.   
+[Source](https://pubmed.ncbi.nlm.nih.gov/38197599/#&gid=article-figures&pid=figure-3-uid-2)  
        
           
 **Fig. 10: Inflammatory consequences of micronuclear rupture**   
 ![cGas-STING](https://raw.githubusercontent.com/njdjyxz/BENG_183_Final/refs/heads/main/Iso_Seq_3/cGas-STING.png)
 Due to micronuclear envelope collapse, cytosolic exposure of genetic material initiate the nucleic-acid recognition, and the innate immune cGAS–STING pathway and downstream inflammatory signaling.  
-[Source](https://pubmed.ncbi.nlm.nih.gov/38197599/#&gid=article-figures&pid=figure-3-uid-2)
+[Source](https://pubmed.ncbi.nlm.nih.gov/38197599/#&gid=article-figures&pid=figure-4-uid-3)
 
 **Therefore, micronuclei have emerged as a prognostic marker in patients with cancer and as a potential predictor of therapeutic outcome.**  
 **By identifying unique splicing events and RNA modifications, IsoSeq helps uncover the molecular mechanisms driven by micronuclei.**
