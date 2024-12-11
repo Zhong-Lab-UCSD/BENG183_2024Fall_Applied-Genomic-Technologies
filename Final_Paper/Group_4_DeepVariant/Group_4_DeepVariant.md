@@ -2,6 +2,12 @@
 
 ![DeepVariant Logo](Figures/dv_logo.png)
 
+* [Introduction](1. Introduction) 
+* [Overview of RoseTTAFold-All Atom](#overview-of-rosettafold-all-atom)
+* [How RFAA Works](#how-rfaa-works)
+* [Example of RFAA Usage](4. Performance)
+* [References](#references)
+
 ---
 
 ## 1. Introduction
@@ -18,13 +24,57 @@
 
 ---
 
-## 3. How DeepVariant Works
-### 3.1 Analytical Pipeline
-#### Step 1: Candidate Variant Identification
-#### Step 2: Encode Variants as Pileup Images
-#### Step 3: CNN Processing
-#### Step 4: Variant Calling
-#### Step 5: Accessing DeepVariant
+## **3. How DeepVariant Works**
+
+### **3.1 Candidate Variant Identification**
+DeepVariant begins by scanning aligned reads to identify candidate variant sites—single-nucleotide polymorphisms (SNPs) and insertions/deletions (indels). These candidates are selected with high sensitivity but low specificity, ensuring that true variants are retained even at the cost of including false positives. For each genomic site, overlapping reads are analyzed to decode alleles, which are classified into reference-matching bases, mismatches, insertions, or deletions. The algorithm filters out unusable reads, such as those marked as duplicates or failing quality checks, while retaining alleles with high base quality (≥10). This step ensures a comprehensive list of potential variant sites.
+
+### **3.2 Encode Variants as Pileup Images**
+For every candidate variant site, DeepVariant encodes the read data and reference genome into an RGB image called a "pileup image." Each channel represents essential information:
+- **Red Channel**: Reference genome bases.
+- **Green and Blue Channels**: Sequencing reads supporting reference or alternate alleles, including quality scores and alignment features.
+
+This image format converts complex genomic information into a format suitable for image classification by deep learning models. Very high coverage regions are downsampled using reservoir sampling to maintain balance input representation.
+
+### **3.3 CNN Processing**
+The pileup images are analyzed by a convolutional neural network (CNN) based on the Inception v2 architecture. The CNN processes the encoded images to compute genotype likelihoods for three diploid states:
+1. **Homozygous Reference (Hom-Ref)**.
+2. **Heterozygous (Het)**.
+3. **Homozygous Alternate (Hom-Alt)**.
+
+The CNN is trained using stochastic gradient descent with labeled images and ground-truth genotypes. Multiple training cycles are ran to optimize the network parameters. After convergence, the trained model is frozen and deployed for inference.
+
+### **3.4 Variant Calling**
+Now, the trained CNN predicts genotype probabilities for each candidate site. A variant call is given if the most probable genotype is heterozygous or homozygous alternate with a confidence score exceeding a threshold. The outputs are formatted in standard Variant Call Format (VCF) for downstream analysis.
+
+### **3.5 Accessing DeepVariant**
+DeepVariant is available as open-source software on GitHub. It allows users to preprocess sequencing data, train models on custom datasets, and call variants using trained CNNs.
+
+To run DeepVariant, you can use the following Docker command:
+
+```bash
+BIN_VERSION="1.8.0"
+docker run \
+  -v "YOUR_INPUT_DIR:/input" \
+  -v "YOUR_OUTPUT_DIR:/output" \
+  google/deepvariant:"${BIN_VERSION}" \
+  /opt/deepvariant/bin/run_deepvariant \
+  --model_type=WGS \
+  --ref=/input/YOUR_REF \
+  --reads=/input/YOUR_BAM \
+  --output_vcf=/output/YOUR_OUTPUT_VCF \
+  --output_gvcf=/output/YOUR_OUTPUT_GVCF \
+  --num_shards=$(nproc) \
+  --vcf_stats_report=true
+```
+
+Replace `YOUR_INPUT_DIR`, `YOUR_OUTPUT_DIR`, `YOUR_REF`, and `YOUR_BAM` with appropriate paths and filenames for your data. For additional customization, refer to the [DeepVariant GitHub repository](https://github.com/google/deepvariant?tab=readme-ov-file).
+
+---
+
+![DeepVariant Workflow](Figures/worflow.webp)
+
+*Figure 1: Overview of the DeepVariant workflow. This image illustrates the pipeline, from identifying candidate variants to producing final variant calls using a CNN.*
 
 ---
 
