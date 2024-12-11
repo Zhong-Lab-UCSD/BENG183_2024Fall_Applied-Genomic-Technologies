@@ -8,7 +8,7 @@
 * [Challenges and Improvements](#Challenges and Improvements)
 * [Advantages of DeepVariant](#Advantages of DeepVariant) 
 * [Future Directions](#Future Directions)
-* [Conclusion](#Conclusion) 
+* [Conclusion](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#Conclusion)) 
 * [References](#references)
 
 ---
