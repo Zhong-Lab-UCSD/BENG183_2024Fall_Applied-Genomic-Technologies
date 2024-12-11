@@ -65,7 +65,7 @@ Input: A spatial omics dataset consisting of gene or protein expression profiles
 
 ### Installation
 
-Install the *Banksy* package with Bioconductor.
+Install the *Banksy* R package with Bioconductor.
 
 ``` r
 BiocManager::install('Banksy')
