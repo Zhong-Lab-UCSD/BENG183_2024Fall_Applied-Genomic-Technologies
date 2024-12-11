@@ -44,8 +44,7 @@ BANKSY then constructs a graph with cells as nodes and their similarities as edg
 
 ![](./Assets/runtimeComp.png)
 
-This image compares the runtimes of common spatial cell-type clustering algorithms, clearly   
-demonstrating that BANKSY is far more scalable than any other spatial algorithm. It can handle nearly twice as many cells as the second-best algorithm, in less time. Surprisingly, it is also as scalable as a standard non-spatial clustering algorithm.
+This image compares the runtimes of common spatial cell-type clustering algorithms, clearly demonstrating that BANKSY is far more scalable than any other spatial algorithm. It can handle nearly twice as many cells as the second-best algorithm, in less time. Surprisingly, it is also just as scalable as a standard non-spatial clustering algorithm.
 
 
 ## **Analysis Pipeline**
