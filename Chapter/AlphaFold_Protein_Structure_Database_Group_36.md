@@ -5,7 +5,7 @@
 * [Protein Structure](#protein-structure)
 * [What is AlphaFold?](#what-is-alphafold)
 * [How to use?](#how-to-use)
-* [Ahicevements and Limitations](#achievements-and-limitations)
+* [Achievements and Limitations](#achievements-and-limitations)
 * [Sources](#sources)
 
 ---
