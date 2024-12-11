@@ -1,5 +1,6 @@
 # Ribosome Profiling
 
+
 ## Procedures
 ### DNA library Preparation     
 Similar to RNA-seq, the preparation of ribosome profiling libraries requires cell lysis, mRNA purification, and reverse transcription. Here's an overview of the steps:
@@ -12,6 +13,7 @@ The mRNA sequences are now obtained. The next steps are to sequence them.
 6) Reverse transcriptase and primers would then be added to perform a reverse transcription.
 7) Among the cDNA reverse transcription products, many are rRNA contamination that needed to be eliminated by hybridizing them with biotinylated sense strand oligonucleotides and then treating with streptavidin which would bind to the biotin. Note that contamination may be still present after this step, further elimination of this contamination would need to be done in the later bioinformatics data analysis.
 8) The rest of the cDNA would next be PCR amplified to create a ribosome footprint library.
+
 
 ### Data Analysis  
 The bioinformatics data analysis of ribosome profiling has many overlaps with that of RNA-seq, and many pipelines and packages have been established for different analysis purposes. 
@@ -47,6 +49,7 @@ The table below shows some packages and programs developed for ribosome profilin
 | RiboDiPA  | Find differences in pattern of ribosome footprints | Prokaryotes and eukaryotes  |
 | RiboVIEW| Visualization of tranlsation elongation and estimation of codon enrichment | Prokaryotes and eukaryotes |
 | smORFer | Detection of small ORFs in prokaryotes | Prokaryotes |
+
 
 Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)). 
 
