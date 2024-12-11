@@ -27,7 +27,7 @@ Ribosome profiling has redefined our understanding of open reading frames (ORFs)
 
 This technique allows for precise tracking of ribosome movement along mRNA, uncovering codon-specific pauses that are often regulatory. Ribosome profiling has been used to study co-translational folding of nascent polypeptides and how these pauses affect protein structure and function. Pausing can also reveal regulatory mechanisms like feedback loops in biosynthetic pathways, such as the regulation of arginine biosynthesis through ribosome stalling.
 
-<img src="application.jpg.pdf" alt="application" width="700" style="display: block; margin: 0 auto;">
+<img src="application.jpg" alt="application" width="700" style="display: block; margin: 0 auto;">
 
 4. Insights into ncRNAs and cancer researches
 
