@@ -39,20 +39,13 @@ There are 3 distinct AlphaFold algorithms: 1, 2, and 3.
 
 * Alphafold 3, released earlier this year in May, is able to model the structures and interactions of proteins with DNA, RNA, ligands, and ions. By modeling protein-ligand interactions, AlphaFold 3 is able to model complexes rather than single chains to contribute to drug development [5]. 
 
-At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences.
+### How it Works
 
-AlphaFold is not entirely comparative modeling: while it was trained on previously known protein structures, it does not require a template and can predict previously unknown structures
-
-It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min 
-
-
-
+At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences. This method is not entirely comparative modeling: while AlphaFold was trained on previously known protein structures, it does not require a template and can predict previously unknown structures. It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min 
 
 ---
 
 ## How to use?
-
-
 
 ### Usage
 
