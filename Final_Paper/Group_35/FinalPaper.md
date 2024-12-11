@@ -45,6 +45,7 @@ Some key features of Chemistry 42 include:
 ## Workflow
 We will now dive into the general workflow for this project using hepatocellular carcinoma (HCC). 
 This will demonstrate the usefulness of various AI tools for commercial purposes such as drug discovery.
+
 ### Target Identification
 PandaOmics was used to analyze OMICs and textual data that associate genes with the disease of interest from 10 different datasets related to HCC and returned a ranked list of the top 20 
 targets which could be sorted by novelty, safety, tissue specificity, etc.
@@ -53,9 +54,11 @@ based on gene variants, knockout/overexpression studies, differential expression
 This tool allowed the researchers to narrow down the scope of the study's therapeutics targets using multidimensional filtering criteria. Of these 20 targets, cyclin-dependent 
 kinase 20 (CDK20) was selected as the initial target due to its strong association with HCC as it is overexpressed in many tumor cell lines, limited information about its structure and lack of approved drugs or 
 clinical compounds targeting it. Now that an initial target has been determined, it is time to move on to generation of the compound and testing.
+
 ### Compound Generation and Testing
 Alphafold was used to predict the 3D structure of CDK2. The surface of the protein is covered in methyl probes whose bonding interaction energy is calculated and then clustered and scored to produce a list of binding sites using Chemistry42. Using this approach, Chemistry42 was then able to use the Alphafold-generated 3D model to produce 8,918 potential compounds. Out of these compounds, after molecular docking and clustering, 7 were selected for 
 synthesis and biological testing. Using kinase binding assays, the compound ISM042-2-001 showed a binding affinity (K_d) of 9.2 μM. These results can then be used for the final step.
+
 ### Optimization
 Using the initial results, a second round of compound generation using Chemistry42 was conducted which generated 16 molecules with the hope of improving binding affinity. Of these 16 molecules, 6 were selected for synthesis and testing was conducted to produce more refined candidates. Of these candidates, the molecule ISM042-2-048 
 was discovered with nanomolar efficacy, representing a significant improvement in potency. Now you should be able to explain the basics of the general workflow of how AI tools, such as
