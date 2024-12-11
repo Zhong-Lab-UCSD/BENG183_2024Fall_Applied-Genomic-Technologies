@@ -27,6 +27,10 @@ Attempting to simulate all these conditions can be a daunting task for any moder
 ## What is AlphaFold?
 AlphaFold is an AI system developed by Google DeepMind to predict a protein’s 3D structure using its amino acid sequence. Currently, the AlphaFold protein structure database contains over 200 million predicted protein structures, including the complete human proteome. It recently won the 2024 Nobel Prize in Chemistry. 
 
+Example of 3D protein structure of AF-Q3S2X4-F1 predicted by AlphaFold. The model displays regions with high prediction confidence in dark blue and regions of lower confidence in orange. 
+![AlphaFold Structure Example Image](https://github.com/serrachow/beng183images/blob/main/alphafold_structure.png)
+
+
 ### Importance of AlphaFold
 AlphaFold has solved the “protein folding problem”, can predict protein structures with high accuracy, and accelerates research in biotechnology and drug development fields as it contributes to targeted drug discovery. 
 
