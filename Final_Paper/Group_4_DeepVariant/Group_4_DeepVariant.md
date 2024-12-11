@@ -29,6 +29,10 @@
 ---
 
 ## 4. Performance
+### 4.0 Interpreting Performance Metrics
+- **F1 Score**: This metric combines precision (how many identified variants are correct) and recall (how many true variants are identified) into a single measure.
+- **Positive Predictive Value (PPV)**: PPV measures the proportion of called variants that are true positives. 
+
 ### 4.1 Key Metrics
 - **Primary Training and Testing**:
   - Trained on CEPH NA12878 and tested on unseen Ashkenazi male NA24385.
