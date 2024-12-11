@@ -103,11 +103,6 @@ Replace `YOUR_INPUT_DIR`, `YOUR_OUTPUT_DIR`, `YOUR_REF`, and `YOUR_BAM` with app
 ### 4.0 Interpreting Performance Metrics
 - **F1 Score**: This metric combines precision (how many identified variants are correct) and recall (how many true variants are identified) into a single measure.
 
-![Precision-Recall Curves](Figures/supplementary_figure_1a.png){ width=50% height=50% }
-
-
-*Figure 1: Precision-recall curves for NA12878 variant calling using Illumina HiSeq data demonstrate DeepVariant’s superior performance compared to GATK. DeepVariant achieves higher precision and recall across all variant types, reflected by its higher F1 scores. This result highlights the effectiveness of DeepVariant’s deep learning approach in balancing precision and recall to reduce errors in variant calling.*
-
 - **Positive Predictive Value (PPV)**: PPV measures the proportion of called variants that are true positives. 
 
 - **Precision-Recall Plot (Supplementary Figure 1A in paper)**:
