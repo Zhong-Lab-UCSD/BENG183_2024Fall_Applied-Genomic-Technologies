@@ -4,7 +4,7 @@
 1. [Why is Feature Selection Important](#why-is-feature-selection-important)
 2. [How is Feature Selection Done](#how-is-feature-selection-done)
 3.  [Potential Applications In Bioinformatics](#potential-applications-in-bioinformatics)
-4. [Boruta](#Boruta:-A-wrapper-method-for-feature-selection)
+4. [Boruta: A Wrapper Method For Feature Selection](Boruta-A-Wrapper-method-for-feature-selection)
 5.  [Conclusion](#conclusion)
 6.  [Sources](#sources-cited)
 
