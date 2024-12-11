@@ -5,6 +5,7 @@
 
 ## Table of Contents
 - [What is ChIRP-seq?](#what-is-chirp-seq)
+- [Applications of ChIRP-Seq](#applications-of-chirp-seq)
 - [Case Study: "Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"](#case-study-exploration-and-bioinformatic-prediction-for-profile-of-mrna-bound-to-circular-rna-btbd7_hsa_circ_0000563-in-coronary-artery-disease)
 
 # What is ChIRP-seq?
