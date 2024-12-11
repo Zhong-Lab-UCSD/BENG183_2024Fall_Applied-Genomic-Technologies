@@ -90,6 +90,27 @@ The table below shows some packages and programs developed for ribosome profilin
 > ![portal](portal.jpg)
 
 
+## Advantages, Limitations, and Future Perspectives
+
+### Advantages
+
+- High Sensitivity and Precision: Codon-level resolution of translation.
+
+- Dynamic Measurements: Captures real-time translation events.
+
+- Broad Applicability: Versatile across different organisms and contexts.
+
+### Limitations
+
+- Experimental Artifacts: Potential biases from nuclease digestion and sequencing.
+
+- Dependency on RNA-Seq: Requires complementary data for translation efficiency calculations.
+
+- Data Complexity: High computational demands for analysis.
+
+### Future Perspectives
+
+
 ## References
 ### Papers:
 Bao Y, Zhai J, Chen H, Wong CC, Liang C, Ding Y, et al. Targeting m(6)A reader YTHDF1 augments antitumour immunity and boosts anti-PD-1 efficacy in colorectal cancer. Gut. 2023;72(8):1497–509.
