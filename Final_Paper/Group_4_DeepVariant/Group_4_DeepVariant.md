@@ -3,9 +3,12 @@
 ![DeepVariant Logo](Figures/dv_logo.png)
 
 * [Introduction](#Introduction) 
-* [Overview of RoseTTAFold-All Atom](#overview-of-rosettafold-all-atom)
-* [How RFAA Works](#how-rfaa-works)
-* [Example of RFAA Usage](4. Performance)
+* [The Challenge of Variant Calling](#The Challenge of Variant Calling) 
+* [How DeepVariant Works](#How DeepVariant Works) 
+* [Challenges and Improvements](#Challenges and Improvements)
+* [Advantages of DeepVariant](#Advantages of DeepVariant) 
+* [Future Directions](#Future Directions)
+* [Conclusion](#Conclusion) 
 * [References](#references)
 
 ---
@@ -38,7 +41,7 @@ A CNN is a type of neural network designed for structured data like images. It i
 
 ---
 
-## **3. How DeepVariant Works**
+## 3. How DeepVariant Works
 
 ### **3.1 Candidate Variant Identification**
 DeepVariant begins by scanning aligned reads to identify candidate variant sites—single-nucleotide polymorphisms (SNPs) and insertions/deletions (indels). These candidates are selected with high sensitivity but low specificity, ensuring that true variants are retained even at the cost of including false positives. For each genomic site, overlapping reads are analyzed to decode alleles, which are classified into reference-matching bases, mismatches, insertions, or deletions. The algorithm filters out unusable reads, such as those marked as duplicates or failing quality checks, while retaining alleles with high base quality (≥10). This step ensures a comprehensive list of potential variant sites.
