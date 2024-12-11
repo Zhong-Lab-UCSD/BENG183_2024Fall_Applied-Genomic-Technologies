@@ -109,16 +109,19 @@ Understanding relative cell positioning is important for biological applications
 https://dsworld.org/content/images/2021/10/dbscan.png
 
 ## References:
-[^1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/ (Reference 2, PMC Article)
 
-[^2]: https://www.nature.com/articles/s41598-023-45190-4 (Reference 3, Nature Article)
+1. [PMC Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7820885/)  
+2. [Nature Article](https://www.nature.com/articles/s41598-023-45190-4)  
+3. [Georgia Tech Article](https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/)  
+4. [New Horizons Article](https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python)  
+5. [Datacamp Article](https://www.datacamp.com/tutorial/dbscan-clustering-algorithm)  
+6. [Medium Article: Clustering Like a Pro - A Beginner's Guide to DBSCAN](https://medium.com/@sachinsoni600517/clustering-like-a-pro-a-beginners-guide-to-dbscan-6c8274c362c4)
 
-[^3]: https://sites.gatech.edu/omscs7641/2024/03/10/evolution-taxonomy-of-clustering-algorithms/ (Reference 3, Georgia Tech Article)
 
-[^4]: https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python (Reference 1, New Horizons Article)
 
-[^5]: https://www.datacamp.com/tutorial/dbscan-clustering-algorithm 
 
-[^6] https://medium.com/@sachinsoni600517/clustering-like-a-pro-a-beginners-guide-to-dbscan-6c8274c362c4 
+---
+
+
 
 
