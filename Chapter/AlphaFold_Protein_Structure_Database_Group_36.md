@@ -41,9 +41,9 @@ There are 3 distinct AlphaFold algorithms: 1, 2, and 3.
 
 * Alphafold 1 was released in 2018 and introduced a novel approach to protein folding using machine learning. 
 
-* Alphafold 2 incorporated an attention-based neural network and calculated a “pair representation” for each residue pair to increase its overall accuracy [4](https://www.nature.com/articles/s41586-021-03819-2).  
+* Alphafold 2 incorporated an attention-based neural network, Evoformer, and calculated a “pair representation” for each residue pair to increase its overall accuracy [4].  
 
-* Alphafold 3, released earlier this year in May, is able to model the structures and interactions of proteins with DNA, RNA, ligands, and ions. By modeling protein-ligand interactions, AlphaFold 3 is able to model complexes rather than single chains to contribute to drug development. 
+* Alphafold 3, released earlier this year in May, is able to model the structures and interactions of proteins with DNA, RNA, ligands, and ions. By modeling protein-ligand interactions, AlphaFold 3 is able to model complexes rather than single chains to contribute to drug development [5]. 
 
 
 ---
@@ -113,4 +113,5 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 
 [4] Jumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021). https://doi.org/10.1038/s41586-021-03819-2
 
+[5] Abramson, J., Adler, J., Dunger, J. et al. Accurate structure prediction of biomolecular interactions with AlphaFold 3. Nature 630, 493–500 (2024). https://doi.org/10.1038/s41586-024-07487-w
 ---
