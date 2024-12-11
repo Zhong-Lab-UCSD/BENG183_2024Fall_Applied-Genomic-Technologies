@@ -21,14 +21,14 @@ HOMER is highly adaptable and can be used in conjunction with many different mot
 <img src="figures/chip-seq.png" align="right" height="350rm">
 <br><br><br>
 Chromatin immunoprecipitation followed by sequencing (ChIP-Seq) is used to study protein-DNA interactions [2]. ChIP-Seq works by cross-linking proteins and their bound DNA, typically with formaldehyde, then sonicating, purifying, and sequencing fragments selected with a protein-specific antibody for your target protein. These fragments correspond to motifs where your target protein binds to DNA.
-<br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ### 2.2 cs-RNA seq
 
 <img src="figures/cs-rna seq.png" align="right" height="300rm">
 <br><br>
 cs-RNA seq stands for capped-small RNA sequencing [3]. This technology targets RNA that has been transcribed a short distance and has a 5’ cap. 5’ caps are added onto RNA transcripts early in the process while they are still being synthesized. After decapping and sequencing these RNA transcripts, HOMER can be used to identify transcription start sites (TSS) and their activity for both stable and unstable RNAs.
-<br><br><br><br>
+<br><br><br><br><br><br>
 
 
 ### 2.3 GRO-seq
@@ -37,7 +37,7 @@ cs-RNA seq stands for capped-small RNA sequencing [3]. This technology targets R
 <br><br>
 Global-run-on sequencing (GRO-seq) identifies the location and the relative levels of transcriptionally active RNA Pol II by combining next-gen deep sequencing and the nuclear run-on assay [4]. This method involves temporarily halting transcription to introduce radioactively labeled nucleotides and then allows transcription to run on in vitro for a short amount of time. The nascent (currently synthesized) RNA is sequenced, identified with HOMER, and quantified to reveal the location of transcriptionally active RNA polymerases and rates of transcription at that specific site in the genome. *GRO-seq image[5]
 
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 
 ## 3. What is HOMER and How Does It Work?
 
