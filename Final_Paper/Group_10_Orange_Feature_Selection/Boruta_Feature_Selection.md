@@ -1,5 +1,5 @@
-# Feature Selection Techniques in Bioinformatics - Orange3
-Within machine learning, high-dimensional datasets can make it difficult to fit appropriate models and perform effective analysis. One technique that can be used to address this issue is feature selection, which can be defined as the process of identifying and selecting the most significant features (predictors with the highest correlation) in a dataset for use in predictive model construction. Our paper aims to give an overview of what feature selection is, why it is useful, how it may be done, and how it can be applied in bioinformatics.
+# Feature Selection Techniques in Bioinformatics - Boruta
+Within machine learning, high-dimensional datasets can make it difficult to fit appropriate models and perform effective analysis. One technique that can be used to address this issue is feature selection, which can be defined as the process of identifying and selecting the most significant features (predictors with the highest correlation) in a dataset for use in predictive model construction. Our paper aims to give an overview of what feature selection is, why it is useful, how it may be done, and how it can be applied in bioinformatics, as well as touching on Boruta, a commonly used feature selection tool that excels in bioinformatics contexts.
 
 ## Why is feature selection important?
 Role in classification:
@@ -33,8 +33,6 @@ Wrapper methods select features by training models on different feature subsets 
 ### Embedded Methods:
 
 Embedded methods select features during the model training process. The model will predict the most relevant features based on the feature relationship with the target variable as it learns. An example is LASSO. This method applies a penalty during the regression process, shrinking coefficients of less important features to a zero value so that the subset of features selected will be the most relevant. Since embedded methods require the model to be run multiple times on feature subsets, they tend to be faster than wrapper methods yet accurate as they still interact with the classifier. However, embedded methods are less interpretable and adaptable across different algorithms.
-
-
 
 
 ## Potential Applications in Bioinformatics
@@ -72,6 +70,46 @@ To highlight one benchmark method, in 2002, Guyou et al. published a paper in th
 
 To improve feature selection techniques for microarray data going forward, future research efforts may focus on optimization of the statistical methods (i.e. addressing class imbalance, reducing recursion times, etc.), incorporating representation-based methods such as image processing or computer vision, and utilizing more sophisticated biological information, such as consideration of interactions between genes in the dataset. 
 
+## Boruta: A Wrapper Method for Feature Selection
+Boruta and Boruta_py are wrapper based feature selection tools, especially effective in bioinformatics due to their notable ability to work on high dimensionality datasets, which are commonly encountered in the field. The Random Forest Classification wrapper was designed to identify all relevant features in the dataset by iteratively removing features that are less relevant than random probes as calculated by statistical tests. 
+
+There are multiple modes of implementation, both a R package and a Python package(Boruta_py). Focusing on Boruta_py, once installed, all you have to do is import it using ```from boruta import BorutaPy```. You then need to initialize a random forest estimator, which can be done as follows, ```rf = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=42)```. Finally you can initialize your Boruta object:
+```
+boruta_selector = BorutaPy(
+    estimator=rf,
+    n_estimators='auto',  # Automatically determine optimal number of trees
+    perc=100,             # Use all shadow features for comparison
+    random_state=42
+)
+```
+With ```boruta_selector```, you are able to use it with other scikit-learn methods including:
+  - fit(X, y)
+  - transform(X)
+  - fit_transform(X, y)
+
+![alt text](../../Figures/boruta_pipe.jpg)\
+*Machine learning pipeline utilizing Boruta*, [Source](https://www.tandfonline.com/doi/full/10.1080/0954898X.2024.2331506)
+
+### How Boruta Works
+As noted earlier, Boruta is a wrapper of a random forest classification algorithm, that is used to evaluate relevance of features within a dataset. Boruta runs through the following steps:
+
+  1. Creates Shadow Features: Boruta creates randomly ordered copies of each feature to serve as the benchmark for figuring out if an original feature  is signifant to the target. This makes it so that the only features selected are those that have signficance scores significantly greater than the random noise that was created.
+  2. Signficance Score Calculation: The model is trained, calculating the significance scores of the real and shadow features.
+  3. Compares and Decides: Compares the significance scores of the real features to that of the shadow features, to decide which features are relevant. Those that significantly outperform the shadow scores are accepted and remain in the dataset, while those that do not are denied and removed.
+  4. Repeat: The previous three steps are repeated until all of the features are decided to have been important or irrelevant. 
+
+![alt text](../../Figures/boruta_results.png)\
+*Box plot Boruta results from Ozone data. Red and Green signify Z scores of rejected and accepted features, blue represents minimal, average and maximum Z score for the shadow attributes*, [Source](https://www.jstatsoft.org/article/view/v036i11) 
+
+### Advantages and Drawbacks of Boruta
+Boruta has a lot of advantages for identifying relevant features, including that it is abililty to comprehensively select all features that contribute to the target class, however one drawback here is that Boruta can only find all features, essentially it cannot find an optimal subgroup of features for predicting the target feature. By nature of the random forest classification model and the shadow features, Boruta is very strong against noise, and also is able to capture non-linear, more complex relations between features. However, not all datasets are optimal for random forrests, and would be better suited with a different model, as well as Boruta can be computationally expensive especially as it is often ran on large datasets. Overall, Boruta is a very powerful tool given the right context, but it is not an end all be all solution, there are different scenarios where it would be better to use a different feature selection technique, but it is still good to have in the arsenal.
+
+### Bioinformatics Application
+Boruta is well-suited for helping to answer bioinformatics questions as it does can handle especially large datasets. Some examples of topics it excels in include:
+  - SNP Analysis: Boruta can help to identify SNPs relevant to the biological question at hand
+  - Proteomics: For mass spectrometry datasets, Boruta can identify important ion peaks for biomarker discover
+  - Gene Expression Analysis: Boruta can identify genes taht are most important for the biological question trying to be answered
+
 ## Conclusion
 As discussed, feature selection is a technique that proves invaluable in many facets of bioinformatics, as it can greatly reduce computational complexity and processing time, as well as strengthen models by filtering out noise. Developing stronger methods for more effective feature selection is undoubtedly a promising area for countless problems within biological (and non-biological) research.
 
@@ -84,5 +122,8 @@ As discussed, feature selection is a technique that proves invaluable in many fa
 
 [4] Li Z, Xie W, Liu T (2018) Efficient feature selection and classification for microarray data. PLoS ONE 13(8): e0202167. https://doi.org/10.1371/journal.pone.0202167
 
-[5]
+[5] Scikit-Learn-Contrib. “Scikit-Learn-Contrib/Boruta_py: Python Implementations of the Boruta All-Relevant Feature Selection Method.” GitHub, github.com/scikit-learn-contrib/boruta_py
 
+[6] Kursa, M. B., & Rudnicki, W. R. (2010). Feature Selection with the Boruta Package. Journal of Statistical Software, 36(11), 1–13. https://doi.org/10.18637/jss.v036.i11
+
+[7] Ejiyi, C. J., Qin, Z., Ukwuoma, C. C., Nneji, G. U., Monday, H. N., Ejiyi, M. B., … Bamisile, O. O. (2024). Comparative performance analysis of Boruta, SHAP, and Borutashap for disease diagnosis: A study with multiple machine learning algorithms. Network: Computation in Neural Systems, 1–38. https://doi.org/10.1080/0954898X.2024.2331506
