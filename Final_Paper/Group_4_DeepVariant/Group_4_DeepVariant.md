@@ -110,6 +110,28 @@ Replace `YOUR_INPUT_DIR`, `YOUR_OUTPUT_DIR`, `YOUR_REF`, and `YOUR_BAM` with app
 
 - **Positive Predictive Value (PPV)**: PPV measures the proportion of called variants that are true positives. 
 
+- **Precision-Recall Plot (Supplementary Figure 1A in paper)**:
+  - Focuses on precision (the proportion of true positive variant calls out of all positive calls) and recall (the proportion of true positive variants identified).
+  - Reflects the end-to-end quality of a variant calling assay by balancing true positives and false positives.
+  - DeepVariant demonstrates superior performance compared to GATK, achieving higher precision and recall across both SNPs and indels. This superiority is directly tied to DeepVariant’s higher F1 scores for both variant types.
+
+- **ROC Curve (Supplementary Figure 2 in paper)**:
+  - Evaluates the classifier’s ability to rank true positives higher than false positives.
+  - Provides a complementary view by assessing the ranking effectiveness independent of absolute counts of true and false positives.
+  - However, in NGS variant calling, ROC curves are less comparable across methods because:
+    1. Definitions of false positives differ between tools, depending on confidently homozygous reference regions.
+    2. Specificity lacks a clear baseline since every allele at every position is a potential true negative.
+
+Both metrics together provide a comprehensive view of DeepVariant’s performance. The PR plot (Figure 1) emphasizes accuracy and error reduction, while the ROC curve (Figure 2) complements this by showcasing ranking effectiveness. Despite its limitations, the ROC curve further validates DeepVariant’s overall superiority in discriminating between true and false positives.
+
+![Precision-Recall Plot](Figures/supplementary_figure_1a.png){ width=10% }
+
+*Figure 1: Precision-recall plot for NA12878 variant calling using Illumina HiSeq data. DeepVariant (red) demonstrates superior precision and recall compared to GATK (green and blue), reflecting its higher F1 scores for both SNPs and indels.*
+
+![ROC Curve](Figures/supplementary_figure_2.png){ width=10% }
+
+*Figure 2: Receiver Operating Characteristic (ROC) curve for NA12878 variant calling using Illumina HiSeq data. DeepVariant (red) outperforms GATK (green, blue) in ranking true positives relative to false positives.*
+
 ### 4.1 Key Metrics
 - **Primary Training and Testing**:
   - Trained on CEPH NA12878 and tested on unseen Ashkenazi male NA24385.
