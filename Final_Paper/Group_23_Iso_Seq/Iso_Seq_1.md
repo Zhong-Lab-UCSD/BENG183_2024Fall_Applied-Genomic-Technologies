@@ -19,9 +19,9 @@
       4. [Finding Special Genes (IGV)](#finding-special-genes-igv)
       5. [Alternative Polyadenylation (APA) Analysis](#alternative-polyadenylation-apa-analysis)
 6. [Application of Isoseq on Micronuclei](#application-of-isoseq-on-micronuclei)
-7. [Understanding Micronuclei](#understanding-micronuclei)
-8. [Mechanisms of Micronuclei Formation](#mechanisms-of-micronuclei-formation)
-9. [Micronuclei and Cancer](#micronuclei-and-cancer)
+    1. [Understanding Micronuclei](#understanding-micronuclei)
+    2. [Mechanisms of Micronuclei Formation](#mechanisms-of-micronuclei-formation)
+    3. [Micronuclei and Cancer](#micronuclei-and-cancer)
 10. [Source](#source)
 
 ---
@@ -344,7 +344,7 @@ Isoforms generated through APA events can influence transcript stability, locali
 From the above discussion we know that IsoSeq enables the study of full-length transcripts, providing valuable insights into RNA splicing and transcriptional disruptions.      
 Due to the specific traits of micronuclei, IsoSeq becomes a perfect tool to study micronuclei 
 
-## Understanding Micronuclei
+### Understanding Micronuclei
 **What are Micronuclei?**   
 Micronuclei have a named as "the Lost Chromosomes". It was first discovered in 19th centure by von Hansemann.   
 Micronuclei are cytoplasmic structures that contain entire chromosomes or chromosomal fragments. They usually result from errors in segregation during mitosis.   
@@ -353,7 +353,7 @@ Micronuclei are cytoplasmic structures that contain entire chromosomes or chromo
 Micronuclei are key indicators in cancer biology research.     
 The exposure of micronuclear chromosome to the cytosolic milieu, through rupture and collapse of the micronuclear envelope during interphase, can raise several pathologic responses which drive tumor progression.
 
-## Mechanisms of Micronuclei Formation
+### Mechanisms of Micronuclei Formation
 **How did micronulei being produced?**   
 Micronuclei arise from mis-segregating events where an entire or a part of a chromosome is left outside of the primary nucleus. And then, the micronucleus ends randomly in one of the daughter cells.  
 
@@ -369,7 +369,7 @@ d. The micronucleus be extruded from the cell, forming after mitotic division tw
 
 **Micronuclei functions as the markers of DNA damage. Compared to mitoric figures, its presence  is easier to detect in tissues. As a result, microneclei is a best case to study ongoing mis-segregation. And work as a reliable marker of chromosomal instability.**
 
-## Micronuclei and Cancer
+### Micronuclei and Cancer
 **Micronuceli Rupture**  
 Micronuclear rupture is a fundamental step in cancer progression. It can activate immune signaling pathways.    
 
