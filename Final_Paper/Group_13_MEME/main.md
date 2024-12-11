@@ -14,7 +14,7 @@
 #### 1.1. About MEME Suite<a name="11"></a>
 MEME Suite is an extensive collection of motif-based sequence analysis tools, widely used in the scientific community for identifying and analyzing motifs found in biological sciences. The basis of algorithms behind the MEME Suite tools were first published in 1994 by Timothy L. Bailey and Charles Elkan from UC San Diego's Computer Science and Engineering department [1]. Its tools are specialized for motif discoveries, enrichments, scannings, comparisons, and more. This chapter will be focused on MEME, which is a motif discovery tool within MEME Suite.
 
-![MEME Suite](the_MEME_suite.png)
+![MEME Suite](MEME_suite.png)
 
 #### 1.2. Importance of Motif-based Analysis<a name="12"></a>
 Motifs are short repetitive patterns in DNA, RNA, and protein sequences that are biologically significant. They play a vital role in understanding biological processes because they often correspond to functional or regulatory elements within the genome. Some instances include transcription factor binding sites, splice junctions, and protein-protein interaction sites[2].
@@ -33,6 +33,7 @@ The MEME tool’s basic function is to discover ungapped motifs in inputted grou
 - Output: As many discoverable motifs as requested, to be graphed in the resulting pictogram
 
 Below is the website application for the MEME tool:
+
 ![MEME_tool](MEME_tool.png)
 
 There is also a command-line version, which installable programs can be found here.
@@ -110,6 +111,8 @@ TGTGAGTGGTCGCACATATCCTGTT
 ```
 
 The following is the output of 3 motifs, as requested:
+
+![MEME Output](MEME_output.png)
 
 Taking a closer look at the first motif, the x-axis describes the position of the MEME in relation to each other, and the y-axis represents the frequency of a base appearing at that position. In this example, positions 3-5 would have 100% CTG base occurrence, whereas position 11 has all 4 types of bases, with A most predominantly.
 
