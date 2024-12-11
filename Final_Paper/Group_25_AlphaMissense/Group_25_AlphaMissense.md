@@ -105,8 +105,6 @@ An example of an SF3b complex used to see how each length contributes to the ess
 
 ## Limitations
 
-(FIX FORMAT)
-
 | Limitations    | Description |
 | -------- | ------- |
 | Length Restriction  | Long sequences can result in a loss of contextual information due to the limitation of the method <br /> Memory limitation <br /> Short genes can be underpowered |
