@@ -39,7 +39,7 @@ The creation of ncRNA indices and the alignment to the indices can be done using
 4) The steps after this vary depending on the purpose of the analysis, for example: <br>To detect the change in translation efficiency, both the reads from ribosome profiling and mRNA seq would be mapped to CDS regions and exons using featureCounts, and by using a package called RiboDiff, the ratio between the counts of  ribosome profiling reads and RNA-seq reads of each CDS or exon would be calculated and compared between different treatments ([manual of RiboDiff](https://github.com/ratschlab/RiboDiff)). 
 <br>To determine ribosome distribution, a count array (lists that record the number of reads that are mapped to each codon of a transcript), would be generated with the bam file resulting from the genome alignment along with GTF genome annotation file using a package called Plastid. By using LOESS smoothing with the count array, we can then calculate cumulative ribosome distribution on transcripts ([manual of Plastid](https://plastid.readthedocs.io/en/latest/generated/plastid.html); [manual of LOESS](https://pypi.org/project/loess/#documentation))
 
-![dry](dry.jpg)
+![dry](dry.jpg){width=300px}
 
 The table below shows some packages and programs developed for ribosome profiling data analysis with different specialization:
 
