@@ -14,21 +14,21 @@
 
 ### Protein Structure Determination is Important
 
-Proteins are commonly known as the fundamental building blocks for all living organisms. They carry out important tasks in the cell, from regulation, structure, and functions of the organ's they belong to. When proteins fail to do their function or hinders the body's function, we see these larger organs fail, in the event of diseases, like in Alzheimer's [1] or ALS [2]. In order to understand how these proteins function, and what happens when they do not function, we can look to studying their specialized structure. Proteins are constructed from amino acid sequences that fold in a certain way, resulting in a mechanism that is specially designed to handling a certain task. For example, a hemoglobin protein that is used for oxygen transport will have specialized binding sites for oxygen molecules, and otpimize the binding and transport of those molecules so they can be delivered across the body [3]. From knowing what shape a protein has, we can understand how it interactes with other molecules in the body, and what role they play in pathways.
+Proteins are commonly known as the fundamental building blocks for all living organisms. They carry out important tasks in the cell, from regulation, structure, and functions of the organ's they belong to. When proteins fail to do their function or hinders the body's function, we see these larger organs fail, in the event of diseases, like in Alzheimer's [1] or ALS [2]. In order to understand how these proteins function, and what happens when they do not function, we can look to studying their specialized structure. Proteins are constructed from amino acid sequences that fold in a certain way, resulting in a mechanism that is specially designed to handling a certain task. For example, a hemoglobin protein that is used for oxygen transport will have specialized binding sites for oxygen molecules, and otpimize the binding and transport of those molecules so they can be delivered across the body [3]. From knowing what shape a protein has, we can understand how it interacts with other molecules in the body, and what role they play in pathways.
 
 
 ![image](https://github.com/user-attachments/assets/5dcf711c-2cb8-496c-8adf-b1fad37dcc5c)
 
-Structure of Salmonella alpha-2-macroglobulin[9]
+Structure of Salmonella alpha-2-macroglobulin [9]
 
 ![image](https://github.com/user-attachments/assets/6fb06eb0-15f1-4865-b3e4-5d0b7b103e39)
 
-Structure of HIV-1 Reverse Transcriptase[9]
+Structure of HIV-1 Reverse Transcriptase [9]
 
 
 ### Previous Methods to Protein Structure Determination
 
-Over the years, we have tried to look at protein structure using a variety of methods, each having their own positives and negatives. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy[9]. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins, and performing physical experimentation on them to determine their structutre. This allows us to determine and create accurate protein structures that are grounded data from reality. However, these method can be expensive with the equipment and knowledge required to use these methods, and often take a long time to produce a result.
+Over the years, we have tried to look at protein structure using a variety of methods, each having their own positives and negatives. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy [9]. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins and performing physical experimentation on them to determine their structutre. This allows us to determine and create accurate protein structures that are grounded data from reality. However, these method can be expensive with the equipment and knowledge required to use these methods, and often take a long time to produce a result.
 
 Because of this, we have tried to look into alternative computational methods for determining protein structure that rely on knowing the protein's sequence rather than observing its form directly. We can use the fact that a protein's structure is constructed from its string of amino acids. However, this poses its own problems. Deriving a protein's structure entirely from its sequence can be a difficult task because there are many factors that go into the folding process. In a protein's tertiary structure, bends can form in the structutre that come from internal and external forces, including hydrogen bonding, hydrophobic interaction, dimers, electrostatic interactions, van der Waals forces, and the enviroment where the protein is folding. Proteins also fold following the lowest energy landscape. Determining this low energy landscape can be a computationally expensive task. Even more, proteins often have a variety of conformations that are suited to their task so their structure can dynamically change based on what they are interacting with in their enviroment. 
 
@@ -46,18 +46,18 @@ Example of 3D protein structure of AF-Q3S2X4-F1 predicted by AlphaFold. The mode
 
 
 ### Importance of AlphaFold
-AlphaFold has solved the “protein folding problem”, can predict protein structures with high accuracy, and accelerates research in biotechnology and drug development fields as it contributes to targeted drug discovery. 
+AlphaFold has solved the “protein folding problem”, predicted protein structures with high accuracy, and accelerated research in biotechnology and drug development fields as it contributes to targeted drug discovery. 
 
 ### Algorithms
 There are 3 distinct AlphaFold algorithms: 1, 2, and 3. 
 
-* Alphafold 1 was released in 2018 and introduced a novel approach to protein folding using machine learning. 
+* AlphaFold 1 was released in 2018 and introduced a novel approach to protein folding using machine learning. 
 
-* Alphafold 2 incorporated an attention-based neural network, Evoformer, and calculated a “pair representation” for each residue pair to increase its overall accuracy [4].  
+* AlphaFold 2 incorporated an attention-based neural network, Evoformer, and calculated a “pair representation” for each residue pair to increase its overall accuracy [4].  
 
-* Alphafold 3, released earlier this year in May, is able to model the structures and interactions of proteins with DNA, RNA, ligands, and ions. By modeling protein-ligand interactions, AlphaFold 3 is able to model complexes rather than single chains to contribute to drug development [5]. 
+* AlphaFold 3, released earlier this year in May, is able to model the structures and interactions of proteins with DNA, RNA, ligands, and ions. By modeling protein-ligand interactions, AlphaFold 3 is able to model complexes rather than single chains to contribute to drug development [5]. 
 
-At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences[8]. This method is not entirely comparative modeling: while AlphaFold was trained on previously known protein structures, it does not require a template and can predict previously unknown structures. It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min. 
+At its core, AlphaFold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD) and apply them to new protein sequences[8]. This method is not entirely comparative modeling: while AlphaFold was trained on previously known protein structures, it does not require a template and can predict previously unknown structures. It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min. 
 
 ---
 
@@ -112,15 +112,15 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 
 ### Achievements
 
-With how AlphaFold is structured, its speciality as a computational method for predicting protein structure is that it can determine protein folds that have not been seen before in the Protein Database. It also perfomrs better than other models at predicting intrinsically disordered part of the protein, such as dynamic regions. These advantages, along with how computationally fast it is, allow it to be used in a wide variety of research settings, whether it is to study multiple proteins at once, or being used as a template for protein structure determination through experimental methods[9]. It has shined in the assiting with understanding the covid-19 virus, and creating drug therapies to counteract it[10]. Its use in helping quickly deploy treatments for viruses shows promising use for helping combat other viruses.
+With how AlphaFold is structured, its speciality as a computational method for predicting protein structure is that it can determine protein folds that have not been seen before in the Protein Database. It also performs better than other models at predicting intrinsically disordered part of the protein, such as dynamic regions. These advantages, along with how computationally fast it is, allow it to be used in a wide variety of research settings, whether it is to study multiple proteins at once, or being used as a template for protein structure determination through experimental methods [9]. It has shined in the assisting with understanding the COVID-19 virus, and creating drug therapies to counteract it [10]. Its used in helping quickly deploy treatments for viruses shows promising use for helping combat other viruses.
 
 ### Limitations
 
-While AlphaFold has proven itself expetional in a variety of ways, it still faces limitations that it can improve upon in future iterations[11]. It still faces trouble with determining the structure of protein sequences with point mutations, as its dataset does not contain enough informtaion on the affects of mutations.  It also struggles with proteins that do not already have close relatives of known proteins, resulting in lower confidence scores. AlphaFold may also struggle with capturing dynamic movement with the nature of how difficult it is to predict how protien conformations can change, but it can display different conformational states at a time.
+While AlphaFold has proven itself exceptional in a variety of ways, it still faces limitations that it can improve upon in future iterations [11]. It still faces trouble with determining the structure of protein sequences with point mutations, as its dataset does not contain enough informtaion on the affects of mutations. It also struggles with proteins that do not already have close relatives of known proteins, resulting in lower confidence scores. AlphaFold may also struggle with capturing dynamic movement with the nature of how difficult it is to predict how protien conformations can change, but it can display different conformational states at a time.
 
 ### Conlcusion
 
-In AlphaFold's future, we can look to increased precision in the models it predicts, as well as better modeling for more unique protiens that include mutations, more complex mechanisms, and more dynamic movement. While it is important to keep experimental methods in mind to confirm protein structures, AlphaFold is a great way to quickly determine a proteins structure with high accuracy, and can be used to greatly expand the protein database and our knowledge of proteins.
+In AlphaFold's future, we can look to increased precision in the models it predicts, as well as better modeling for more unique proteins that include mutations, more complex mechanisms, and more dynamic movement. While it is important to keep experimental methods in mind to confirm protein structures, AlphaFold is a great way to quickly determine a protein's structure with high accuracy and can be used to greatly expand protein databases and our knowledge of proteins.
 
 ---
 
