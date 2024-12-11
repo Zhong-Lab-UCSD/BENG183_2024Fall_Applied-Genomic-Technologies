@@ -96,9 +96,9 @@ The curve is generated based on experimental data where increasing concentration
 
 The predicted binding pose is a computational model that shows how the molecule (ISM042-2-048) is expected to interact with the binding pocket of the CDK20 protein at the molecular level. It illustrates the specific interactions between ISM042-2-048 and the CDK20 protein, such as hydrogen bonds, hydrophobic interactions, and ionic interactions, which are critical in stabilizing the binding and influencing the drug's effectiveness. This provides insights into the molecular mechanism of action for ISM042-2-048 and helps identify key residues in CDK20 that are essential for binding, which can guide further optimization of the compound for improved efficacy.
 
-### Input and Output
+### Input and Output Data
 
-Input Data
+#### Input Data
 
 1. **Omics Data**  
    The platform integrates large-scale, high-dimensional datasets such as gene expression profiles and proteomics. These data sources provide an in-depth view of biological processes, enabling the identification of critical pathways and potential therapeutic targets. This comprehensive analysis forms the foundation for precise and informed intervention strategies.
@@ -109,7 +109,7 @@ Input Data
 4. **AlphaFold-Predicted Structures**  
    Additionally, the platform utilizes AlphaFold-predicted structures to enhance its capabilities. For instance, the computationally modeled 3D structure of CDK20 provides valuable insights into the structural basis of protein function. Even in the absence of experimentally determined structures, these predictions enable the exploration of protein interactions and functional mechanisms. 
 
-Output Data
+##### Output Data
 
 1. **Therapeutic Targets**  
    The workflow provides a prioritized list of therapeutic targets, tailored to specific disease contexts. For hepatocellular carcinoma (HCC), 20 potential candidates were ranked based on their relevance to disease mechanisms and druggability. This ensures a strategic emphasis on high-impact, actionable targets that align with therapeutic priorities.
