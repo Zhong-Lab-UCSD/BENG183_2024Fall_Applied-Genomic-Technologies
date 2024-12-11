@@ -14,17 +14,11 @@
 
 Proteins are commonly known as the fundamental building blocks for all living organisms. They carry out important tasks in cell, from regulation, structure, and functions of the organ's they belong to. When proteins fail to do their function or hinders the body's function, we see these larger organs fail, in the event of diseases, like in Alzheimer's[1] or ALS[2]. In order to understand how these proteins function, and what happens when they do not function, we can look to studying their specialized structure. Proteins are constructed from amino acid sequences that fold in a certain way, resulting in a mechanism that is specially designed to handling a certain task. For example, a hemoglobin protein that is used for oxygen transport will have specialized binding sites for oxygen molecules, and otpimize the binding and transport of those molecules so they can be delivered across the body[3]. From knowing what shape a protein has, we can understand how it interactes with other molecules in the body, and what role they play in pathways.
 
-Over the years, we have tried to look at protein structure using a variety of methods, each having their own positives and negatives. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins, and 
+Over the years, we have tried to look at protein structure using a variety of methods, each having their own positives and negatives. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins, and performing physical experimentation on them to determine their structutre. This allows to determine and accurate protein structure that is grounded data from reality. However, theis method can be expensive with the equipment and knowledge required to use these methods, and often take a long time to have a result.
 
-Because of these 
+Because of this, we have tried to loook into alternative computational methods for determining protein structure that rely on knowing the protein's sequence rather than observing its form directly. We can use the fact that a proteins structure comes from the string of amino acids it is formed from to construct the final output structure. Howerver, this poses its own problems. Deriving a proteins structure entirely from its sequence can be a difficult task, because there are a lot more factors that go into the folding process. In a proteins tertiary structure, bends can form in the structutre that come from internal and external forces, including hydrogen bonding, hydrophobic interaction, dimers, electrostatic interactions, van der Waals forces, and the enviroment where the protein is folding. Protein also fold in many different ways along an energy landscape. When they are being created, they follow the lowest energy landscape. Determining this low energy landscape can also be a computationally expensive task. Even more, proteins often have a variety of conformations that are suited to their task, meaning their structure can dynamically change based on what they are interacting with in their enviroment. 
 
-Proteins fold in very complex ways that rely more factors than just the peptides that make up its sequence:
-
-structure affected by number of internal and external forces, including hydrogen bonding, hydrophobic interaction, dimers, electrostatic interactions, van der Waals forces, environment, etc.
-
-Protein can fold in many different ways along an energy landscape, when created they follow the lowest energy landscape, but this can be hard to find
-
-Proteins can take on a number of different conformations depending on their role, predicting this dynamic behavior can be difficult 
+Attempting to simulate all these conditions can be a daunting task for any modern computer, so computational methods use shortcuts to get around this issue. 
 
 
 
@@ -44,6 +38,14 @@ There are 3 distinct AlphaFold algorithms: 1, 2, and 3.
 * Alphafold 2 incorporated an attention-based neural network, Evoformer, and calculated a “pair representation” for each residue pair to increase its overall accuracy [4].  
 
 * Alphafold 3, released earlier this year in May, is able to model the structures and interactions of proteins with DNA, RNA, ligands, and ions. By modeling protein-ligand interactions, AlphaFold 3 is able to model complexes rather than single chains to contribute to drug development [5]. 
+
+At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences.
+
+AlphaFold is not entirely comparative modeling: while it was trained on previously known protein structures, it does not require a template and can predict previously unknown structures
+
+It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min 
+
+
 
 
 ---
@@ -99,6 +101,19 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 
 ## Achievements and Limitations
 
+Research everywhere heavily use AlphaFold to quickly determine protein structure
+
+Affected by point mutations
+Lower confidence with proteins that do not have similar known structures
+Not designed to capture dynamic movement, but can get different conformations
+Validating novel models created by AlphaFold
+
+
+Increasing precision in models
+
+Better modeling dynamic proteins
+
+Expanding on the Alphafold Protein Structure Database
 
 
 ---
