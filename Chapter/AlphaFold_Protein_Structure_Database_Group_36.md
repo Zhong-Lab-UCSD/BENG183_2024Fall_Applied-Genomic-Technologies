@@ -12,15 +12,21 @@
 
 ## Protein Structure
 
-Proteins are commonly known as the fundamental building blocks for all living organisms. They carry out important tasks in the cell, from regulation, structure, and functions of the organs they belong to. When proteins fail to perform their function or hinders the body's function, we see these larger organs fail, in the event of diseases, like in Alzheimer's [1] or ALS [2]. In order to understand how these proteins function, and what happens when they do not function, we can look to study their specialized structure. Proteins are constructed from amino acid sequences that fold into specifc 3D structures which allows them to perform specialized functions. For example, a hemoglobin protein that is used for oxygen transport will have specialized binding sites for oxygen molecules, and optimize the binding and transport of those molecules so they can be delivered across the body [3]. Understanding a protein's shape allows us to understand how it interacts with other molecules and its role in biological pathways.
+### Protein Structure Determination is Important
 
-Over the years, we have tried to look at protein structure using a variety of methods, each having their own advantages and limitations. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins, and performing physical experimentation on them to determine their structutre. This ensures the resulting models are accurate and grounded from reality. However, these method can be expensive with the equipment and knowledge required to use these methods, and often take a long time to produce a result.
+Proteins are commonly known as the fundamental building blocks for all living organisms. They carry out important tasks in the cell, from regulation, structure, and functions of the organ's they belong to. When proteins fail to do their function or hinders the body's function, we see these larger organs fail, in the event of diseases, like in Alzheimer's [1] or ALS [2]. In order to understand how these proteins function, and what happens when they do not function, we can look to studying their specialized structure. Proteins are constructed from amino acid sequences that fold in a certain way, resulting in a mechanism that is specially designed to handling a certain task. For example, a hemoglobin protein that is used for oxygen transport will have specialized binding sites for oxygen molecules, and otpimize the binding and transport of those molecules so they can be delivered across the body [3]. From knowing what shape a protein has, we can understand how it interactes with other molecules in the body, and what role they play in pathways.
+
+
+### Previous Methods to Protein Structure Determination
+
+Over the years, we have tried to look at protein structure using a variety of methods, each having their own positives and negatives. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins, and performing physical experimentation on them to determine their structutre. This allows us to determine and create accurate protein structures that are grounded data from reality. However, these method can be expensive with the equipment and knowledge required to use these methods, and often take a long time to produce a result.
 
 Because of this, we have tried to look into alternative computational methods for determining protein structure that rely on knowing the protein's sequence rather than observing its form directly. We can use the fact that a protein's structure is constructed from its string of amino acids. However, this poses its own problems. Deriving a protein's structure entirely from its sequence can be a difficult task because there are many factors that go into the folding process. In a protein's tertiary structure, bends can form in the structutre that come from internal and external forces, including hydrogen bonding, hydrophobic interaction, dimers, electrostatic interactions, van der Waals forces, and the enviroment where the protein is folding. Proteins also fold following the lowest energy landscape. Determining this low energy landscape can be a computationally expensive task. Even more, proteins often have a variety of conformations that are suited to their task so their structure can dynamically change based on what they are interacting with in their enviroment. 
 
+
 Attempting to simulate all these conditions can be a daunting task for any modern computer, so computational methods use shortcuts to get around this issue. Ab initio methods predict protein structure using only the protein's sequence, and therefore are restricted to shorter sequences of proteins[6]. Popular methods that use the ab initio technique are QUARK, PEPFOLD2, and 3dProFold. Alternatively, to speed up computations and model larger proteins, comparative modeling will use the known structures of similar proteins to predict the structure. Methods using this approach include MODELLER and SWISS-MODEL. 
 
-
+We will see how ALphaFold combines these previous techniques to make an accurate and fast AI model for protein structure prediction. 
 
 ---
 
@@ -129,4 +135,7 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 [5] Abramson, J., Adler, J., Dunger, J. et al. Accurate structure prediction of biomolecular interactions with AlphaFold 3. Nature 630, 493–500 (2024). https://doi.org/10.1038/s41586-024-07487-w
 
 [6] Phillip Compeau. (n.d.). Ab initio protein structure prediction. Biological Modeling. https://biologicalmodeling.org/coronavirus/ab_initio 
+
+[7] Phillip Compeau. (n.d.-b). Homology modeling. Biological Modeling: A Free Online Course. https://biologicalmodeling.org/coronavirus/homology 
+
 ---
