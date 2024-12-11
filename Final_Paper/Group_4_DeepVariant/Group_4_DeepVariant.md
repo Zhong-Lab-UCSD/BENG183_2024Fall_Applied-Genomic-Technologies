@@ -2,7 +2,7 @@
 
 ![DeepVariant Logo](Figures/dv_logo.png)
 
-* [Introduction](1. Introduction) 
+* [Introduction](#Introduction) 
 * [Overview of RoseTTAFold-All Atom](#overview-of-rosettafold-all-atom)
 * [How RFAA Works](#how-rfaa-works)
 * [Example of RFAA Usage](4. Performance)
@@ -11,16 +11,30 @@
 ---
 
 ## 1. Introduction
-### 1.1 Background
+### 1.1 What Are Genetic Variants?
+Genetic variants are small differences in DNA sequences compared to a reference genome. These differences make each individual unique. Some variants affect traits like height, while others influence disease risk or evolutionary relationships.
 
-### 1.2 Importance of Variant Calling
+### 1.2 What is Variant Calling?
+Variant calling is the process of detecting genetic variants from sequencing data. It provides critical insights into genetic traits, disease susceptibility, and more. However, sequencing data is noisy, making it difficult to distinguish true variants from errors.
 
 ---
 
 ## 2. The Challenge of Variant Calling
-### 2.1 Sources of Difficulty
+When sequencing a genome, the output is not a perfect read of DNA but rather noisy data. Distinguishing real genetic variants from sequencing errors is akin to finding a needle in a haystack.
 
-### 2.2 DeepVariant’s Solution
+### 2.1 Sources of Difficulty
+Traditional tools like GATK (Genome Analysis Toolkit) address this using statistical models such as Hidden Markov Models. While effective in some cases, they have limitations:
+- **Assumptions about error patterns:** These models rely on predefined assumptions about sequencing errors, which may not apply universally.
+- **Need for tuning:** Different sequencing platforms and technologies require manual adjustments to the models.
+
+### 2.2 DeepVariant: An AI-Based Solution
+DeepVariant replaces traditional statistical models with a deep learning-based approach using a convolutional neural network (CNN). This enables it to learn directly from data, eliminating the need for domain-specific tuning.
+
+#### 2.2.1 What Is Deep Learning?
+Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers. Each layer processes input data, extracting features before passing it to the next layer. This approach removes the need for manual feature engineering.
+
+#### 2.2.2 What Is a Convolutional Neural Network (CNN)?
+A CNN is a type of neural network designed for structured data like images. It is particularly effective at recognizing patterns such as edges, shapes, and textures.
 
 ---
 
