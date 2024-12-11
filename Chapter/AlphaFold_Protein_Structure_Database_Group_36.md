@@ -31,6 +31,19 @@ Proteins can take on a number of different conformations depending on their role
 ---
 
 ## What is AlphaFold?
+AlphaFold is an AI system developed by Google DeepMind to predict a protein’s 3D structure using its amino acid sequence. Currently, the AlphaFold protein structure database contains over 200 million predicted protein structures, including the complete human proteome. It recently won the 2024 Nobel Prize in Chemistry. 
+
+### Importance of AlphaFold
+AlphaFold has solved the “protein folding problem”, can predict protein structures with high accuracy, and accelerates research in biotechnology and drug development fields as it contributes to targeted drug discovery. 
+
+### Algorithms
+There are 3 distinct AlphaFold algorithms: 1, 2, and 3. 
+
+* Alphafold 1 was released in 2018 and introduced a novel approach to protein folding using machine learning. 
+
+* Alphafold 2 incorporated an attention-based neural network and calculated a “pair representation” for each residue pair to increase its overall accuracy [2].  
+
+* Alphafold 3, released earlier this year in May, is able to model the structures and interactions of proteins with DNA, RNA, ligands, and ions. By modeling protein-ligand interactions, AlphaFold 3 is able to model complexes rather than single chains to contribute to drug development. 
 
 
 ---
@@ -97,5 +110,7 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 [2] Maguire G. Amyotrophic lateral sclerosis as a protein level, non-genomic disease: Therapy with S2RM exosome released molecules. World J Stem Cells. 2017 Nov 26;9(11):187-202. doi: 10.4252/wjsc.v9.i11.187. PMID: 29312526; PMCID: PMC5745587.
 
 [3] Pittman RN. Regulation of Tissue Oxygenation. San Rafael (CA): Morgan & Claypool Life Sciences; 2011. Chapter 4, Oxygen Transport. Available from: https://www.ncbi.nlm.nih.gov/books/NBK54103/
+
+[4] Jumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021). https://doi.org/10.1038/s41586-021-03819-2
 
 ---
