@@ -1,5 +1,4 @@
-# **BANKSY**
-A clustering tool for improved tissue analysis.
+# **BANKSY: A Clustering Tool for Improved Tissue Analysis.**
 
 
 # Table of Contents
