@@ -13,7 +13,7 @@ The mRNA sequences are now obtained. The next steps are to sequence them.
 7) Among the cDNA reverse transcription products, many are rRNA contamination that needed to be eliminated by hybridizing them with biotinylated sense strand oligonucleotides and then treating with streptavidin which would bind to the biotin. Note that contamination may be still present after this step, further elimination of this contamination would need to be done in the later bioinformatics data analysis.
 8) The rest of the cDNA would next be PCR amplified to create a ribosome footprint library.
 
-9) ### Data Analysis  
+### Data Analysis  
 The bioinformatics data analysis of ribosome profiling has many overlaps with that of RNA-seq, and many pipelines and packages have been established for different analysis purposes. 
 The graph below shows an overview of a STAR Protocol of ribosome profiling data analysis pipeline specialized in ribosome pausing analysis ([link to this paper](https://star-protocols.cell.com/protocols/1899)):
 1) Preparation: raw read fastq files and reference genome of the species need to be downloaded (previously published datasets can be downloaded from SRA). 
@@ -40,7 +40,9 @@ The creation of ncRNA indices and the alignment to the indices can be done using
 | HRIBO      | Bacterial Ribosome Profiling data analysis | Prokaryotes |
 | ORFik      | Translation complex profiling, ribosome complex profiling, gene expression analysis      |   Prokaryotes and eukaryotes |
 | RiboA |  Calculation of accurate A-site offset values   |   Prokaryotes and eukaryotes |
-
+|  RiboChat  |  Ribosome profiling data analysis with chat-style interface  |  Prokaryotes and eukaryotes   |
+| RiboDiPA  | Find differences in pattern of ribosome footprints | Prokaryotes and eukaryotes  |
+| RiboVIEW| Visualization of tranlsation elongation and estimation of codon enrichment | Prokaryotes and eukaryotes |
 
 Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)). 
 
