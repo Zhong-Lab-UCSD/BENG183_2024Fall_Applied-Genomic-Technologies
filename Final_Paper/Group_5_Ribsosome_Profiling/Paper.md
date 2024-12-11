@@ -53,3 +53,13 @@ The table below shows some packages and programs developed for ribosome profilin
 
 Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)). 
 
+
+## References
+Ingolia, N. T., Brar, G. A., Rouskin, S., McGeachy, A. M., & Weissman, J. S. (2012). The ribosome profiling strategy for monitoring translation in vivo by deep sequencing of ribosome-protected mRNA fragments. Nature protocols, 7(8), 1534–1550. https://doi.org/10.1038/nprot.2012.086
+
+Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,
+End-to-end pipeline for differential analysis of pausing in ribosome profiling data,
+STAR Protocols,Volume 3, Issue 3, 2022,101605,ISSN 2666-1667,
+https://doi.org/10.1016/j.xpro.2022.101605.
+
+
