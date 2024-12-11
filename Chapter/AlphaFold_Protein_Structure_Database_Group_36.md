@@ -21,9 +21,10 @@ Proteins are commonly known as the fundamental building blocks for all living or
 
 Over the years, we have tried to look at protein structure using a variety of methods, each having their own positives and negatives. Three of the main methods we have today are NMR spectroscopy, x-ray crystallography, and cryogenic electron microscopy. One thing these methods have in common is that they are experimental, meaning they rely on collecting real data of the proteins, and performing physical experimentation on them to determine their structutre. This allows us to determine and create accurate protein structures that are grounded data from reality. However, these method can be expensive with the equipment and knowledge required to use these methods, and often take a long time to produce a result.
 
-Because of this, we have tried to look into alternative computational methods for determining protein structure that rely on knowing the protein's sequence rather than observing its form directly. We can use the fact that a protein's structure is constructed from its string of amino acids. However, this poses its own problems. Deriving a protein's structure entirely from its sequence can be a difficult task, because there are many more factors that go into the folding process. In a protein's tertiary structure, bends can form in the structutre that come from internal and external forces, including hydrogen bonding, hydrophobic interaction, dimers, electrostatic interactions, van der Waals forces, and the enviroment where the protein is folding. Proteins also fold following the lowest energy landscape. Determining this low energy landscape can be a computationally expensive task. Even more, proteins often have a variety of conformations that are suited to their task, meaning their structure can dynamically change based on what they are interacting with in their enviroment. 
+Because of this, we have tried to look into alternative computational methods for determining protein structure that rely on knowing the protein's sequence rather than observing its form directly. We can use the fact that a protein's structure is constructed from its string of amino acids. However, this poses its own problems. Deriving a protein's structure entirely from its sequence can be a difficult task because there are many factors that go into the folding process. In a protein's tertiary structure, bends can form in the structutre that come from internal and external forces, including hydrogen bonding, hydrophobic interaction, dimers, electrostatic interactions, van der Waals forces, and the enviroment where the protein is folding. Proteins also fold following the lowest energy landscape. Determining this low energy landscape can be a computationally expensive task. Even more, proteins often have a variety of conformations that are suited to their task so their structure can dynamically change based on what they are interacting with in their enviroment. 
 
-Attempting to simulate all these conditions can be a daunting task for any modern computer, so computational methods use shortcuts to get around this issue. Ab initio methods predict protein structure using only the protein's sequence, and therefore are restricted to shorter sequences of proteins[6]. Popular methods that use the ab initio technique are QUARK, PEPFOLD2, and 3dProFold. Alternatively to speed up computations and be able to model much larger proteins, comparative modeling will use the known structures of similar proteins to predict the structure[7]. These similar models allows the tool to narrow down options for los energy states that the sturctures converge on. Many of them also rely on the help of artificial intelliengce and training on prior knowledge of proteins to make more accurate predictions. Methods that use this include MODELLER and SWISS-MODEL. 
+
+Attempting to simulate all these conditions can be a daunting task for any modern computer, so computational methods use shortcuts to get around this issue. Ab initio methods predict protein structure using only the protein's sequence, and therefore are restricted to shorter sequences of proteins[6]. Popular methods that use the ab initio technique are QUARK, PEPFOLD2, and 3dProFold. Alternatively, to speed up computations and model larger proteins, comparative modeling will use the known structures of similar proteins to predict the structure. Methods using this approach include MODELLER and SWISS-MODEL. 
 
 We will see how ALphaFold combines these previous techniques to make an accurate and fast AI model for protein structure prediction. 
 
@@ -50,7 +51,7 @@ There are 3 distinct AlphaFold algorithms: 1, 2, and 3.
 
 ### How it Works
 
-At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences. This method is not entirely comparative modeling: while AlphaFold was trained on previously known protein structures, it does not require a template and can predict previously unknown structures. It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min 
+At its core, Alpha Fold uses a deep learning algorithm to discover patterns from training data in the Protein Data Bank (PBD), and apply them to new protein sequences. This method is not entirely comparative modeling: while AlphaFold was trained on previously known protein structures, it does not require a template and can predict previously unknown structures. It aligns the given protein sequence to similar ones and uses the input features as guidance for creating a model in 3D space in 10-15 min. 
 
 ---
 
@@ -103,21 +104,21 @@ AlphaFold was first trained on supervised learning on PDB data to generate a new
 
 ## Achievements and Limitations
 
-Achievements
-Research everywhere heavily use AlphaFold to quickly determine protein structure
-Efficient as an algorithm for also solving previously unknown protein folds
-We have a comprehensive database of protein structures created by AlphaFold that people can use to validate their protein reconstructions
+### Achievements
+* Researchers across the world heavily use AlphaFold to quickly determine protein structure
+* Efficient algorithm for solving unknown protein folds
+* Provides a comprehensive database of protein structures that can be used for protein reconstruction validation
 
-Limitations:
-Affected by point mutations
-Lower confidence with proteins that do not have similar known structures
-Not designed to capture dynamic movement, but can get different conformations
-Validating novel models created by AlphaFold
+### Limitations
+* Affected by point mutations
+* Lower confidence with proteins that do not have similar known structures
+* Not designed to capture dynamic movement but can get different conformations
+* Validating novel models created by AlphaFold
 
-Improvements:
-Increasing precision in models
-Better modeling dynamic proteins
-Expanding on the Alphafold Protein Structure Database
+### Improvements
+* Increasing precision in predicted models
+* Developing better methods for modeling dynamic proteins
+* Expanding on the Alphafold Protein Structure Database datasets
 
 ---
 
