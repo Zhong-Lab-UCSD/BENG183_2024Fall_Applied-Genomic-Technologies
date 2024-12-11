@@ -5,7 +5,7 @@
 * [Introduction](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#1-introduction) 
 * [The Challenge of Variant Calling](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#2-the-challenge-of-variant-calling) 
 * [How DeepVariant Works](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#3-how-deepvariant-works) 
-* [Performance](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#4-performance))
+* [Performance](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#4-performance)
 * [Challenges and Improvements](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#5-challenges-and-improvements)
 * [Advantages of DeepVariant](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#6-advantages-of-deepvariant) 
 * [Future Directions](https://github.com/adityaparmarr/BENG183_2024Fall_Applied-Genomic-Technologies/edit/main/Final_Paper/Group_4_DeepVariant/Group_4_DeepVariant.md#7-future-directions)
