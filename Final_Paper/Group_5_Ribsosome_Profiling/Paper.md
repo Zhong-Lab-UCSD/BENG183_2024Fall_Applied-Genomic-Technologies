@@ -4,7 +4,6 @@
 <div style="text-align: justify;">
 Ribosome profiling, also known as Ribo-seq, is a revolutionary technique that enables genome-wide analysis of translation by mapping ribosome-protected mRNA fragments. This powerful method provides unparalleled insights into gene expression at the level of translation, complementing transcriptomics and proteomics to offer a comprehensive view of cellular function.
 </div>
-<img src="ribo.jpeg" alt="ribo" width="500" style="display: block; margin: 0 auto;">
 
 ## Why Ribosome Profiling?
 <div style="text-align: justify;">
@@ -27,6 +26,8 @@ Ribosome profiling has redefined our understanding of open reading frames (ORFs)
 3. Ribosome Dynamics and Translational Pauses
 
 This technique allows for precise tracking of ribosome movement along mRNA, uncovering codon-specific pauses that are often regulatory. Ribosome profiling has been used to study co-translational folding of nascent polypeptides and how these pauses affect protein structure and function. Pausing can also reveal regulatory mechanisms like feedback loops in biosynthetic pathways, such as the regulation of arginine biosynthesis through ribosome stalling.
+
+<img src="application.jpg.pdf" alt="application" width="700" style="display: block; margin: 0 auto;">
 
 4. Insights into ncRNAs and cancer researches
 
