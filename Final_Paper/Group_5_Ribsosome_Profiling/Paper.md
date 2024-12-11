@@ -13,6 +13,7 @@ The mRNA sequences are now obtained. The next steps are to sequence them.
 6) Reverse transcriptase and primers would then be added to perform a reverse transcription.
 7) Among the cDNA reverse transcription products, many are rRNA contamination that needed to be eliminated by hybridizing them with biotinylated sense strand oligonucleotides and then treating with streptavidin which would bind to the biotin. Note that contamination may be still present after this step, further elimination of this contamination would need to be done in the later bioinformatics data analysis.
 8) The rest of the cDNA would next be PCR amplified to create a ribosome footprint library.
+![wet](ribowet.jpeg)
 
 
 ### Data Analysis  
