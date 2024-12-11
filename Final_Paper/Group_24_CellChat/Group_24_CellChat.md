@@ -1,5 +1,9 @@
 # CellChat: An R Toolkit For Inference and Analysis of Cellular Signaling
 
+BENG 183 Applied Genomic Technologies Fall 2024
+
+Group 24: Anthony Ton, Ethan Xu, James Young
+
 ![CellChat Logo](Attachments/CellChat_Logo.png)
 
 ## Background: Cellular Signaling
