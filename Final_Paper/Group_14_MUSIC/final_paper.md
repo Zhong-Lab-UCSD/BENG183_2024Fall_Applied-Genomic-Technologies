@@ -1,5 +1,20 @@
 # BENG 183 Final Project
 
+## Experiment Methodology
+The MUSIC technique requires extensive sample treatment to obtain analyzable raw data. This section provides an overview of sample treatment, linker and barcode addition, and sequencing.
+
+### Crosslinking and nuclei isolation
+To characterize multiplex chromatin interactions, gene expression, and RNA-chromatin association within individual nuclei, samples are crosslinked using disuccinimidyl glutarate (DSG) dissolved in PBS. Depending on the sample origin, the method of nuclei isolation varies. Cultured cells are readily dissociated without the need for additional treatments. Structurally complex sample tissues, such as postmortem brain tissue used in the original publication, require specific mechanical homogenization and debris removal using chromium nuclei isolation kits.
+
+### Linker and Cell Barcode
+Molecular linkers are joined to DNA and RNA. RNA linkers are single-stranded chimeric oligonucleotides. NNNNN denotes randomized DNA nucleotides for the molecular identity. The linker contains DNA nucleotides on the 5’ end and RNA nucleotides on the 3’ end. The single-strand RNA can ligate with RNA efficiently, while the single-strand DNA is complementary with cell barcode overhangs. A poly-A tail is attached to RNA fragments to allow complementary binding with complex barcodes. DNA linkers have top and bottom strands with similar NNNNN DNA nucleotides for molecular identity. When hybridized, the linker has two different single-strand overhangs with one that can bind to the complex barcode. Three sets of cell barcodes are added sequentially after linker addition.
+
+### Complex barcode
+To elucidate nucleic acid interaction, complex barcodes including 10X barcodes and indexing i7 adaptors are joined to the molecules. The 10X barcodes bind to RNA or DNA linkers via their overhanging ends during droplet encapsulation. Indexing adaptors hybridize with the third set of cell barcodes.
+
+### UMNDBC read pair and Sequencing
+The final desired barcoded molecule is referred to as the UMNDBC read pair -- uniquely mapped, non-duplicate, barcode complete read pair. MUSIC captures one insert per read pair and provides unambiguous, cell-specific information during sequencing using a high-throughput sequencing platform like NovaSeq.
+
 ## Data Analysis
 
 The MUSIC technique provides a comprehensive workflow for analyzing chromatin and RNA interactions at the single-cell level. It combines RNA and fragmented DNA into a single sequencing library, enabling simultaneous profiling of:
