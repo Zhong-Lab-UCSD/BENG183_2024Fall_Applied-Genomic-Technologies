@@ -113,8 +113,8 @@ The table below shows some packages and programs developed for ribosome profilin
 
 - Data Complexity: High computational demands for analysis.
 
-
-
+## Conclusion
+Ribosome profiling has transformed our understanding of protein synthesis and translational control. By bridging the gap between mRNA and protein, it has revealed intricate details of gene expression regulation. As technologies advance, ribosome profiling will continue to shape the future of molecular and cellular biology, with profound implications for research and medicine.
 
 ## References
 ### Papers:
