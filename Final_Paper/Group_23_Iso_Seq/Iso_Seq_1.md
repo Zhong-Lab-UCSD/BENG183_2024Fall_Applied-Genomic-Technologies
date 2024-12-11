@@ -8,7 +8,7 @@
 2. [Iso-Seq: An Advantage Method in Isoform Detaction](#iso-seq-an-advantage-method-in-isoform-detaction)
    1. [What is Iso-Seq?](#what-is-iso-seq)
    2. [Advanced Workflow](#advanced-workflow)
-      1. [Experiment Preparation](#experiment-preparation)
+      1. [Experiment Preparation](#experiment-prepration)
       2. [Read Segmentation (Skera)](#read-segmentation-skera)
       3. [Remove Primers(Lima), polyA tails, CCS, Extract UMI/BCs, Deduplication (IsoSeq3)](#remove-primerslima-polya-tails-ccs-extract-umibcs-deduplication-isoseq3)
       4. [Align to Genome (pbmm2/minimap2), Collapse/Merge GFFs(IsoSeq3)](#align-to-genome-pbmm2minimap2-collapsemerge-gffsisoseq3)
