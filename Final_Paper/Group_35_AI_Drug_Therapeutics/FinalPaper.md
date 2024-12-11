@@ -8,7 +8,7 @@
 * [Results and Summary](#results-and-summary)
 * [Input and Output Data](#input-and-output-data)
 * [Potential Applications](#potential-applications)
-* [References](#references)
+* [Citations](#citations)
 
 ## Introduction
 Traditional drug discovery relies on slow, expensive trial-and-error chemistry, limiting the scope of exploration and innovation. As the COVID-19 pandemic has shown, the public increasingly expects the rapid development of effective treatments. Artificial intelligence has the potential to transform the speed and efficiency of drug discovery, as it has done for numerous scientific and engineering disciplines over the past decade. AlphaFold, PandaOmics, and Chemistry42 have helped identify a novel hit molecule against a novel target without an experimental structure, starting from target selection towards hit identification, in a cost-and-time efficient manner. 
