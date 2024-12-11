@@ -1,4 +1,7 @@
-# MEME (Multiple Expectation Maximization for Motif Elicitation) 
+# MEME (Multiple Expectation Maximization for Motif Elicitation)
+
+Team 13: Jammy Luo, Katelyn Lee, Nathan Kelley
+
 1. [Introduction](#1)<br>
     1.1. [About MEME Suite](#11)<br>
     1.2. [Importance of Motif-based Analysis](#12)<br>
@@ -17,7 +20,7 @@ MEME Suite is an extensive collection of motif-based sequence analysis tools, wi
 ![MEME Suite](MEME_suite.png)
 
 #### 1.2. Importance of Motif-based Analysis<a name="12"></a>
-Motifs are short repetitive patterns in DNA, RNA, and protein sequences that are biologically significant. They play a vital role in understanding biological processes because they often correspond to functional or regulatory elements within the genome. Some instances include transcription factor binding sites, splice junctions, and protein-protein interaction sites[2].
+Motifs are short repetitive patterns in DNA, RNA, and protein sequences that are biologically significant. They play a vital role in understanding biological processes because they often correspond to functional or regulatory elements within the genome. Some instances include transcription factor binding sites, splice junctions, and protein-protein interaction sites[3].
 
 There are two types of motifs: Ungapped motifs and gapped motifs. Both are recurring sequences, with a key difference in that ungapped motifs are fixed-length and gapped motifs are variable-length.
 
@@ -25,7 +28,7 @@ Ungapped motifs mostly look into conserved sequence patterns. For example, the T
 
 ![TATA box](TATA_box.png)
 
-In contrast, gapped motifs contain slight nucleotide changes that are important to consider when examining their impacts on biological function. An example of this is the following bacterial σ70 promoter: TTGACA– (16-19 bp gap) –TATAAT[3]. Despite this gap, the promoter is still able to maintain its role in RNA polymerase binding and transcription initiation within e. coli. More about this motif can be found in this paper.
+In contrast, gapped motifs contain slight nucleotide changes that are important to consider when examining their impacts on biological function. An example of this is the following bacterial σ70 promoter: TTGACA– (16-19 bp gap) –TATAAT[2]. Despite this gap, the promoter is still able to maintain its role in RNA polymerase binding and transcription initiation within e. coli. More about this motif can be found in this paper[*I'm a small italic link*]([https://en.wikipedia.org/wiki/YOLO_(aphorism)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3209215/).
 
 ## 2. Overview of MEME Parameters<a name="2"></a>
 The MEME tool’s basic function is to discover ungapped motifs in inputted group(s) of unaligned sequences through one of three motif discovery modes: Classic, Discriminative, and Differential. It also requires the selection of specific parameters to improve the quality of the motif search, which site distribution assists in doing by informing MEME of expected motif distribution. In general, the tool will have the following usage formats:
@@ -125,11 +128,11 @@ One important limitation to note is that MEME can only handle ungapped motifs. T
 Another limitation is that MEME works best on smaller sets of sequences. For datasets with greater than 50 sequences, it is better to use STREME from MEME Suite. MEME can handle at most 500,000 (primary) FASTA sequences, and 80,000,000 bytes of data. Ideally, use MEME with sequences 100-500 bp in length.
 
 # References
-[1] Schmitt, Anthony D., Ming Hu, and Bing Ren. "Genome-wide mapping and analysis of chromosome architecture." Nature reviews Molecular cell biology 17.12 (2016): 743.<br>
+[1] Bailey TL, Elkan C. Fitting a mixture model by expectation maximization to discover motifs in biopolymers. Proc Int Conf Intell Syst Mol Biol. 1994;2:28-36. PMID: 7584402.<br>
 
-[2] Risca, Viviana I., and William J. Greenleaf. "Unraveling the 3D genome: genomics tools for multiscale exploration." Trends in Genetics 31.7 (2015): 357-372.<br>
+[2] Djordjevic M. Redefining Escherichia coli σ(70) promoter elements: -15 motif as a complement of the -10 motif. J Bacteriol. 2011 Nov;193(22):6305-14. doi: 10.1128/JB.05947-11. Epub 2011 Sep 9. PMID: 21908667; PMCID: PMC3209215.<br>
 
-[3] Dekker J, Rippe K, Dekker M, Kleckner N. Capturing chromosome conformation. Science 2002;295(5558):1306–11.<br>
+[3] Sequence motif. Sequence Motif - an overview | ScienceDirect Topics. (n.d.). https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/sequence-motif#:~:text=Motifs%20can%20be%20used%20to,et%20al.%2C%202008<br>
 
 [4] Simonis M, Klous P, Homminga I, Galjaard RJ, Rijkers EJ, Grosveld F, et al. High-res- olution identification of balanced and complex chromosomal rearrangements by 4C technology. Nature Methods 2009;6(11):837–42.<br>
 
