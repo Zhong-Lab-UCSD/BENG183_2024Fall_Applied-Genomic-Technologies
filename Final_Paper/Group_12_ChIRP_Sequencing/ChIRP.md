@@ -36,9 +36,45 @@
 #### ChIRP-seq Workflow:
 <img src="ChIRP-Workflow.png" alt="ChIP-seq Workflow" width="300">
 
-
 ---
 
+# Applications of ChIRP-seq
+
+**RNA-DNA** interactions are not well known or understood, and have only recently been studied thanks to ChIRP-seq. This research has uncovered the dynamic role of long noncoding RNAs (lncRNAs) in regulating gene expression. ChIRP-seq is a general-purpose tool for studying lncRNAs, along with other DNA-binding RNAs, allowing RNA-DNA interactions to be studied anywhere on the genome. So far, these studies have uncovered some key genes where these lncRNAs have an important role.
+
+### Developmental Genes
+
+Developmental genes are, as their name would suggest, involved in the growth and development of animal bodies. As such, they are primarily expressed in stem cells. These genes have two major roles: 
+1. Tissue Formation: Developmental genes are responsible for building up the body's tissues and organs. During adolescence, they trigger cell proliferation in response to hormonal changes. Throughout the organism's lifetime, they replace old cells with new cells, and repair cuts, wounds, and other tissue damage.
+2. Cell Differentiation: Stem cells must differentiate into the different cell types in the body, in correct proportions and at the right frequency. During pregnancy, the zygote grows into an embryo of stem cells, which then differentiate through multiple rounds of division into organ- and tissue-specific stem cells. Even in adulthood, multipotent stem cells are present which are specific to a certain tissue but can generate a variety of cells within those bounds. One example which is particularly studied with ChIRP-seq is Hematopoetic Stem Cells (HSCs), which are found in bone marrow and can differentiate into any type of blood cell, including red blood cells, white blood cells (immune cells) and platelets.
+
+Many interactions between lncRNAs and developmental genes have been discovered in the past decades, especially in HSCs. Studies have discovered their effects in some key genes involved in blood cell production. Here are two lncRNAs whose role in regulating blood cell expression was unknown, until ChIRP-seq revealed their interaction with key developmental genes.
+
+### The Beta-Globin Gene
+
+The beta-globin gene produces one of the subunits of hemoglobin, the protein responsible for red blood cell's ability to carry oxygen through the blood.  Using ChIRP-seq, researchers discovered that a certain lncRNA called ERV-9, a product of the ERV-9 LTR retrotransposon, has a function in regulating the beta-globin gene in humans, but not in mice.*
+
+ChiRP-seq for lncRNA ERV-9 on the Beta-Globin Gene in Mouse and Human cells.
+<img src="globin.png" alt="ChIRP-seq on Beta-Globin gene in mouse and human">
+
+This revealed a high degree of binding in the human beta-globin gene but not in the mouse beta-globin gene. Further experiments indicated that the absence of ERV-9 inhibits beta-globin expression, confirming that this interaction regulates the expression of the gene.
+
+*Long non-coding RNAs transcribed by ERV-9 LTR retrotransposon act in cis to modulate long-range LTR enhancer function
+https://academic.oup.com/nar/article/45/8/4479/2962182
+
+### The Itpkb Gene
+
+The Itpkb gene causes HSCs to differentiate into a certain type of T-cell lymphocyte. ChIRP-seq found that lncHSC-2 binds close to the transcription start site of this gene.** 
+
+ChIRP-seq on the Iptkb Gene and Other Genomic Information
+<img src="itpkb.png" alt="ChIRP-seq on the Iptkb gene">
+
+Because it binds so close to the transcription start site, it's thought that lncHSC-2 has a role in regulating Itpkb and lymphocyte differentiation. This could only have been discovered using ChIRP-seq, since it was a previously unknown lncRNA and interaction.
+
+**Long Non-coding RNAs Control Hematopoietic Stem Cell Function
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4388783/
+
+---
 
 ## Case Study: "Exploration and bioinformatic prediction for profile of mRNA bound to circular RNA BTBD7_hsa_circ_0000563 in coronary artery disease"
 
