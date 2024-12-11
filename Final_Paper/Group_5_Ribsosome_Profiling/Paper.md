@@ -55,6 +55,7 @@ The table below shows some packages and programs developed for ribosome profilin
 
 
 ## References
+### Papers:
 Ingolia, N. T., Brar, G. A., Rouskin, S., McGeachy, A. M., & Weissman, J. S. (2012). The ribosome profiling strategy for monitoring translation in vivo by deep sequencing of ribosome-protected mRNA fragments. Nature protocols, 7(8), 1534–1550. https://doi.org/10.1038/nprot.2012.086
 
 Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeline for differential analysis of pausing in ribosome profiling data,STAR Protocols,Volume 3, Issue 3, 2022,101605,ISSN 2666-1667, https://doi.org/10.1016/j.xpro.2022.101605.
@@ -62,3 +63,11 @@ Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeli
 Mingso Sherma Limbu, Tianze Xiong, Sufang Wang,A review of Ribosome profiling and tools used in Ribo-seq data analysis, Computational and Structural Biotechnology Journal,Volume 23,2024,Pages 1912-1918,ISSN 2001-0370, https://doi.org/10.1016/j.csbj.2024.04.051.
 
 Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020, https://doi.org/10.1093/nar/gkae1020
+
+### Websites:
+https://github.com/ratschlab/RiboDiff 
+https://plastid.readthedocs.io/en/latest/generated/plastid.html
+https://pypi.org/project/loess/#documentation
+https://rdp.ucc.ie/home
+
+
