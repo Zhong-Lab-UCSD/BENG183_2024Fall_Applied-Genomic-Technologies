@@ -154,19 +154,19 @@ plot_grid(plot_nsp + coord_equal(), plot_bank + coord_equal(), ncol = 2)
 
 ## **Sample Outputs**
 
-Mouse Hippocampus data (from demo above):
+### Mouse Hippocampus data (from demo above):
 
 ![](./Assets/mouseHippo.png)
 
 The left image displays the non-spatial clustering output, while the right image shows BANKSY's clustering results. BANKSY identified two additional clusters (15 and 16), uncovering subtle cell-type distinctions missed by the non-spatial approach. This highlights BANKSY's strength in capturing finer details by incorporating spatial relationships between cells.
 
-Mature Oligodendrocyte (OD) cell data:
+### Mature Oligodendrocyte (OD) cell data:
 
 ![](./Assets/matureOligo.png)
 
 As indicated by the red and orange lines, BANKSY successfully distinguished between Subclusters 1 and 2, which the non-spatial algorithm failed to do. This distinction reflects how BANKSY's ability to incorporate spatial context provides a more accurate and detailed clustering approach. As a result, BANKSY provides deeper insights into the organization and interaction of cells within complex tissue structures, which is crucial for understanding functional dynamics and disease progression.
 
-Human Colorectal Cancer Data:
+### Human Colorectal Cancer Data:
 
 ![](./Assets/colorectal.png)
 
