@@ -91,8 +91,6 @@ With ```boruta_selector```, you are able to use it with other scikit-learn metho
 *Machine learning pipeline utilizing Boruta*, [Source](https://www.tandfonline.com/doi/full/10.1080/0954898X.2024.2331506)
 
 ### How Boruta Works
-As noted earlier, Boruta is a wrapper of a random forest classification algorithm, that is used to evaluate relevance of features within a dataset. Boruta runs through the following steps:
-
   1. Creates Shadow Features: Boruta creates randomly ordered copies of each feature to serve as the benchmark for figuring out if an original feature  is signifant to the target. This makes it so that the only features selected are those that have signficance scores significantly greater than the random noise that was created.
   2. Signficance Score Calculation: The model is trained, calculating the significance scores of the real and shadow features.
   3. Compares and Decides: Compares the significance scores of the real features to that of the shadow features, to decide which features are relevant. Those that significantly outperform the shadow scores are accepted and remain in the dataset, while those that do not are denied and removed.
