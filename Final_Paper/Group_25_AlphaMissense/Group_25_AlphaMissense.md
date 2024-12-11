@@ -6,7 +6,7 @@
 
 To understand AlphaMissense, it is first important to introduce AlphaFold. AlphaFold was a groundbreaking AI system developed by Google DeepMind that is used to predict protein structure. AlphaFold improved upon previous models for predicting the 3D structure of proteins. Shown below is one example of a protein structure elucidated in the original AlphaFold paper. The TM-score is a metric used to compare protein structures, and 1 indicates a perfect match. In this example, the TM-score of 0.93 indicates that the protein model produced by AlphaFold is highly accurate.
 
-[](./Images/protein-jumper-etal.png)
+![](./Images/protein-jumper-etal.png)
 
 AlphaMissense is essentially an extension of AlphaFold, and builds upon the models and protein data already provided by AlphaFold. The biological problem that researchers wanted to address was the difficulty in properly identifying missense mutations that have a pathogenic impact. There have been over 4 million missense mutations observed in the human genome. However, only around 2% are pathogenic, while the other 98% are benign. This discrepancy results in data that has a large amount of background noise in identifying and studying the crucial mutations. Previously, multiplexed assays of variant effect (MAVEs) were the main way that pathogenicity was assessed, and although they are effective, they are expensive in cost, time, and labor. By leveraging AlphaFold’s deep learning capabilities and large-scale protein structure data, AlphaMissense aims to predict how specific mutations that affect individual amino acids might alter protein folding, stability, and ultimately function that form the molecular basis of diseases.
 
@@ -14,13 +14,13 @@ AlphaMissense is essentially an extension of AlphaFold, and builds upon the mode
 
 At a high-level, AlphaMissense takes a missense variant as input and as its output, predicts its pathogenicity as being either “likely pathogenic”, “likely benign”, or “uncertain/ambiguous”. The pathogenicity score that users will interpret will be from a scale of 0 to 1, where 0.34 or lower corresponds to “likely benign”, 0.564 or higher to “likely pathogenic”, and in between is ambiguous. These cutoffs were determined in order for the model to achieve 90% precision.
 
-(PRECISION RECALL IMAGE)
+![](./Images/threshold.png)
 
 AlphaMissense’s model is first pre-trained as AlphaFold2 to infer the sequence to structure relationship in proteins, as the context of a missense variant within its amino acid sequence and 3D structure can provide insight into its potential pathogenicity.
 
 Additionally, in this stage, AlphaMissense contains a component where it is tasked with understanding the statistics of protein evolutionary history by using unsupervised protein language modeling to learn amino acid distributions, where it is conditioned also on the context of a protein’s structure (previously predicted by AlphaFold2). This is done by querying multiple sequence alignment (MSA) databases, where each row is a different species and each column is a position in an amino acid sequence. However, some of these sequence positions are masked from the model, and the model is then challenged to predict what these amino acids should be in the hidden positions– hence, learning patterns across species and positions to determine these identities.
 
-IO IMAGE
+![](./Images/overview.jpg)
 
 Once the pre-training stage has been completed, AlphaMissense enters a fine-tuning stage where it undergoes weak supervision on human sequence variation. “Benign” labels are assigned to variants frequently observed in human and primate populations, while “Pathogenic” labels are assigned to variants absent from these populations. The model is then challenged for each position on a protein that is masked, to determine whether a particular variant at that position will be present or absent in the human population. A benefit to the approach taken in the fine-tuning stage is that AlphaMissense avoids introducing biases from human-curated annotations for variants in the population, and rather focuses on the actual observed variant frequencies.
 
@@ -35,19 +35,19 @@ Observed sequence variation
 
 Ultimately, AlphaMissense’s performance and capabilities are impressive. At an auROC of 0.940, approximately 18,924 ClinVar test variants were classified, which is a leap forward from an auROC of 0.911 by the second leading tool which was also not trained on ClinVar test variants, the Evolutionary model of Variant Effect (EVE). 71 total million missense variant predictions were made across 19,233 human proteins, out of all 216 million possible single amino acid changes. 32% of these variants were found likely to be pathogenic, and 57% likely benign. Performance is also consistent across different AlphaFold pLDDT confidence scores.
 
-CLINVAR ASSAY IMAGE + CAPTION
+![](./Images/benchmark.png)
 
 Furthermore, when assessing the performance of AlphaMissense with a prioritized set of clinically actionable genes by the American College of Medical Genetics (ACMG), 26 genes out of these 34 (77%) showed improvements in their predictions of pathogenicity over EVE. In another set of proteins prioritized for future MAVE studies based on their clinical relevance, AlphaMissense again outperforms EVE in its predictions for 16 of the genes (80%).
 
-ALPHAMISSENSE/EVE IMAGE
+![](./Images/acmg-genes.png)
 
 However, it is important to note that AlphaMissense’s accuracy in predictions can vary depending on different structural groups whose residues may appear in more disordered regions. For instance, in an analysis of AlphaMissense data separated into non-transmembrane (non-TM) and transmembrane (TM) regions for TM proteins, Tordai et al. demonstrated that AlphaMissense’s performance varies across TM and non-TM regions (2024). The graphs below show this distribution of predictions in TM (a) and soluble (b) regions of the proteins, with 88% correct predictions for TM regions made compared to 85% for soluble regions. Furthermore, in investigating the model’s performance for membrane-interacting residues, a low Matthews correlation coefficient (MCC) of 0.496 was seen. Likely, this is due to the low sequence conservation and greater intrinsic disorder found in lipid-interacting disordered regions of the membrane molecular recognition features dataset (MemMoRF).
 
-T/F PREDICTION IMAGE + CAPTION
+![](./Images/tm-regions.png)
 
 ## Example with SHOC2-MRAS-PP1C Complex
 
-FIGURE IMAGE
+![](./Images/shoc2.png)
 
 The above figure shows an example of AlphaMissense used to assess the pathogenicity of specific domains in the SHOC2 oncoprotein. SHOC2 binds with MRAS and PP1C to form a complex which activates the Ras-MAPK signaling pathway. On the left (D) are three heatmaps: the top representing MAVE data, the middle for AlphaMissense, and the bottom for EVE. Each of these heatmaps highlight the average pathogenicity at each amino acid position across all possible substitutions for the first 200 amino acids of SHOC2 (the pathogenicity in the MAVE assay was measured through cell growth in SHOC2-dependent cancer cells). As can be seen, there are very similar residue-level patterns observed between the MAVE and SHOC2 data (positional Spearman correlation of 0.64), whereas EVE, ESM1b, and ESM1v have lower agreement with MAVE (positional Spearman correlations of 0.48, 0.56, and 0.55 respectively).
 
@@ -64,7 +64,7 @@ UniProt (https://www.uniprot.org/). You can view the AlphaMissense variation sco
 ProtVar (https://www.ebi.ac.uk/ProtVar/). This tool provides a glimpse at the residue level of functional annotations derived from UniProt, including predicted structural features in a protein that may impact how variants are interpreted, along with the inclusion of AlphaMissense scores.
 AlphaFold Database (https://alphafold.ebi.ac.uk/). Next to the Model Confidence tab, there is now an “AlphaMissense Pathogenicity” tab and interactive heatmap allowing you to examine missense variants at the residue level while also taking into consideration 3D aspects of the protein‘s structure.
 
-IMAGE + CAPTION
+![](./Images/alphafold-db.png)
 
 ## Applications and Real-Life Examples
 
@@ -90,8 +90,7 @@ Identify positive/negative selection
 Understand the roles of adaptation
 An example of an SF3b complex used to see how each length contributes to the essentiality:
 
-COMPLEX IMAGE
-
+![](./Images/avg-am-scores.png)
 
 ## Limitations
 
