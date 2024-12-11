@@ -85,5 +85,5 @@ CellChat has made a significant contribution to the field of intercellular commu
 Furthermore, the release of CellChat v2 presents a significant advancement by integrating multiple spatially resolved transcriptomics datasets into its analytical framework. This update allows researchers to incorporate spatial proximity into the analysis of cell-cell communication. With this integration, CellChat furthers its ability to combine computational methods with transcriptomic and spatial data, making it a great tool for researchers who seek to uncover the complex networks that drive cellular behavior. By shedding light upon deeper insights into these cellular dynamics, CellChat has the potential to inform therapeutic strategies and advance our understanding of complex biological systems. 
 
 **Links**  
-- [CellChat R Toolkit GitHub Repository](https://github.com/jinworks/CellChat)  
-- [CellChat Web Explorer](http://www.cellchat.org/)
+- CellChat R Toolkit GitHub Repository: https://github.com/jinworks/CellChat
+- CellChat Web Explorer: http://www.cellchat.org/
