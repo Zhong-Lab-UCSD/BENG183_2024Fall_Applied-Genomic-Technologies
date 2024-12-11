@@ -1,5 +1,5 @@
 # Revolutionizing Drug Discovery: Harnessing AlphaFold and AI to Develop Liver Cancer Therapeutics
-#### Team 35: Kim, Camilla, and Jenny
+#### Team 35: Kimberly, Camilla, and Jenny
 
 ## Table of Contents
 * [Introduction](#introduction)
