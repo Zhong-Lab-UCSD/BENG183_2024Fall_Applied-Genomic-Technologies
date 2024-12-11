@@ -81,15 +81,25 @@ Example GWAS summary statistics
 
 The dataset used in the example below is simulated but showcases some of SuSiE’s functions.  
 This dataset contains 3 causal SNPs with effect sizes shown below.   
+
 ![Figure 3](figure_3.png)
+
 A Manhattan plot indicating the causal SNPs in red:    
+
 ![Figure 4](figure_4.png)
+
 As you can see, many of the other SNPs clustered around the causal SNPs have high p-values, due to correlation with the causal SNPs.  
+
 Next you can fit a model. The parameter “L” represents how many causal SNPs are present, but SuSiE is robust to the number specified.  
+
 ![Figure 5](figure_5.png)
+
 Next print out the credible sets of SNPs. SNPs 403, 653, and 773 are causal in this example, and all three were identified in credible sets.  
+
 ![Figure 6](figure_6.png)
-SuSiE also has options for displaying your credible sets, graphing the SNPs by location and PIP  
+
+SuSiE also has options for displaying your credible sets, graphing the SNPs by location and PIP
+
 ![Figure 7](figure_7.png)
 
 ---
