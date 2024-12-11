@@ -121,6 +121,16 @@ The predicted binding pose is a computational model that shows how the molecule 
 3. **Validation Outcomes**  
    The workflow delivers two validated compounds as key outcomes. The first is an initial lead molecule exhibiting micromolar binding affinity, demonstrating therapeutic feasibility. The second is an optimized molecule with nanomolar potency, highlighting the system’s ability to refine and enhance drug candidates for greater efficacy and precision.
 
+### Potential Applications
+
+1. **Broader Disease Applications**  
+   The methodology can be extended to other cancers and diseases, enabling the identification of novel therapeutic targets and tailored treatments across various conditions.
+
+2. **Personalized Medicine**  
+   By utilizing patient-specific omics data, the platform can design treatments tailored to individual genetic and molecular profiles, enhancing efficacy and safety.
+
+3. **Expanding Druggable Targets**  
+   AlphaFold enables the exploration of previously undruggable proteins by predicting their 3D structures, unlocking new possibilities for therapeutic intervention.
 
 
 ## Citations
