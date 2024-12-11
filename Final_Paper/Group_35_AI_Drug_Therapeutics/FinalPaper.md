@@ -60,7 +60,7 @@ Alphafold was used to predict the 3D structure of CDK2. The surface of the prote
 synthesis and biological testing. Using kinase binding assays, the compound ISM042-2-001 showed a binding affinity (K_d) of 9.2 μM. These results can then be used for the final step.
 
 ### Optimization
-Using the initial results, a second round of compound generation using Chemistry42 was conducted which generated 16 molecules with the hope of improving binding affinity. Of these 16 molecules, 6 were selected for synthesis and testing was conducted to produce more refined candidates. Of these candidates, the molecule ISM042-2-048 
+Using the initial results, a second round of compound generation using Chemistry42 was conducted which generated 16 molecules with the hope of improving binding affinity. Of these 16 molecules, 6 were selected for synthesis and testing to produce more refined candidates. Of these candidates, the molecule ISM042-2-048 
 was discovered with nanomolar efficacy, representing a significant improvement in potency. Now you should be able to explain the basics of the general workflow of how AI tools, such as
 Alphafold, can be utilized for drug discovery. 
 
