@@ -20,7 +20,7 @@ Proteins are commonly known as the fundamental building blocks for all living or
 
 Structure of Salmonella alpha-2-macroglobulin [9]
 
-![image](https://github.com/user-attachments/assets/6fb06eb0-15f1-4865-b3e4-5d0b7b103e39)
+![image](https://github.com/serrachow/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_36_AlphaFold/Images/hiv_reverse_transcriptase_structure.png)
 
 Structure of HIV-1 Reverse Transcriptase [9]
 
@@ -41,7 +41,7 @@ We will see how ALphaFold combines these previous techniques to make an accurate
 AlphaFold is an AI system developed by Google DeepMind to predict a protein’s 3D structure using its amino acid sequence. Currently, the AlphaFold protein structure database contains over 200 million predicted protein structures, including the complete human proteome. It recently won the 2024 Nobel Prize in Chemistry. 
 
 Example of 3D protein structure of AF-Q3S2X4-F1 predicted by AlphaFold. The model displays regions with high prediction confidence in dark blue and regions of lower confidence in orange. 
-![AlphaFold Structure Example Image](https://github.com/serrachow/beng183images/blob/main/alphafold_structure.png)
+![AlphaFold Structure Example Image](https://github.com/serrachow/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_36_AlphaFold/Images/alphafold_structure.png)
 
 
 ### Importance of AlphaFold
@@ -66,11 +66,11 @@ At its core, AlphaFold uses a deep learning algorithm to discover patterns from 
 
 There are two ways to use AlphaFold. First, there is the [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/), which provides free accessible protein structure predictions. This database contains over 200 million entries, which covers a substantial amount of Uniprot, the database that contains protein sequences and annotations. 
 
-![AlphaFold Database Image](https://github.com/serrachow/beng183images/blob/main/alphafold_db.png)
+![AlphaFold Database Image](https://github.com/serrachow/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_36_AlphaFold/Images/alphafold_db.png)
 
 For example, let's use `PTBP1` as an example gene. We can type in `PTBP1` into the search bar, and select the first option, which shows `Polypyrimidine tract-binding protein 1`. 
 
-![AlphaFold Database Example](https://github.com/serrachow/beng183images/blob/main/alphafold_db_example.png)
+![AlphaFold Database Example](https://github.com/serrachow/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_36_AlphaFold/Images/alphafold_db_example.png)
 
 A list of what the AlphaFold Protein Structure Database offers:
 
@@ -82,7 +82,7 @@ A list of what the AlphaFold Protein Structure Database offers:
 
 Alternatively, if you wanted to run your own simulations and predictions, there is the [AlphaFold v2 pipeline Github Repository](https://github.com/google-deepmind/alphafold), which is an open source package, that you can download and run on a Linux machine. 
 
-![AlphaFold Github](https://github.com/serrachow/beng183images/blob/main/alphafold_github.png)
+![AlphaFold Github](https://github.com/serrachow/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_36_AlphaFold/Images/alphafold_github.png)
 
 The exact instructions are listed in the `README.md` document in the Github repository, but we will go over the general idea of how AlphaFold predictions work. 
 
