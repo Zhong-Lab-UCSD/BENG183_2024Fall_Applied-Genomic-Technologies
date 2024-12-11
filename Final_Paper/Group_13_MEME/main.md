@@ -28,7 +28,7 @@ Ungapped motifs mostly look into conserved sequence patterns. For example, the T
 
 ![TATA box](TATA_box.png)
 
-In contrast, gapped motifs contain slight nucleotide changes that are important to consider when examining their impacts on biological function. An example of this is the following bacterial σ70 promoter: TTGACA– (16-19 bp gap) –TATAAT[2]. Despite this gap, the promoter is still able to maintain its role in RNA polymerase binding and transcription initiation within e. coli. More about this motif can be found in this paper[*I'm a small italic link*]([paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC3209215/).
+In contrast, gapped motifs contain slight nucleotide changes that are important to consider when examining their impacts on biological function. An example of this is the following bacterial σ70 promoter: TTGACA– (16-19 bp gap) –TATAAT[2]. Despite this gap, the promoter is still able to maintain its role in RNA polymerase binding and transcription initiation within e. coli. More about this motif can be found in this ([paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC3209215/).
 
 ## 2. Overview of MEME Parameters<a name="2"></a>
 The MEME tool’s basic function is to discover ungapped motifs in inputted group(s) of unaligned sequences through one of three motif discovery modes: Classic, Discriminative, and Differential. It also requires the selection of specific parameters to improve the quality of the motif search, which site distribution assists in doing by informing MEME of expected motif distribution. In general, the tool will have the following usage formats:
