@@ -65,9 +65,9 @@ Mingso Sherma Limbu, Tianze Xiong, Sufang Wang,A review of Ribosome profiling an
 Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020, https://doi.org/10.1093/nar/gkae1020
 
 ### Websites:
-https://github.com/ratschlab/RiboDiff 
-https://plastid.readthedocs.io/en/latest/generated/plastid.html
-https://pypi.org/project/loess/#documentation
+https://github.com/ratschlab/RiboDiff <br>
+https://plastid.readthedocs.io/en/latest/generated/plastid.html <br>
+https://pypi.org/project/loess/#documentation <br>
 https://rdp.ucc.ie/home
 
 
