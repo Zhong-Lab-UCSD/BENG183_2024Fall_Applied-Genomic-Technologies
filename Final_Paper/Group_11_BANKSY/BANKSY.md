@@ -8,6 +8,7 @@ First, clustering cells into types and distinguishing tissue domains are typical
 
 This reveals the need for a more unified and scalable approach, which is exactly what BANKSY provides.
 
+
 ## **Methodology**  
 
 BANKSY improves upon these non-spatial clustering algorithms by not only considering how similar cells are, but also how similar each cell’s neighbors are.
@@ -17,6 +18,7 @@ This is achieved by adding neighborhood features to the traditional gene-cell ex
 BANKSY then constructs a graph with cells as nodes and their similarities as edges. Afterwards, it efficiently clusters the cells using the Leiden algorithm, which starts by treating each node as its own cluster and iteratively moving nodes between clusters to maximize modularity: a measure of how well nodes in a network are grouped together. The process repeats until optimal clusters are formed. The following image is a visual representation of this.
 
 ![](./Assets/clusterRep.png)
+
 
 ## **Advantages of BANKSY**
 
@@ -32,6 +34,7 @@ BANKSY then constructs a graph with cells as nodes and their similarities as edg
 
 This image compares the runtimes of common spatial cell-type clustering algorithms, clearly   
 demonstrating that BANKSY is far more scalable than any other spatial algorithm. It can handle nearly twice as many cells as the second-best algorithm, in less time. Surprisingly, it is also as scalable as a standard non-spatial clustering algorithm.
+
 
 ## **Analysis Pipeline**
 
@@ -52,6 +55,7 @@ Input: A spatial omics dataset consisting of gene or protein expression profiles
 4. Integration into visualization and reporting:   
      
    In the final step, BANKSY integrates cell-type classifications and tissue domains to produce comprehensive, interpretable outputs. It generates detailed spatial maps of cell types through domains and summary reports, translating complex data into actionable insights. These outputs support hypothesis generation and guide experimental validation, advancing the understanding of tissue structure and function.
+
 
 ## **Demo**  
 
@@ -168,11 +172,13 @@ Human Colorectal Cancer Data:
 
 The red arrows highlight the cycling epithelial cell cluster, which was detected exclusively by BANKSY’s clustering. These cells are actively undergoing the cell cycle, making them of significant interest in cancer research, where cell replication plays a key role in tumor growth and progression. BANKSY's ability to identify such dynamic cellular processes offers valuable insights into cancer biology and potential therapeutic targets.
 
+
 ## **Applications to Personalized Medicine**
 
 BANKSY is highly effective at mapping various cell types within a tumor, including immune cells, stromal cells, and cancer cells, while also identifying tissue domains linked to tumor progression. This capability has numerous applications, such as enhancing our understanding of tumor heterogeneity by revealing the diverse cellular compositions within a single tumor. Such insights are crucial for advancing personalized medicine in oncology, as they allow for more precise targeting of therapies based on the unique tumor microenvironment.
 
 Through BANKSY, we can also gain a deeper understanding of how cells respond to different drugs, facilitating the development of more effective treatments. By analyzing cellular reactions to diseases, BANKSY aids in identifying potential biomarkers for diagnostics and therapeutic targets. Furthermore, its speed and precision enable more accurate tissue testing, allowing for the development of personalized medicines tailored to individual patients' specific needs, ultimately improving treatment outcomes.
+
 
 ## **References**
 
