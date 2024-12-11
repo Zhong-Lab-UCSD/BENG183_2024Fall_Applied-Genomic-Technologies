@@ -1,7 +1,7 @@
 # **BANKSY: A Clustering Tool for Improved Tissue Analysis.**
 
 
-# Table of Contents
+## Table of Contents
 
 
 ## **Intro to Spatial Omics**
