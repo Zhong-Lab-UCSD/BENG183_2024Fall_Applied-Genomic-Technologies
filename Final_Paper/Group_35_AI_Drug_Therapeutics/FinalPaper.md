@@ -80,12 +80,13 @@ yourself!
   The rapid timeline for discovering ISM042-2-048 illustrates the power of AI in streamlining complex processes. The entire process, from data analysis to compound synthesis and testing, was completed in just 30 days. The integration of AI platforms significantly compressed the timeline, demonstrating a new standard for efficiency in pharmaceutical research. In comparison, traditional methods of drug discovery require years of development. Target Identification and Validation takes approximately 1-2 years, a lengthy and expensive process in which scientists identify a biological target (ex. protein, receptor) involved in a disease and validate its relevance. Then, hit identification and lead discovery takes another 2-3 years, as large compound libraries must be screened to find “hit” molecules that interact with the target. Hits are then refined into “lead” compounds through iterative testing and optimization to improve potency, selectivity, and pharmacokinetics (Hughes et al.)
 
 ![image](https://github.com/user-attachments/assets/9f79beb4-4308-43c7-94de-1df1a8b91b02)
+Figure by Hughes et al., Br J Pharmacol. 2011 Mar;162(6):1239–1249.
 
 
   In this specific case, for the study of HCC related drug development, of the 8,918 compounds generated, only seven were synthesized and tested in the initial round. This remarkable efficiency reflects Chemistry42's predictive capabilities, which prioritized candidates with the highest potential for success. The AI’s ability to minimize unnecessary synthesis and testing resulted in significant time and resource savings. AlphaFold’s predictive capabilities played a critical role by generating precise 3D models of CDK20, a key target in hepatocellular carcinoma (HCC). By eliminating the need for labor-intensive and costly experimental structural determination, researchers could focus on designing molecules with high specificity and binding efficacy. The results speak volumes about the efficacy of the AI-driven approach. ISM042-2-001, the initial compound, demonstrated a promising binding affinity (K_d = 9.2 μM), validating the AI’s ability to identify viable therapeutic candidates. Subsequent optimization rounds led to ISM042-2-048, a molecule with nanomolar potency. This dramatic improvement highlights the capability of AI to deliver optimized drug candidates with clinical potential in record time (Ren et al.).
 
 ![image](https://github.com/user-attachments/assets/c360c87f-f752-4e41-84dd-e6306bc3f189)
-(Ren et al.)
+Figure by Ren et al., Chem. Sci., 2023,14, 1443-1452
 
 (A) Representative Binding Affinity Curve for ISM042-2-048 in CDK20 Kinase Binding Assay
 
@@ -101,7 +102,7 @@ The predicted binding pose is a computational model that shows how the molecule 
 #### Input Data
 
 1. **Omics Data**  
-   The platform integrates large-scale, high-dimensional datasets such as gene expression profiles and proteomics. These data sources provide an in-depth view of biological processes, enabling the identification of critical pathways and potential therapeutic targets. This comprehensive analysis forms the foundation for precise and informed intervention strategies.
+   The platform integrates large-scale, high-dimensional datasets such as gene expression profiles and proteomics. These data sources provide an in-depth view of biological processes, enabling the identification of critical pathways and potential therapeutic targets. This comprehensive analysis forms the foundation for precise and informed intervention strategies. 
 
 3. **Textual Data**  
    The system also incorporates textual data from scientific literature and curated databases. This information is crucial for understanding disease associations, predicting the relevance of potential targets, and prioritizing compounds for development. By synthesizing these insights, the platform establishes meaningful connections between molecular mechanisms and clinical outcomes, guiding its discovery processes with greater accuracy.
@@ -124,5 +125,7 @@ The predicted binding pose is a computational model that shows how the molecule 
 
 ## Citations
 * Ren, F., Ding, X., Zheng, M., Korzinkin, M., Cai, X., Zhu, W., Mantsyzov, A., Aliper, A., Aladinskiy, V., Cao, Z., Kong, S., Long, X., Liu, B. H. M., Liu, Y., Naumov, V., Shneyderman, A., Ozerov, I. V., Wang, J., Pun, F. W., … Zhavoronkov, A. (2023, January 10). Alphafold accelerates artificial intelligence powered drug discovery: Efficient discovery of a novel cdk20 small molecule inhibitor. Chemical Science. https://pubs.rsc.org/en/Content/ArticleLanding/2023/SC/D2SC05709C 
-* Warner, E. (2024, February 12). New Study uses alphafold and AI to accelerate design of novel drug for liver cancer. UToronto - Faculty of Arts & Science. https://www.artsci.utoronto.ca/news/new-study-uses-alphafold-and-ai-accelerate-design-novel-drug-liver-cancer 
+* Warner, E. (2024, February 12). New Study uses alphafold and AI to accelerate design of novel drug for liver cancer. UToronto - Faculty of Arts & Science. https://www.artsci.utoronto.ca/news/new-study-uses-alphafold-and-ai-accelerate-design-novel-drug-liver-cancer
+* Hughes JP, Rees S, Kalindjian SB, Philpott KL. Principles of early drug discovery. Br J Pharmacol. 2011 Mar;162(6):1239-49. doi: 10.1111/j.1476-5381.2010.01127.x. PMID: 21091654; PMCID: PMC3058157.
+* Callaway, Ewen. "Major AlphaFold Upgrade Offers Boost for Drug Discovery: Latest Version of the AI Models How Proteins Interact with Other Molecules — but DeepMind Restricts Access to the Tool." Nature, 8 May 2024, https://doi.org/10.1038/d41586-024-01383-z.
 
