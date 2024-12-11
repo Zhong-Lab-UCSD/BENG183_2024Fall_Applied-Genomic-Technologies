@@ -22,6 +22,8 @@ There are two types of motifs: Ungapped motifs and gapped motifs. Both are recur
 
 Ungapped motifs mostly look into conserved sequence patterns. For example, the TATA box is considered an ungapped motif because it is a contiguous and uninterrupted promoter sequence that serves as a transcription binding site.
 
+![TATA box](TATA_box.png)
+
 In contrast, gapped motifs contain slight nucleotide changes that are important to consider when examining their impacts on biological function. An example of this is the following bacterial σ70 promoter: TTGACA– (16-19 bp gap) –TATAAT[3]. Despite this gap, the promoter is still able to maintain its role in RNA polymerase binding and transcription initiation within e. coli. More about this motif can be found in this paper.
 
 ## 1.1.2 Overview of MEME Parameters<a name="112"></a>
