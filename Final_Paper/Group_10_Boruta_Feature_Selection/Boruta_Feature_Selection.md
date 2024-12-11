@@ -24,7 +24,7 @@ Before carrying out feature selection, data cleaning and imputation are importan
 
 ### Feature Scaling
 
-Feature scaling can also be used to decrease bias in classification tasks where features with larger values may over-contribute to the model performance. Feature scaling standardizes or normalizes the values of features, for example Min-Max Normalization, so that features are more comparable and the model is more accurate.
+Feature scaling can also be used to decrease bias in classification tasks where features with larger values may over-contribute to the model performance. Feature scaling standardizes or normalizes the values of features through techniques such as Min-Max Normalization, so that features are more comparable and the model is more accurate.
 
 ### Techniques in Feature Selection
 
@@ -52,8 +52,9 @@ There are many datasets commonly analyzed in bioinformatics where feature select
 
 Sequence analysis is another major focus of bioinformatics, and the field contains two main problems of interest:
 
-**Content analysis** focuses on broad characterization of a sequence, meaning that tasks require the selection of pertinent subsequences from a much larger complete sequence. Common problems include prediction of subsequences with high tendency to code for proteins (coding potential prediction), prediction of protein function from sequence, and prediction of promoter regions or microRNA targets. Markov models, SVMs, and other filtering techniques are a few of the approaches that have been utilized for such tasks.\
-**Signal analysis** involves identifying important, often conserved motifs in a sequence, such as gene structural elements or regulatory elements. A popular method is to use regression techniques to identify regulatory motifs, then use feature selection to search for the motifs that maximize fit to the regression model. Embedded SVM techniques, genetic algorithms, and other filtering techniques have also been applied to signal analysis problems.
+**Content analysis** focuses on broad characterization of a sequence, meaning that tasks require the selection of pertinent subsequences from a much larger complete sequence. Common problems include prediction of subsequences with high tendency to code for proteins (coding potential prediction), prediction of protein function from sequence, and prediction of promoter regions or microRNA targets. Markov models, SVMs, and other filtering techniques are a few of the approaches that have been utilized for such tasks.  
+
+**Signal analysis** involves identifying important, often conserved motifs in a sequence, such as gene structural elements or regulatory elements. A popular method is to use regression techniques to identify regulatory motifs, then use feature selection to search for the motifs that maximize fit to the regression model. Embedded SVM techniques, genetic algorithms, and other filtering techniques have also been applied to signal analysis problems.  
 
 Furthermore, SNP analysis is an area of great interest within bioinformatics. Around 7 million known SNPs exist in the human genome, and while having this large database is valuable for applications like disease-gene association studies, it cannot easily be analyzed in its entirety. Feature selection can be used to determine a smaller, but still informative subset of SNPs, through techniques such as genetic algorithms, SVMs, k-nearest neighbors, or decision trees. 
 
