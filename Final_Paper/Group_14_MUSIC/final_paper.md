@@ -41,20 +41,14 @@ MUSIC surpasses these methods by integrating multiplex DNA and RNA interactions 
 | **Multiplex Capability** | DNA-DNA, RNA-DNA, RNA-RNA multiplexing | Pairwise only DNA-DNA | Pairwise only RNA-DNA | DNA-DNA, bulk-level multiplexing |
 | **Sensitivity to RNA Interactions** | High (direct RNA-DNA mapping) | None | High | Moderate    |
 
-### Methodology 
-
-<img src="image/Intro1.webp" alt="MUSIC Method" width="1000" />
-MUSIC employs a dual-barcoding strategy:
-
-1. Unique cell barcodes label RNA and fragmented DNA within the same nucleus.  
-2. Complex barcodes, barcodes that are unique to each molecular complex, enable the identification of co-complexed RNA and DNA molecules.
-
-The workflow includes constructing sequencing libraries, differentiating RNA and DNA inserts, and analyzing molecular complexes. This innovative approach facilitates high-resolution mapping of chromatin architecture and transcriptional activity within individual cells.
 
 
 
 
 ## Experiment Methodology
+
+<img src="image/Intro1.webp" alt="MUSIC Method" width="1000" />
+
 The MUSIC technique requires extensive sample treatment to obtain analyzable raw data. This section provides an overview of sample treatment, linker and barcode addition, and sequencing.
 
 ### Crosslinking and nuclei isolation
