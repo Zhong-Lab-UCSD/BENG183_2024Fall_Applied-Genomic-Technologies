@@ -72,3 +72,8 @@ yourself!
 | Target Identification   | PandaOmics           | Analyze data and return potential targets         |
 | Compound Generation and Testing  | Alphafold, Chemistry42        | Predict 3D structure of CDK2, generate potential compounds |
 | Optimization    | All              | Produce more refined candidates |
+
+## Citations
+* Ren, F., Ding, X., Zheng, M., Korzinkin, M., Cai, X., Zhu, W., Mantsyzov, A., Aliper, A., Aladinskiy, V., Cao, Z., Kong, S., Long, X., Liu, B. H. M., Liu, Y., Naumov, V., Shneyderman, A., Ozerov, I. V., Wang, J., Pun, F. W., … Zhavoronkov, A. (2023, January 10). Alphafold accelerates artificial intelligence powered drug discovery: Efficient discovery of a novel cdk20 small molecule inhibitor. Chemical Science. https://pubs.rsc.org/en/Content/ArticleLanding/2023/SC/D2SC05709C 
+* Warner, E. (2024, February 12). New Study uses alphafold and AI to accelerate design of novel drug for liver cancer. UToronto - Faculty of Arts & Science. https://www.artsci.utoronto.ca/news/new-study-uses-alphafold-and-ai-accelerate-design-novel-drug-liver-cancer 
+
