@@ -1,38 +1,47 @@
-# Feature Selection Techniques in Bioinformatics - Boruta
+# Feature Selection Techniques in Bioinformatics - Boruta 
+#### Team 10: Kathyrn Chen, Gavin Simmons, Sriya Paleti
+
+
+
+1. [Why is Feature Selection Important](#why-is-feature-selection-important)
+2. [How is Feature Selection Done](#how-is-feature-selection-done)
+3.  [Potential Applications In Bioinformatics](#potential-applications-in-bioinformatics)
+4. [Boruta](#Boruta:-A-Wrapper-method-for-feature-selection)
+5.  [Conclusion](#conclusion)
+6.  [Sources](#sources-cited)
+
 Within machine learning, high-dimensional datasets can make it difficult to fit appropriate models and perform effective analysis. One technique that can be used to address this issue is feature selection, which can be defined as the process of identifying and selecting the most significant features (predictors with the highest correlation) in a dataset for use in predictive model construction. Our paper aims to give an overview of what feature selection is, why it is useful, how it may be done, and how it can be applied in bioinformatics, as well as touching on Boruta, a commonly used feature selection tool that excels in bioinformatics contexts.
 
-## Why is feature selection important?
-Role in classification:
-Challenges it addresses - high dimensionality in data, redundant, highly dependent data
-In comparison to other dimensionality reduction techniques (i.e. PCA – based on projection, information theory – compression, etc), feature selection doesn’t alter the representation of the variables, but merely selects a subset of them
-Impact on classification model - Reduces computational cost, improves accuracy by decreasing noise, enhances interpretability, avoid overfitting (improve model performance)
-Potential issues: introduces additional layer of complexity to modeling task, optimal parameters for feature subset may not generalize to full feature set, risk worsening model by removing an important feature
+## Why is feature selection important
+In classification, feature selection addresses the common challenges of high-dimensional, redundant, and highly dependent data. In comparison to other dimensionality reduction techniques (i.e. PCA - based on projection, information theory - compression, etc), feature selection doesn’t alter the representation of the variables, but merely selects a subset of them. Feature selection reduces computational cost, improves accuracy by decreasing noise, enhances interpretability, and avoids overfitting. However, some potential issues can arise in that feature selection introduces an additional layer of complexity to the modeling task as the optimal parameters for feature subset may not generalize to full feature set and can risk worsening model by removing an important feature
 
 ## How is Feature Selection Done
 
 ### Data Cleaning
 
 Before carrying out feature selection, data cleaning and imputation are important steps. Some common problems to be addressed are as follows:
-Features that have zero variance, where they have constant values across samples should be removed as they don’t contribute to selection.
-Missing values are common in bioinformatics datasets and can be addressed by either removing features or imputing them. Imputation techniques like mean imputation can substitute these missing values using statistical values based on the data.
+- Features that have zero variance, where they have constant values across samples should be removed as they don’t contribute to selection.
+- Missing values are common in bioinformatics datasets and can be addressed by either removing features or imputing them. Imputation techniques like mean imputation can substitute these missing values using statistical values based on the data.
 
 ### Feature Scaling
 
 Feature scaling can also be used to decrease bias in classification tasks where features with larger values may over-contribute to the model performance. Feature scaling standardizes or normalizes the values of features, for example Min-Max Normalization, so that features are more comparable and the model is more accurate .
 
-## Techniques in Feature Selection
+### Techniques in Feature Selection
 
-### Filter Methods
+#### Filter Methods
 
 Filter methods evaluate the relevance of features independently of a model. These methods utilize a variety of statistical tests to rank features based on their relationship with the target variable. Since filter methods don’t need to run the model to select features, they are computationally effective and therefore commonly used when dealing with large datasets with many features. Correlation Coefficients are an example of using univariate filter methods to assess the linear relationship between features and target variables. However filter methods ignore classifier interaction and many are univariate [1], meaning they evaluate features independently, without considering feature to feature interaction which can lead to oversimplification.
 
-### Wrapper Methods:
+#### Wrapper Methods:
 
-Wrapper methods select features by training models on different feature subsets and evaluating model performance at each combination. Some examples of this are Recursive Feature Selection (which is explained later) and Forward Selection, where starting from 0 features, features are added to the model one at a time until the model performance stops improving. Since wrapper methods directly evaluate feature subsets, they outperform filter methods in terms of accuracy but in turn, they are more computationally expensive and prone to overfitting.
+&nbsp
+: Wrapper methods select features by training models on different feature subsets and evaluating model performance at each combination. Some examples of this are Recursive Feature Selection (which is explained later) and Forward Selection, where starting from 0 features, features are added to the model one at a time until the model performance stops improving. Since wrapper methods directly evaluate feature subsets, they outperform filter methods in terms of accuracy but in turn, they are more computationally expensive and prone to overfitting.
 
-### Embedded Methods:
+#### Embedded Methods:
 
-Embedded methods select features during the model training process. The model will predict the most relevant features based on the feature relationship with the target variable as it learns. An example is LASSO. This method applies a penalty during the regression process, shrinking coefficients of less important features to a zero value so that the subset of features selected will be the most relevant. Since embedded methods require the model to be run multiple times on feature subsets, they tend to be faster than wrapper methods yet accurate as they still interact with the classifier. However, embedded methods are less interpretable and adaptable across different algorithms.
+&nbsp
+: Embedded methods select features during the model training process. The model will predict the most relevant features based on the feature relationship with the target variable as it learns. An example is LASSO. This method applies a penalty during the regression process, shrinking coefficients of less important features to a zero value so that the subset of features selected will be the most relevant. Since embedded methods require the model to be run multiple times on feature subsets, they tend to be faster than wrapper methods yet accurate as they still interact with the classifier. However, embedded methods are less interpretable and adaptable across different algorithms.
 
 
 ## Potential Applications in Bioinformatics
