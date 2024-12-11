@@ -33,12 +33,12 @@ Additionally, in this stage, AlphaMissense contains a component where it is task
 
 Once the pre-training stage has been completed, AlphaMissense enters a fine-tuning stage where it undergoes weak supervision on human sequence variation. “Benign” labels are assigned to variants frequently observed in human and primate populations, while “Pathogenic” labels are assigned to variants absent from these populations. The model is then challenged for each position on a protein that is masked, to determine whether a particular variant at that position will be present or absent in the human population. A benefit to the approach taken in the fine-tuning stage is that AlphaMissense avoids introducing biases from human-curated annotations for variants in the population, and rather focuses on the actual observed variant frequencies.
 
-Finally, a diverse amount of datasets were used to evaluate AlphaMissense’s predictions, such as the ClinVar annotated missense variants database (https://pubmed.ncbi.nlm.nih.gov/29165669/), a de novo mutations database (https://www.nature.com/articles/nature21062), as well as experimental MAVE data in the ProteinGym benchmark set (https://www.biorxiv.org/content/10.1101/2023.12.07.570727v1).
+Finally, a diverse amount of datasets were used to evaluate AlphaMissense’s predictions, such as the [ClinVar annotated missense variants database](https://pubmed.ncbi.nlm.nih.gov/29165669/), a [de novo mutations database](https://www.nature.com/articles/nature21062), as well as experimental MAVE data in the [ProteinGym benchmark set](https://www.biorxiv.org/content/10.1101/2023.12.07.570727v1).
 
 To summarize the big picture, three important inductive biases inform AlphaMissense’s model:
-Structural context
-Protein evolutionary history
-Observed sequence variation
+1. **Structural context**
+2. **Protein evolutionary history**
+3. **Observed sequence variation**
 
 ## Performance
 
@@ -68,80 +68,65 @@ Additionally, in figure E, we can see a zoom-in into the RVxF binding motif of S
 
 Excitingly, AlphaMissense has been widely integrated into a variety of EMBL-EBI’s open data resources and tools, increasing the accessibility of its data for researchers’ uses. A couple of these resources include:
 
-(FIX LIST FORMATTING) \
-Ensembl Variant Effect Predictor Tool (https://www.ensembl.org/info/docs/tools/vep/index.html), where AlphaMissense pathogenicity scores have been included in annotations of all variants. This data can be accessed via Ensembl’s web interface, REST API, or command line interface.
-DECIPHER (https://www.deciphergenomics.org/). AlphaMissense scores and pathogenicity classifications are displayed along the variant annotation pages.
-UniProt (https://www.uniprot.org/). You can view the AlphaMissense variation scores alongside a protein’s AlphaFold-predicted 3D structure in the ProtVista protein sequence viewer.
-ProtVar (https://www.ebi.ac.uk/ProtVar/). This tool provides a glimpse at the residue level of functional annotations derived from UniProt, including predicted structural features in a protein that may impact how variants are interpreted, along with the inclusion of AlphaMissense scores.
-AlphaFold Database (https://alphafold.ebi.ac.uk/). Next to the Model Confidence tab, there is now an “AlphaMissense Pathogenicity” tab and interactive heatmap allowing you to examine missense variants at the residue level while also taking into consideration 3D aspects of the protein‘s structure.
+* [**Ensembl Variant Effect Predictor Tool**](https://www.ensembl.org/info/docs/tools/vep/index.html): a tool where AlphaMissense pathogenicity scores have been included in annotations of all variants. This data can be accessed via Ensembl’s web interface, REST API, or command line interface.
+* [**DECIPHER**](https://www.deciphergenomics.org/): AlphaMissense scores and pathogenicity classifications are displayed along the variant annotation pages.
+* [**UniProt**](https://www.uniprot.org/): you can view the AlphaMissense variation scores alongside a protein’s AlphaFold-predicted 3D structure in the ProtVista protein sequence viewer.
+* [**ProtVar**](https://www.ebi.ac.uk/ProtVar/): this tool provides a glimpse at the residue level of functional annotations derived from UniProt, including predicted structural features in a protein that may impact how variants are interpreted, along with the inclusion of AlphaMissense scores.
+* [**AlphaFold Database**](https://alphafold.ebi.ac.uk/): next to the Model Confidence tab, there is now an “AlphaMissense Pathogenicity” tab and interactive heatmap allowing you to examine missense variants at the residue level while also taking into consideration 3D aspects of the protein‘s structure.
 
 ![](./Images/alphafold-db.png)
 *Above is an example from the AlphaFold database showing AlphaMissense’s predictions at a residue-level for Cellular tumor antigen p53.*
 
 ## Applications and Real-Life Examples
 
-(FIX LIST FORMATTING)
-
 Missense mutations are known to cause potential diseases such as cystic fibrosis, sickle-cell anemia, and cancer. A combination of multiple genetic variations can cause more complex diseases such as Type 2 diabetes. AI tools such as Alpha Missense use laboratory experiment results enabling the predictions of how variants impact protein function, aiding in identifying pathogenic missense mutations and previously undiscovered disease-causing genes. 
 
-Population Genomics
-Provides pathogenicity predictions, allowing researchers to understand genetic variation in a large data set.
-Identify variants in *selective pressure
-Understand patterns in the population – frequency of disease, adaptive genetic changes
+#### Population Genomics
+- Provides pathogenicity predictions, allowing researchers to understand genetic variation in a large data set.
+- Identify variants in **selective pressure*
+- Understand patterns in the population – frequency of disease, adaptive genetic changes
 
-Potential Drug Targets 
-Identifying drug targets
-Helps to find proteins critical to disease pathways helping to find the drug targets 
-Effect of missense mutation on the protein structure
-Design personalized treatments – understanding of genotype-phenotype relationship
+#### Potential Drug Targets 
+- Identifying drug targets
+- Helps to find proteins critical to disease pathways helping to find the drug targets 
+- Effect of missense mutation on the protein structure
+- Design personalized treatments – understanding of genotype-phenotype relationship
 
-Evolutionary Studies
+#### Evolutionary Studies
+- Calculates average prediction(AM scores) for each gene, which is similar to measuring a gene’s evolutionary constraint—how essential the gene is for the organism’s survival. 
+- Identify positive/negative selection
+- Understand the roles of adaptation
 
-Calculates average prediction(AM scores) for each gene, which is similar to measuring a gene’s evolutionary constraint—how essential the gene is for the organism’s survival. 
-Identify positive/negative selection
-Understand the roles of adaptation
 An example of an SF3b complex used to see how each length contributes to the essentiality:
 
 ![](./Images/avg-am-scores.png)
 
+**Selective Pressure: Evolutionary force that influences reproductive success.*
+
 ## Limitations
 
 (FIX FORMAT)
-* Selective Pressure: Evolutionary force that influences reproductive success. 
-Limitations
-Description
-Length Restriction
-Long sequences can result in a loss of contextual information:due to the limitation of the method
-Memory limitation
-Short genes can be underpowered 
-Lack of Context from DNA/RNA
-Splicing/regulatory information may be missed
-Simultaneous mutations may not be captured
-Lack of detailed structural change information - biophysical properties, like, stability and binding affinity
-De Novo Proteins
-Lack of *homologous sequence
-Reduces the ability to find protein-coding regions because no existing datasets can be found
-No consideration of complex genetic variations
-Limited to single amino acid substitution
-*Epistasis not considered
-*Structural Variants not considered
-Mutations in proteins that form complexes can cause disease in ways that will not be obvious when considering only monomeric structures.
-Doesn’t account for potential interactions with other proteins 
-Scoring from 0 to 1
-No information on penetrance, haploinsufficiency and specific disease
 
-* Homologous Sequence: sequences that provide strong evidence of shared ancestry between organisms 
-*Epistasis: Interaction between variants
-*Structural Variants: Insertion, Deletion, Duplication 
+| Limitations    | Description |
+| -------- | ------- |
+| Length Restriction  | Long sequences can result in a loss of contextual information due to the limitation of the method <br /> Memory limitation <br /> Short genes can be underpowered |
+| Lack of Context from DNA/RNA | Splicing/regulatory information may be missed <br /> Simultaneous mutations may not be captured <br /> Lack of detailed structural change information - biophysical properties, like, stability and binding affinity |
+| De Novo Proteins | Lack of **homologous sequence* <br/> Reduces the ability to find protein-coding regions because no existing datasets can be found    |
+| No consideration of complex genetic variations | Limited to single amino acid substitution <br /> **Epistasis* not considered <br /> **Structural variants* not considered <br /> Mutations in proteins that form complexes can cause disease in ways that will not be obvious when considering only monomeric structures. <br /> Doesn’t account for potential interactions with other proteins |
+| Scoring from 0 to 1 | No information on penetrance, haploinsufficiency and specific disease   |
+
+
+**Homologous sequence: sequences that provide strong evidence of shared ancestry between organisms*\
+**Epistasis: Interaction between variants*
+**Structural variants: Insertion, Deletion, Duplication*
 
 
 ## References
 
-(FIX FORMAT)
-Cheng, J., Novati, G., Pan, J., Bycroft, C., Žemgulytė, A., Applebaum, T., Pritzel, A., Wong, L. H., Zielinski, M., Sargeant, T., Schneider, R. G., Senior, A. W., Jumper, J., Hassabis, D., Kohli, P., & Avsec, Ž. (2023). Accurate proteome-wide missense variant effect prediction with AlphaMissense. Science (New York, N.Y.), 381(6664), eadg7492. https://doi.org/10.1126/science.adg7492
-Minton, K. Predicting variant pathogenicity with AlphaMissense (2023). Nat Rev Genet 24, 804. https://doi.org/10.1038/s41576-023-00668-9
-Yi M, Liu Y, Su Z (2024). AlphaMissense, a groundbreaking advancement in artificial intelligence for predicting the effects of missense variants. MedComm – Future Medicine, 3:e70. doi:10.1002/mef2.70
-Inside Precision Medicine (2023, September 19). AlphaMissense Classifies Mutation Pathogenicity. https://www.insideprecisionmedicine.com/topics/precision-medicine/alphamissense-classifies-mutation-pathogenicity/
-Tordai, H., Torres, O., Csepi, M. et al. (2024). Analysis of AlphaMissense data in different protein groups and structural context. Sci Data 11, 495. https://doi.org/10.1038/s41597-024-03327-8
-AlphaMissense Predictions for Human Genetic Variation Research (2024, June 7). YouTube. https://www.youtube.com/watch?v=49E9m3XcgjU
-Wang Y, Masson E, Liao Z, et al. (2024). Strengths and limitations of AlphaMissense in CPA1 missense variant classification. Gut; 73:e42. https://doi.org/10.1136/gutjnl-2024-332120
+1. Cheng, J., Novati, G., Pan, J., Bycroft, C., Žemgulytė, A., Applebaum, T., Pritzel, A., Wong, L. H., Zielinski, M., Sargeant, T., Schneider, R. G., Senior, A. W., Jumper, J., Hassabis, D., Kohli, P., & Avsec, Ž. (2023). Accurate proteome-wide missense variant effect prediction with AlphaMissense. Science (New York, N.Y.), 381(6664), eadg7492. https://doi.org/10.1126/science.adg7492
+2. Minton, K. Predicting variant pathogenicity with AlphaMissense (2023). Nat Rev Genet 24, 804. https://doi.org/10.1038/s41576-023-00668-9
+3. Yi M, Liu Y, Su Z (2024). AlphaMissense, a groundbreaking advancement in artificial intelligence for predicting the effects of missense variants. MedComm – Future Medicine, 3:e70. https://doi.org/10.1002/mef2.70
+4. Inside Precision Medicine (2023, September 19). AlphaMissense Classifies Mutation Pathogenicity. https://www.insideprecisionmedicine.com/topics/precision-medicine/alphamissense-classifies-mutation-pathogenicity/
+5. Tordai, H., Torres, O., Csepi, M. et al. (2024). Analysis of AlphaMissense data in different protein groups and structural context. Sci Data 11, 495. https://doi.org/10.1038/s41597-024-03327-8
+6. AlphaMissense Predictions for Human Genetic Variation Research (2024, June 7). YouTube. https://www.youtube.com/watch?v=49E9m3XcgjU
+7. Wang Y, Masson E, Liao Z, et al. (2024). Strengths and limitations of AlphaMissense in CPA1 missense variant classification. Gut; 73:e42. https://doi.org/10.1136/gutjnl-2024-332120
