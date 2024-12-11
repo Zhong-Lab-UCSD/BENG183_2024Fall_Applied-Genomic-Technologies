@@ -7,7 +7,7 @@
 * [Performance](#performance)
 * [Example with SHOC2-MRAS-PP1C Complex](#example-with-shoc2-mras-pp1c-complex)
 * [Data Integration](#data-integration)
-* [Applications and Real-Life Examples](#applications-and-real-life-examples)
+* [Applications](#applications)
 * [Limitations](#limitations)
 * [References](#references)
 
@@ -27,7 +27,7 @@ At a high-level, AlphaMissense takes a missense variant as input and as its outp
 
 AlphaMissense’s model is first pre-trained as AlphaFold2 to infer the sequence to structure relationship in proteins, as the context of a missense variant within its amino acid sequence and 3D structure can provide insight into its potential pathogenicity.
 
-Additionally, in this stage, AlphaMissense contains a component where it is tasked with understanding the statistics of protein evolutionary history by using unsupervised protein language modeling to learn amino acid distributions, where it is conditioned also on the context of a protein’s structure (previously predicted by AlphaFold2). This is done by querying multiple sequence alignment (MSA) databases, where each row is a different species and each column is a position in an amino acid sequence. However, some of these sequence positions are masked from the model, and the model is then challenged to predict what these amino acids should be in the hidden positions– hence, learning patterns across species and positions to determine these identities.
+Additionally, in this stage, AlphaMissense contains a component where it is tasked with understanding the statistics of protein evolutionary history by using unsupervised protein language modeling to learn amino acid distributions, where it is conditioned also on the context of a protein’s structure (previously predicted by AlphaFold2). This is done by querying multiple sequence alignment (MSA) databases, where each row is a different species and each column is a position in an amino acid sequence. However, some of these sequence positions are masked from the model, and the model is then challenged to predict what these amino acids should be in the hidden positions – hence, learning patterns across species and positions to determine these identities.
 
 ![](./Images/overview.jpg)
 
@@ -77,7 +77,7 @@ Excitingly, AlphaMissense has been widely integrated into a variety of EMBL-EBI�
 ![](./Images/alphafold-db.png)
 *Above is an example from the AlphaFold database showing AlphaMissense’s predictions at a residue-level for Cellular tumor antigen p53.*
 
-## Applications and Real-Life Examples
+## Applications
 
 Missense mutations are known to cause potential diseases such as cystic fibrosis, sickle-cell anemia, and cancer. A combination of multiple genetic variations can cause more complex diseases such as Type 2 diabetes. AI tools such as Alpha Missense use laboratory experiment results enabling the predictions of how variants impact protein function, aiding in identifying pathogenic missense mutations and previously undiscovered disease-causing genes. 
 
@@ -115,7 +115,7 @@ An example of an SF3b complex used to see how each length contributes to the ess
 
 
 **Homologous sequence: sequences that provide strong evidence of shared ancestry between organisms*\
-**Epistasis: Interaction between variants*
+**Epistasis: Interaction between variants*\
 **Structural variants: Insertion, Deletion, Duplication*
 
 
