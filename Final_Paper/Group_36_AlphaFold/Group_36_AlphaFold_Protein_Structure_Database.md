@@ -7,7 +7,6 @@
 * [How to use?](#how-to-use)
 * [Achievements and Limitations](#achievements-and-limitations)
 * [Sources](#sources)
-* [Images](https://github.com/serrachow/beng183images)
 ---
 
 ## Protein Structure
@@ -16,8 +15,8 @@
 
 Proteins are commonly known as the fundamental building blocks for all living organisms. They carry out important tasks in the cell, from regulation, structure, and functions of the organ's they belong to. When proteins fail to do their function or hinders the body's function, we see these larger organs fail, in the event of diseases, like in Alzheimer's [1] or ALS [2]. In order to understand how these proteins function, and what happens when they do not function, we can look to studying their specialized structure. Proteins are constructed from amino acid sequences that fold in a certain way, resulting in a mechanism that is specially designed to handling a certain task. For example, a hemoglobin protein that is used for oxygen transport will have specialized binding sites for oxygen molecules, and otpimize the binding and transport of those molecules so they can be delivered across the body [3]. From knowing what shape a protein has, we can understand how it interacts with other molecules in the body, and what role they play in pathways.
 
+![image](https://github.com/TonyYangHan/BENG183_2024Fall_Applied-Genomic-Technologies/blob/main/Final_Paper/Group_36_AlphaFold/Images/salmonella_structure.png)
 
-![image](https://github.com/user-attachments/assets/5dcf711c-2cb8-496c-8adf-b1fad37dcc5c)
 
 Structure of Salmonella alpha-2-macroglobulin [9]
 
