@@ -141,6 +141,37 @@ Both metrics together provide a comprehensive view of DeepVariant’s performanc
 - **Error Reduction**:
   - Over 50% fewer errors compared to GATK, FreeBayes, SAMtools, 16GT, and Strelka.
 
+---
+
+#### Performance Across Genome Builds
+| Variants        | Training Data | Evaluation Data | PPV (%)  | Sensitivity (%) | F1 (%)   |
+|------------------|--------------|-----------------|----------|-----------------|----------|
+| SNPs + Indels   | b37 chr1-19  | b38 chr20-22    | 99.93    | 98.98          | 99.45    |
+|                 | b37 chr1-19  | b38 chr20-22    | 99.87    | 99.21          | 99.53    |
+| SNPs            | b37 chr1-19  | b38 chr20-22    | 99.98    | 99.23          | 99.60    |
+|                 | b37 chr1-19  | b38 chr20-22    | 99.93    | 99.35          | 99.64    |
+| Indels          | b37 chr1-19  | b38 chr20-22    | 99.69    | 97.35          | 98.46    |
+|                 | b37 chr1-19  | b38 chr20-22    | 99.42    | 98.22          | 98.81    |
+
+DeepVariant demonstrates consistent and high accuracy when applied across genome builds (GRCh37 and GRCh38).
+
+---
+
+#### Cross-Species Performance
+| Variants        | Training Data | Evaluation Data | PPV (%)  | Sensitivity (%) | F1 (%)   |
+|------------------|--------------|-----------------|----------|-----------------|----------|
+| SNPs + Indels   | Human chr1-19| Mouse chr18-19  | 99.53    | 97.07          | 98.29    |
+|                 | Mouse chr1-17| Mouse chr18-19  | 99.90    | 95.85          | 97.84    |
+| SNPs            | Human chr1-19| Mouse chr18-19  | 99.98    | 97.86          | 98.91    |
+|                 | Mouse chr1-17| Mouse chr18-19  | 99.99    | 99.10          | 99.54    |
+| Indels          | Human chr1-19| Mouse chr18-19  | 96.41    | 91.75          | 94.02    |
+|                 | Mouse chr1-17| Mouse chr18-19  | 99.15    | 73.80          | 84.62    |
+
+These results highlight DeepVariant’s adaptability and robust performance in cross-species applications, such as generalizing from human data to mouse datasets.
+
+---
+
+
 ### 4.2 Robustness Across Applications
 - **Genome Builds**:
   - GRCh37 → GRCh38: F1 = 99.45%.
