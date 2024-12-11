@@ -1,4 +1,4 @@
-# Handout: DeepVariant - Transforming Genomics with AI
+# DeepVariant: Transforming Genomics with AI
 
 ![DeepVariant Logo](Figures/dv_logo.png)
 
