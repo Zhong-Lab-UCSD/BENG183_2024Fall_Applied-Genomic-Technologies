@@ -1,5 +1,5 @@
 # Feature Selection Techniques in Bioinformatics - Boruta 
-#### Team 10: Kathyrn Chen, Gavin Simmons, Sriya Paleti
+#### Team 10: Kathryn Chen, Gavin Simmons, Sriya Paleti
 
 1. [Why is Feature Selection Important](#why-is-feature-selection-important)
 2. [How is Feature Selection Done](#how-is-feature-selection-done)
