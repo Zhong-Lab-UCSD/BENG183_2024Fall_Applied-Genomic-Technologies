@@ -2,6 +2,14 @@
 
 
 # Table of Contents
+1. [Intro to Spatial Omics](#intro-to-spatial-omics)
+2. [Methodology](#methodology)
+3. [Advantages of BANKSY](#advantages-of-banksy)
+4. [Analysis Pipeline](#analysis-pipeline)
+5. [Demo](#demo)
+6. [Sample Outputs](#sample-outputs)
+7. [Applications to Personalized Medicine](#applications-to-personalized-medicine)
+8. [References](#references)
 
 
 ## **Intro to Spatial Omics**
