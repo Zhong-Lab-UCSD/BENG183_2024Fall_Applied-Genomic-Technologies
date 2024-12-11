@@ -18,6 +18,9 @@
 ### 1.1 What Are Genetic Variants?
 Genetic variants are small differences in DNA sequences compared to a reference genome. These differences make each individual unique. Some variants affect traits like height, while others influence disease risk or evolutionary relationships.
 
+![Genetic Variation](Figures/genetic_variation.png)
+*Figure 1: This illustration depicts a genetic variant, specifically a single nucleotide difference (C to G), between two individuals.*
+
 ### 1.2 What is Variant Calling?
 Variant calling is the process of detecting genetic variants from sequencing data. It provides critical insights into genetic traits, disease susceptibility, and more. However, sequencing data is noisy, making it difficult to distinguish true variants from errors.
 
@@ -92,7 +95,7 @@ Replace `YOUR_INPUT_DIR`, `YOUR_OUTPUT_DIR`, `YOUR_REF`, and `YOUR_BAM` with app
 
 ![DeepVariant Workflow](Figures/worflow.webp)
 
-*Figure 1: Overview of the DeepVariant workflow. This image illustrates the pipeline, from identifying candidate variants to producing final variant calls using a CNN.*
+*Figure 2: Overview of the DeepVariant workflow. This image illustrates the pipeline, from identifying candidate variants to producing final variant calls using a CNN.*
 
 ---
 
