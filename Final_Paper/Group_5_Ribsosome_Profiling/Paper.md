@@ -95,7 +95,7 @@ The table below shows some packages and programs developed for ribosome profilin
 > ![portal](portal.jpg)
 
 
-## Advantages, Limitations, and Future Perspectives
+## Advantages and Limitations
 
 ### Advantages
 
@@ -113,7 +113,7 @@ The table below shows some packages and programs developed for ribosome profilin
 
 - Data Complexity: High computational demands for analysis.
 
-### Future Perspectives
+
 
 
 ## References
