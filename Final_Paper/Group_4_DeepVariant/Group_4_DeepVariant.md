@@ -111,7 +111,7 @@ DeepVariant’s retraining and preprocessing strategies have effectively address
   - Low-quality or sparse sequencing data from clinical samples.
 - Leveraging larger and more diverse datasets could also improve performance across varying genome builds, platforms, and experimental designs.
 
-### 7.4 Conclusion
+### 7.4 Summary
 By expanding its scope, improving sensitivity, and incorporating diverse training data, DeepVariant has the potential to become a universal tool for genomic and epigenomic analysis, applicable across a broad range of research and clinical settings.
 
 ---
