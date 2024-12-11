@@ -1,6 +1,15 @@
 # AlphaMissense
-
+### Team members: Evelyn Quan, Ela Ustuner, Aditi Dutta
 ## Contents
+
+* [Introduction and Background](#introduction-and-background)
+* [Overview of Model](#overview-of-model)
+* [Performance](#performance)
+* [Example with SHOC2-MRAS-PP1C Complex](#example-with-shoc2-mras-pp1c-complex)
+* [Data Integration](#data-integration)
+* [Applications and Real-Life Examples](#applications-and-real-life-examples)
+* [Limitations](#limitations)
+* [References](#references)
 
 ## Introduction and Background
 
@@ -36,6 +45,7 @@ Observed sequence variation
 Ultimately, AlphaMissense’s performance and capabilities are impressive. At an auROC of 0.940, approximately 18,924 ClinVar test variants were classified, which is a leap forward from an auROC of 0.911 by the second leading tool which was also not trained on ClinVar test variants, the Evolutionary model of Variant Effect (EVE). 71 total million missense variant predictions were made across 19,233 human proteins, out of all 216 million possible single amino acid changes. 32% of these variants were found likely to be pathogenic, and 57% likely benign. Performance is also consistent across different AlphaFold pLDDT confidence scores.
 
 ![](./Images/benchmark.png)
+*AlphaMissense benchmarked against competing missense variant effector predictors. Left: Tools are evaluated by how well their predictions agree with ClinVar annotations. Right: The correlation of predictions with experimental assays that probed for mutations on selected human proteins.*
 
 Furthermore, when assessing the performance of AlphaMissense with a prioritized set of clinically actionable genes by the American College of Medical Genetics (ACMG), 26 genes out of these 34 (77%) showed improvements in their predictions of pathogenicity over EVE. In another set of proteins prioritized for future MAVE studies based on their clinical relevance, AlphaMissense again outperforms EVE in its predictions for 16 of the genes (80%).
 
@@ -44,6 +54,7 @@ Furthermore, when assessing the performance of AlphaMissense with a prioritized 
 However, it is important to note that AlphaMissense’s accuracy in predictions can vary depending on different structural groups whose residues may appear in more disordered regions. For instance, in an analysis of AlphaMissense data separated into non-transmembrane (non-TM) and transmembrane (TM) regions for TM proteins, Tordai et al. demonstrated that AlphaMissense’s performance varies across TM and non-TM regions (2024). The graphs below show this distribution of predictions in TM (a) and soluble (b) regions of the proteins, with 88% correct predictions for TM regions made compared to 85% for soluble regions. Furthermore, in investigating the model’s performance for membrane-interacting residues, a low Matthews correlation coefficient (MCC) of 0.496 was seen. Likely, this is due to the low sequence conservation and greater intrinsic disorder found in lipid-interacting disordered regions of the membrane molecular recognition features dataset (MemMoRF).
 
 ![](./Images/tm-regions.png)
+*AlphaMissense’s true vs. false predictions for transmembrane (a) and soluble (b) regions of transmembrane proteins, as separated with reference to the Human Transmembrane Proteome database.*
 
 ## Example with SHOC2-MRAS-PP1C Complex
 
@@ -65,6 +76,7 @@ ProtVar (https://www.ebi.ac.uk/ProtVar/). This tool provides a glimpse at the re
 AlphaFold Database (https://alphafold.ebi.ac.uk/). Next to the Model Confidence tab, there is now an “AlphaMissense Pathogenicity” tab and interactive heatmap allowing you to examine missense variants at the residue level while also taking into consideration 3D aspects of the protein‘s structure.
 
 ![](./Images/alphafold-db.png)
+*Above is an example from the AlphaFold database showing AlphaMissense’s predictions at a residue-level for Cellular tumor antigen p53.*
 
 ## Applications and Real-Life Examples
 
