@@ -41,7 +41,7 @@ Generally, many bioinformatics datasets tend to have high dimensionality and sma
 ### Broad Areas of Interest 
 There are many datasets commonly analyzed in bioinformatics where feature selection can be applied. Mass spectrometry is one area where feature selection is pertinent, since the input dataset, a mass spectrum of a biological sample, is typically high-dimensional and very sparse. Mass spectrometry measures the relative abundance of ions detected in a sample based on their mass-to-charge ratio (i.e. m/z values). Feature selection techniques like univariate statistical tests or supervised methods (such as LASSO) can help identify the most informative peaks, ultimately assisting with tasks like disease diagnosis or protein-based biomarker profiling.
 
-![alt text](../../Figures/mass-spec.avif)\
+![alt text](./Figures/mass-spec.avif)\
 *Example of dataset generated through mass spectrometry*, [Source](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/analytical-chemistry/mass-spectrometry/mass-spectrometry-ms) 
 
 Sequence analysis is another major focus of bioinformatics, and the field contains two main problems of interest:
@@ -58,12 +58,12 @@ To discuss one application of feature selection in greater depth, microarray res
 
 However, since each sample tests hundreds of thousands of variables (gene probes) at once, analysis of this data tends to be very computationally expensive. There is a big need for dimensionality reduction to make microarray analysis viable. 
 
-![alt text](../../Figures/microarray.webp)\
+![alt text](./Figures/microarray.webp)\
 *Visualization of microarray data preprocessing pipeline. Feature selection is used to reduce the dataset to a smaller subset, reducing computational expense and refining the model*, [Source](https://benthamsciencepublishers.wordpress.com/2018/05/07/editors-choice-gene-selection-using-high-dimensional-gene-expression-data/) 
 
 Many techniques have been developed to perform feature selection on microarray datasets, incorporating filtering, wrapping, and embedded techniques. The table below summarizes key references for various types of feature selection techniques applied to microarrays, but some popular methods include t-tests, Wilcoxon rank sum, genetic algorithms, and random forests. Further research into effective methods for feature selection for microarray data is still ongoing.
 
-![alt text](../../Figures/fs_microarray.jpeg)\
+![alt text](./Figures/fs_microarray.jpeg)\
 *Types of feature selection techniques used for microarray analysis*, [Source](https://academic.oup.com/bioinformatics/article/23/19/2507/185254) 
 
 To highlight one benchmark method, in 2002, Guyou et al. published a paper in the journal Machine Learning, proposing a feature selection called SVM-RFE (Support Vector Machine based on Recursive Feature Elimination), which has since become regarded as a leading algorithm for feature selection of microarray data. The method first ranks genes (features) by training support vector machine models, then selects key genes through backward feature elimination, which recursively discards the most unimportant feature. While typically effective, the process is extremely time consuming. Since then, various methods have attempted to address the high time requirement, and other challenges faced by SVM-RFE, such as its inability to account for the probable hidden correlation between features.
@@ -87,7 +87,7 @@ With ```boruta_selector```, you are able to use it with other scikit-learn metho
   - transform(X)
   - fit_transform(X, y)
 
-![alt text](../../Figures/boruta_pipe.jpg)\
+![alt text](./Figures/boruta_pipe.jpg)\
 *Machine learning pipeline utilizing Boruta*, [Source](https://www.tandfonline.com/doi/full/10.1080/0954898X.2024.2331506)
 
 ### How Boruta Works
@@ -96,7 +96,7 @@ With ```boruta_selector```, you are able to use it with other scikit-learn metho
   3. Compares and Decides: Compares the significance scores of the real features to that of the shadow features, to decide which features are relevant. Those that significantly outperform the shadow scores are accepted and remain in the dataset, while those that do not are denied and removed.
   4. Repeat: The previous three steps are repeated until all of the features are decided to have been important or irrelevant. 
 
-![alt text](../../Figures/boruta_results.png)\
+![alt text](./Figures/boruta_results.png)\
 *Box plot Boruta results from Ozone data. Red and Green signify Z scores of rejected and accepted features, blue represents minimal, average and maximum Z score for the shadow attributes*, [Source](https://www.jstatsoft.org/article/view/v036i11) 
 
 ### Advantages and Drawbacks of Boruta
