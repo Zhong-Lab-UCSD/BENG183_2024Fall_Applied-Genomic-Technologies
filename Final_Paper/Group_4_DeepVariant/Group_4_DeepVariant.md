@@ -118,11 +118,11 @@ Replace `YOUR_INPUT_DIR`, `YOUR_OUTPUT_DIR`, `YOUR_REF`, and `YOUR_BAM` with app
 
 Both metrics together provide a comprehensive view of DeepVariant’s performance. The PR plot (Figure 1) emphasizes accuracy and error reduction, while the ROC curve (Figure 2) complements this by showcasing ranking effectiveness. Despite its limitations, the ROC curve further validates DeepVariant’s overall superiority in discriminating between true and false positives.
 
-![Precision-Recall Plot](Figures/supplementary_figure_1a.png){ width=50% }
+![Precision-Recall Plot](Figures/supplementary_figure_1a.png){ width=10% }
 
 *Figure 1: Precision-recall plot for NA12878 variant calling using Illumina HiSeq data. DeepVariant (red) demonstrates superior precision and recall compared to GATK (green and blue), reflecting its higher F1 scores for both SNPs and indels.*
 
-![ROC Curve](Figures/supplementary_figure_2.png){ width=50% }
+![ROC Curve](Figures/supplementary_figure_2.png){ width=10% }
 
 *Figure 2: Receiver Operating Characteristic (ROC) curve for NA12878 variant calling using Illumina HiSeq data. DeepVariant (red) outperforms GATK (green, blue) in ranking true positives relative to false positives.*
 
