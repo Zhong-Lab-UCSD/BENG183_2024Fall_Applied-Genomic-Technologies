@@ -73,6 +73,9 @@
 - **Preprocessing**:
   - Preprocessing steps contributed to significant accuracy improvements.
 
+### 5.3 Summary
+DeepVariant’s retraining and preprocessing strategies have effectively addressed many challenges, particularly for exomes and diverse sequencing platforms. These advancements enhance its robustness for whole-genome sequencing and show progress in managing more complex datasets.
+
 ---
 
 ## 6. Advantages of DeepVariant
